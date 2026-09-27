@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Diego Bravo — Atlas del Umbral</title>
+  <meta name="description" content="Atlas del Umbral es una investigación artística en proceso sobre límites, intervalos, materia, temporalidad, archivo y transformación.">
+  <meta name="author" content="Diego Bravo">
+  <meta name="copyright" content="© Diego Bravo 2026">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://diegobravo.es/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Diego Bravo — Atlas del Umbral">
+  <meta property="og:description" content="Investigación artística en proceso sobre límites, intervalos, materia, temporalidad, archivo y transformación.">
+  <meta property="og:url" content="https://diegobravo.es/">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/334584374?v=4&size=1200">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#f4f1ea">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <style>
+    :root{--paper:#f4f1ea;--ink:#171715;--muted:#6b675f;--line:#cfc8bc;--max:1160px}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.55;text-rendering:optimizeLegibility}
+    a{color:inherit;text-decoration-thickness:1px;text-underline-offset:4px}
+    .wrap{width:min(calc(100% - 40px),var(--max));margin:auto}
+    .nav{position:sticky;top:0;z-index:20;background:rgba(244,241,234,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .nav .wrap{height:62px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{font-size:12px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none}
+    .navlinks{display:flex;gap:22px;font-size:12px;color:var(--muted)}
+    .navlinks a{text-decoration:none}.navlinks a:hover{color:var(--ink)}
+    .hero{min-height:76vh;border-bottom:1px solid var(--line);display:grid;align-items:end;padding:68px 0 54px}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:72px;align-items:end}
+    .eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:18px}
+    h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(62px,9vw,132px);line-height:.88;letter-spacing:-.055em;font-weight:400;margin:0}
+    .hero-note{font-family:Georgia,'Times New Roman',serif;font-size:clamp(27px,3.1vw,44px);line-height:1.1;letter-spacing:-.025em;margin:0 0 10px}
+    section{padding:86px 0;border-bottom:1px solid var(--line)}
+    .grid{display:grid;grid-template-columns:220px 1fr;gap:64px}
+    .label{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding-top:6px}
+    .body{max-width:820px}
+    .lead{font-family:Georgia,'Times New Roman',serif;font-size:clamp(29px,3.4vw,46px);line-height:1.15;letter-spacing:-.025em;margin:0}
+    .body p{font-size:18px;margin:28px 0 0;max-width:720px}
+    .portrait-grid{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:start}
+    .portrait{width:100%;display:block;aspect-ratio:1/1;object-fit:cover;border:1px solid var(--line)}
+    .caption{font-size:11px;color:var(--muted);margin-top:10px}
+    .problems{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:44px}
+    .problem{border-top:1px solid var(--ink);padding-top:17px;min-height:200px}
+    .n{display:block;font-size:11px;color:var(--muted);letter-spacing:.1em;margin-bottom:35px}
+    .problem p{font-family:Georgia,'Times New Roman',serif;font-size:22px;line-height:1.28;margin:0}
+    .fragments{display:grid;gap:0}
+    blockquote{margin:0;padding:28px 0;border-top:1px solid var(--line);font-family:Georgia,'Times New Roman',serif;font-size:clamp(28px,3.1vw,42px);line-height:1.14;letter-spacing:-.02em}
+    blockquote:first-child{border-top:1px solid var(--ink)}
+    .method{display:grid;grid-template-columns:1fr 1fr;gap:46px}
+    .method .lead{font-size:clamp(27px,2.8vw,38px)}
+    .version{display:inline-block;border:1px solid var(--line);padding:8px 11px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:24px}
+    .contact{display:grid;grid-template-columns:1fr auto;gap:42px;align-items:end;border:1px solid var(--ink);padding:30px}
+    .contact strong{font-family:Georgia,'Times New Roman',serif;font-size:30px;font-weight:400}
+    .contact p{margin:10px 0 0;color:var(--muted);font-size:15px}
+    .contact-link{font-size:14px;white-space:nowrap;text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:4px}
+    footer{padding:30px 0 48px;color:var(--muted);font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+    footer .wrap{display:flex;justify-content:space-between;gap:20px}
+    .rights{font-size:12px;color:var(--muted);margin-top:24px;max-width:700px}
+    @media(max-width:780px){
+      .navlinks{display:none}.hero{min-height:auto;padding-top:84px}.hero-grid,.grid,.portrait-grid,.method{grid-template-columns:1fr}.hero-grid{gap:48px}.grid{gap:34px}.problems{grid-template-columns:1fr}.problem{min-height:auto;padding-bottom:30px}.contact{grid-template-columns:1fr}.contact-link{white-space:normal}section{padding:62px 0}footer .wrap{display:block}footer .wrap>div+div{margin-top:10px}
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav" aria-label="Navegación principal">
+    <div class="wrap">
+      <a class="brand" href="#inicio">Diego Bravo</a>
+      <div class="navlinks">
+        <a href="#atlas">Atlas</a><a href="#ahora">Ahora</a><a href="#correspondencias">Correspondencias</a><a href="#contacto">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="inicio">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Investigación artística en proceso</div>
+        <h1>Atlas del<br>Umbral</h1>
+      </div>
+      <p class="hero-note">«El límite no como casa, sino como herida que respira.»</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="atlas">
+      <div class="wrap grid">
+        <div class="label">Atlas</div>
+        <div class="body">
+          <span class="version">Versión pública 0.1 · 2026</span>
+          <p class="lead">Una investigación artística y escrita sobre límites, intervalos y transformaciones: qué ocurre cuando una forma deja de permanecer intacta.</p>
+          <p>El proyecto cruza escritura, imágenes, materiales, archivo, dibujo, correspondencia y situaciones cotidianas. No busca construir una teoría cerrada del umbral, sino seguir sus operaciones: separar, sostener, filtrar, erosionar, contaminar, poner en contacto y transformar.</p>
+          <p class="rights">Esta página muestra únicamente una capa pública del proyecto. El archivo de trabajo, el libro en proceso, las matrices de investigación y la correspondencia completa permanecen fuera de publicación.</p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="Diego Bravo">
+      <div class="wrap portrait-grid">
+        <div><img class="portrait" src="https://avatars.githubusercontent.com/u/334584374?v=4&size=1200" alt="Retrato de Diego Bravo" width="1200" height="1200" loading="lazy"><div class="caption">Diego Bravo · 2026</div></div>
+        <div class="body">
+          <div class="label" style="margin-bottom:28px">Práctica</div>
+          <p class="lead">Artista e investigador independiente.</p>
+          <p>Trabajo desde una práctica que se mueve entre escritura, imagen, materia, archivo y conversación. El Atlas funciona como una constelación abierta: los fragmentos no se reúnen para formar una totalidad estable, sino para observar qué empieza a cambiar cuando entran en relación.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="ahora">
+      <div class="wrap grid">
+        <div class="label">Ahora</div>
+        <div class="body">
+          <p class="lead">Tres problemas de trabajo actuales.</p>
+          <div class="problems">
+            <div class="problem"><span class="n">01</span><p>Cómo un borde puede producir aquello que parece simplemente separar.</p></div>
+            <div class="problem"><span class="n">02</span><p>Cómo materiales y cuerpos sostienen temporalidades diferentes.</p></div>
+            <div class="problem"><span class="n">03</span><p>Cómo una relación transforma los términos que entran en contacto.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="Fragmentos">
+      <div class="wrap grid">
+        <div class="label">Fragmentos</div>
+        <div class="body fragments">
+          <blockquote>«El intervalo no es un vacío entre dos formas ya constituidas. Es aquello que permite que dejen de permanecer intactas.»</blockquote>
+          <blockquote>«La materia no ilustra la transformación. La materia transforma.»</blockquote>
+          <blockquote>«La contradicción no siempre pide solución. A veces pide una forma capaz de contenerla.»</blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="correspondencias">
+      <div class="wrap grid">
+        <div class="label">Correspondencias</div>
+        <div class="body method">
+          <p class="lead">La correspondencia puede ser también una forma de investigación.</p>
+          <div>
+            <p style="margin-top:0">Algunas preguntas se trabajan con artistas, investigadores e instituciones cuando existe una afinidad concreta y algo puede modificarse realmente en el intercambio.</p>
+            <p>No se trata de acumular contactos. Se trata de construir situaciones en las que una pregunta pueda recibir una respuesta inesperada, una corrección, una referencia o una nueva dirección.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div class="wrap grid">
+        <div class="label">Contacto</div>
+        <div class="body">
+          <div class="contact">
+            <div><strong>Conversación, documentación e intercambio.</strong><p>Para cuestiones relacionadas con el Atlas, procesos artísticos, archivos y correspondencias.</p></div>
+            <span class="contact-link" aria-label="Correo de contacto pendiente">Correo de contacto — pendiente de activar</span>
+          </div>
+          <p class="rights">© Diego Bravo, 2026. Textos e imágenes reservados. Las ideas y referencias citadas conservan sus genealogías y autorías propias.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap"><div>Diego Bravo · Atlas del Umbral</div><div>Investigación en proceso · 2026</div></div></footer>
+</body>
+</html>
