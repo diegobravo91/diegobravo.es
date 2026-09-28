@@ -29,3 +29,10 @@ Sitio estático servido con GitHub Pages en [diegobravo.es](https://diegobravo.e
 - Primera Nota conectada al Diccionario y con procedencia explícita de la fuente citada.
 - Protocolo WEB / Instagram / YouTube incorporado al Sistema Maestro de Drive.
 - Regla reforzada: cuando el efecto pueda lograrse enlazando la fuente original, preferir enlace a republicación.
+
+
+## v0.8.1 — coherencia técnica
+- Colofón enlazado discretamente desde las páginas públicas principales.
+- Colofón permanece fuera del sitemap e indexación por diseño: es información accesible, no una página de captación.
+- Limpieza de la lista de superficie pública en README.
+- El desarrollo de Instagram/YouTube continúa aislado en `social-lab`.
