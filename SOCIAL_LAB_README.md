@@ -32,3 +32,9 @@ Esto NO activa ninguna cuenta ni convierte los borradores en publicaciones. La s
 - `CIRCULATION_MAP.md` separa la función de web, Instagram y YouTube por circuitos concretos.
 - `SOCIAL_ARCHIVE_DRAFTS.md` prueba un uso de material abierto de tercero sin incorporarlo al lanzamiento inicial.
 - “Derechos verdes” y “decisión editorial de salida” quedan separados.
+
+
+## v0.7 — producción antes que publicación
+- `PRODUCTION_GATE.md` pasa a ser la regla superior del laboratorio.
+- El inventario de herramientas sigue en HOLD: inspección EXIF sin datos útiles; autoría fotográfica no resuelta.
+- La web pública ya reconoce `Materia propia` como estado operativo sin publicar todavía la fotografía.
