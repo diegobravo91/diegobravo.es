@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+<rect width="1080" height="1350" fill="#eceae4"/>
+<line x1="540" y1="0" x2="540" y2="1350" stroke="#0d0d0c" stroke-opacity=".22"/>
+<line x1="0" y1="675" x2="1080" y2="675" stroke="#0d0d0c" stroke-opacity=".22"/>
+<text x="64" y="82" fill="#6f6b64" font-family="monospace" font-size="22">ESTÉTICA DEL UMBRAL / 01</text>
+<text x="64" y="515" fill="#0d0d0c" font-family="Arial, Helvetica, sans-serif" font-size="138" font-weight="500" letter-spacing="-8">
+<tspan x="64" dy="0">¿QUÉ HACE</tspan><tspan x="170" dy="118">UN UMBRAL?</tspan></text>
+<rect x="64" y="1188" width="126" height="8" fill="#ff4a22"/>
+<text x="64" y="1266" fill="#6f6b64" font-family="monospace" font-size="20">DIEGO BRAVO · DIEGOBRAVO.ES</text>
+</svg>
