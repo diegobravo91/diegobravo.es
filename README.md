@@ -65,3 +65,11 @@ Sitio estático servido con GitHub Pages en [diegobravo.es](https://diegobravo.e
 - La interacción no añade dependencias externas ni seguimiento.
 - Accesibilidad mejorada con skip link y activación por teclado.
 - La búsqueda de documentación material no produjo aún una prueba ESTRATO 001 publicable; no se sustituye por referencias o imágenes generadas.
+
+
+## v0.10 — primera propuesta concreta de práctica
+- Práctica v0.3 publica `STRESS TEST 001 — materia bajo presión` con estado explícito: propuesta activa / no realizada.
+- Regla: no fabricar una apariencia de ruina; definir material + fuerza + duración y comprobar qué permanece después de retirar la presión.
+- Protocolo público mínimo: control / pulse / press / cycle.
+- Mapa v0.4 conecta Materia propia con STRESS TEST 001 y después con documento, consecuencia y decisión de circulación.
+- La portada enlaza la propuesta sin presentarla como obra ejecutada.
