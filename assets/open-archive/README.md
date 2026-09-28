@@ -35,3 +35,18 @@ La regla no es acumular imágenes “libres”, sino conservar para cada activo 
 ## Regla de mantenimiento
 
 Antes de incorporar un nuevo activo a producción debe existir una ficha equivalente. Para activos CC BY se añadirá la atribución exigida; para licencias con NC, ND o SA se revisará el uso concreto antes de publicar. El dominio público de la obra no sustituye la comprobación de la reproducción concreta.
+
+
+## OA-021
+
+- Autor: Eadweard Muybridge
+- Obra: *Boys Playing Leap Frog*
+- Fecha: 1883–86, impreso 1887
+- Institución: The Metropolitan Museum of Art
+- Ficha: https://www.metmuseum.org/art/collection/search/268638
+- Imagen institucional utilizada en la web: https://collectionapi.metmuseum.org/api/collection/v1/iiif/268638/631820/main-image
+- Estado: Public Domain
+- Licencia/política: imagen incluida en el programa Open Access de The Met; reutilización comercial y no comercial sin permiso ni tasa para imágenes en dominio público.
+- Verificación incorporada al archivo de trabajo: 2026-09-28
+- Uso en la web: Atlas / “Archivo abierto” / relación secuencia–intervalo–cuerpo
+- Operación: la secuencia se utiliza para pensar cómo el corte temporal hace legible el movimiento; no se presenta como obra de Diego Bravo.
