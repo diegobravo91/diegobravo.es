@@ -8,7 +8,7 @@ Mostrar evidencia de una investigación real sin publicar el archivo interno com
 ## Estado — 28 septiembre 2026
 - Dominio: `diegobravo.es`; GitHub Pages ya informa `DNS check successful`. La propagación externa sigue siendo reciente y `Enforce HTTPS` ya está disponible.
 - Repositorio: `diegobravo91/diegobravo.es`.
-- Portada pública actual: `index.html` (v0.4, publicada 28/09/2026).
+- Portada pública actual: `index.html` (v0.7, publicada 28/09/2026).
 - Exploración anterior: `preview-v02.html`.
 - `preview-v03.html` conserva la etapa anterior. `preview-v04.html` replica la arquitectura actual como preview no indexable.
 - Las previews históricas quedan fuera de indexación; la web dispone de una `404.html` propia y metadatos canónicos en las páginas públicas.
@@ -18,8 +18,8 @@ Mostrar evidencia de una investigación real sin publicar el archivo interno com
 - Contacto profesional: previsto en `diego@diegobravo.es`; aún no se publica hasta estar operativo.
 - Instagram/YouTube: estructura preparada; enlaces/usuarios definitivos pendientes.
 
-## Privacidad técnica de la v0.4
-La versión pública v0.4 evita Google Fonts, analítica, píxeles, embeds sociales y formularios. Los vídeos de YouTube, cuando entren, deberán cargarse de forma deliberada y preferentemente con modo de privacidad mejorada.
+## Privacidad técnica de la v0.7
+La versión pública v0.7 evita Google Fonts, analítica, píxeles, embeds sociales y formularios. Los vídeos de YouTube, cuando entren, deberán cargarse de forma deliberada y preferentemente con modo de privacidad mejorada.
 
 ## Criterio de privacidad intelectual
 No subir libro maestro, diccionario/matrices, correspondencias completas ni hipótesis internas que todavía no tengan una razón pública clara.
@@ -47,3 +47,13 @@ Añadir páginas públicas sólo cuando aporten evidencia: una página breve del
 - Portada actualizada a v0.6 y sitemap ampliado.
 - Auditoría visual inicial: se localizaron fotografías propias del taller, pero no se publican todavía por privacidad y porque documentación de espacio ≠ obra.
 - Se descartó como material visual propio una imagen titulada `camino corto.jpg`: es una página escaneada de un libro y no debe entrar como imagen autoral.
+
+
+## v0.7 — 2026-09-28
+- Portada depurada: Instagram y YouTube dejan de ocupar una sección central mientras no existan cuentas oficiales activas.
+- `canales.html` se conserva como arquitectura de trabajo accesible pero queda `noindex,follow` y fuera del sitemap.
+- Práctica y Notas permanecen visibles porque ya existen como páginas públicas reales, sin presentar propuestas como obras terminadas.
+- Tarjeta social propia alojada en `assets/social-card.jpg` y metadatos Open Graph/Twitter homogéneos.
+- Sitemap corregido y validado sin secuencias literales de escape.
+- Accesibilidad reforzada: foco visible, salto al contenido, estados ARIA y 404 semántica.
+- Primera nota pública con trazabilidad mejorada para la referencia de Fernando Castro Flórez / Nacho Criado.
