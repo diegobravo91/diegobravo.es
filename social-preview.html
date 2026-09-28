@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Social Lab — Diego Bravo</title>
+<style>
+:root{
+  --bg:#eceae4;--ink:#0d0d0c;--soft:#6f6b64;--hair:rgba(13,13,12,.20);
+  --accent:#ff4a22;--pad:clamp(18px,2.8vw,42px);
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;
+  --sans:Arial,Helvetica,sans-serif
+}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.35}
+a{color:inherit;text-underline-offset:4px}
+::selection{background:var(--ink);color:var(--bg)}
+.top{min-height:58px;border-bottom:1px solid var(--ink);display:flex;align-items:center;justify-content:space-between;gap:24px;padding:10px var(--pad);position:sticky;top:0;background:rgba(236,234,228,.96);backdrop-filter:blur(14px);z-index:20}
+.brand{font-size:13px;font-weight:700}
+.lab{font:10px var(--mono);text-transform:uppercase;color:var(--soft)}
+.hero{min-height:68svh;padding:clamp(55px,9vw,130px) var(--pad) var(--pad);display:flex;flex-direction:column;justify-content:space-between;border-bottom:1px solid var(--ink)}
+.hero h1{font-size:clamp(70px,13vw,185px);line-height:.74;letter-spacing:-.078em;text-transform:uppercase;font-weight:500;margin:0}
+.hero .lead{font-size:clamp(22px,2.8vw,40px);line-height:1.04;letter-spacing:-.04em;max-width:960px;margin-top:48px}
+.sec{border-bottom:1px solid var(--ink)}
+.head{display:grid;grid-template-columns:160px 1fr;border-bottom:1px solid var(--hair)}
+.head span,.head h2{margin:0;padding:16px var(--pad);font:10px var(--mono);font-weight:500;text-transform:uppercase;letter-spacing:.05em}
+.head span{border-right:1px solid var(--hair);color:var(--soft)}
+.split{display:grid;grid-template-columns:1fr 1fr}
+.panel{padding:var(--pad);min-width:0}.panel:first-child{border-right:1px solid var(--ink)}
+.kicker{font:10px var(--mono);text-transform:uppercase;color:var(--soft)}
+.panel h3{font-size:clamp(48px,6.7vw,104px);line-height:.8;letter-spacing:-.067em;text-transform:uppercase;font-weight:500;margin:18px 0 34px}
+.profile{border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);padding:18px 0;margin-bottom:28px;display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center}
+.avatar{width:62px;height:62px;border:1px solid var(--ink);border-radius:50%;display:grid;place-items:center;font:12px var(--mono)}
+.bio{font:12px/1.5 var(--mono)}
+.bio strong{display:block;font-size:13px;font-family:var(--sans);margin-bottom:3px}
+.ig-grid{display:grid;grid-template-columns:repeat(3,1fr);border-left:1px solid var(--ink);border-top:1px solid var(--ink)}
+.tile{aspect-ratio:1;border-right:1px solid var(--ink);border-bottom:1px solid var(--ink);padding:12px;display:flex;flex-direction:column;justify-content:space-between}
+.tile .type{font:9px var(--mono);text-transform:uppercase;color:var(--soft)}
+.tile strong{font-size:clamp(16px,1.9vw,30px);line-height:.94;letter-spacing:-.04em;font-weight:500}
+.tile.dark{background:var(--ink);color:var(--bg)}.tile.dark .type{color:#aaa}
+.tile.accent{background:var(--accent)}
+.rule{font:10px/1.65 var(--mono);text-transform:uppercase;color:var(--soft);margin-top:26px;padding-top:17px;border-top:1px solid var(--hair)}
+.yt-header{border:1px solid var(--ink);padding:18px;margin-bottom:26px}
+.yt-banner{min-height:150px;border-bottom:1px solid var(--ink);display:flex;align-items:flex-end;padding-bottom:16px;font-size:clamp(34px,4vw,62px);line-height:.86;letter-spacing:-.055em;text-transform:uppercase}
+.yt-meta{display:flex;justify-content:space-between;gap:20px;padding-top:13px;font:10px/1.5 var(--mono);text-transform:uppercase;color:var(--soft)}
+.videos{border-top:1px solid var(--ink)}
+.video{display:grid;grid-template-columns:42% 1fr;gap:18px;padding:17px 0;border-bottom:1px solid var(--hair)}
+.thumb{aspect-ratio:16/9;border:1px solid var(--ink);padding:10px;display:flex;align-items:flex-end;font:9px var(--mono);text-transform:uppercase;background:
+linear-gradient(135deg,transparent 49.4%,var(--ink) 49.5%,var(--ink) 50.5%,transparent 50.6%)}
+.video h4{font-size:clamp(20px,2.3vw,34px);line-height:.98;letter-spacing:-.04em;margin:0 0 10px;font-weight:500}
+.video p{font:10px/1.55 var(--mono);color:var(--soft);margin:0}
+.matrix{display:grid;grid-template-columns:repeat(6,1fr)}
+.step{padding:22px var(--pad);min-height:155px;border-right:1px solid var(--hair)}
+.step:last-child{border-right:0}
+.step b{display:block;font:500 28px/1 var(--sans);letter-spacing:-.04em;margin-bottom:12px}
+.step span{font:10px/1.55 var(--mono);text-transform:uppercase;color:var(--soft)}
+.release{padding:var(--pad);display:grid;grid-template-columns:.8fr 1.2fr;gap:8vw;min-height:50vh;align-items:start}
+.release .big{font-size:clamp(38px,5.6vw,84px);line-height:.89;letter-spacing:-.055em}
+.list{border-top:1px solid var(--ink)}
+.row{padding:16px 0;border-bottom:1px solid var(--hair);display:grid;grid-template-columns:70px 1fr auto;gap:20px;align-items:start}
+.row .n,.row .tag{font:10px var(--mono);text-transform:uppercase;color:var(--soft)}
+.row strong{font-size:clamp(20px,2.2vw,32px);line-height:1;letter-spacing:-.035em;font-weight:500}
+.legal{background:var(--ink);color:var(--bg);padding:var(--pad);display:grid;grid-template-columns:1fr 1fr;gap:8vw}
+.legal h3{font-size:clamp(44px,6vw,92px);line-height:.84;letter-spacing:-.06em;font-weight:500;margin:0}
+.legal p{font-size:17px;line-height:1.55;max-width:650px;margin:0}
+.footer{padding:var(--pad);display:flex;justify-content:space-between;gap:24px;font:10px/1.6 var(--mono);text-transform:uppercase;color:var(--soft)}
+@media(max-width:900px){
+  .head{grid-template-columns:86px 1fr}.split{grid-template-columns:1fr}.panel:first-child{border-right:0;border-bottom:1px solid var(--ink)}
+  .matrix{grid-template-columns:repeat(2,1fr)}.step{border-bottom:1px solid var(--hair)}
+  .release{grid-template-columns:1fr}.video{grid-template-columns:1fr}.footer{display:block}
+}
+</style>
+</head>
+<body>
+<header class="top"><div class="brand">Diego Bravo</div><div class="lab">SOCIAL LAB / rama de desarrollo / noindex</div></header>
+<main>
+<section class="hero">
+<div class="lab">Instagram + YouTube / arquitectura v0.3</div>
+<div><h1>Circulación<br>sin relleno.</h1><p class="lead">No diseñar una identidad para ocultar la falta de corpus. Diseñar una circulación capaz de recibir obra, texto y proceso cuando existan.</p></div>
+</section>
+
+<section class="sec"><div class="head"><span>01 / Instagram</span><h2>Cuaderno público</h2></div>
+<div class="split">
+<div class="panel">
+<div class="kicker">Perfil / sin usuario inventado</div>
+<h3>Proximidad.</h3>
+<div class="profile"><div class="avatar">DB</div><div class="bio"><strong>Diego Bravo</strong>Artista e investigador<br>Estética del umbral — investigación en curso<br>texto · imagen · materia · territorio<br>diegobravo.es</div></div>
+<div class="ig-grid">
+<div class="tile"><span class="type">01 / apertura</span><strong>¿QUÉ HACE<br>UN UMBRAL?</strong></div>
+<div class="tile dark"><span class="type">02 / nota</span><strong>NO ENTRA<br>POR ESTAR<br>ENTRE.</strong></div>
+<div class="tile"><span class="type">03 / campo</span><strong>RECORRIDO<br>/ HUELLA</strong></div>
+<div class="tile"><span class="type">04 / libro</span><strong>UNA PÁGINA<br>NO UN<br>ANUNCIO</strong></div>
+<div class="tile"><span class="type">05 / diccionario</span><strong>UMBRAL ≠<br>TRANSICIÓN</strong></div>
+<div class="tile dark"><span class="type">06 / atlas</span><strong>RELACIÓN<br>QUE CAMBIA<br>ALGO</strong></div>
+<div class="tile accent"><span class="type">07 / práctica</span><strong>HIPÓTESIS →<br>PRUEBA</strong></div>
+<div class="tile"><span class="type">08 / detalle</span><strong>MATERIA /<br>RESTO</strong></div>
+<div class="tile"><span class="type">09 / lectura</span><strong>UNA<br>DIFERENCIA</strong></div>
+<div class="tile dark"><span class="type">10 / proceso</span><strong>ANTES /<br>DURANTE /<br>DESPUÉS</strong></div>
+<div class="tile"><span class="type">11 / voz</span><strong>FRAGMENTO<br>LEÍDO</strong></div>
+<div class="tile"><span class="type">12 / retorno</span><strong>CASO<br>COMPLETO ↗</strong></div>
+</div>
+<div class="rule">Las doce casillas no son un calendario. Son un vocabulario. Cualquier casilla puede permanecer vacía durante meses.</div>
+</div>
+
+<div class="panel">
+<div class="kicker">Reglas de publicación</div>
+<h3>No feed.</h3>
+<div class="list">
+<div class="row"><span class="n">A</span><strong>Material propio primero.</strong><span class="tag">DEFAULT</span></div>
+<div class="row"><span class="n">B</span><strong>Una publicación debe introducir una diferencia.</strong><span class="tag">NO FRECUENCIA</span></div>
+<div class="row"><span class="n">C</span><strong>Texto breve no significa texto ornamental.</strong><span class="tag">NOTA ≠ QUOTE CARD</span></div>
+<div class="row"><span class="n">D</span><strong>Obra ajena sólo cuando la procedencia importe al argumento.</strong><span class="tag">FUENTE</span></div>
+<div class="row"><span class="n">E</span><strong>Stories: sólo acontecimiento, proceso o retorno.</strong><span class="tag">NO RUIDO</span></div>
+<div class="row"><span class="n">F</span><strong>La pieza completa vive en la web cuando necesita duración.</strong><span class="tag">RETORNO</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="sec"><div class="head"><span>02 / YouTube</span><h2>Archivo audiovisual</h2></div>
+<div class="split">
+<div class="panel">
+<div class="kicker">Canal / arquitectura</div>
+<h3>Duración.</h3>
+<div class="yt-header"><div class="yt-banner">Estética<br>del umbral</div><div class="yt-meta"><span>Diego Bravo</span><span>ensayo · voz · proceso</span></div></div>
+<div class="videos">
+<article class="video"><div class="thumb">ENSAYO / 08–18 MIN</div><div><h4>¿Qué hace un umbral?</h4><p>Voz propia + montaje propio + fuentes trazables. Un problema, no una clase magistral.</p></div></article>
+<article class="video"><div class="thumb">VOZ / 15–35 MIN</div><div><h4>Leer Estética del umbral</h4><p>Texto propio leído o desarrollado. Imagen mínima cuando la escucha sea el centro.</p></div></article>
+<article class="video"><div class="thumb">PROCESO / VARIABLE</div><div><h4>Una prueba de principio a consecuencia</h4><p>Hipótesis, ejecución, documento, fallo o consecuencia. No tutorial; caso.</p></div></article>
+<article class="video"><div class="thumb">ARCHIVO / COMENTADO</div><div><h4>Una obra, una fricción</h4><p>Comentario propio. Si una imagen o vídeo ajeno no puede reutilizarse con seguridad, se enlaza y se describe.</p></div></article>
+</div>
+</div>
+
+<div class="panel">
+<div class="kicker">Qué no hacer</div>
+<h3>No depósito.</h3>
+<div class="list">
+<div class="row"><span class="n">01</span><strong>No re-subir seminarios completos.</strong><span class="tag">ENLAZAR</span></div>
+<div class="row"><span class="n">02</span><strong>No usar música “porque está en YouTube”.</strong><span class="tag">LICENCIA</span></div>
+<div class="row"><span class="n">03</span><strong>No convertir un disclaimer en permiso.</strong><span class="tag">NO BASTA</span></div>
+<div class="row"><span class="n">04</span><strong>No publicar conversaciones sin consentimiento explícito.</strong><span class="tag">PERSONAS</span></div>
+<div class="row"><span class="n">05</span><strong>No forzar imágenes cuando la voz basta.</strong><span class="tag">DURACIÓN</span></div>
+<div class="row"><span class="n">06</span><strong>No monetizar material cuya licencia no lo permita.</strong><span class="tag">CONTROL</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="sec"><div class="head"><span>03 / Derechos</span><h2>Orden de preferencia</h2></div>
+<div class="matrix">
+<div class="step"><b>A</b><span>Material propio</span></div>
+<div class="step"><b>B</b><span>Permiso escrito</span></div>
+<div class="step"><b>C</b><span>Licencia compatible</span></div>
+<div class="step"><b>D</b><span>Dominio público verificado</span></div>
+<div class="step"><b>E</b><span>Excepción legal limitada y justificada</span></div>
+<div class="step"><b>F</b><span>Si hay duda: enlazar</span></div>
+</div></section>
+
+<section class="sec"><div class="head"><span>04 / Primer ciclo</span><h2>Salida gradual</h2></div>
+<div class="release">
+<div class="big">Primero demostrar profundidad. Después aumentar frecuencia.</div>
+<div class="list">
+<div class="row"><span class="n">01</span><strong>Web: texto disponible y páginas del sistema.</strong><span class="tag">YA</span></div>
+<div class="row"><span class="n">02</span><strong>Instagram: abrir sólo cuando existan 3–5 publicaciones reales listas.</strong><span class="tag">UMBRAL</span></div>
+<div class="row"><span class="n">03</span><strong>YouTube: primer vídeo cuando tenga una razón de duración.</strong><span class="tag">NO TRAILER</span></div>
+<div class="row"><span class="n">04</span><strong>Vincular perfiles a diegobravo.es cuando sus URLs sean definitivas.</strong><span class="tag">REL=ME</span></div>
+<div class="row"><span class="n">05</span><strong>Embeds en web sólo después del clic y sólo si aportan algo.</strong><span class="tag">PRIVACIDAD</span></div>
+</div>
+</div></section>
+
+<section class="legal"><h3>El criterio legal también es una forma de edición.</h3><div><p>No todo lo que puede encontrarse debe circular de nuevo. La procedencia, el permiso, la escala del fragmento y la necesidad real de incorporarlo forman parte de la pieza.</p><p style="margin-top:22px;font:10px/1.6 var(--mono);text-transform:uppercase;color:#aaa">LABORATORIO INTERNO · NO INDEXAR · NO PRESENTAR COMO CANAL ACTIVO</p></div></section>
+</main>
+<footer class="footer"><span>diegobravo.es / social-lab</span><span>arquitectura v0.3 · 28.09.2026</span></footer>
+</body></html>
