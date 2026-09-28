@@ -16,3 +16,13 @@ Regla de salida:
 5. Cualquier material ajeno pasa por la matriz: propio → permiso → licencia → dominio público → excepción limitada → enlazar.
 
 El archivo `social-preview.html` es una maqueta, no una identidad publicada.
+
+
+## v0.4 — assets reales de laboratorio
+Ya existen cuatro archivos visuales propios:
+- tres posts 4:5 para Instagram;
+- una miniatura 16:9 para YouTube;
+- un sistema visual documentado;
+- un guion técnico del piloto #01.
+
+Esto NO activa ninguna cuenta ni convierte los borradores en publicaciones. La salida exige todavía material visual propio no tipográfico y, para YouTube, el vídeo grabado/montado.
