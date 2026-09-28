@@ -26,3 +26,9 @@ Ya existen cuatro archivos visuales propios:
 - un guion técnico del piloto #01.
 
 Esto NO activa ninguna cuenta ni convierte los borradores en publicaciones. La salida exige todavía material visual propio no tipográfico y, para YouTube, el vídeo grabado/montado.
+
+
+## v0.6 — circulación
+- `CIRCULATION_MAP.md` separa la función de web, Instagram y YouTube por circuitos concretos.
+- `SOCIAL_ARCHIVE_DRAFTS.md` prueba un uso de material abierto de tercero sin incorporarlo al lanzamiento inicial.
+- “Derechos verdes” y “decisión editorial de salida” quedan separados.
