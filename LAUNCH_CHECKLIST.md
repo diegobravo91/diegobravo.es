@@ -7,7 +7,7 @@
 - [x] Preparar página estática responsive.
 - [x] Preparar metadatos básicos SEO, favicon, robots y sitemap.
 
-## Estado después del lanzamiento
+## Estado después del lanzamiento\n- [x] Abrir páginas públicas de Práctica, Canales y Sobre sin inventar corpus ni perfiles.
 - [x] Activar GitHub Pages desde la rama `main` y carpeta raíz.
 - [ ] Revisar la v0.4 en móvil y escritorio reales.
 - [ ] Activar el correo profesional y sustituir el marcador de contacto.
