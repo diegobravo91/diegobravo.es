@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fisura 01 — Documento / práctica — Web Lab</title>
+<meta name="description" content="Prototipo no público de una Puerta de contradicción para diegobravo.es.">
+<meta name="robots" content="noindex,nofollow">
+<style>
+:root{--bg:#eceae4;--ink:#0d0d0c;--soft:#6f6b64;--hair:rgba(13,13,12,.22);--accent:#ff4a22;--pad:clamp(18px,2.8vw,40px);--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;--sans:Arial,Helvetica,sans-serif}
+*{box-sizing:border-box}html{background:var(--bg);scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.35}a{color:inherit;text-underline-offset:3px}::selection{background:var(--ink);color:var(--bg)}
+.top{height:58px;border-bottom:1px solid var(--hair);display:flex;align-items:center;justify-content:space-between;padding:0 var(--pad);position:sticky;top:0;background:rgba(236,234,228,.95);backdrop-filter:blur(14px);z-index:20}.brand{font-size:13px;font-weight:700;text-decoration:none}.state{font:10px var(--mono);text-transform:uppercase;color:var(--soft)}
+.hero{min-height:76svh;padding:clamp(54px,9vw,130px) var(--pad) var(--pad);display:flex;flex-direction:column;justify-content:space-between;border-bottom:1px solid var(--ink)}.eyebrow{font:10px var(--mono);text-transform:uppercase;color:var(--soft)}h1{font-size:clamp(58px,9.5vw,145px);line-height:.79;letter-spacing:-.07em;font-weight:500;margin:0;max-width:1280px}.lead{font-size:clamp(22px,2.65vw,38px);line-height:1.04;letter-spacing:-.038em;max-width:920px;margin:48px 0 0}
+.sec{border-bottom:1px solid var(--ink)}.head{display:grid;grid-template-columns:160px 1fr;border-bottom:1px solid var(--hair)}.head span,.head h2{margin:0;padding:16px var(--pad);font:10px var(--mono);font-weight:500;text-transform:uppercase;letter-spacing:.05em}.head span{border-right:1px solid var(--hair);color:var(--soft)}
+.statement{padding:var(--pad);display:grid;grid-template-columns:.9fr 1.1fr;gap:8vw;min-height:50vh;align-items:center}.statement .big{font-size:clamp(38px,5.5vw,84px);line-height:.9;letter-spacing:-.055em;margin:0}.statement .copy{font-size:18px;line-height:1.55;max-width:720px}.mono{font:10px/1.6 var(--mono);text-transform:uppercase;color:var(--soft)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr)}.card{padding:var(--pad);min-height:400px;border-right:1px solid var(--hair);display:flex;flex-direction:column;justify-content:space-between}.card:last-child{border-right:0}.card .meta{font:10px var(--mono);text-transform:uppercase;color:var(--soft)}.card h3{font-size:clamp(29px,3.3vw,52px);line-height:.94;letter-spacing:-.05em;font-weight:500;margin:26px 0 18px}.card p{font-size:16px;line-height:1.52;max-width:520px}.card .foot{font:10px/1.55 var(--mono);text-transform:uppercase;color:var(--soft);margin-top:28px}
+.criteria{padding:0 var(--pad)}.row{display:grid;grid-template-columns:160px 1fr;gap:32px;padding:24px 0;border-bottom:1px solid var(--hair)}.row:last-child{border-bottom:0}.row .k{font:10px var(--mono);text-transform:uppercase;color:var(--soft)}.row strong{font-size:clamp(23px,2.6vw,38px);line-height:1.02;letter-spacing:-.035em;font-weight:500}.row p{margin:10px 0 0;font-size:16px;line-height:1.5;max-width:850px}
+.fissure{background:var(--ink);color:var(--bg);padding:var(--pad);display:grid;grid-template-columns:.85fr 1.15fr;gap:8vw;min-height:55vh;align-items:start}.fissure h2{font-size:clamp(48px,7vw,108px);line-height:.84;letter-spacing:-.065em;font-weight:500;margin:0}.fissure .copy{font-size:18px;line-height:1.55;max-width:720px}.prompt{border-top:1px solid rgba(236,234,228,.3);padding-top:20px;margin-top:28px}.prompt dl{margin:0}.prompt dt{font:10px var(--mono);text-transform:uppercase;color:rgba(236,234,228,.56);margin:18px 0 6px}.prompt dd{margin:0;font-size:17px}.inactive{display:inline-block;margin-top:30px;border:1px solid rgba(236,234,228,.45);padding:12px 15px;font:10px var(--mono);text-transform:uppercase;color:rgba(236,234,228,.65)}
+.consequence{padding:var(--pad);display:grid;grid-template-columns:160px 1fr;gap:30px;min-height:38vh}.consequence .k{font:10px var(--mono);text-transform:uppercase;color:var(--soft)}.consequence .text{font-size:clamp(29px,3.8vw,58px);line-height:.98;letter-spacing:-.045em;max-width:1080px}.consequence .text small{display:block;margin-top:28px;font:10px/1.65 var(--mono);text-transform:uppercase;color:var(--soft);letter-spacing:0}
+.footer{padding:var(--pad);display:flex;justify-content:space-between;gap:30px;font:10px/1.6 var(--mono);text-transform:uppercase;color:var(--soft)}
+@media(max-width:900px){.statement,.fissure{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.card{border-right:0;border-bottom:1px solid var(--hair);min-height:300px}.card:last-child{border-bottom:0}.head{grid-template-columns:86px 1fr}.row{grid-template-columns:1fr}.consequence{grid-template-columns:1fr}.footer{display:block}}
+</style>
+</head>
+<body>
+<header class="top"><a class="brand" href="#">Diego Bravo / WEB LAB</a><div class="state">Noindex · prototipo · no enlazado desde main</div></header>
+<main>
+<section class="hero">
+<div class="eyebrow">Puerta de contradicción / prueba 01 / documento</div>
+<div>
+<h1>¿Cuándo documentar conserva una práctica y cuándo empieza a sustituirla?</h1>
+<p class="lead">Una pregunta pública no para recibir opiniones, sino para localizar un caso capaz de volver insuficiente la formulación actual.</p>
+</div>
+</section>
+
+<section class="sec">
+<div class="head"><span>01 / Estado</span><h2>Hipótesis actual</h2></div>
+<div class="statement">
+<p class="big">El documento puede mantener una práctica accesible sin ser la práctica.</p>
+<div class="copy">
+<p>La hipótesis distingue entre documento como mediación, documento como operación y documento como sustitución. Una fotografía, un contrato, una instrucción, una memoria corporal o un registro pueden relacionarse de maneras distintas con aquello que preservan.</p>
+<p class="mono">ESTADO: EN PRUEBA · VERSIÓN 0.1 · NO INCORPORADO COMO TESIS CERRADA</p>
+</div>
+</div>
+</section>
+
+<section class="sec">
+<div class="head"><span>02 / Presión</span><h2>Casos que ya impiden una respuesta simple</h2></div>
+<div class="grid">
+<article class="card"><div><span class="meta">Rastro riguroso</span><h3>Tehching Hsieh</h3><p>Años vividos bajo reglas extremas sobreviven mediante fotografías, mapas, objetos, contratos y registros. La documentación permite conocer la obra, pero no puede contener la duración vivida que documenta.</p></div><div class="foot">DOCUMENTO-DE / PÉRDIDA RECONOCIDA</div></article>
+<article class="card"><div><span class="meta">Transmisión corporal</span><h3>Tino Sehgal</h3><p>La obra rechaza reproducción fotográfica y escrita como equivalente suficiente. El conocimiento necesario para volver a realizarla se transmite entre cuerpos, relatos y ensayos.</p></div><div class="foot">RESERVA / MEMORIA / TRANSMISIÓN</div></article>
+<article class="card"><div><span class="meta">Documento que actúa</span><h3>Siegelaub / Projansky</h3><p>Un contrato no recuerda simplemente una relación artística: puede modificar jurídicamente qué derechos y obligaciones continúan cuando la obra cambia de manos.</p></div><div class="foot">DOCUMENTO-COMO / OPERADOR</div></article>
+</div>
+</section>
+
+<section class="sec">
+<div class="head"><span>03 / Herida</span><h2>Qué podría hacernos cambiar</h2></div>
+<div class="criteria">
+<div class="row"><div class="k">Caso A</div><div><strong>Una práctica cuya documentación no pueda separarse de aquello que documenta.</strong><p>No un registro útil, sino un caso donde intentar distinguir acontecimiento y documento destruya la operación.</p></div></div>
+<div class="row"><div class="k">Caso B</div><div><strong>Una ausencia documental que aumente la capacidad de transmisión en vez de reducirla.</strong><p>Algo más fuerte que simple secreto, prohibición o pérdida: la falta tendría que producir una forma verificable de continuidad.</p></div></div>
+<div class="row"><div class="k">Caso C</div><div><strong>Un documento que conserve perfectamente los datos pero anule la práctica que pretendía preservar.</strong><p>El caso debería permitir localizar la sustitución, no asumirla por intuición.</p></div></div>
+<div class="row"><div class="k">Salida</div><div><strong>La pregunta está mal formulada.</strong><p>También cuenta una objeción que demuestre que “documento” y “práctica” no son los términos adecuados para pensar el problema.</p></div></div>
+</div>
+</section>
+
+<section class="fissure">
+<h2>Señalar<br>una fisura.</h2>
+<div class="copy">
+<p>No buscamos una opinión general sobre documentación. Buscamos un caso, fuente, obra o situación que permita comprobar que alguna parte de la pregunta falla.</p>
+<div class="prompt"><dl>
+<dt>Qué falla</dt><dd>La afirmación, distinción o relación que el caso vuelve insuficiente.</dd>
+<dt>Evidencia</dt><dd>Fuente, obra, enlace, documento o experiencia verificable.</dd>
+<dt>Qué cambiaría</dt><dd>Qué parte del Diccionario, Atlas, Libro, práctica o web tendría que reabrirse si la objeción se sostiene.</dd>
+<dt>Fuera de marco</dt><dd>También se admite: “esto no encaja en vuestra pregunta”.</dd>
+</dl></div>
+<span class="inactive">Canal de envío no activado en este prototipo</span>
+</div>
+</section>
+
+<section class="sec">
+<div class="head"><span>04 / Consecuencia</span><h2>Qué ocurriría si una fisura supera la criba</h2></div>
+<div class="consequence"><div class="k">Compromiso limitado</div><div class="text">No prometemos responder a todo. Una objeción validada puede obligar a una única consecuencia concreta: corregir, reabrir, investigar, probar, retirar o cambiar de versión.<small>La prueba pública de participación sería el cambio producido, no un contador de mensajes.</small></div></div>
+</section>
+</main>
+<footer class="footer"><span>Diego Bravo / Estética del umbral</span><span>WEB LAB · fisura-documento · v0.1 · 28.09.2026</span></footer>
+</body>
+</html>
