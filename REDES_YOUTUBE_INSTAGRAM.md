@@ -1,4 +1,4 @@
-# Diego Bravo — Instagram + YouTube — arquitectura v0.1
+# Diego Bravo — Instagram + YouTube — arquitectura v0.2
 
 ## Principio
 Las redes no son un proyecto paralelo. La web es la superficie estable; Instagram y YouTube son salidas de distinta duración del mismo sistema de investigación.
@@ -34,3 +34,49 @@ Para España, el artículo 32 de la Ley de Propiedad Intelectual permite en dete
 
 ## Web + embeds
 No cargar feeds de Instagram automáticamente en la web. Para YouTube, si se incorporan vídeos, preferir carga bajo acción del usuario y modo de privacidad mejorada (`youtube-nocookie.com`). Mientras no haya embeds ni analítica, la web puede mantenerse técnicamente mucho más simple.
+
+
+## Primer ciclo de circulación
+No es un calendario obligatorio. Es un repertorio para no empezar desde cero cuando exista material real.
+
+Instagram:
+1. Apertura — ¿qué hace un umbral?
+2. Nota — “No entra porque esté entre. Entra cuando el entre hace algo.”
+3. Campo — recorrido / huella.
+4. Libro — una página o fragmento contextualizado, no un anuncio.
+5. Diccionario — una diferencia concreta, por ejemplo UMBRAL ≠ TRANSICIÓN.
+6. Atlas — una relación y qué modifica.
+7. Práctica — hipótesis → prueba.
+8. Detalle — materia / resto / escala.
+9. Lectura — una diferencia introducida por una fuente.
+10. Proceso — antes / durante / después.
+11. Voz — fragmento leído o pensado en voz alta.
+12. Retorno — enlace al caso o texto completo en diegobravo.es.
+
+YouTube:
+- ¿Qué hace un umbral? — ensayo audiovisual de apertura.
+- Leer Estética del umbral — cuaderno de voz con material propio.
+- Una prueba de principio a consecuencia — documentación procesual.
+- Una obra, una fricción — archivo comentado con trazabilidad de fuentes.
+
+## Matriz de derechos previa a publicación
+Orden de preferencia:
+A. Material propio.
+B. Permiso escrito del titular.
+C. Licencia compatible con el uso concreto.
+D. Dominio público verificado.
+E. Inclusión limitada bajo una excepción legal aplicable, revisada caso por caso.
+F. Si la base no es clara: enlazar la fuente original y describir/comentar sin re-subir.
+
+Fuentes de control:
+- BOE, Texto Refundido de la Ley de Propiedad Intelectual, art. 32: https://www.boe.es/buscar/act.php?id=BOE-A-1996-8930
+- YouTube, Derechos de autor: https://support.google.com/youtube/answer/2797466?hl=es
+- YouTube, Tipos de licencias: https://support.google.com/youtube/answer/2797468?hl=es
+- AEPD, Guías: https://www.aepd.es/guias-y-herramientas/guias
+
+## Integración con la web
+Páginas públicas creadas:
+- /practica.html — método, estados y corpus público.
+- /canales.html — función de Instagram/YouTube, matriz de derechos y privacidad.
+Preview interno:
+- /social-preview-v02.html — noindex; sirve para probar arquitectura visual antes de fijar cuentas.
