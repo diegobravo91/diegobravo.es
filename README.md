@@ -12,6 +12,7 @@ Superficie pública actual:
 - `practica.html` — método y estado del corpus.
 - `notas.html` — textos y fragmentos públicos.
 - `sobre.html` — posición y método.
+- `mapa.html` — cartografía pública de relaciones y recorridos.
 - `feed.xml` — RSS de Notas.\n- `colofon.html` — derechos, procedencia y privacidad (noindex).
 
 ## Regla editorial
@@ -44,3 +45,9 @@ Sitio estático servido con GitHub Pages en [diegobravo.es](https://diegobravo.e
 - Cruce explícito desde Atlas hacia las entradas `#transicion` y `#umbral` del Diccionario.
 - Registro de procedencia y derechos actualizado antes de publicar la imagen.
 - La portada identifica ya el Archivo abierto como parte del Atlas sin convertirlo en una fototeca independiente.
+
+
+## v0.9.1 — cartografía pública
+- Nueva página `mapa.html`: red entre Libro, Atlas, Diccionario, Práctica, Notas y Archivo abierto.
+- Cuatro recorridos públicos iniciales: Tiempo, Contacto, Borde y Método.
+- La página no pretende representar el archivo completo; sólo conexiones que ya producen una diferencia verificable.
