@@ -45,3 +45,10 @@ Esto NO activa ninguna cuenta ni convierte los borradores en publicaciones. La s
 - Duración prevista: 10–13 minutos.
 - Primera versión construida para existir sin material audiovisual de terceros y sin música.
 - El vídeo puede sostenerse con voz, tipografía, páginas propias y, sólo cuando existan, planos propios necesarios.
+
+
+## v0.9 — primer ciclo real de Instagram
+- `INSTAGRAM_FIRST_CYCLE.md` fija cinco primeras piezas y su estado.
+- Estado actual: 01 LISTO · 02 HOLD · 03 LISTO · 04 LISTO · 05 FALTA PRÁCTICA.
+- Instagram no se abre todavía.
+- La pieza 05 —primera transformación material real— es un bloqueo deliberado que no puede sustituirse por archivo, IA aislada, mockup o quote card.
