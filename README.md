@@ -35,3 +35,15 @@ Añadir páginas públicas sólo cuando aporten evidencia: una página breve del
 - Portada actualizada con acceso directo a Práctica y Canales.
 - Sitemap ampliado.
 - Protocolos de redes y prepublicación actualizados con fuentes oficiales BOE, AEPD y YouTube.
+
+
+## v0.6 — 2026-09-28
+- Nueva zona pública `notas.html`: salida editorial lenta del archivo, separada de Libro, Atlas y Diccionario.
+- Primera nota completa publicada: `notas/el-tiempo-que-no-tenemos.html`, apertura de la versión de lectura 0.4 de *Estética del umbral*.
+- RSS mínimo en `feed.xml` para que futuras notas puedan crecer sin rehacer la arquitectura.
+- Navegación transversal unificada entre Libro, Atlas, Diccionario, Práctica, Notas y Sobre.
+- Enlace directo desde la página del libro a la apertura completa.
+- Datos estructurados Schema.org para autor, sitio, proyecto/libro y artículo.
+- Portada actualizada a v0.6 y sitemap ampliado.
+- Auditoría visual inicial: se localizaron fotografías propias del taller, pero no se publican todavía por privacidad y porque documentación de espacio ≠ obra.
+- Se descartó como material visual propio una imagen titulada `camino corto.jpg`: es una página escaneada de un libro y no debe entrar como imagen autoral.
