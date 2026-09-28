@@ -1,166 +1,64 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Diego Bravo — Atlas del Umbral</title>
-  <meta name="description" content="Atlas del Umbral es una investigación artística en proceso sobre límites, intervalos, materia, temporalidad, archivo y transformación.">
-  <meta name="author" content="Diego Bravo">
-  <meta name="copyright" content="© Diego Bravo 2026">
-  <meta name="robots" content="index,follow,max-image-preview:large">
-  <link rel="canonical" href="https://diegobravo.es/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Diego Bravo — Atlas del Umbral">
-  <meta property="og:description" content="Investigación artística en proceso sobre límites, intervalos, materia, temporalidad, archivo y transformación.">
-  <meta property="og:url" content="https://diegobravo.es/">
-  <meta property="og:image" content="https://avatars.githubusercontent.com/u/334584374?v=4&size=1200">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="theme-color" content="#f4f1ea">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <style>
-    :root{--paper:#f4f1ea;--ink:#171715;--muted:#6b675f;--line:#cfc8bc;--max:1160px}
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.55;text-rendering:optimizeLegibility}
-    a{color:inherit;text-decoration-thickness:1px;text-underline-offset:4px}
-    .wrap{width:min(calc(100% - 40px),var(--max));margin:auto}
-    .nav{position:sticky;top:0;z-index:20;background:rgba(244,241,234,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-    .nav .wrap{height:62px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-    .brand{font-size:12px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none}
-    .navlinks{display:flex;gap:22px;font-size:12px;color:var(--muted)}
-    .navlinks a{text-decoration:none}.navlinks a:hover{color:var(--ink)}
-    .hero{min-height:76vh;border-bottom:1px solid var(--line);display:grid;align-items:end;padding:68px 0 54px}
-    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:72px;align-items:end}
-    .eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:18px}
-    h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(62px,9vw,132px);line-height:.88;letter-spacing:-.055em;font-weight:400;margin:0}
-    .hero-note{font-family:Georgia,'Times New Roman',serif;font-size:clamp(27px,3.1vw,44px);line-height:1.1;letter-spacing:-.025em;margin:0 0 10px}
-    section{padding:86px 0;border-bottom:1px solid var(--line)}
-    .grid{display:grid;grid-template-columns:220px 1fr;gap:64px}
-    .label{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding-top:6px}
-    .body{max-width:820px}
-    .lead{font-family:Georgia,'Times New Roman',serif;font-size:clamp(29px,3.4vw,46px);line-height:1.15;letter-spacing:-.025em;margin:0}
-    .body p{font-size:18px;margin:28px 0 0;max-width:720px}
-    .portrait-grid{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:start}
-    .portrait{width:100%;display:block;aspect-ratio:1/1;object-fit:cover;border:1px solid var(--line)}
-    .caption{font-size:11px;color:var(--muted);margin-top:10px}
-    .problems{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:44px}
-    .problem{border-top:1px solid var(--ink);padding-top:17px;min-height:200px}
-    .n{display:block;font-size:11px;color:var(--muted);letter-spacing:.1em;margin-bottom:35px}
-    .problem p{font-family:Georgia,'Times New Roman',serif;font-size:22px;line-height:1.28;margin:0}
-    .fragments{display:grid;gap:0}
-    blockquote{margin:0;padding:28px 0;border-top:1px solid var(--line);font-family:Georgia,'Times New Roman',serif;font-size:clamp(28px,3.1vw,42px);line-height:1.14;letter-spacing:-.02em}
-    blockquote:first-child{border-top:1px solid var(--ink)}
-    .method{display:grid;grid-template-columns:1fr 1fr;gap:46px}
-    .method .lead{font-size:clamp(27px,2.8vw,38px)}
-    .version{display:inline-block;border:1px solid var(--line);padding:8px 11px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:24px}
-    .contact{display:grid;grid-template-columns:1fr auto;gap:42px;align-items:end;border:1px solid var(--ink);padding:30px}
-    .contact strong{font-family:Georgia,'Times New Roman',serif;font-size:30px;font-weight:400}
-    .contact p{margin:10px 0 0;color:var(--muted);font-size:15px}
-    .contact-link{font-size:14px;white-space:nowrap;text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:4px}
-    footer{padding:30px 0 48px;color:var(--muted);font-size:11px;letter-spacing:.08em;text-transform:uppercase}
-    footer .wrap{display:flex;justify-content:space-between;gap:20px}
-    .rights{font-size:12px;color:var(--muted);margin-top:24px;max-width:700px}
-    @media(max-width:780px){
-      .navlinks{display:none}.hero{min-height:auto;padding-top:84px}.hero-grid,.grid,.portrait-grid,.method{grid-template-columns:1fr}.hero-grid{gap:48px}.grid{gap:34px}.problems{grid-template-columns:1fr}.problem{min-height:auto;padding-bottom:30px}.contact{grid-template-columns:1fr}.contact-link{white-space:normal}section{padding:62px 0}footer .wrap{display:block}footer .wrap>div+div{margin-top:10px}
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diego Bravo — Estética del umbral · Atlas</title>
+<meta name="description" content="Diego Bravo — Estética del umbral. Libro, Atlas, Diccionario, práctica artística, notas, archivo, correspondencia y audiovisual en proceso.">
+<meta name="author" content="Diego Bravo">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://diegobravo.es/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Diego Bravo — Estética del umbral · Atlas">
+<meta property="og:description" content="Libro, Atlas, Diccionario y práctica artística en torno a límites, intervalos, tiempo, materia, archivo y transformación.">
+<meta property="og:url" content="https://diegobravo.es/">
+<meta name="theme-color" content="#eceae4">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<style>
+:root{--bg:#eceae4;--ink:#0d0d0c;--soft:#6f6b64;--hair:rgba(13,13,12,.22);--accent:#ff4a22;--pad:clamp(18px,2.4vw,34px);--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;--sans:Arial,Helvetica,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;background:var(--bg)}body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.35;overflow-x:hidden}a{color:inherit}button{font:inherit;color:inherit}::selection{background:var(--ink);color:var(--bg)}
+.topbar{position:fixed;inset:0 0 auto;height:56px;z-index:100;border-bottom:1px solid var(--hair);background:rgba(236,234,228,.92);backdrop-filter:blur(14px);display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:0 var(--pad)}
+.wordmark{font-size:13px;font-weight:700;letter-spacing:-.015em;text-decoration:none}.status{font-family:var(--mono);font-size:10px;letter-spacing:.04em;text-transform:uppercase;color:var(--soft)}.topnav{justify-self:end;display:flex;gap:16px}.topnav a{font-family:var(--mono);font-size:10px;text-transform:uppercase;text-decoration:none;color:var(--soft)}.topnav a:hover{color:var(--ink)}
+.hero{min-height:100svh;padding:calc(56px + var(--pad)) var(--pad) var(--pad);display:grid;grid-template-columns:1fr;grid-template-rows:1fr auto;border-bottom:1px solid var(--ink);position:relative}.hero::after{content:'';position:absolute;top:56px;bottom:0;left:50%;width:1px;background:var(--hair);pointer-events:none}
+.hero-title{align-self:center;font-size:clamp(62px,12.2vw,188px);font-weight:500;line-height:.76;letter-spacing:-.073em;text-transform:uppercase;max-width:95vw;margin:5vh 0 8vh}.hero-title .line{display:block}.hero-title .offset{padding-left:10.4vw}.hero-meta{display:grid;grid-template-columns:1fr 1fr;gap:var(--pad);align-items:end}.hero-kicker{max-width:690px;font-size:clamp(20px,2.35vw,34px);letter-spacing:-.03em;line-height:1.03;margin:0}.hero-side{justify-self:end;max-width:430px;font-family:var(--mono);font-size:11px;line-height:1.55;color:var(--soft)}.hero-side strong{color:var(--ink);font-weight:600}
+.section{border-bottom:1px solid var(--ink)}.section-head{display:grid;grid-template-columns:170px 1fr;border-bottom:1px solid var(--hair);min-height:58px}.section-head .n,.section-head h2{margin:0;padding:17px var(--pad);font-family:var(--mono);font-size:10px;font-weight:500;letter-spacing:.06em;text-transform:uppercase}.section-head .n{border-right:1px solid var(--hair);color:var(--soft)}
+.field{display:grid;grid-template-columns:minmax(280px,40%) 1fr;min-height:80vh}.field-index{border-right:1px solid var(--ink)}.term{width:100%;border:0;border-bottom:1px solid var(--hair);background:transparent;padding:18px var(--pad);display:grid;grid-template-columns:38px 1fr auto;gap:12px;text-align:left;cursor:pointer;align-items:baseline}.term:hover,.term.active{background:var(--ink);color:var(--bg)}.term .ix{font-family:var(--mono);font-size:10px;color:var(--soft)}.term:hover .ix,.term.active .ix{color:rgba(236,234,228,.55)}.term .name{font-size:clamp(24px,3vw,42px);line-height:.95;letter-spacing:-.045em;text-transform:uppercase}.term .sign{font-family:var(--mono);font-size:12px}.field-display{position:relative;overflow:hidden;padding:var(--pad);display:flex;flex-direction:column;justify-content:space-between;background:radial-gradient(circle at var(--mx,62%) var(--my,38%),rgba(255,74,34,.14),transparent 23%),var(--bg)}.field-display::before,.field-display::after{content:'';position:absolute;pointer-events:none;background:var(--hair)}.field-display::before{width:1px;top:0;bottom:0;left:50%}.field-display::after{height:1px;left:0;right:0;top:50%}.field-code{font-family:var(--mono);font-size:10px;color:var(--soft);z-index:2}.field-word{font-size:clamp(62px,9vw,150px);line-height:.78;letter-spacing:-.07em;text-transform:uppercase;z-index:2;max-width:850px;transition:opacity .18s ease,transform .18s ease}.field-def{align-self:flex-end;max-width:560px;font-size:clamp(21px,2.3vw,32px);line-height:1.08;letter-spacing:-.03em;z-index:2;padding-top:80px}.field-def small{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--soft);margin-bottom:12px}
+.editorial{display:grid;grid-template-columns:1fr 1fr;min-height:68vh}.editorial-main{padding:var(--pad);border-right:1px solid var(--ink);display:flex;align-items:center}.editorial-main p{font-size:clamp(42px,5.8vw,94px);line-height:.89;letter-spacing:-.06em;margin:0;max-width:940px}.editorial-side{padding:var(--pad);display:flex;flex-direction:column;justify-content:space-between}.editorial-side p{font-size:clamp(19px,1.9vw,29px);letter-spacing:-.025em;line-height:1.1;max-width:620px;margin:0}.note{font-family:var(--mono);font-size:10px;line-height:1.65;color:var(--soft);max-width:540px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr)}.card{min-height:430px;padding:var(--pad);border-right:1px solid var(--hair);display:flex;flex-direction:column;justify-content:space-between}.card:last-child{border-right:0}.card .meta{font-family:var(--mono);font-size:10px;color:var(--soft);text-transform:uppercase}.card h3{font-size:clamp(31px,3.5vw,54px);line-height:.94;letter-spacing:-.05em;margin:28px 0 18px;font-weight:500}.card p{font-size:16px;line-height:1.5;margin:0;max-width:460px}.card .state{font-family:var(--mono);font-size:10px;color:var(--soft);padding-top:30px}.card.empty{background:rgba(13,13,12,.04)}
+.notes{display:grid;grid-template-columns:170px 1fr}.notes-aside{border-right:1px solid var(--hair);padding:var(--pad);font-family:var(--mono);font-size:10px;color:var(--soft)}.notes-main{padding:0 var(--pad)}.fragment{padding:34px 0;border-bottom:1px solid var(--hair);display:grid;grid-template-columns:150px 1fr;gap:30px}.fragment:last-child{border-bottom:0}.fragment .tag{font-family:var(--mono);font-size:10px;color:var(--soft);text-transform:uppercase}.fragment p{font-size:clamp(28px,3.6vw,56px);line-height:.98;letter-spacing:-.045em;margin:0;max-width:980px}
+.av-grid{display:grid;grid-template-columns:1fr 1fr}.av-panel{min-height:620px;padding:var(--pad);display:flex;flex-direction:column;justify-content:space-between}.av-panel:first-child{border-right:1px solid var(--ink)}.av-kicker{font-family:var(--mono);font-size:10px;color:var(--soft);text-transform:uppercase}.av-panel h3{font-size:clamp(54px,7vw,112px);line-height:.8;letter-spacing:-.068em;text-transform:uppercase;font-weight:500;margin:20px 0 40px}.av-panel p{font-size:18px;line-height:1.5;max-width:590px}.series{margin-top:38px;border-top:1px solid var(--hair)}.series div{display:flex;justify-content:space-between;gap:18px;padding:13px 0;border-bottom:1px solid var(--hair);font-family:var(--mono);font-size:10px;text-transform:uppercase}.series span:last-child{color:var(--soft)}.platform-state{font-family:var(--mono);font-size:10px;color:var(--soft);text-transform:uppercase;margin-top:34px}
+.correspondence{display:grid;grid-template-columns:170px 1fr}.correspondence .aside{padding:var(--pad);border-right:1px solid var(--hair);font-family:var(--mono);font-size:10px;color:var(--soft)}.correspondence .content{padding:var(--pad);display:grid;grid-template-columns:1fr 1fr;gap:8vw}.correspondence h3{font-size:clamp(38px,5vw,76px);line-height:.88;letter-spacing:-.055em;margin:0;font-weight:500}.correspondence p{font-size:18px;line-height:1.45;margin:0;max-width:560px}.correspondence .rule{margin-top:26px;padding-top:18px;border-top:1px solid var(--hair);font-family:var(--mono);font-size:10px;color:var(--soft);line-height:1.6}
+.contact{min-height:62vh;padding:var(--pad);display:flex;flex-direction:column;justify-content:space-between}.contact .top{display:grid;grid-template-columns:1fr 1fr;gap:var(--pad)}.contact h2{font-size:clamp(62px,10vw,156px);line-height:.78;letter-spacing:-.07em;text-transform:uppercase;font-weight:500;margin:0}.contact p{align-self:end;justify-self:end;max-width:500px;font-family:var(--mono);font-size:11px;line-height:1.6;color:var(--soft)}.contact-bottom{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:end;border-top:1px solid var(--hair);padding-top:18px}.contact-bottom .channels{display:flex;gap:20px;flex-wrap:wrap;font-family:var(--mono);font-size:10px;text-transform:uppercase}.contact-bottom .channels span{border-bottom:1px solid var(--hair);padding-bottom:4px}.contact-bottom .version{font-family:var(--mono);font-size:10px;color:var(--soft);text-align:right}.privacy{font-family:var(--mono);font-size:9px;line-height:1.6;color:var(--soft);max-width:760px;margin-top:20px}
+.cursor-dot{position:fixed;width:9px;height:9px;border-radius:50%;background:var(--accent);pointer-events:none;z-index:999;transform:translate(-50%,-50%);mix-blend-mode:multiply;opacity:0;transition:opacity .2s}@media(pointer:fine){body:hover .cursor-dot{opacity:1}}
+@media(max-width:900px){.topbar{grid-template-columns:1fr auto}.status{display:none}.topnav{gap:10px}.topnav a:nth-child(3),.topnav a:nth-child(4){display:none}.hero{min-height:88svh}.hero::after{left:67%}.hero-meta{grid-template-columns:1fr}.hero-side{justify-self:start}.section-head{grid-template-columns:86px 1fr}.field{grid-template-columns:1fr}.field-index{border-right:0}.field-display{min-height:70svh}.editorial,.av-grid{grid-template-columns:1fr}.editorial-main,.av-panel:first-child{border-right:0;border-bottom:1px solid var(--ink)}.editorial-main{min-height:52vh}.editorial-side{min-height:44vh}.cards{grid-template-columns:1fr}.card{min-height:340px;border-right:0;border-bottom:1px solid var(--hair)}.card:last-child{border-bottom:0}.notes{grid-template-columns:86px 1fr}.fragment{grid-template-columns:1fr;gap:12px}.correspondence{grid-template-columns:86px 1fr}.correspondence .content{grid-template-columns:1fr;gap:50px}.contact .top{grid-template-columns:1fr}.contact p{justify-self:start}.contact-bottom{grid-template-columns:1fr}.contact-bottom .version{text-align:left}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.field-word{transition:none}.cursor-dot{display:none}}
+</style>
 </head>
 <body>
-  <nav class="nav" aria-label="Navegación principal">
-    <div class="wrap">
-      <a class="brand" href="#inicio">Diego Bravo</a>
-      <div class="navlinks">
-        <a href="#atlas">Atlas</a><a href="#ahora">Ahora</a><a href="#correspondencias">Correspondencias</a><a href="#contacto">Contacto</a>
-      </div>
-    </div>
-  </nav>
-
-  <header class="hero" id="inicio">
-    <div class="wrap hero-grid">
-      <div>
-        <div class="eyebrow">Investigación artística en proceso</div>
-        <h1>Atlas del<br>Umbral</h1>
-      </div>
-      <p class="hero-note">«El límite no como casa, sino como herida que respira.»</p>
-    </div>
-  </header>
-
-  <main>
-    <section id="atlas">
-      <div class="wrap grid">
-        <div class="label">Atlas</div>
-        <div class="body">
-          <span class="version">Versión pública 0.1 · 2026</span>
-          <p class="lead">Una investigación artística y escrita sobre límites, intervalos y transformaciones: qué ocurre cuando una forma deja de permanecer intacta.</p>
-          <p>El proyecto cruza escritura, imágenes, materiales, archivo, dibujo, correspondencia y situaciones cotidianas. No busca construir una teoría cerrada del umbral, sino seguir sus operaciones: separar, sostener, filtrar, erosionar, contaminar, poner en contacto y transformar.</p>
-          <p class="rights">Esta página muestra únicamente una capa pública del proyecto. El archivo de trabajo, el libro en proceso, las matrices de investigación y la correspondencia completa permanecen fuera de publicación.</p>
-        </div>
-      </div>
-    </section>
-
-    <section aria-label="Diego Bravo">
-      <div class="wrap portrait-grid">
-        <div><img class="portrait" src="https://avatars.githubusercontent.com/u/334584374?v=4&size=1200" alt="Retrato de Diego Bravo" width="1200" height="1200" loading="lazy"><div class="caption">Diego Bravo · 2026</div></div>
-        <div class="body">
-          <div class="label" style="margin-bottom:28px">Práctica</div>
-          <p class="lead">Artista e investigador independiente.</p>
-          <p>Trabajo desde una práctica que se mueve entre escritura, imagen, materia, archivo y conversación. El Atlas funciona como una constelación abierta: los fragmentos no se reúnen para formar una totalidad estable, sino para observar qué empieza a cambiar cuando entran en relación.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="ahora">
-      <div class="wrap grid">
-        <div class="label">Ahora</div>
-        <div class="body">
-          <p class="lead">Tres problemas de trabajo actuales.</p>
-          <div class="problems">
-            <div class="problem"><span class="n">01</span><p>Cómo un borde puede producir aquello que parece simplemente separar.</p></div>
-            <div class="problem"><span class="n">02</span><p>Cómo materiales y cuerpos sostienen temporalidades diferentes.</p></div>
-            <div class="problem"><span class="n">03</span><p>Cómo una relación transforma los términos que entran en contacto.</p></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section aria-label="Fragmentos">
-      <div class="wrap grid">
-        <div class="label">Fragmentos</div>
-        <div class="body fragments">
-          <blockquote>«El intervalo no es un vacío entre dos formas ya constituidas. Es aquello que permite que dejen de permanecer intactas.»</blockquote>
-          <blockquote>«La materia no ilustra la transformación. La materia transforma.»</blockquote>
-          <blockquote>«La contradicción no siempre pide solución. A veces pide una forma capaz de contenerla.»</blockquote>
-        </div>
-      </div>
-    </section>
-
-    <section id="correspondencias">
-      <div class="wrap grid">
-        <div class="label">Correspondencias</div>
-        <div class="body method">
-          <p class="lead">La correspondencia puede ser también una forma de investigación.</p>
-          <div>
-            <p style="margin-top:0">Algunas preguntas se trabajan con artistas, investigadores e instituciones cuando existe una afinidad concreta y algo puede modificarse realmente en el intercambio.</p>
-            <p>No se trata de acumular contactos. Se trata de construir situaciones en las que una pregunta pueda recibir una respuesta inesperada, una corrección, una referencia o una nueva dirección.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contacto">
-      <div class="wrap grid">
-        <div class="label">Contacto</div>
-        <div class="body">
-          <div class="contact">
-            <div><strong>Conversación, documentación e intercambio.</strong><p>Para cuestiones relacionadas con el Atlas, procesos artísticos, archivos y correspondencias.</p></div>
-            <span class="contact-link" aria-label="Correo de contacto pendiente">Correo de contacto — pendiente de activar</span>
-          </div>
-          <p class="rights">© Diego Bravo, 2026. Textos e imágenes reservados. Las ideas y referencias citadas conservan sus genealogías y autorías propias.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer><div class="wrap"><div>Diego Bravo · Atlas del Umbral</div><div>Investigación en proceso · 2026</div></div></footer>
-</body>
-</html>
+<div class="cursor-dot" id="cursor"></div>
+<header class="topbar"><a class="wordmark" href="#top">Diego Bravo</a><div class="status">Estética del umbral / investigación en proceso</div><nav class="topnav"><a href="#campo">Campo</a><a href="#instrumentos">Libro · Atlas · Diccionario</a><a href="#procesos">Práctica</a><a href="#notas">Notas</a><a href="#audiovisual">Audiovisual</a><a href="#contacto">Contacto</a></nav></header>
+<main id="top">
+<section class="hero"><h1 class="hero-title"><span class="line">Atlas del</span><span class="line offset">Umbral</span></h1><div class="hero-meta"><p class="hero-kicker">Una investigación artística y escrita sobre lo que ocurre cuando una diferencia deja de ser estable sin desaparecer del todo.</p><div class="hero-side"><strong>Diego Bravo</strong><br>Libro · Atlas · Diccionario · práctica · correspondencia<br><br>Versión pública / v0.4 / 28 septiembre 2026</div></div></section>
+<section class="section" id="campo"><div class="section-head"><div class="n">01 / Campo</div><h2>Índice público</h2></div><div class="field"><div class="field-index" id="terms">
+<button class="term active" data-key="limite"><span class="ix">01</span><span class="name">Límite</span><span class="sign">↗</span></button>
+<button class="term" data-key="intervalo"><span class="ix">02</span><span class="name">Intervalo</span><span class="sign">↗</span></button>
+<button class="term" data-key="materia"><span class="ix">03</span><span class="name">Materia</span><span class="sign">↗</span></button>
+<button class="term" data-key="tiempo"><span class="ix">04</span><span class="name">Tiempo</span><span class="sign">↗</span></button>
+<button class="term" data-key="archivo"><span class="ix">05</span><span class="name">Archivo</span><span class="sign">↗</span></button>
+<button class="term" data-key="relacion"><span class="ix">06</span><span class="name">Relación</span><span class="sign">↗</span></button></div>
+<div class="field-display" id="fieldDisplay"><div class="field-code" id="fieldCode">CAMPO / 01</div><div class="field-word" id="fieldWord">Límite</div><div class="field-def"><small id="fieldType">Operación</small><span id="fieldDef">No como una línea pasiva entre cosas ya hechas, sino como una condición capaz de producir diferencias, contactos y transformaciones.</span></div></div></div></section>
+<section class="section" id="instrumentos"><div class="section-head"><div class="n">02 / Instrumentos</div><h2>Tres formas de pensar el mismo campo</h2></div><div class="cards"><article class="card"><div><span class="meta">Libro / ensayo</span><h3>Estética del umbral</h3><p>Construye un argumento alrededor de una pregunta precisa: qué hace realmente un umbral. La versión de lectura 0.4 organiza el recorrido en apertura, siete capítulos y coda.</p></div><div class="state">VERSIÓN DE LECTURA 0.4 · 26.09.2026</div></article><article class="card"><div><span class="meta">Atlas / montaje</span><h3>Atlas</h3><p>Relaciona imágenes, casos, recorridos, temporalidades y contradicciones sin obligarlos a sostener una tesis única. No es un depósito: una relación entra sólo cuando produce una diferencia.</p></div><div class="state">EN EXPANSIÓN · CONSTELACIÓN ABIERTA</div></article><article class="card"><div><span class="meta">Diccionario / precisión</span><h3>Diccionario</h3><p>Distingue umbral de transición, frontera, intersticio, liminalidad y otros términos próximos. Cada entrada existe para evitar que una palabra amplia sustituya a una diferencia real.</p></div><div class="state">EN DESARROLLO · DIFERENCIAS CONCEPTUALES</div></article></div></section>
+<section class="section" id="procesos"><div class="section-head"><div class="n">03 / Procesos</div><h2>Práctica y pruebas</h2></div><div class="cards"><article class="card"><div><span class="meta">Formato / caso</span><h3>Operación</h3><p>Una entrada de proceso tendrá fecha, lugar, materiales, procedimiento, documentación, expectativa, lo ocurrido y la consecuencia. La teoría no conoce el final de antemano.</p></div><div class="state">PLANTILLA PÚBLICA / LISTA</div></article><article class="card"><div><span class="meta">Formato / imagen</span><h3>Documento</h3><p>Una imagen entra cuando deja ver algo que el texto no resuelve: huella, escala, desgaste, cuerpo, relación espacial, temporalidad o transformación material.</p></div><div class="state">CRITERIO / ACTIVO</div></article><article class="card empty"><div><span class="meta">Estado / corpus</span><h3>Sin relleno.</h3><p>No se publica todavía una cuadrícula de “obras” para simular abundancia. Los casos aparecerán a medida que existan y estén suficientemente documentados.</p></div><div class="state">AUSENCIA DELIBERADA</div></article></div></section>
+<section class="section" id="notas"><div class="section-head"><div class="n">04 / Notas</div><h2>Fragmentos públicos</h2></div><div class="notes"><div class="notes-aside">TEXTO BREVE<br>HIPÓTESIS<br>RESTO<br>CAMPO</div><div class="notes-main"><article class="fragment"><div class="tag">Formulación propia</div><p>El límite no como casa, sino como herida que respira.</p></article><article class="fragment"><div class="tag">Hipótesis de trabajo</div><p>Un umbral empieza cuando los tiempos dejan de coincidir.</p></article><article class="fragment"><div class="tag">Regla editorial</div><p>No entra porque esté entre. Entra cuando el entre hace algo.</p></article></div></div></section>
+<section class="section" id="audiovisual"><div class="section-head"><div class="n">05 / Canales</div><h2>Instagram + YouTube</h2></div><div class="av-grid"><article class="av-panel"><div><span class="av-kicker">Instagram / cuaderno público</span><h3>Proceso</h3><p>Imágenes de pruebas, detalles, recorridos, anotaciones y fragmentos. No una cuadrícula ornamental ni un catálogo exhaustivo. Cada publicación debe poder regresar a una página, una pregunta o una operación del Atlas.</p><div class="series"><div><span>Pruebas</span><span>obra / proceso</span></div><div><span>Notas</span><span>texto breve</span></div><div><span>Archivo</span><span>fuente + contexto</span></div><div><span>Campo</span><span>territorio / hallazgo</span></div></div></div><div class="platform-state">CUENTA / ESTRUCTURA PREPARADA · USUARIO POR FIJAR</div></article><article class="av-panel"><div><span class="av-kicker">YouTube / archivo audiovisual</span><h3>Duración</h3><p>Ensayos audiovisuales, cuadernos de voz, conversaciones y procesos. El canal no re-subirá por sistema conferencias o vídeos ajenos: cuando no exista permiso o licencia suficiente, se enlaza la fuente original o se trabaja con comentario propio y sólo el material ajeno estrictamente justificable.</p><div class="series"><div><span>Ensayo audiovisual</span><span>voz + montaje</span></div><div><span>Cuaderno de voz</span><span>lectura propia</span></div><div><span>Conversaciones</span><span>con permiso</span></div><div><span>Archivo comentado</span><span>fuente trazable</span></div></div></div><div class="platform-state">CANAL / ARQUITECTURA PREPARADA · PUBLICACIÓN SELECTIVA</div></article></div></section>
+<section class="section" id="correspondencia"><div class="section-head"><div class="n">06 / Método</div><h2>Correspondencia</h2></div><div class="correspondence"><div class="aside">PREGUNTA<br>⇄<br>RESPUESTA<br>⇄<br>DESPLAZAMIENTO</div><div class="content"><h3>Escribir a alguien solo cuando algo puede cambiar.</h3><div><p>La correspondencia entra en la investigación cuando existe una afinidad concreta, una pregunta real y una continuidad imaginable. Una respuesta puede corregir una interpretación, abrir documentación, modificar una hipótesis o producir otra pregunta.</p><div class="rule">NO NETWORKING COMO FIN · NO ELOGIO VACÍO · NO CONVERSACIONES PUBLICADAS SIN PERMISO.</div></div></div></div></section>
+<section class="contact" id="contacto"><div class="top"><h2>Diego<br>Bravo</h2><p>Estética del umbral, el Atlas y el Diccionario forman un sistema de trabajo en proceso. Esta web es su superficie pública estable; Instagram y YouTube serán extensiones de distinta duración, no sustitutos de la obra ni del archivo.</p></div><div><div class="contact-bottom"><div class="channels"><span>Instagram — en preparación</span><span>YouTube — en preparación</span><span>Correo profesional — en activación</span></div><div class="version">DIEGOBRAVO.ES<br>VERSIÓN PÚBLICA / V0.4 / 2026<br>© Diego Bravo</div></div><div class="privacy">Esta web no carga analítica, píxeles publicitarios, feeds sociales ni formularios. Los contenidos de terceros se enlazarán o incorporarán sólo con procedencia clara y una base suficiente de permiso, licencia o uso legalmente justificable.</div></div></section>
+</main>
+<script>
+const DATA={limite:{code:'CAMPO / 01',word:'Límite',type:'Operación',def:'No como una línea pasiva entre cosas ya hechas, sino como una condición capaz de producir diferencias, contactos y transformaciones.'},intervalo:{code:'CAMPO / 02',word:'Intervalo',type:'Distancia activa',def:'No es un vacío entre dos formas constituidas. Es aquello que permite que dejen de permanecer intactas sin quedar inmediatamente fusionadas.'},materia:{code:'CAMPO / 03',word:'Materia',type:'Agencia material',def:'No funciona como soporte neutro de una idea. Tiene duración, resistencia, desgaste, temperatura y capacidad de modificar lo que toca.'},tiempo:{code:'CAMPO / 04',word:'Tiempo',type:'Discordancia',def:'El umbral temporal no es sólo un antes y un después: aparece cuando varias temporalidades dejan de coincidir y esa fricción produce una consecuencia.'},archivo:{code:'CAMPO / 05',word:'Archivo',type:'Reactivación',def:'Una huella no interesa sólo porque conserva algo. Interesa cuando encuentra condiciones presentes capaces de hacerla operar de nuevo.'},relacion:{code:'CAMPO / 06',word:'Relación',type:'Alteración recíproca',def:'La relación importa cuando los términos que entran en contacto no salen intactos: algo se desplaza, resiste, contamina o transforma.'}};
+const buttons=[...document.querySelectorAll('.term')],word=document.getElementById('fieldWord'),code=document.getElementById('fieldCode'),type=document.getElementById('fieldType'),def=document.getElementById('fieldDef');
+buttons.forEach(btn=>btn.addEventListener('click',()=>{buttons.forEach(b=>b.classList.remove('active'));btn.classList.add('active');const d=DATA[btn.dataset.key];word.style.opacity='0';word.style.transform='translateY(8px)';setTimeout(()=>{code.textContent=d.code;word.textContent=d.word;type.textContent=d.type;def.textContent=d.def;word.style.opacity='1';word.style.transform='translateY(0)'},120)}));
+const field=document.getElementById('fieldDisplay');field.addEventListener('pointermove',e=>{const r=field.getBoundingClientRect();field.style.setProperty('--mx',(((e.clientX-r.left)/r.width)*100)+'%');field.style.setProperty('--my',(((e.clientY-r.top)/r.height)*100)+'%')});
+const c=document.getElementById('cursor');document.addEventListener('pointermove',e=>{c.style.left=e.clientX+'px';c.style.top=e.clientY+'px'});
+</script>
+</body></html>
