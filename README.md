@@ -51,3 +51,10 @@ Sitio estático servido con GitHub Pages en [diegobravo.es](https://diegobravo.e
 - Nueva página `mapa.html`: red entre Libro, Atlas, Diccionario, Práctica, Notas y Archivo abierto.
 - Cuatro recorridos públicos iniciales: Tiempo, Contacto, Borde y Método.
 - La página no pretende representar el archivo completo; sólo conexiones que ya producen una diferencia verificable.
+
+
+## v0.9.2 — materia y circulación
+- Práctica v0.2 incorpora una regla pública: la producción gobierna la circulación.
+- Nueva sección `#materia-propia`: condición → transformación → consecuencia.
+- El Mapa v0.2 añade Materia propia como nodo y un quinto recorrido: condición → operación → documento → consecuencia → decisión de circulación.
+- La primera fotografía candidata continúa retenida: no se publica hasta resolver su autoría fotográfica.
