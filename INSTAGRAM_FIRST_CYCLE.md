@@ -98,11 +98,12 @@ Texto completo en diegobravo.es.
 ---
 
 ## 05 — PROCESO PROPIO
-**PRIMERA TRANSFORMACIÓN MATERIAL**
+**STRESS TEST 001 — PRIMERA TRANSFORMACIÓN MATERIAL**
 
-Estado: NO EXISTE TODAVÍA.
+Estado: PROPUESTA DEFINIDA / EJECUCIÓN NO EXISTE TODAVÍA.
 Derechos: —
 Publicación: BLOQUEO REAL DEL LANZAMIENTO.
+Referencia pública: https://diegobravo.es/practica.html#stress-test-001
 Función: demostrar que la práctica produce algo que no es sólo texto, diseño o infraestructura.
 
 Para pasar a LISTO debe existir:
@@ -140,7 +141,7 @@ Estado actual:
 02 — HOLD  
 03 — LISTO  
 04 — LISTO  
-05 — FALTA PRÁCTICA
+05 — PROPUESTA LISTA / FALTA EJECUCIÓN
 
 **DECISIÓN ACTUAL: NO ABRIR.**
 
