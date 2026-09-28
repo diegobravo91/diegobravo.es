@@ -42,6 +42,11 @@ PUBLICACIÓN: HOLD hasta confirmar quién realizó la fotografía.
 
 Poseer el archivo no basta para presumir autoría de la fotografía.
 
+### Comprobación EXIF — 28.09.2026
+El JPEG fue inspeccionado localmente. No conserva campos EXIF útiles de autor, dispositivo o fecha de captura.
+Resultado: NO RESUELVE AUTORÍA.
+Decisión: mantener HOLD. No inferir autoría por ausencia de metadatos.
+
 ### Posible función Instagram
 POST 04 — ESTADO INICIAL / INSTRUMENTOS.
 
