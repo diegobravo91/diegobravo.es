@@ -58,3 +58,10 @@ Sitio estático servido con GitHub Pages en [diegobravo.es](https://diegobravo.e
 - Nueva sección `#materia-propia`: condición → transformación → consecuencia.
 - El Mapa v0.2 añade Materia propia como nodo y un quinto recorrido: condición → operación → documento → consecuencia → decisión de circulación.
 - La primera fotografía candidata continúa retenida: no se publica hasta resolver su autoría fotográfica.
+
+
+## v0.9.3 — mapa operativo
+- Mapa v0.3: los cinco recorridos resaltan sus nodos implicados mediante hover y foco de teclado.
+- La interacción no añade dependencias externas ni seguimiento.
+- Accesibilidad mejorada con skip link y activación por teclado.
+- La búsqueda de documentación material no produjo aún una prueba ESTRATO 001 publicable; no se sustituye por referencias o imágenes generadas.
