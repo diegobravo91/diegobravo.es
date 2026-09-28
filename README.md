@@ -6,11 +6,12 @@ Sitio estático para `diegobravo.es`.
 Mostrar evidencia de una investigación real sin publicar el archivo interno completo. La web muestra consecuencias; no convierte infraestructura, bibliografía o volumen de archivo en obra.
 
 ## Estado — 28 septiembre 2026
-- Dominio: `diegobravo.es`, DNS configurado para GitHub Pages; propagación/certificado HTTPS pendientes de completar.
+- Dominio: `diegobravo.es`; GitHub Pages ya informa `DNS check successful`. La propagación externa sigue siendo reciente y `Enforce HTTPS` ya está disponible.
 - Repositorio: `diegobravo91/diegobravo.es`.
 - Portada pública actual: `index.html` (v0.4, publicada 28/09/2026).
 - Exploración anterior: `preview-v02.html`.
 - `preview-v03.html` conserva la etapa anterior. `preview-v04.html` replica la arquitectura actual como preview no indexable.
+- Las previews históricas quedan fuera de indexación; la web dispone de una `404.html` propia y metadatos canónicos en las páginas públicas.
 - Maqueta de ecosistema social: `social-preview-v01.html`.
 - Arquitectura editorial de Instagram/YouTube: `REDES_YOUTUBE_INSTAGRAM.md`.
 - Control previo de privacidad/derechos: `LEGAL_PREPUBLICACION.md`.
