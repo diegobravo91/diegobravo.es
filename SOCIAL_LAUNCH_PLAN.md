@@ -9,7 +9,7 @@ Activar sólo cuando estén listos:
 1. POST 01 — pregunta: ¿Qué hace un umbral?
 2. POST 02 — regla: el entre hace algo.
 3. POST 03 — texto: El tiempo que no tenemos.
-4. Una pieza visual propia no tipográfica: campo / recorrido / dibujo / materia.
+4. Una pieza visual no tipográfica del archivo propio: candidata actual = inventario de herramientas, pendiente de confirmar autoría fotográfica.
 5. Una pieza de proceso propio con contexto verificable.
 
 Así el perfil nace como investigación, no como campaña gráfica.
@@ -61,3 +61,9 @@ Una vez activos:
 - añadir `sameAs` al JSON-LD de Person;
 - evitar embeds automáticos;
 - si hay vídeos embebidos, cargar sólo tras acción del usuario y revisar privacidad/cookies.
+
+
+## Primera candidata material
+Ver `OWN_MATERIAL_CANDIDATES.md`.
+
+La imagen del inventario de herramientas supera la prueba visual y de privacidad, pero permanece en HOLD hasta confirmar autoría fotográfica. Esta pausa es deliberada: archivo personal no equivale automáticamente a copyright propio.
