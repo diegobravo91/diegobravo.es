@@ -1,8 +1,13 @@
-# SOCIAL LAUNCH PLAN — v0.1
+# SOCIAL LAUNCH PLAN — v0.2
 
 Estado: preparación. No abrir cuentas automáticamente.
 
+Regla superior: `PRODUCTION_GATE.md`.
+Ninguna frecuencia de publicación puede invalidar esa puerta.
+
 ## Condición de salida Instagram
+
+La salida exige corpus, no sólo assets.
 No basta con tres posts tipográficos terminados.
 
 Activar sólo cuando estén listos:
