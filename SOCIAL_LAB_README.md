@@ -38,3 +38,10 @@ Esto NO activa ninguna cuenta ni convierte los borradores en publicaciones. La s
 - `PRODUCTION_GATE.md` pasa a ser la regla superior del laboratorio.
 - El inventario de herramientas sigue en HOLD: inspección EXIF sin datos útiles; autoría fotográfica no resuelta.
 - La web pública ya reconoce `Materia propia` como estado operativo sin publicar todavía la fotografía.
+
+
+## v0.8 — piloto audiovisual
+- `YOUTUBE_PILOT_01_SCRIPT.md`: guion completo de voz y montaje para “¿Qué hace un umbral?”.
+- Duración prevista: 10–13 minutos.
+- Primera versión construida para existir sin material audiovisual de terceros y sin música.
+- El vídeo puede sostenerse con voz, tipografía, páginas propias y, sólo cuando existan, planos propios necesarios.
