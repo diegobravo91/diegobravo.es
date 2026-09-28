@@ -1,6 +1,15 @@
-# SOCIAL COPY — borradores internos v0.2
+# SOCIAL COPY — borradores internos v0.3
 
 Estado: BORRADOR. No publicar automáticamente.
+
+## ORDEN EDITORIAL ACTUAL
+El orden de salida ya no coincide con los números históricos de los SVG.
+Consultar `INSTAGRAM_FIRST_CYCLE.md`.
+
+Secuencia actual:
+01 pregunta → 02 materia propia → 03 regla → 04 texto → 05 proceso propio.
+
+No renombrar assets sólo para simular que el ciclo está completo.
 
 ## Instagram — salida mínima
 
