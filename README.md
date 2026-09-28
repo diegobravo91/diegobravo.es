@@ -26,3 +26,12 @@ No subir libro maestro, diccionario/matrices, correspondencias completas ni hip�
 
 ## Siguiente umbral
 Añadir páginas públicas sólo cuando aporten evidencia: una página breve del libro, una selección del Atlas/Diccionario y los primeros casos propios documentados. Activar los enlaces de Instagram, YouTube y correo únicamente cuando existan las cuentas/direcciones definitivas.
+
+
+## v0.5 — 2026-09-28
+- Nueva página pública `practica.html`: método, estados y condiciones para publicar casos sin simular un corpus inexistente.
+- Nueva página pública `canales.html`: Instagram, YouTube, derechos, procedencia y privacidad.
+- Nueva previsualización interna `social-preview-v02.html` con un primer repertorio de 12 formatos para Instagram y 4 series de YouTube.
+- Portada actualizada con acceso directo a Práctica y Canales.
+- Sitemap ampliado.
+- Protocolos de redes y prepublicación actualizados con fuentes oficiales BOE, AEPD y YouTube.
