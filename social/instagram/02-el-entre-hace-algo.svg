@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+<rect width="1080" height="1350" fill="#0d0d0c"/>
+<text x="64" y="82" fill="#9f9b93" font-family="monospace" font-size="22">REGLA DE TRABAJO / 02</text>
+<text x="64" y="390" fill="#eceae4" font-family="Arial, Helvetica, sans-serif" font-size="112" font-weight="500" letter-spacing="-6">
+<tspan x="64" dy="0">NO ENTRA</tspan><tspan x="64" dy="106">POR ESTAR</tspan><tspan x="64" dy="106">ENTRE.</tspan></text>
+<rect x="64" y="787" width="952" height="2" fill="#eceae4" fill-opacity=".22"/>
+<text x="64" y="935" fill="#ff4a22" font-family="Arial, Helvetica, sans-serif" font-size="82" font-weight="500" letter-spacing="-4">
+<tspan x="64" dy="0">ENTRA CUANDO</tspan><tspan x="64" dy="86">EL ENTRE HACE ALGO.</tspan></text>
+<text x="64" y="1266" fill="#9f9b93" font-family="monospace" font-size="20">DIEGO BRAVO · ESTÉTICA DEL UMBRAL</text>
+</svg>
