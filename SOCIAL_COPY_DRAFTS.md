@@ -1,4 +1,4 @@
-# SOCIAL COPY — borradores internos v0.1
+# SOCIAL COPY — borradores internos v0.2
 
 Estado: BORRADOR. No publicar automáticamente.
 
@@ -194,3 +194,27 @@ Evitar rostro/reacción/gestualidad de YouTube si no corresponde al contenido.
 - [ ] Fragmentos ajenos: necesarios, proporcionados y atribuidos.
 - [ ] Si existe duda razonable: sustituir por enlace o descripción.
 - [ ] La publicación conduce a una consecuencia: web, caso, texto, pregunta o conversación.
+
+
+---
+
+# ASSETS YA CONSTRUIDOS — v0.2
+
+Instagram:
+- POST 01: `social/instagram/01-que-hace-un-umbral.svg`
+- POST 02: `social/instagram/02-el-entre-hace-algo.svg`
+- POST 03: `social/instagram/03-el-tiempo-que-no-tenemos.svg`
+
+YouTube:
+- Miniatura piloto #01: `social/youtube/01-que-hace-un-umbral-thumbnail.svg`
+- Guion técnico: `YOUTUBE_PILOT_01.md`
+
+Sistema visual:
+- `SOCIAL_VISUAL_SYSTEM.md`
+
+Todos los assets iniciales son jurídicamente verdes: texto propio + formas geométricas + tipografías de sistema. No contienen material de terceros.
+
+## Regla de activación
+No abrir Instagram por tener tres carteles listos. Abrir sólo cuando junto a ellos exista al menos una pieza visual no tipográfica realmente propia —proceso, dibujo, materia, territorio o documento— que evite que el perfil nazca como una campaña de frases.
+
+No abrir YouTube por tener miniatura y guion. Abrir cuando el piloto esté grabado y el montaje tenga razón de duración propia.
