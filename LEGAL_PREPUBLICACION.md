@@ -31,3 +31,16 @@ No publicar emails, conversaciones, fotografías, voz o vídeo identificable de 
 3. Revisar si la web presta servicios económicos y qué datos exige la LSSI en ese caso.
 4. Confirmar política de privacidad/cookies acorde a las funciones reales instaladas.
 5. Revisar licencias de cada imagen, audio, vídeo y tipografía no propia.
+
+
+## Verificación 28/09/2026 — derechos y plataformas
+- El art. 32 LPI permite, bajo condiciones concretas, incluir en una obra propia fragmentos de obras ajenas ya divulgadas —y determinadas obras plásticas o fotográficas aisladas— a título de cita o para análisis, comentario o juicio crítico, con fines docentes o de investigación, en la medida justificada e indicando fuente y autor. No usar esta excepción como regla automática para re-subir obras completas.
+- YouTube recuerda que el crédito, un disclaimer o afirmar que el uso es “sin ánimo de lucro” no convierten por sí solos una reutilización en lícita y que incluso un uso que el creador considera amparado por una excepción puede recibir una reclamación o Content ID.
+- Si se usan obras con Creative Commons, comprobar la licencia exacta y sus condiciones; la licencia estándar de YouTube no equivale a autorización general de reutilización.
+- Para cookies que requieran consentimiento, la AEPD mantiene que aceptar y rechazar deben ofrecerse al mismo tiempo, al mismo nivel y con la misma visibilidad.
+
+Fuentes oficiales revisadas:
+- BOE: https://www.boe.es/buscar/act.php?id=BOE-A-1996-8930
+- AEPD, guía de cookies: https://www.aepd.es/guias-y-herramientas/guias
+- YouTube, copyright: https://support.google.com/youtube/answer/2797466?hl=es
+- YouTube, licencias: https://support.google.com/youtube/answer/2797468?hl=es
