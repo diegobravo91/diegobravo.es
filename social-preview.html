@@ -67,6 +67,7 @@ linear-gradient(135deg,transparent 49.4%,var(--ink) 49.5%,var(--ink) 50.5%,trans
 .legal p{font-size:17px;line-height:1.55;max-width:650px;margin:0}
 .footer{padding:var(--pad);display:flex;justify-content:space-between;gap:24px;font:10px/1.6 var(--mono);text-transform:uppercase;color:var(--soft)}
 @media(max-width:900px){
+  section.sec > div[style*="repeat(3,1fr)"]{grid-template-columns:1fr!important}
   .head{grid-template-columns:86px 1fr}.split{grid-template-columns:1fr}.panel:first-child{border-right:0;border-bottom:1px solid var(--ink)}
   .matrix{grid-template-columns:repeat(2,1fr)}.step{border-bottom:1px solid var(--hair)}
   .release{grid-template-columns:1fr}.video{grid-template-columns:1fr}.footer{display:block}
@@ -81,6 +82,14 @@ linear-gradient(135deg,transparent 49.4%,var(--ink) 49.5%,var(--ink) 50.5%,trans
 <div><h1>Circulación<br>sin relleno.</h1><p class="lead">No diseñar una identidad para ocultar la falta de corpus. Diseñar una circulación capaz de recibir obra, texto y proceso cuando existan.</p></div>
 </section>
 
+<section class="sec"><div class="head"><span>00 / Assets</span><h2>Primeras piezas construidas</h2></div>
+<div style="padding:var(--pad);display:grid;grid-template-columns:repeat(3,1fr);gap:18px">
+<figure style="margin:0"><img src="social/instagram/01-que-hace-un-umbral.svg" alt="Cartel tipográfico: ¿Qué hace un umbral?" style="width:100%;display:block;border:1px solid var(--ink)"><figcaption class="rule" style="margin-top:8px;padding-top:0;border:0">POST 01 / APERTURA / 1080×1350 / PROPIO</figcaption></figure>
+<figure style="margin:0"><img src="social/instagram/02-el-entre-hace-algo.svg" alt="Cartel tipográfico: No entra por estar entre. Entra cuando el entre hace algo." style="width:100%;display:block;border:1px solid var(--ink)"><figcaption class="rule" style="margin-top:8px;padding-top:0;border:0">POST 02 / REGLA / 1080×1350 / PROPIO</figcaption></figure>
+<figure style="margin:0"><img src="social/instagram/03-el-tiempo-que-no-tenemos.svg" alt="Cartel tipográfico: El tiempo que no tenemos." style="width:100%;display:block;border:1px solid var(--ink)"><figcaption class="rule" style="margin-top:8px;padding-top:0;border:0">POST 03 / NOTA / 1080×1350 / PROPIO</figcaption></figure>
+</div>
+<div style="padding:0 var(--pad) var(--pad)"><img src="social/youtube/01-que-hace-un-umbral-thumbnail.svg" alt="Miniatura de YouTube: ¿Qué hace un umbral?" style="width:100%;display:block;border:1px solid var(--ink)"><div class="rule">YOUTUBE #01 / MINIATURA / 1280×720 / PROPIO · sin rostro forzado · sin material de terceros</div></div>
+</section>
 <section class="sec"><div class="head"><span>01 / Instagram</span><h2>Cuaderno público</h2></div>
 <div class="split">
 <div class="panel">
@@ -172,5 +181,5 @@ linear-gradient(135deg,transparent 49.4%,var(--ink) 49.5%,var(--ink) 50.5%,trans
 
 <section class="legal"><h3>El criterio legal también es una forma de edición.</h3><div><p>No todo lo que puede encontrarse debe circular de nuevo. La procedencia, el permiso, la escala del fragmento y la necesidad real de incorporarlo forman parte de la pieza.</p><p style="margin-top:22px;font:10px/1.6 var(--mono);text-transform:uppercase;color:#aaa">LABORATORIO INTERNO · NO INDEXAR · NO PRESENTAR COMO CANAL ACTIVO</p></div></section>
 </main>
-<footer class="footer"><span>diegobravo.es / social-lab</span><span>arquitectura v0.3 · 28.09.2026</span></footer>
+<footer class="footer"><span>diegobravo.es / social-lab</span><span>arquitectura v0.4 · 28.09.2026</span></footer>
 </body></html>
