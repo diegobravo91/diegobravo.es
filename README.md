@@ -36,3 +36,11 @@ Sitio estático servido con GitHub Pages en [diegobravo.es](https://diegobravo.e
 - Colofón permanece fuera del sitemap e indexación por diseño: es información accesible, no una página de captación.
 - Limpieza de la lista de superficie pública en README.
 - El desarrollo de Instagram/YouTube continúa aislado en `social-lab`.
+
+
+## v0.9 — Atlas como red visual
+- Tercera relación de Archivo abierto: Eadweard Muybridge / secuencia–intervalo–cuerpo.
+- Anclas permanentes para OA-001, OA-020 y OA-021.
+- Cruce explícito desde Atlas hacia las entradas `#transicion` y `#umbral` del Diccionario.
+- Registro de procedencia y derechos actualizado antes de publicar la imagen.
+- La portada identifica ya el Archivo abierto como parte del Atlas sin convertirlo en una fototeca independiente.
