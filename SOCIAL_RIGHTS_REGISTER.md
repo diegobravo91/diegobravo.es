@@ -9,6 +9,7 @@ Estado: laboratorio interno.
 | IG-03 | social/instagram/03-el-tiempo-que-no-tenemos.svg | Diego Bravo | Ninguno | Material propio | VERDE |
 | YT-01-TH | social/youtube/01-que-hace-un-umbral-thumbnail.svg | Diego Bravo | Ninguno | Material propio | VERDE |
 | IG-OA-021 | borrador de carrusel / Muybridge | Diego Bravo (texto y montaje) | Eadweard Muybridge, *Boys Playing Leap Frog* | Public Domain / The Met Open Access | VERDE derechos / HOLD editorial |
+| IG-04-CAND | 08_INVENTARIO_herramientas_dibujo_y_corte.jpg | Autoría fotográfica por confirmar | Ninguno identificado | Archivo personal / falta confirmar copyright | AMARILLO derechos / VERDE privacidad / HOLD |
 
 ## Qué significa VERDE
 No significa “publicar automáticamente”. Significa que, respecto a reutilización de material de terceros, la pieza no contiene por ahora elementos que requieran permiso/licencia externa.
