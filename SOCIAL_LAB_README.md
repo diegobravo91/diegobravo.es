@@ -52,3 +52,11 @@ Esto NO activa ninguna cuenta ni convierte los borradores en publicaciones. La s
 - Estado actual: 01 LISTO · 02 HOLD · 03 LISTO · 04 LISTO · 05 FALTA PRÁCTICA.
 - Instagram no se abre todavía.
 - La pieza 05 —primera transformación material real— es un bloqueo deliberado que no puede sustituirse por archivo, IA aislada, mockup o quote card.
+
+
+## v0.10 — cola de práctica
+- `PRACTICE_QUEUE.md` separa lo ejecutable de lo publicable.
+- P0 = STRESS TEST 001, propuesta concreta visible en la web pero todavía no ejecutada.
+- P1 = ESTRATO 001, definido conceptualmente pero sin documentación de ejecución localizada.
+- Instagram POST 05 queda ligado a la ejecución real de STRESS TEST 001.
+- El bloqueo social ya no es abstracto: falta una transformación material documentada.
