@@ -7,13 +7,13 @@
 - [x] Preparar página estática responsive.
 - [x] Preparar metadatos básicos SEO, favicon, robots y sitemap.
 
-## Pendiente antes del lanzamiento
-- [ ] Activar GitHub Pages desde la rama `main` y carpeta raíz.
-- [ ] Revisar la URL provisional en móvil y escritorio.
+## Estado después del lanzamiento
+- [x] Activar GitHub Pages desde la rama `main` y carpeta raíz.
+- [ ] Revisar la v0.4 en móvil y escritorio reales.
 - [ ] Activar el correo profesional y sustituir el marcador de contacto.
-- [ ] Conectar `diegobravo.es` a GitHub Pages.
-- [ ] Activar HTTPS y verificar `www`.
-- [ ] Sustituir el retrato servido desde GitHub por una copia alojada en el propio sitio.
+- [x] Conectar `diegobravo.es` a GitHub Pages.
+- [ ] Confirmar HTTPS definitivo y `www` una vez terminada la propagación/certificado.
+- [x] La v0.4 no depende del retrato remoto de GitHub en la portada.
 
 ## Regla editorial
 Publicar evidencia de profundidad, no el mecanismo interno: libro maestro, diccionario/matrices, correspondencias completas e hipótesis frágiles permanecen privados.
