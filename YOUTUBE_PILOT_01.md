@@ -2,6 +2,8 @@
 
 Estado: guion técnico interno / no publicado.
 
+Guion completo de voz y montaje: `YOUTUBE_PILOT_01_SCRIPT.md`.
+
 Duración objetivo: 9–14 min.
 Material de terceros necesario: ninguno.
 Música: ninguna por defecto.
