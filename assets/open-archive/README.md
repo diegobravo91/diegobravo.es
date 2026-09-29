@@ -14,7 +14,7 @@ La regla no es acumular imágenes “libres”, sino conservar para cada activo 
 - Estado: Public Domain / Open Access
 - Licencia/política: CC0 en el programa Open Access de The Met
 - Verificación incorporada al archivo de trabajo: 2026-09-28
-- Uso en la web: Atlas / “Archivo abierto” / relación ruina–interior–pasaje
+- Uso en la web: Atlas / relación ruina–interior–pasaje + portada / franja de casos
 - Operación: contextualización y montaje editorial; no se presenta como obra de Diego Bravo.
 
 ## OA-020
@@ -29,7 +29,7 @@ La regla no es acumular imágenes “libres”, sino conservar para cada activo 
 - Estado: Public Domain
 - Verificación: The Met marca la obra como Public Domain y permite uso comercial/no comercial de imágenes Open Access; Rijksmuseum marca el objeto como Public domain.
 - Verificación incorporada al archivo de trabajo: 2026-09-28
-- Uso en la web: Atlas / “Archivo abierto” / relación contacto–luz–espécimen
+- Uso en la web: Atlas / relación contacto–luz–espécimen + portada / franja de casos
 - Operación: contextualización como procedimiento de contacto y exposición; no se presenta como obra de Diego Bravo.
 
 ## Regla de mantenimiento
@@ -48,5 +48,10 @@ Antes de incorporar un nuevo activo a producción debe existir una ficha equival
 - Estado: Public Domain
 - Licencia/política: imagen incluida en el programa Open Access de The Met; reutilización comercial y no comercial sin permiso ni tasa para imágenes en dominio público.
 - Verificación incorporada al archivo de trabajo: 2026-09-28
-- Uso en la web: Atlas / “Archivo abierto” / relación secuencia–intervalo–cuerpo
+- Uso en la web: Atlas / relación secuencia–intervalo–cuerpo + portada / franja de casos
 - Operación: la secuencia se utiliza para pensar cómo el corte temporal hace legible el movimiento; no se presenta como obra de Diego Bravo.
+
+
+## Regla de carga pública
+
+La reutilización de estos activos en más de una página no crea nuevas copias conceptuales del caso. OA-001 / OA-020 / OA-021 siguen siendo las unidades canónicas de procedencia. La portada sólo los cita como evidencia visual y enlaza al caso del Atlas. Las imágenes externas se cargan con `referrerpolicy="no-referrer"` cuando el navegador lo permite.
