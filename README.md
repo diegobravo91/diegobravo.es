@@ -82,3 +82,11 @@ Sitio estático servido con GitHub Pages en [diegobravo.es](https://diegobravo.e
 - Atlas v0.2 prioriza casos y relaciones abiertas; cada OA muestra método, operador, destino, estado y procedencia.
 - Diccionario v0.2 adopta índice, diferencias operativas, estado provisional y arquitectura de versión viva.
 - Principio visual: trabajo primero, sistema después. Aprender de interfaces de investigación sin copiar su identidad gráfica.
+
+
+## v0.11.1 — coherencia de páginas
+- Libro: la página pública se presenta como edición en curso con versión, fecha, extensión, estado e índice antes de la explicación conceptual.
+- Mapa v0.5: recorridos antes que red; Fisura 01 entra como sexto recorrido y nodo público.
+- Sobre v0.2: menos repetición del sistema, más posición, trabajo activo y reglas de superficie pública.
+- Notas v0.2: índice editorial compacto y fragmentos secundarios.
+- Colofón actualizado: declara la carga de imágenes externas del Atlas y separa privacidad, autoría, cita, correspondencia y plataformas.
