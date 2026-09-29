@@ -13,7 +13,11 @@ Superficie pública actual:
 - `notas.html` — textos y fragmentos públicos.
 - `sobre.html` — posición y método.
 - `mapa.html` — cartografía pública de relaciones y recorridos.
-- `feed.xml` — RSS de Notas.\n- `fisura-documento.html` — investigación en prueba sobre documento / práctica.\n- `colofon.html` — derechos, procedencia y privacidad (noindex).
+- `feed.xml` — RSS de Notas.
+- `fisura-documento.html` — investigación en prueba sobre documento / práctica.
+- `colofon.html` — derechos, procedencia, trazabilidad y privacidad (noindex).
+- `humans.txt` — ficha mínima de autoría y proyecto.
+- `COPYRIGHT.md` — alcance de derechos del repositorio y materiales de terceros.
 
 ## Regla editorial
 La web muestra consecuencias y materiales que ya pueden sostenerse públicamente. El archivo de investigación, protocolos internos, correspondencias y borradores permanecen fuera de la superficie publicada.
@@ -104,3 +108,12 @@ Sitio estático servido con GitHub Pages en [diegobravo.es](https://diegobravo.e
 - Consecuencias de la home ahora son navegables.
 - 404 y Fisura 01 dejan de ser islas de navegación.
 - Archivo abierto y Colofón actualizados para registrar la reutilización de imágenes en portada.
+
+
+## v0.11.3 — trazabilidad editorial
+- Referencia analizada: Institute for Postnatural Studies, extraída como lógica editorial y no como identidad visual: convivencia de formatos, metadatos discretos, archivo vivo, créditos y relaciones entre piezas.
+- Portada y Atlas refuerzan autoría, fecha de modificación y enlace visible a trazabilidad.
+- Colofón incorpora una sección específica de versiones, procedencia y diferencia entre influencia visual y reproducción concreta.
+- Se añade una regla editorial explícita: una página pública debe conducir hacia fuentes, relaciones, consecuencias o versiones, no funcionar como isla.
+- `humans.txt` y `COPYRIGHT.md` hacen explícita la autoría sin introducir barreras, scripts de vigilancia ni falsas promesas anticopia.
+- Se corrigen los saltos de línea literales del inventario del README.

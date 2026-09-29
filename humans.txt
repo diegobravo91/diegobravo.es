@@ -1,0 +1,15 @@
+/* TEAM */
+Author: Diego Bravo
+Site: https://diegobravo.es/
+Project: Estética del umbral / Atlas del Umbral
+
+/* SITE */
+Language: Spanish
+First public cycle: 2026
+Approach: static research site, versioned and provenance-aware
+Repository: https://github.com/diegobravo91/diegobravo.es
+
+/* RIGHTS */
+Original texts, diagrams, code and other materials: © Diego Bravo, 2026, unless otherwise stated.
+Third-party materials retain their own attribution and reuse conditions.
+See: https://diegobravo.es/colofon.html
