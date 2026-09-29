@@ -6,6 +6,7 @@ Fuente pública del sitio web de Diego Bravo.
 
 Superficie pública actual:
 - `index.html` — portada.
+- `investigaciones.html` — índice editorial común de casos, pruebas, textos y relaciones públicas.
 - `estetica-del-umbral.html` — selección pública del libro.
 - `atlas.html` — selección pública del Atlas.
 - `diccionario.html` — selección pública del Diccionario.
@@ -117,3 +118,11 @@ Sitio estático servido con GitHub Pages en [diegobravo.es](https://diegobravo.e
 - Se añade una regla editorial explícita: una página pública debe conducir hacia fuentes, relaciones, consecuencias o versiones, no funcionar como isla.
 - `humans.txt` y `COPYRIGHT.md` hacen explícita la autoría sin introducir barreras, scripts de vigilancia ni falsas promesas anticopia.
 - Se corrigen los saltos de línea literales del inventario del README.
+
+
+## v0.12 — índice editorial de investigaciones
+- Nueva página `investigaciones.html`: archivo común filtrable de las unidades públicas, con tipo, método, estado, fecha y una síntesis de la consecuencia.
+- La portada vuelve a ser entrada y selección: deriva el inventario completo al índice en lugar de seguir acumulando bloques.
+- La navegación principal conecta Libro, Atlas, Diccionario, Práctica, Notas, Mapa, Sobre y Fisura con el mismo índice editorial.
+- La estructura queda preparada para incorporar futuros casos, audio, vídeo, correspondencia o piezas digitales sólo cuando hayan madurado.
+- Regla de publicación reforzada: los expedientes internos no se hacen visibles por existir; entran cuando ya producen una diferencia pública.
