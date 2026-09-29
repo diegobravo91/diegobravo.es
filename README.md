@@ -13,7 +13,7 @@ Superficie pública actual:
 - `notas.html` — textos y fragmentos públicos.
 - `sobre.html` — posición y método.
 - `mapa.html` — cartografía pública de relaciones y recorridos.
-- `feed.xml` — RSS de Notas.\n- `colofon.html` — derechos, procedencia y privacidad (noindex).
+- `feed.xml` — RSS de Notas.\n- `fisura-documento.html` — investigación en prueba sobre documento / práctica.\n- `colofon.html` — derechos, procedencia y privacidad (noindex).
 
 ## Regla editorial
 La web muestra consecuencias y materiales que ya pueden sostenerse públicamente. El archivo de investigación, protocolos internos, correspondencias y borradores permanecen fuera de la superficie publicada.
@@ -73,3 +73,12 @@ Sitio estático servido con GitHub Pages en [diegobravo.es](https://diegobravo.e
 - Protocolo público mínimo: control / pulse / press / cycle.
 - Mapa v0.4 conecta Materia propia con STRESS TEST 001 y después con documento, consecuencia y decisión de circulación.
 - La portada enlaza la propuesta sin presentarla como obra ejecutada.
+
+
+## v0.11 — investigación visible
+- La portada deja de explicar primero el sistema y muestra trabajo trazable: investigaciones activas, índice de unidades, métodos y consecuencias recientes.
+- Nueva página pública `fisura-documento.html`: Fisura 01 — Documento / práctica, versión 0.2, con pregunta, hallazgo, casos, método, fuentes y condiciones de refutación.
+- Práctica v0.4 enlaza Fisura 01 sin confundir investigación abierta con obra realizada.
+- Atlas v0.2 prioriza casos y relaciones abiertas; cada OA muestra método, operador, destino, estado y procedencia.
+- Diccionario v0.2 adopta índice, diferencias operativas, estado provisional y arquitectura de versión viva.
+- Principio visual: trabajo primero, sistema después. Aprender de interfaces de investigación sin copiar su identidad gráfica.
