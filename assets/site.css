@@ -1,0 +1,25 @@
+/* Shared site safeguards — navigation, motion, resilience */
+html{color-scheme:light}
+img{max-width:100%}
+a,button{touch-action:manipulation}
+@media (max-width:760px){
+  .top,.topbar{gap:12px}
+  .nav,.topnav{
+    display:flex!important;
+    flex-wrap:nowrap!important;
+    overflow-x:auto!important;
+    overflow-y:hidden;
+    -webkit-overflow-scrolling:touch;
+    overscroll-behavior-inline:contain;
+    scrollbar-width:none;
+    max-width:72vw;
+    white-space:nowrap;
+    padding-block:8px;
+  }
+  .nav::-webkit-scrollbar,.topnav::-webkit-scrollbar{display:none}
+  .nav a,.topnav a{display:inline-block!important;flex:0 0 auto!important}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto!important}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+}
