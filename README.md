@@ -90,3 +90,17 @@ Sitio estático servido con GitHub Pages en [diegobravo.es](https://diegobravo.e
 - Sobre v0.2: menos repetición del sistema, más posición, trabajo activo y reglas de superficie pública.
 - Notas v0.2: índice editorial compacto y fragmentos secundarios.
 - Colofón actualizado: declara la carga de imágenes externas del Atlas y separa privacidad, autoría, cita, correspondencia y plataformas.
+
+
+## v0.11.2 — densidad visible + coherencia transversal
+- Home: hero reducido; investigaciones activas entran antes en el primer viewport; metadatos expresan volumen real de trabajo.
+- Home: franja de evidencia con OA-001 Piranesi, OA-020 Atkins y OA-021 Muybridge, enlazada al Atlas y con carga externa sin referrer.
+- Práctica v0.5: hero reducido + índice inmediato de trabajo activo (P-001 / F-001).
+- Navegación primaria normalizada: Libro · Atlas · Diccionario · Práctica · Notas · Mapa · Sobre.
+- Móvil/tableta: ningún enlace principal se oculta; navegación horizontal accesible desde CSS común.
+- Nuevo `assets/site.css`: salvaguardas compartidas de navegación, movimiento reducido, skip-link, estado activo y contraste.
+- Contraste: gris secundario llevado a AA; naranja brillante se conserva como acento gráfico y un naranja más oscuro se usa en microtexto sobre fondo claro.
+- Metadata: Fisura 01 completada; Mapa/Práctica/Sobre alineados; og:image:alt corregido en Práctica y en la nota pública.
+- Consecuencias de la home ahora son navegables.
+- 404 y Fisura 01 dejan de ser islas de navegación.
+- Archivo abierto y Colofón actualizados para registrar la reutilización de imágenes en portada.
