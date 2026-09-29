@@ -2,6 +2,9 @@
 html{color-scheme:light}
 img{max-width:100%}
 a,button{touch-action:manipulation}
+.skip-link{position:fixed;left:16px;top:8px;z-index:1000;background:#0d0d0c;color:#eceae4;padding:9px 12px;font:9px ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;text-transform:uppercase;text-decoration:none;transform:translateY(-180%)}
+.skip-link:focus{transform:translateY(0)}
+.nav a[aria-current="page"],.topnav a[aria-current="page"]{color:var(--ink,#0d0d0c);text-decoration:underline;text-underline-offset:4px}
 @media (max-width:980px){
   .top,.topbar{gap:12px}
   .nav,.topnav{
