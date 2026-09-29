@@ -10,6 +10,8 @@ Estado: laboratorio interno.
 | YT-01-TH | social/youtube/01-que-hace-un-umbral-thumbnail.svg | Diego Bravo | Ninguno | Material propio | VERDE |
 | IG-OA-021 | borrador de carrusel / Muybridge | Diego Bravo (texto y montaje) | Eadweard Muybridge, *Boys Playing Leap Frog* | Public Domain / The Met Open Access | VERDE derechos / HOLD editorial |
 | IG-04-CAND | 08_INVENTARIO_herramientas_dibujo_y_corte.jpg | Autoría fotográfica por confirmar | Ninguno identificado | Archivo personal / falta confirmar copyright | AMARILLO derechos / VERDE privacidad / HOLD |
+| YT-MNCARS-ASINS | *Aquí no hay nada que comprender. Un documental sobre Elena Asins* (2020) | Javi Álvarez / Olga Sevillano; producción MNCARS | Incluye material de terceros | MNCARS confirma CC BY-NC-ND 4.0 sólo sobre derechos propios; terceros fuera de alcance | HOLD REPUBLICACIÓN ÍNTEGRA / ENLAZAR hasta aclaración |
+| YT-UNED-MARCHAN | *Reflexiones sobre la Estética con Simón Marchán* 1.ª y 2.ª parte | UNED Media | Material UNED y posibles terceros | UNED Media autoriza enlace/embed original pero no nueva URL/rehosting | EMBEBER / ENLAZAR · NO REHOSTEAR |
 
 ## Qué significa VERDE
 No significa “publicar automáticamente”. Significa que, respecto a reutilización de material de terceros, la pieza no contiene por ahora elementos que requieran permiso/licencia externa.
@@ -34,3 +36,20 @@ Una fotografía, voz o vídeo propio puede seguir requiriendo revisión si apare
 ## Música
 Estado por defecto: SIN MÚSICA.
 Si se incorpora música, registrar título, autor, fuente, licencia, territorios/plataformas permitidos y condiciones de monetización antes del montaje final.
+
+
+## Respuestas institucionales registradas — 2026-09-29
+
+### MNCARS / Elena Asins
+Fuente: Gmail thread `1a0da105ef1ee6f4`, respuesta del Departamento de Prensa del Museo Reina Sofía, 29.09.2026.
+
+La licencia general CC BY-NC-ND 4.0 del Museo no cubre automáticamente materiales con derechos de terceros incluidos en el documental. Hasta aclaración específica, no tratar la obra completa como autorizada para rehosting en YouTube.
+
+**Decisión:** HOLD REPUBLICACIÓN ÍNTEGRA. Preferir enlace/uso del original. Una eventual aclaración debe preguntar por el documental concreto, no por la licencia general.
+
+### UNED Media / Simón Marchán
+Fuente: Gmail thread `1a0d83758e11a0b2`, respuestas de UNED Media de 25 y 28.09.2026.
+
+UNED Media permite enlazar o embeber sus originales para fines divulgativos, pero indica que no se creen nuevas URLs con su contenido. Esta instrucción fue reiterada al preguntar por recursos que muestran Creative Commons y descarga directa.
+
+**Decisión:** ENLAZAR/EMBEBER. NO REHOSTEAR las emisiones en YouTube bajo la autorización recibida.
