@@ -1,10 +1,12 @@
 /* Shared site safeguards — navigation, motion, resilience */
 html{color-scheme:light}
+:root{--soft:#6d6963;--accent-text:#be371b}
 img{max-width:100%}
 a,button{touch-action:manipulation}
 .skip-link{position:fixed;left:16px;top:8px;z-index:1000;background:#0d0d0c;color:#eceae4;padding:9px 12px;font:9px ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;text-transform:uppercase;text-decoration:none;transform:translateY(-180%)}
 .skip-link:focus{transform:translateY(0)}
 .nav a[aria-current="page"],.topnav a[aria-current="page"]{color:var(--ink,#0d0d0c);text-decoration:underline;text-underline-offset:4px}
+.code,.evidence .e-code,.index-row .state,.method .m,.change .state,.fact .accent,.linkcard span,.row .state,.op .state,.row .status,.entry-left .id,.lab,.meta .accent,.finding .tag,.trace-label a,.route .meta,.pending,.method span{color:var(--accent-text)!important}
 @media (max-width:980px){
   .top,.topbar{gap:12px}
   .nav,.topnav{
