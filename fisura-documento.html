@@ -1,104 +1,74 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Fisura 01 — Documento / práctica — Web Lab</title>
-<meta name="description" content="Prototipo no público de una Puerta de contradicción para diegobravo.es.">
+<meta name="description" content="Investigación en prueba sobre documento y práctica. Prototipo no público.">
 <meta name="robots" content="noindex,nofollow">
 <style>
-:root{--bg:#eceae4;--ink:#0d0d0c;--soft:#6f6b64;--hair:rgba(13,13,12,.22);--accent:#ff4a22;--pad:clamp(18px,2.8vw,40px);--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;--sans:Arial,Helvetica,sans-serif}
-*{box-sizing:border-box}html{background:var(--bg);scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.35}a{color:inherit;text-underline-offset:3px}::selection{background:var(--ink);color:var(--bg)}
-.top{height:58px;border-bottom:1px solid var(--hair);display:flex;align-items:center;justify-content:space-between;padding:0 var(--pad);position:sticky;top:0;background:rgba(236,234,228,.95);backdrop-filter:blur(14px);z-index:20}.brand{font-size:13px;font-weight:700;text-decoration:none}.state{font:10px var(--mono);text-transform:uppercase;color:var(--soft)}
-.hero{min-height:76svh;padding:clamp(54px,9vw,130px) var(--pad) var(--pad);display:flex;flex-direction:column;justify-content:space-between;border-bottom:1px solid var(--ink)}.eyebrow{font:10px var(--mono);text-transform:uppercase;color:var(--soft)}h1{font-size:clamp(58px,9.5vw,145px);line-height:.79;letter-spacing:-.07em;font-weight:500;margin:0;max-width:1280px}.lead{font-size:clamp(22px,2.65vw,38px);line-height:1.04;letter-spacing:-.038em;max-width:920px;margin:48px 0 0}
-.sec{border-bottom:1px solid var(--ink)}.head{display:grid;grid-template-columns:160px 1fr;border-bottom:1px solid var(--hair)}.head span,.head h2{margin:0;padding:16px var(--pad);font:10px var(--mono);font-weight:500;text-transform:uppercase;letter-spacing:.05em}.head span{border-right:1px solid var(--hair);color:var(--soft)}
-.statement{padding:var(--pad);display:grid;grid-template-columns:.9fr 1.1fr;gap:8vw;min-height:50vh;align-items:center}.statement .big{font-size:clamp(38px,5.5vw,84px);line-height:.9;letter-spacing:-.055em;margin:0}.statement .copy{font-size:18px;line-height:1.55;max-width:720px}.mono{font:10px/1.6 var(--mono);text-transform:uppercase;color:var(--soft)}
-.grid{display:grid;grid-template-columns:repeat(3,1fr)}.card{padding:var(--pad);min-height:400px;border-right:1px solid var(--hair);display:flex;flex-direction:column;justify-content:space-between}.card:last-child{border-right:0}.card .meta{font:10px var(--mono);text-transform:uppercase;color:var(--soft)}.card h3{font-size:clamp(29px,3.3vw,52px);line-height:.94;letter-spacing:-.05em;font-weight:500;margin:26px 0 18px}.card p{font-size:16px;line-height:1.52;max-width:520px}.card .foot{font:10px/1.55 var(--mono);text-transform:uppercase;color:var(--soft);margin-top:28px}
-.criteria{padding:0 var(--pad)}.row{display:grid;grid-template-columns:160px 1fr;gap:32px;padding:24px 0;border-bottom:1px solid var(--hair)}.row:last-child{border-bottom:0}.row .k{font:10px var(--mono);text-transform:uppercase;color:var(--soft)}.row strong{font-size:clamp(23px,2.6vw,38px);line-height:1.02;letter-spacing:-.035em;font-weight:500}.row p{margin:10px 0 0;font-size:16px;line-height:1.5;max-width:850px}
-.fissure{background:var(--ink);color:var(--bg);padding:var(--pad);display:grid;grid-template-columns:.85fr 1.15fr;gap:8vw;min-height:55vh;align-items:start}.fissure h2{font-size:clamp(48px,7vw,108px);line-height:.84;letter-spacing:-.065em;font-weight:500;margin:0}.fissure .copy{font-size:18px;line-height:1.55;max-width:720px}.prompt{border-top:1px solid rgba(236,234,228,.3);padding-top:20px;margin-top:28px}.prompt dl{margin:0}.prompt dt{font:10px var(--mono);text-transform:uppercase;color:rgba(236,234,228,.56);margin:18px 0 6px}.prompt dd{margin:0;font-size:17px}.inactive{display:inline-block;margin-top:30px;border:1px solid rgba(236,234,228,.45);padding:12px 15px;font:10px var(--mono);text-transform:uppercase;color:rgba(236,234,228,.65)}
-.consequence{padding:var(--pad);display:grid;grid-template-columns:160px 1fr;gap:30px;min-height:38vh}.consequence .k{font:10px var(--mono);text-transform:uppercase;color:var(--soft)}.consequence .text{font-size:clamp(29px,3.8vw,58px);line-height:.98;letter-spacing:-.045em;max-width:1080px}.consequence .text small{display:block;margin-top:28px;font:10px/1.65 var(--mono);text-transform:uppercase;color:var(--soft);letter-spacing:0}
-.footer{padding:var(--pad);display:flex;justify-content:space-between;gap:30px;font:10px/1.6 var(--mono);text-transform:uppercase;color:var(--soft)}
-@media(max-width:900px){.statement,.fissure{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.card{border-right:0;border-bottom:1px solid var(--hair);min-height:300px}.card:last-child{border-bottom:0}.head{grid-template-columns:86px 1fr}.row{grid-template-columns:1fr}.consequence{grid-template-columns:1fr}.footer{display:block}}
+:root{--bg:#efede7;--ink:#111;--soft:#726e67;--line:#bdb8ae;--accent:#ee4b2b;--pad:clamp(18px,2.4vw,34px);--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;--sans:Arial,Helvetica,sans-serif}
+*{box-sizing:border-box}html{background:var(--bg)}body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.35}a{color:inherit;text-underline-offset:3px}::selection{background:var(--ink);color:var(--bg)}
+.top{height:54px;display:flex;align-items:center;justify-content:space-between;padding:0 var(--pad);border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(239,237,231,.96);backdrop-filter:blur(12px);z-index:10}.brand{font-size:13px;font-weight:700;text-decoration:none}.lab{font:9px var(--mono);text-transform:uppercase;color:var(--accent)}
+.case-head{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(300px,.7fr);border-bottom:1px solid var(--ink)}.title{padding:28px var(--pad) 34px;border-right:1px solid var(--line)}.eyebrow,.label,.meta dt,.tag{font:9px/1.5 var(--mono);text-transform:uppercase;letter-spacing:.04em;color:var(--soft)}h1{font-size:clamp(48px,7.2vw,112px);line-height:.86;letter-spacing:-.062em;font-weight:500;margin:18px 0 30px;max-width:1050px}.dek{font-size:clamp(19px,2vw,29px);line-height:1.08;letter-spacing:-.03em;max-width:780px;margin:0}
+.meta{margin:0;display:grid;grid-template-columns:1fr 1fr;align-content:start}.meta>div{padding:15px;border-bottom:1px solid var(--line);border-right:1px solid var(--line)}.meta>div:nth-child(even){border-right:0}.meta dt{margin:0 0 5px}.meta dd{margin:0;font:10px/1.4 var(--mono);text-transform:uppercase}.meta .accent{color:var(--accent)}
+.visual{min-height:45vh;border-bottom:1px solid var(--ink);display:grid;place-items:center;padding:40px var(--pad)}.diagram{width:min(1100px,94%)}.axis{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:18px}.axis strong{font-size:clamp(28px,4vw,62px);line-height:.95;letter-spacing:-.045em;font-weight:500}.axis .right{text-align:right}.line{height:1px;background:var(--ink);position:relative;margin:30px 0}.line:before,.line:after{content:"";position:absolute;top:-4px;width:9px;height:9px;border-radius:50%;background:var(--accent)}.line:before{left:18%}.line:after{right:17%}.mid{font:10px var(--mono);text-transform:uppercase;color:var(--soft);text-align:center}.caption{font:9px/1.55 var(--mono);text-transform:uppercase;color:var(--soft);margin-top:28px;max-width:700px}
+.sec{border-bottom:1px solid var(--ink)}.sec-head{display:grid;grid-template-columns:145px 1fr;border-bottom:1px solid var(--line)}.sec-head>*{padding:14px var(--pad);margin:0}.sec-head .label{border-right:1px solid var(--line)}.sec-head h2{font:500 9px var(--mono);text-transform:uppercase;letter-spacing:.05em}.body{padding:var(--pad);max-width:1260px}.two{display:grid;grid-template-columns:.9fr 1.1fr;gap:8vw}.big{font-size:clamp(31px,4.5vw,66px);line-height:.92;letter-spacing:-.05em;margin:0}.copy{font-size:17px;line-height:1.55;max-width:760px}.copy p:first-child{margin-top:0}.copy p:last-child{margin-bottom:0}
+.findings{display:grid;grid-template-columns:repeat(3,1fr)}.finding{padding:var(--pad);border-right:1px solid var(--line);min-height:320px}.finding:last-child{border-right:0}.finding h3{font-size:clamp(24px,2.8vw,42px);line-height:.96;letter-spacing:-.04em;font-weight:500;margin:18px 0}.finding p{font-size:15px;line-height:1.48}.finding .tag{color:var(--accent)}
+.steps{padding:0 var(--pad)}.step{display:grid;grid-template-columns:145px .9fr 1.1fr;gap:30px;padding:22px 0;border-bottom:1px solid var(--line)}.step:last-child{border-bottom:0}.step .n{font:9px var(--mono);text-transform:uppercase;color:var(--soft)}.step strong{font-size:22px;line-height:1.05;font-weight:500}.step p{margin:0;font-size:15px;line-height:1.48;max-width:700px}
+.sources{padding:0 var(--pad)}.source{display:grid;grid-template-columns:145px 1fr auto;gap:30px;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--line)}.source:last-child{border-bottom:0}.source .who{font:9px var(--mono);text-transform:uppercase;color:var(--soft)}.source a{font-size:18px}.source .role{font:9px var(--mono);text-transform:uppercase;color:var(--soft)}
+.open{background:var(--ink);color:var(--bg)}.open .sec-head{border-color:rgba(239,237,231,.25)}.open .sec-head .label{border-color:rgba(239,237,231,.25);color:rgba(239,237,231,.55)}.open .body{max-width:none}.question{font-size:clamp(34px,5vw,76px);line-height:.93;letter-spacing:-.055em;max-width:1180px;margin:0}.criteria{margin-top:38px;display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid rgba(239,237,231,.3);border-left:1px solid rgba(239,237,231,.3)}.criterion{padding:18px;border-right:1px solid rgba(239,237,231,.3);border-bottom:1px solid rgba(239,237,231,.3)}.criterion span{display:block;font:9px var(--mono);text-transform:uppercase;color:rgba(239,237,231,.5);margin-bottom:8px}.criterion p{font-size:15px;line-height:1.45;margin:0}.inactive{display:inline-block;margin-top:24px;padding:10px 12px;border:1px solid rgba(239,237,231,.4);font:9px var(--mono);text-transform:uppercase;color:rgba(239,237,231,.65)}
+.footer{padding:18px var(--pad);display:flex;justify-content:space-between;gap:24px;font:9px/1.5 var(--mono);text-transform:uppercase;color:var(--soft)}
+@media(max-width:880px){.case-head,.two{grid-template-columns:1fr}.title{border-right:0}.meta{border-top:1px solid var(--line)}.findings{grid-template-columns:1fr}.finding{border-right:0;border-bottom:1px solid var(--line)}.finding:last-child{border-bottom:0}.step,.source{grid-template-columns:1fr;gap:8px}.criteria{grid-template-columns:1fr}.sec-head{grid-template-columns:86px 1fr}.footer{display:block}}
 </style>
 </head>
 <body>
-<header class="top"><a class="brand" href="#">Diego Bravo / WEB LAB</a><div class="state">Noindex · prototipo · no enlazado desde main</div></header>
+<header class="top"><a class="brand" href="/practica.html">Diego Bravo / Práctica</a><div class="lab">web-lab · no público</div></header>
 <main>
-<section class="hero">
-<div class="eyebrow">Puerta de contradicción / prueba 01 / documento</div>
-<div>
-<h1>¿Cuándo un documento conserva una práctica y cuándo empieza a producir la forma en que esa práctica existe para quienes no estuvieron allí?</h1>
-<p class="lead">Una pregunta pública no para recibir opiniones, sino para localizar un caso capaz de volver insuficiente la formulación actual.</p>
-</div>
+<section class="case-head">
+<div class="title"><div class="eyebrow">Fisura 01 / investigación en prueba</div><h1>Documento / práctica</h1><p class="dek">¿Cuándo un documento conserva una práctica y cuándo empieza a producir la forma en que esa práctica existe para quienes no estuvieron allí?</p></div>
+<dl class="meta">
+<div><dt>Estado</dt><dd class="accent">Reabierta</dd></div><div><dt>Versión</dt><dd>0.2</dd></div>
+<div><dt>Inicio</dt><dd>28 sep 2026</dd></div><div><dt>Tipo</dt><dd>Problema abierto</dd></div>
+<div><dt>Ámbitos</dt><dd>Práctica · Archivo · Web</dd></div><div><dt>Método</dt><dd>Contraste de casos</dd></div>
+<div><dt>Primera consecuencia</dt><dd>Pregunta reformulada</dd></div><div><dt>Canal externo</dt><dd>No activado</dd></div>
+</dl>
 </section>
 
-<section class="sec">
-<div class="head"><span>01 / Estado</span><h2>Hipótesis actual</h2></div>
-<div class="statement">
-<p class="big">El documento puede mantener una práctica accesible sin ser la práctica.</p>
-<div class="copy">
-<p>La hipótesis distingue entre documento como mediación, documento como operación y documento como sustitución. Una fotografía, un contrato, una instrucción, una memoria corporal o un registro pueden relacionarse de maneras distintas con aquello que preservan.</p>
-<p class="mono">ESTADO: REABIERTO · VERSIÓN 0.2 · NO INCORPORADO COMO TESIS CERRADA</p>
-</div>
-</div>
-</section>
+<section class="visual"><div class="diagram"><div class="axis"><strong>acontecimiento</strong><span class="mid">mediación / operación / sustitución</span><strong class="right">existencia posterior</strong></div><div class="line"></div><div class="caption">La investigación ya no pregunta si el documento llega después de una práctica estable. Pregunta qué relación produce entre un acontecimiento, sus rastros y quienes sólo pueden acceder a él posteriormente.</div></div></section>
 
-<section class="sec">
-<div class="head"><span>v0.1 → v0.2</span><h2>La primera pregunta ya falló</h2></div>
-<div class="statement">
-<p class="big">Conservar / sustituir era una oposición demasiado limpia.</p>
-<div class="copy"><p>La lectura de Philip Auslander obliga a desplazar el problema: para muchos espectadores, el documento no llega después de una performance ya plenamente disponible. Puede ser el principal lugar desde el que esa performance se conoce y se experimenta como obra.</p><p>La pregunta cambia, por tanto, de <em>cuándo el documento sustituye a la práctica</em> a <em>qué forma de existencia produce para quienes no estuvieron allí</em>. La sustitución sigue siendo un riesgo posible, pero ya no organiza por sí sola el campo.</p><p class="mono">CONSECUENCIA 001 · REFORMULACIÓN POR FUENTE EXTERNA · AUSLANDER, 2006 / 2018</p></div>
-</div>
-</section>
-<section class="sec">
-<div class="head"><span>02 / Presión</span><h2>Casos que ya impiden una respuesta simple</h2></div>
-<div class="grid">
-<article class="card"><div><span class="meta">Rastro riguroso</span><h3>Tehching Hsieh</h3><p>Años vividos bajo reglas extremas sobreviven mediante fotografías, mapas, objetos, contratos y registros. La documentación permite conocer la obra, pero no puede contener la duración vivida que documenta.</p></div><div class="foot">DOCUMENTO-DE / PÉRDIDA RECONOCIDA</div></article>
-<article class="card"><div><span class="meta">Transmisión corporal</span><h3>Tino Sehgal</h3><p>La obra rechaza reproducción fotográfica y escrita como equivalente suficiente. El conocimiento necesario para volver a realizarla se transmite entre cuerpos, relatos y ensayos.</p></div><div class="foot">RESERVA / MEMORIA / TRANSMISIÓN</div></article>
-<article class="card"><div><span class="meta">Documento que actúa</span><h3>Siegelaub / Projansky</h3><p>Un contrato no recuerda simplemente una relación artística: puede modificar jurídicamente qué derechos y obligaciones continúan cuando la obra cambia de manos.</p></div><div class="foot">DOCUMENTO-COMO / OPERADOR</div></article>
-</div>
-</section>
+<section class="sec"><div class="sec-head"><div class="label">01 / Pregunta</div><h2>Hipótesis actual</h2></div><div class="body two"><p class="big">El documento puede mantener una práctica accesible y, al mismo tiempo, producir cómo esa práctica será conocida después.</p><div class="copy"><p>Fotografía, contrato, instrucción, memoria corporal, catálogo o registro no ocupan necesariamente el mismo lugar. La investigación distingue qué relación efectiva establecen con aquello que conservan, transmiten o transforman.</p><p><span class="tag">Estado:</span> en prueba. No incorporado como tesis cerrada del Libro ni como entrada pública del Diccionario.</p></div></div></section>
 
-<section class="sec">
-<div class="head"><span>03 / Herida</span><h2>Qué podría hacernos cambiar</h2></div>
-<div class="criteria">
-<div class="row"><div class="k">Caso A</div><div><strong>Una práctica cuya documentación no pueda separarse de aquello que documenta.</strong><p>No un registro útil, sino un caso donde intentar distinguir acontecimiento y documento destruya la operación.</p></div></div>
-<div class="row"><div class="k">Caso B</div><div><strong>Una ausencia documental que aumente la capacidad de transmisión en vez de reducirla.</strong><p>Algo más fuerte que simple secreto, prohibición o pérdida: la falta tendría que producir una forma verificable de continuidad.</p></div></div>
-<div class="row"><div class="k">Caso C</div><div><strong>Un documento que conserve perfectamente los datos pero anule la práctica que pretendía preservar.</strong><p>El caso debería permitir localizar la sustitución, no asumirla por intuición.</p></div></div>
-<div class="row"><div class="k">Salida</div><div><strong>La pregunta está mal formulada.</strong><p>También cuenta una objeción que demuestre que “documento” y “práctica” no son los términos adecuados para pensar el problema.</p></div></div>
-</div>
-</section>
+<section class="sec"><div class="sec-head"><div class="label">02 / Hallazgo</div><h2>La v0.1 ya fue insuficiente</h2></div><div class="body two"><p class="big">«Conservar / sustituir» era una oposición demasiado limpia.</p><div class="copy"><p>Auslander obliga a desplazar el problema: para muchos espectadores el documento no llega simplemente después de una performance ya disponible. Puede ser el principal lugar desde el que esa performance se conoce y se experimenta como obra.</p><p><span class="tag">Consecuencia 001:</span> reformular la pregunta. La sustitución continúa como riesgo posible, pero deja de organizar todo el campo.</p></div></div></section>
 
-<section class="sec" id="procedencia">
-<div class="head"><span>04 / Procedencia</span><h2>Rutas para comprobar la presión</h2></div>
-<div class="criteria">
-<div class="row"><div class="k">Auslander</div><div><strong><a href="https://www.jstor.org/stable/4140006" rel="noopener noreferrer">The Performativity of Performance Documentation ↗</a></strong><p>PAJ 28.3, 2006. Fuente de la reformulación v0.1 → v0.2.</p></div></div>
-<div class="row"><div class="k">Hsieh</div><div><strong><a href="https://www.moma.org/calendar/performance/322" rel="noopener noreferrer">Performance 1: Tehching Hsieh — MoMA ↗</a></strong><p>Documentación del Cage Piece y serie de performance histórica.</p></div></div>
-<div class="row"><div class="k">Sehgal / Van Saaze</div><div><strong><a href="https://cris.maastrichtuniversity.nl/en/publications/in-the-absence-of-documentation-remembering-tino-sehgals-construc/" rel="noopener noreferrer">In the Absence of Documentation ↗</a></strong><p>Memoria corporal, narración, ensayo y transmisión institucional sin documentación visual/material.</p></div></div>
-<div class="row"><div class="k">Siegelaub / Projansky</div><div><strong><a href="https://primaryinformation.org/the-artists-reserved-rights-transfer-and-sale-agreement-1971/" rel="noopener noreferrer">Artist’s Reserved Rights Transfer and Sale Agreement ↗</a></strong><p>Documento que no sólo registra: modifica derechos y relaciones futuras.</p></div></div>
-<div class="row"><div class="k">Ferrer</div><div><strong><a href="https://recursos.museoreinasofia.es/esther-ferrer-esp.pdf" rel="noopener noreferrer">Todas las variaciones son válidas, incluida esta ↗</a></strong><p>Catálogo MNCARS: práctica, fotografía, documentación y afterlife editorial.</p></div></div>
-</div>
-</section>
+<section class="sec"><div class="sec-head"><div class="label">03 / Casos</div><h2>Presiones actuales</h2></div><div class="findings">
+<article class="finding"><span class="tag">Rastro / duración</span><h3>Tehching Hsieh</h3><p>Contratos, fotografías, mapas y objetos hacen recuperable una práctica anual sin poder contener la duración vivida que documentan.</p></article>
+<article class="finding"><span class="tag">Transmisión / memoria</span><h3>Tino Sehgal</h3><p>La conservación desplaza parte del conocimiento hacia cuerpos, relatos y ensayos. La ausencia de documento visual no elimina necesariamente la fijación.</p></article>
+<article class="finding"><span class="tag">Documento / operador</span><h3>Siegelaub / Projansky</h3><p>El contrato no recuerda una relación previa: modifica jurídicamente derechos y obligaciones futuras cuando la obra cambia de manos.</p></article>
+</div></section>
 
-<section class="fissure">
-<h2>Señalar<br>una fisura.</h2>
-<div class="copy">
-<p>No buscamos una opinión general sobre documentación. Buscamos un caso, fuente, obra o situación que permita comprobar que alguna parte de la pregunta falla.</p>
-<div class="prompt"><dl>
-<dt>Qué falla</dt><dd>La afirmación, distinción o relación que el caso vuelve insuficiente.</dd>
-<dt>Evidencia</dt><dd>Fuente, obra, enlace, documento o experiencia verificable.</dd>
-<dt>Qué cambiaría</dt><dd>Qué parte del Diccionario, Atlas, Libro, práctica o web tendría que reabrirse si la objeción se sostiene.</dd>
-<dt>Fuera de marco</dt><dd>También se admite: “esto no encaja en vuestra pregunta”.</dd>
-</dl></div>
-<span class="inactive">Canal de envío no activado en este prototipo</span>
-</div>
-</section>
+<section class="sec"><div class="sec-head"><div class="label">04 / Método</div><h2>Cómo se está comprobando</h2></div><div class="steps">
+<div class="step"><div class="n">01</div><strong>Localizar una diferencia.</strong><p>No reunir ejemplos de documentación. Buscar casos que obliguen a separar mediación, transmisión, operación y sustitución.</p></div>
+<div class="step"><div class="n">02</div><strong>Leer antes de contactar.</strong><p>Si una fuente publicada ya responde a la pregunta y produce una consecuencia, no convertir la correspondencia en petición de confirmación.</p></div>
+<div class="step"><div class="n">03</div><strong>Reformular públicamente.</strong><p>Cuando una fuente vuelve insuficiente la pregunta, cambiar versión y conservar la causa de la modificación.</p></div>
+<div class="step"><div class="n">04</div><strong>Abrir sólo una fisura verificable.</strong><p>Una aportación externa futura tendría que mostrar qué falla, con qué evidencia y qué debería cambiar si la objeción se sostiene.</p></div>
+</div></section>
 
-<section class="sec">
-<div class="head"><span>05 / Consecuencia</span><h2>Qué ocurriría si una fisura supera la criba</h2></div>
-<div class="consequence"><div class="k">Compromiso limitado</div><div class="text">No prometemos responder a todo. Una objeción validada puede obligar a una única consecuencia concreta: corregir, reabrir, investigar, probar, retirar o cambiar de versión.<small>La prueba pública de participación sería el cambio producido, no un contador de mensajes.</small></div></div>
-</section>
+<section class="sec"><div class="sec-head"><div class="label">05 / Fuentes</div><h2>Procedencia navegable</h2></div><div class="sources">
+<div class="source"><div class="who">Auslander</div><a href="https://www.jstor.org/stable/4140006" rel="noopener noreferrer">The Performativity of Performance Documentation ↗</a><div class="role">causa v0.2</div></div>
+<div class="source"><div class="who">Hsieh</div><a href="https://www.moma.org/calendar/performance/322" rel="noopener noreferrer">Performance 1: Tehching Hsieh — MoMA ↗</a><div class="role">caso</div></div>
+<div class="source"><div class="who">Sehgal / Van Saaze</div><a href="https://cris.maastrichtuniversity.nl/en/publications/in-the-absence-of-documentation-remembering-tino-sehgals-construc/" rel="noopener noreferrer">In the Absence of Documentation ↗</a><div class="role">caso / conservación</div></div>
+<div class="source"><div class="who">Siegelaub / Projansky</div><a href="https://primaryinformation.org/the-artists-reserved-rights-transfer-and-sale-agreement-1971/" rel="noopener noreferrer">Artist’s Reserved Rights Transfer and Sale Agreement ↗</a><div class="role">caso / contrato</div></div>
+<div class="source"><div class="who">Ferrer</div><a href="https://recursos.museoreinasofia.es/esther-ferrer-esp.pdf" rel="noopener noreferrer">Todas las variaciones son válidas, incluida esta ↗</a><div class="role">posible contraste</div></div>
+</div></section>
+
+<section class="open"><div class="sec-head"><div class="label">06 / Abierto</div><h2>Qué podría hacernos cambiar</h2></div><div class="body"><p class="question">Buscamos un caso que vuelva insuficiente incluso esta formulación.</p><div class="criteria">
+<div class="criterion"><span>Caso A</span><p>Una práctica donde separar documento y acontecimiento destruya la operación que intentamos describir.</p></div>
+<div class="criterion"><span>Caso B</span><p>Una ausencia documental que aumente de forma verificable la capacidad de transmisión.</p></div>
+<div class="criterion"><span>Caso C</span><p>Un documento que conserve datos con precisión y, sin embargo, cierre o deforme la práctica que preserva.</p></div>
+<div class="criterion"><span>Salida</span><p>Una objeción que muestre que «documento» y «práctica» son ya los términos equivocados.</p></div>
+</div><span class="inactive">Canal externo no activado en este prototipo</span></div></section>
+
+<section class="sec"><div class="sec-head"><div class="label">07 / Consecuencia</div><h2>Qué puede cambiar</h2></div><div class="body two"><p class="big">Una objeción validada no gana una respuesta: gana una consecuencia.</p><div class="copy"><p>Puede obligar a corregir una formulación, reabrir una entrada, investigar una fuente, hacer una prueba, retirar una relación o producir una nueva versión.</p><p>La prueba pública de alteridad será el cambio producido, no el número de mensajes recibidos.</p></div></div></section>
 </main>
-<footer class="footer"><span>Diego Bravo / Estética del umbral</span><span>WEB LAB · fisura-documento · v0.2 · 28.09.2026</span></footer>
-</body>
-</html>
+<footer class="footer"><span>Diego Bravo / Estética del umbral</span><span>Fisura 01 · v0.2 · web-lab · noindex</span></footer>
+</body></html>
