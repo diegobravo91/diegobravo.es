@@ -133,3 +133,12 @@ Sitio estático servido con GitHub Pages en [diegobravo.es](https://diegobravo.e
 - Libro: nueva sección pública de investigación posterior a v0.4, `De la huella al régimen de acceso`, sin fingir una nueva versión del manuscrito.
 - Investigaciones: 11 unidades públicas.
 - Social-lab: preparados assets Instagram para N-002 y A-022 y piloto YouTube #02 `No todo entre es umbral`.
+
+
+## v0.16 — exposición y zona de contacto — 2026-09-30
+- Atlas: A-023 `Exposición / zona de contacto / dispositivo`, a partir de Fernando Castro Flórez y James Clifford.
+- Diccionario: D-010 `Zona de contacto`; diferencia entre contacto, entre, frontera, consulta y participación.
+- Notas: N-003 `Una exposición no es un contenedor`.
+- Libro: segunda línea visible posterior a v0.4; no se altera la versión del manuscrito.
+- Mapa: R10 `Exposición / contacto`.
+- Investigaciones: 16 unidades públicas.
