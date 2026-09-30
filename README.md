@@ -51,3 +51,11 @@ Sitio estático servido con GitHub Pages en [diegobravo.es](https://diegobravo.e
 - Nueva página `mapa.html`: red entre Libro, Atlas, Diccionario, Práctica, Notas y Archivo abierto.
 - Cuatro recorridos públicos iniciales: Tiempo, Contacto, Borde y Método.
 - La página no pretende representar el archivo completo; sólo conexiones que ya producen una diferencia verificable.
+
+
+## web-lab · gramática de función y acceso — 2026-09-30
+- Libro, Atlas, Diccionario y Práctica incorporan una firma funcional visible y distinta: argumentar, montar, distinguir y probar.
+- El Atlas declara en cada documento abierto un régimen de acceso/reutilización junto al crédito, sin confundir publicación con permiso.
+- El Colofón distingue enlace, consulta, descarga, embed, reproducción autorizada y material restringido.
+- Corregida la navegación duplicada de Mapa donde aparecía.
+- Cambio limitado a `web-lab`: no añade corpus ficticio ni promueve todavía las candidatas ACCESO / RESOLUCIÓN / ESTÁNDAR a la web pública.
