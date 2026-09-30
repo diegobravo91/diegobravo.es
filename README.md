@@ -12,7 +12,7 @@ Superficie pública actual:
 - `diccionario.html` — selección pública del Diccionario.
 - `practica.html` — método y estado del corpus.
 - `notas.html` — textos y fragmentos públicos.
-- `sobre.html` — posición y método.
+- `sobre.html` — posición, método y contacto profesional.
 - `mapa.html` — cartografía pública de relaciones y recorridos.
 - `feed.xml` — RSS de Notas.
 - `fisura-documento.html` — investigación en prueba sobre documento / práctica.
@@ -142,3 +142,10 @@ Sitio estático servido con GitHub Pages en [diegobravo.es](https://diegobravo.e
 - Libro: segunda línea visible posterior a v0.4; no se altera la versión del manuscrito.
 - Mapa: R10 `Exposición / contacto`.
 - Investigaciones: 16 unidades públicas.
+
+
+## v0.16.1 — contacto y salida exterior — 2026-09-30
+- Sobre incorpora una superficie de contacto profesional explícita para investigación, documentación, derechos, publicaciones, encargos y colaboraciones.
+- La portada enlaza directamente a Sobre → Contacto.
+- La dirección de contacto queda visible sin formularios, tracking ni intermediarios.
+- La web mantiene separadas la superficie pública y las correspondencias privadas: publicar una vía de contacto no convierte los hilos de correo en contenido.
