@@ -268,3 +268,29 @@ diegobravo.es/atlas.html
 
 **Estado**
 COPY + SVG LISTOS. NO PUBLICADO.
+
+
+---
+
+### POST 06 — N-003 / EXPOSICIÓN
+**Asset**
+`social/instagram/06-una-exposicion-no-es-un-contenedor.svg`
+
+**Caption**
+Una exposición no es un contenedor.
+
+Mostrar no es simplemente poner algo delante.
+
+Exponer selecciona, ordena, separa, acerca, clasifica y decide recorridos. También distribuye autoridad: quién habla, quién interpreta y quién puede modificar lo que ya estaba decidido.
+
+Fernando Castro Flórez → exposición como dispositivo.
+James Clifford → museo como zona de contacto.
+
+CONSULTA ≠ CONTACTO.
+PARTICIPACIÓN ≠ CAPACIDAD DE ALTERAR.
+
+Texto completo:
+diegobravo.es/notas/una-exposicion-no-es-un-contenedor.html
+
+**Estado**
+COPY + SVG LISTOS. PNG generado localmente. NO PUBLICADO.
