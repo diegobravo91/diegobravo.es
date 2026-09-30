@@ -126,3 +126,10 @@ Sitio estático servido con GitHub Pages en [diegobravo.es](https://diegobravo.e
 - La navegación principal conecta Libro, Atlas, Diccionario, Práctica, Notas, Mapa, Sobre y Fisura con el mismo índice editorial.
 - La estructura queda preparada para incorporar futuros casos, audio, vídeo, correspondencia o piezas digitales sólo cuando hayan madurado.
 - Regla de publicación reforzada: los expedientes internos no se hacen visibles por existir; entran cuando ya producen una diferencia pública.
+
+
+## v0.14 — acceso y continuidad pública — 2026-09-30
+- Diccionario: nueva entrada pública D-007, `Acceso`, diferenciando visibilidad, consulta, descarga, reproducción y publicación.
+- Libro: nueva sección pública de investigación posterior a v0.4, `De la huella al régimen de acceso`, sin fingir una nueva versión del manuscrito.
+- Investigaciones: 11 unidades públicas.
+- Social-lab: preparados assets Instagram para N-002 y A-022 y piloto YouTube #02 `No todo entre es umbral`.
