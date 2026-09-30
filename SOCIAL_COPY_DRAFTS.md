@@ -227,3 +227,44 @@ Todos los assets iniciales son jurídicamente verdes: texto propio + formas geom
 No abrir Instagram por tener tres carteles listos. Abrir sólo cuando junto a ellos exista al menos una pieza visual no tipográfica realmente propia —proceso, dibujo, materia, territorio o documento— que evite que el perfil nazca como una campaña de frases.
 
 No abrir YouTube por tener miniatura y guion. Abrir cuando el piloto esté grabado y el montaje tenga razón de duración propia.
+
+
+---
+
+### POST 04 — N-002 / ADUANA
+**Asset**
+`social/instagram/04-no-todo-entre-es-umbral.svg`
+
+**Caption**
+No todo entre es umbral.
+
+Una palabra que sirve para todo termina sin distinguir nada.
+
+Por eso he publicado una segunda nota de *Estética del umbral*: una aduana para decidir cuándo la palabra “umbral” deja de hacer falta.
+
+El concepto empieza a tener filo cuando puede ser rechazado.
+
+Texto completo:
+diegobravo.es/notas/no-todo-entre-es-umbral.html
+
+**Estado**
+COPY + SVG LISTOS. Borrador creado en Metricool el 30.09.2026. NO PUBLICADO.
+
+### POST 05 — A-022 / ATLAS
+**Asset**
+`social/instagram/05-regimenes-aparicion-acceso.svg`
+
+**Caption**
+Existir no es lo mismo que ser detectable.
+Ser detectable no es lo mismo que ser legible.
+Ser legible no es lo mismo que poder consultar, reproducir o publicar.
+
+He incorporado al Atlas una nueva relación sobre resolución, archivo, acceso, derechos y visión maquínica.
+
+Rosa Menkman · Laia Estruch / MACBA · Josep Renau / IVAM · Rafael Lozano-Hemmer · Trevor Paglen.
+
+A-022 · Regímenes de aparición y acceso.
+diegobravo.es/atlas.html
+
+**Estado**
+COPY + SVG LISTOS. NO PUBLICADO.
