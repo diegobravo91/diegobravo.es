@@ -1,0 +1,73 @@
+/* Mobile editorial shell v0.18 — progressive enhancement. No JS = original header navigation stays available. */
+@media (max-width: 850px) {
+  html.mobile-shell-enabled { scroll-padding-top:76px; }
+  html.mobile-shell-enabled body { padding-bottom:calc(84px + env(safe-area-inset-bottom,0px)) !important; }
+  html.mobile-shell-enabled .top, html.mobile-shell-enabled .topbar {
+    display:flex!important; align-items:center!important; justify-content:space-between!important;
+    grid-template-columns:none!important; min-height:58px!important;height:auto!important;
+    padding:12px clamp(18px,4vw,28px)!important;gap:12px!important;
+    position:sticky!important;top:0!important;z-index:40!important;
+    background:rgba(236,234,228,.97)!important;
+  }
+  html.mobile-shell-enabled .topbar .status {display:none!important}
+  html.mobile-shell-enabled .topnav,html.mobile-shell-enabled .top .nav {
+    display:none!important
+  }
+  .mobile-dock {
+    position:fixed;left:0;right:0;bottom:0;z-index:190;
+    min-height:64px;padding:7px 9px calc(7px + env(safe-area-inset-bottom,0px));
+    background:rgba(236,234,228,.985); color:#191b18;
+    border-top:1px solid rgba(13,13,12,.48);
+    display:grid;grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:2px;align-items:stretch;
+    -webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);
+    font:11px/1.25 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  }
+  .mobile-dock>a,.mobile-dock>details>summary {
+    min-height:49px;min-width:0;display:flex;flex-direction:column;
+    justify-content:center;align-items:center;gap:5px;
+    padding:6px 1px;text-align:center; color:inherit;
+    text-decoration:none;border:1px solid transparent;
+    background:none;cursor:pointer;list-style:none;
+  }
+  .mobile-dock>details>summary::-webkit-details-marker {display:none}
+  .mobile-dock .dock-icon{display:block;font:19px/1 Arial,Helvetica,sans-serif}
+  .mobile-dock [aria-current="page"],.mobile-dock>details[open]>summary {
+    background:#161714;color:#eceae4;
+  }
+  .mobile-dock>details {position:static;min-width:0}
+  .mobile-drawer {
+    position:fixed;left:0;right:0;bottom:calc(64px + env(safe-area-inset-bottom,0px));
+    border-top:1px solid #161714;border-bottom:1px solid #161714;
+    background:#eceae4;box-shadow:0 -14px 40px rgba(0,0,0,.14);
+    padding:12px 18px 20px;max-height:min(68dvh,650px);
+    overflow-y:auto;overscroll-behavior:contain;
+  }
+  .mobile-drawer-head{font:10px/1.5 ui-monospace,monospace;text-transform:uppercase;
+    padding:8px 2px 14px;color:#575851;border-bottom:1px solid #aaa9a0}
+  .mobile-drawer-links{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}
+  .mobile-drawer-links a {
+    min-height:57px;display:flex;align-items:center;
+    font:clamp(15px,4.3vw,19px)/1.12 Arial,Helvetica,sans-serif;
+    text-decoration:none;letter-spacing:-.025em;
+    border-bottom:1px solid #b9b9b0;
+  }
+  .mobile-drawer-links a[aria-current="page"] {color:#a52e17;text-decoration:underline}
+  .mobile-drawer-foot{padding:16px 2px 0;font:10px/1.5 ui-monospace,monospace}
+  .mobile-dock :focus-visible{outline:2px solid #a52e17;outline-offset:-2px}
+  /* Avoid tables, media, or code becoming wider than the viewport. */
+  body{overflow-wrap:break-word}
+  main img, main svg, main video, main iframe{max-width:100%}
+  main pre{overflow-x:auto}
+  .prose{max-width:100%;font-size:clamp(17px,4.5vw,20px)!important;line-height:1.65!important}
+  .prose a {overflow-wrap:anywhere}
+  .article{min-width:0}
+  .article .prose{min-width:0}
+  .top .brand,.topbar .wordmark{font-size:14px!important}
+}
+@media (max-width:370px) {
+  .mobile-drawer-links{grid-template-columns:1fr 1fr}
+  .mobile-dock {font-size:10px}
+}
+@media (min-width:851px) {.mobile-dock{display:none!important}}
+@media(prefers-reduced-motion:reduce) {.mobile-dock,.mobile-drawer{scroll-behavior:auto}}
