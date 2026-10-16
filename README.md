@@ -157,3 +157,12 @@ Sitio estático servido con GitHub Pages en [diegobravo.es](https://diegobravo.e
 - Estados editoriales visibles: F-001 es investigación reabierta; A-023 es relación de Atlas; P-001 es propuesta material no realizada.
 - Se preservan metadatos SEO/OG, RSS, colofón y contacto profesional; la web continúa siendo estática, sin analítica.
 - El estudio separado de v0.17 permanece fuera de producción; la portada publicada no afirma que diagramas ilustrativos sean obras materiales ejecutadas.
+
+## v0.18 — Cuaderno y Android (16.10.2026)
+- `notas.html` evoluciona a cuaderno/blog editorial con una portada destacada, búsqueda local y filtros sobre las 3 notas realmente publicadas. Abre temas de arte, cine, lecturas y cultura sin multiplicar obras ni publicar borradores.
+- Navegación móvil inferior compartida en portada y secciones, con acceso directo a Inicio, Notas, Atlas y Exploración completa; sin datos de usuario ni dependencias externas. La navegación original queda accesible si JavaScript no se ejecuta.
+- CSS móvil de lectura en `assets/mobile-shell.css`; comportamiento en `assets/mobile-shell.js`. La refactorización completa de CSS por página queda pendiente para una fase posterior.
+- Derechos: `EDITORIAL_PUBLICACION.md`, `data/media-rights.json` y colofón v0.3 documentan las condiciones de publicación y el inventario de las 3 imágenes de Archivo abierto verificado en los registros The Met / Wikimedia Commons.
+- Portada con enlace explícito a la licencia/fuente de Piranesi, Anna Atkins y Muybridge. No se han añadido medios ajenos nuevos sin licencia, ni publicaciones falsas, ni estadísticas, ni embeds de terceros.
+- RSS y sitemap actualizados sin alterar fechas originales de los artículos ni el número de publicaciones.
+- Validación estática necesaria y comprobación manual en Android real pendiente antes de afirmar perfección de la interfaz.
