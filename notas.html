@@ -123,6 +123,22 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(-
 .footer{display:block}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Curaduría por recorridos, no por algoritmo ni calendario */
+.routes-intro{padding:22px var(--pad) 28px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:40px}
+.routes-intro p{max-width:740px;font-size:clamp(19px,2vw,28px);line-height:1.3;letter-spacing:-.025em;margin:0}
+.route-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-bottom:1px solid var(--ink)}
+.route-card{padding:clamp(22px,3vw,43px) var(--pad);border-right:1px solid var(--line);display:flex;flex-direction:column;gap:22px;min-height:345px}
+.route-card:last-child{border-right:0}
+.route-card .route-number{font:11px/1.5 var(--mono);color:var(--accent);letter-spacing:.05em}
+.route-card h3{font-size:clamp(29px,3.4vw,55px);line-height:.96;letter-spacing:-.055em;font-weight:500;margin:10px 0}
+.route-card p{font-size:15px;line-height:1.6;margin:0;max-width:460px}
+.route-links{display:grid;gap:9px;margin-top:auto;padding-top:20px;border-top:1px solid var(--line)}
+.route-links a{min-height:30px;font-size:13px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;gap:14px}
+.route-links a:hover{text-decoration:underline}
+.route-links a::after{content:"↗";color:var(--accent)}
+@media(max-width:900px){.route-grid{grid-template-columns:1fr}.route-card{border-right:0;border-bottom:1px solid var(--line);min-height:255px}.route-card:last-child{border-bottom:0}.routes-intro{grid-template-columns:1fr;gap:12px}}
+@media(max-width:650px){.route-card{min-height:unset;gap:16px}.route-card h3{font-size:34px}.route-links a{min-height:44px}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Notas y cuaderno — Diego Bravo","url":"https://diegobravo.es/notas.html","inLanguage":"es","author":{"@type":"Person","name":"Diego Bravo","url":"https://diegobravo.es/"}}</script>
 <script defer src="/assets/mobile-shell.js"></script>
@@ -138,7 +154,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(-
 <main id="contenido" tabindex="-1">
 <section class="hero">
 <div class="hero-main"><div><div class="overline">Cuaderno público / arte · cultura · pensamiento</div><h1>Notas<em>.</em></h1></div><div class="hero-index"><span>Leer / mirar / relacionar</span><span>Publicación independiente</span></div></div>
-<div class="hero-description"><p>Un lugar para escribir sobre <strong>arte y otras cosas</strong>. Lo que merece volver a mirarse, aunque no encaje en ningún proyecto.</p><div class="tiny">Ensayo · Crítica · Lecturas · Archivo · Fragmentos · 3 textos publicados</div></div>
+<div class="hero-description"><p>Un cuaderno para <strong>mirar, escribir, relacionar</strong>. Una imagen, una película o una pregunta pueden bastar; no todo tiene que pertenecer al Libro.</p><div class="tiny">Ensayo · Crítica · Lecturas · Archivo · Fragmentos · 3 textos publicados</div></div>
 </section>
 
 <section aria-labelledby="destacada">
@@ -177,14 +193,24 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(-
 </div>
 </section>
 
+<section id="recorridos" aria-labelledby="recorridos-titulo">
+<div class="section-head"><span class="section-kicker">03 / Recorridos</span><h2 id="recorridos-titulo">Entrar de lado</h2><span class="meta">Tres caminos con materiales públicos existentes</span></div>
+<div class="routes-intro"><div class="overline">No son nuevas publicaciones</div><p>Una misma nota puede llevar hacia una obra, un concepto o un problema distinto. Son itinerarios de lectura, no categorías cerradas.</p></div>
+<div class="route-grid">
+<article class="route-card"><div class="route-number">R–01 / Mostrar</div><div><h3>El espacio también decide.</h3><p>De la disposición de una exposición a la idea de zona de contacto. Lo que se ve depende también de cómo se coloca.</p></div><div class="route-links"><a href="/notas/una-exposicion-no-es-un-contenedor.html">Leer la nota</a><a href="/atlas.html#exposicion-zona-contacto">Continuar en el Atlas</a></div></article>
+<article class="route-card"><div class="route-number">R–02 / Distinguir</div><div><h3>Una palabra tiene que poder fallar.</h3><p>El umbral no puede convertirse en nombre de cualquier intervalo. Una distinción necesita contraejemplos.</p></div><div class="route-links"><a href="/notas/no-todo-entre-es-umbral.html">Leer la nota</a><a href="/diccionario.html#umbral">Contrastar en el Diccionario</a></div></article>
+<article class="route-card"><div class="route-number">R–03 / Durar</div><div><h3>¿De quién es nuestro tiempo?</h3><p>El tiempo que hace posible trabajar, mirar y escribir no equivale a las horas que quedan libres.</p></div><div class="route-links"><a href="/notas/el-tiempo-que-no-tenemos.html">Leer el fragmento</a><a href="/estetica-del-umbral.html">Continuar en el Libro</a></div></article>
+</div>
+</section>
+
 <section class="manifest" aria-labelledby="manifiesto">
-<div class="manifest-quote"><div>03 / Posición editorial</div><h2 id="manifiesto">No todo tiene que ser umbral.</h2></div>
+<div class="manifest-quote"><div>04 / Posición editorial</div><h2 id="manifiesto">No todo tiene que ser umbral.</h2></div>
 <div class="manifest-copy"><p>Este cuaderno puede reunir una película, una exposición, un gesto encontrado, una imagen, un libro o un problema cotidiano. <strong>El criterio es la calidad de la mirada, no la obligación de pertenecer a una teoría.</strong></p>
 <p>Los materiales ajenos se citan, enlazan o reproducen únicamente cuando el uso está justificado y los derechos lo permiten. Cada entrada debe distinguir hechos, interpretación, procedencia y condiciones de circulación.</p>
 <div><a class="text-link" href="/colofon.html">Derechos, citas y procedencia</a><p class="meta"><a href="/feed.xml">RSS de nuevas publicaciones ↗</a></p></div></div>
 </section>
 <section aria-labelledby="formas">
-<div class="section-head"><span class="section-kicker">04 / Formatos</span><h2 id="formas">Lo que puede entrar en este cuaderno</h2><span class="meta">Posibilidades editoriales / no entradas publicadas</span></div>
+<div class="section-head"><span class="section-kicker">05 / Formatos</span><h2 id="formas">Lo que puede entrar en este cuaderno</h2><span class="meta">Posibilidades editoriales / no entradas publicadas</span></div>
 <div class="futures">
 <div class="future"><div class="tag">01 / Mirar</div><strong>Imágenes</strong><p>Una obra, una secuencia, una comparación visual o un detalle que cambia la lectura.</p></div>
 <div class="future"><div class="tag">02 / Escuchar</div><strong>Cine y vídeo</strong><p>Documentales, cortos y fragmentos enlazados desde sus fuentes legítimas.</p></div>

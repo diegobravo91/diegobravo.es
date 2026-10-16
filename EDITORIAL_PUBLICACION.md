@@ -78,3 +78,39 @@ DESTINO Y ENLACES:
 Idea → lectura y fuentes → texto propio revisado → verificación de derechos → decisión editorial → página HTML estable + canonical/og → `notas.html` → `feed.xml` → `sitemap.xml` → GitHub → revisión móvil → derivados sociales (sólo con permiso adecuado).
 
 No editar archivos RSS/sitemap si no hay entrada realmente nueva. No usar publicaciones automáticas no revisadas ni publicar material procedente de chats privados por defecto. Mantener los borradores sensibles fuera del repositorio GitHub público. Los borradores de ejemplo sin datos privados sí pueden mantenerse en `web-lab`.
+
+## Dirección editorial v0.19 — revista de autor, no canal de actualización
+
+El sitio mantiene dos entradas complementarias: **trabajo e investigación** (Libro, Atlas, Diccionario, Práctica) y **Cuaderno** (textos, montajes, crítica, cine, imágenes, ciudad y hallazgos que no necesitan pertenecer a Estética del umbral). No eliminar esa diferencia aunque una investigación circule entre ambos.
+
+No promover a publicación una lista de ideas sólo porque haya material suficiente en Drive o en chats. Las candidaturas son privadas hasta revisión editorial y aprobación. En la web pública se pueden proponer **recorridos** sólo cuando todas sus páginas enlazadas existen y están accesibles; no crear una ruta ficticia que parezca un nuevo corpus.
+
+### Cuatro familias abiertas, sin taxonomía obligatoria
+
+- MIRAR: imagen, cine, montaje, cita, exposición, desenfoque, copia.
+- MATERIA: gesto, pintura, basura, soporte, desgaste, arquitectura, vegetación.
+- ESCENA: performance, ritual, humor, mirada social, institución, trabajo.
+- TERRITORIO: caminar, jardines, ruinas, paisaje, caminos, infraestructura y archivo situado.
+
+Son lentes de edición, no cuatro carpetas maestras. Una entrada puede pertenecer a ninguna, a una o a varias. Los recorridos públicos actuales enlazan materiales existentes: MOSTRAR (exposición / Atlas), DISTINGUIR (nota / Diccionario) y DURAR (nota / Libro).
+
+### Cuándo una entrada merece aparecer
+
+Comprobar antes de publicar: (1) un material, experiencia u obra concreta que soporte la entrada; (2) una lectura propia que no sea paráfrasis del catálogo; (3) procedencia y derechos; (4) claridad sobre qué está realizado y qué es hipótesis; (5) una consecuencia, incluso abierta. No exigir extensión mínima, teoría del umbral, calendario regular, promoción en Instagram ni vídeo.
+
+Si la entrada es más visual que verbal, dejar que el montaje mande y que el texto no lo explique por completo. Si trata de crítica, describir de cerca la obra antes de diagnosticar. Si es una experiencia personal, anonimizar o excluir terceros y separar archivo privado de publicación.
+
+### Plantilla técnica y actualización manual
+
+`web-lab/plantilla-nota.html` contiene el esqueleto de una entrada futura sin publicar (`noindex,nofollow`); `assets/entrada.css` ofrece tipos de lectura móviles y de escritorio. Nunca publicar la plantilla con marcadores de posición ni copiar la plantilla en el sitio sin completar y aprobar los derechos. Para una nueva publicación real:
+1. Crear una página estable `notas/slug.html`, título/description/canonical y, cuando proceda, OG + metadatos Article.
+2. Sustituir marcadores por escritura propia revisada y figura(s) con ficha de derechos verificable.
+3. Verificar accesibilidad, enlaces, correcto `robots=index,follow` y visualización móvil.
+4. Añadir la entrada real a `notas.html`, después `feed.xml` y `sitemap.xml`, conservando fecha original de publicación.
+5. Sólo entonces valorar carrusel Instagram, vídeo breve, lectura en voz o publicación audiovisual, revisando derechos de cada medio y plataforma.
+
+### Destinos editoriales de una investigación
+
+**Libro** = argumenta. **Diccionario** = distingue. **Atlas** = monta. **Práctica** = demuestra o falla materialmente. **Cuaderno** = publica una experiencia de lectura, imagen, crítica u observación con entidad propia. **Archivo** = conserva fuentes. La web puede mostrar un acceso a cada uno, pero no debe duplicar su documentación interna.
+
+El próximo crecimiento verdadero no será un nuevo menú: será una entrada madura, bien escrita, visualmente necesaria y con al menos un material propio o un montaje crítico suficientemente singular.

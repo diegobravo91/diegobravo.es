@@ -166,3 +166,12 @@ Sitio estático servido con GitHub Pages en [diegobravo.es](https://diegobravo.e
 - Portada con enlace explícito a la licencia/fuente de Piranesi, Anna Atkins y Muybridge. No se han añadido medios ajenos nuevos sin licencia, ni publicaciones falsas, ni estadísticas, ni embeds de terceros.
 - RSS y sitemap actualizados sin alterar fechas originales de los artículos ni el número de publicaciones.
 - Validación estática necesaria y comprobación manual en Android real pendiente antes de afirmar perfección de la interfaz.
+
+
+## v0.19 — Cuaderno con recorridos (16.10.2026)
+- La portada reconoce el Cuaderno como publicación independiente del Libro; enlace propio y tres textos ya existentes, sin presentar propuestas como obras nuevas.
+- `notas.html` añade tres itinerarios basados exclusivamente en páginas publicadas: Mostrar → Atlas, Distinguir → Diccionario y Durar → Libro.
+- Menú Android: se unifica la denominación **Cuaderno** y se indica el contexto de las páginas `/notas/`.
+- `assets/entrada.css` y `web-lab/plantilla-nota.html` proporcionan maqueta y tipografía reutilizables para futuros artículos. La plantilla está expresamente `noindex,nofollow` y contiene marcadores; no es una publicación.
+- `EDITORIAL_PUBLICACION.md` registra el destino diferenciado de los dispositivos, los criterios de publicación, el procedimiento para nuevas notas y el control de derechos por medio.
+- No se añaden entradas ficticias, imágenes ajenas nuevas, automatismos de publicación, analítica ni dependencias externas.

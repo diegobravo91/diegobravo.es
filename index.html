@@ -233,6 +233,23 @@
       .evidence:last-child{border-bottom:0}
       .evidence img{aspect-ratio:1.8}
     }
+
+/* The notebook is a publication, not an appendage to the book */
+.journal-feature{display:grid;grid-template-columns:1.08fr .92fr;border-bottom:1px solid var(--ink)}
+.journal-feature .journal-voice{background:var(--ink);color:var(--paper);padding:clamp(28px,5vw,85px) var(--space);display:flex;flex-direction:column;justify-content:space-between;gap:65px}
+.journal-feature .journal-voice .overline{font:11px/1.5 var(--mono);text-transform:uppercase;color:#c3c4bc}
+.journal-feature .journal-voice h2{font-size:clamp(55px,7vw,115px);font-weight:500;line-height:.84;letter-spacing:-.077em;margin:16px 0 24px}
+.journal-feature .journal-voice p{font-size:clamp(20px,2.2vw,33px);line-height:1.15;letter-spacing:-.035em;max-width:710px;margin:0}
+.journal-feature .journal-voice .text-link{color:var(--paper);border-color:#a4a49c}
+.journal-feature .journal-voice .text-link::after{color:#ff926f}
+.journal-feature .journal-readings{padding:clamp(26px,3vw,52px) var(--space);display:flex;flex-direction:column;justify-content:space-between;gap:26px;background:var(--white)}
+.journal-feature .journal-readings .overline{font:11px/1.5 var(--mono);text-transform:uppercase;color:var(--grey)}
+.journal-feature .journal-readings a{display:grid;grid-template-columns:60px 1fr auto;align-items:baseline;gap:12px;padding:19px 0;border-bottom:1px solid var(--rule);text-decoration:none}
+.journal-feature .journal-readings a:hover .journal-title{text-decoration:underline}
+.journal-feature .journal-readings .journal-id,.journal-feature .journal-readings .journal-arrow{font:11px/1.5 var(--mono);color:var(--grey)}
+.journal-feature .journal-readings .journal-title{font-size:clamp(20px,2.2vw,35px);line-height:1.05;letter-spacing:-.045em}
+.journal-feature .journal-readings .journal-arrow{color:var(--orange-ink)}
+@media(max-width:900px){.journal-feature{grid-template-columns:1fr}.journal-feature .journal-voice{gap:35px}.journal-feature .journal-readings a{grid-template-columns:48px 1fr 18px;min-height:66px}}
   </style>
 <link rel="stylesheet" href="/assets/mobile-shell.css">
 <script defer src="/assets/mobile-shell.js"></script>
@@ -349,8 +366,24 @@
       <div class="container" style="padding-top:22px;padding-bottom:32px;border-top:1px solid var(--rule)"><a class="text-link" href="https://diegobravo.es/investigaciones.html">Ver índice público completo</a></div>
     </section>
 
-    <section id="publicaciones" aria-labelledby="pub-heading">
-      <div class="section-title"><span class="serial">03 / Dispositivos</span><h2 id="pub-heading">Tres maneras de trabajar un problema</h2><span class="small">Selección pública, no archivo interno</span></div>
+    <section class="journal-feature" id="cuaderno" aria-labelledby="journal-title">
+<div class="journal-voice">
+<div><div class="overline">03 / Cuaderno independiente</div><h2 id="journal-title">Notas.</h2><p>Arte, imágenes, cine, lecturas y otras cosas. Un lugar para mirar sin obligar a cada hallazgo a entrar en el Libro.</p></div>
+<a class="text-link" href="/notas.html">Entrar en el cuaderno</a>
+</div>
+<div class="journal-readings">
+<div class="overline">Tres textos disponibles / Ninguna publicación simulada</div>
+<div>
+<a href="/notas/una-exposicion-no-es-un-contenedor.html"><span class="journal-id">N–003</span><span class="journal-title">Una exposición no es un contenedor</span><span class="journal-arrow">↗</span></a>
+<a href="/notas/no-todo-entre-es-umbral.html"><span class="journal-id">N–002</span><span class="journal-title">No todo entre es umbral</span><span class="journal-arrow">↗</span></a>
+<a href="/notas/el-tiempo-que-no-tenemos.html"><span class="journal-id">N–001</span><span class="journal-title">El tiempo que no tenemos</span><span class="journal-arrow">↗</span></a>
+</div>
+<div class="overline"><a href="/notas.html#recorridos">Seguir recorridos entre notas, Atlas y Libro ↗</a></div>
+</div>
+</section>
+
+<section id="publicaciones" aria-labelledby="pub-heading">
+      <div class="section-title"><span class="serial">04 / Dispositivos</span><h2 id="pub-heading">Tres maneras de trabajar un problema</h2><span class="small">Selección pública, no archivo interno</span></div>
       <div class="triad">
         <article><span class="serial">L / Argumentar</span><h3>Libro</h3><p><em>Estética del umbral</em>: un ensayo en revisión. La web ofrece una selección de lectura y distingue la versión pública del manuscrito completo.</p><a class="text-link" href="https://diegobravo.es/estetica-del-umbral.html">Leer selección</a></article>
         <article><span class="serial">A / Relacionar</span><h3>Atlas</h3><p>Casos, imágenes, fuentes y montajes. Cada vínculo necesita producir una diferencia; las referencias externas conservan procedencia y condiciones de uso.</p><a class="text-link" href="https://diegobravo.es/atlas.html">Explorar Atlas</a></article>
@@ -359,7 +392,7 @@
     </section>
 
     <section class="note" aria-labelledby="note-heading">
-      <div class="note-title"><div class="eyebrow">04 / Nota de lectura</div><h2 id="note-heading">No todo entre es umbral.</h2></div>
+      <div class="note-title"><div class="eyebrow">05 / Nota de lectura</div><h2 id="note-heading">No todo entre es umbral.</h2></div>
       <div class="note-copy"><div class="eyebrow">N–002 · Texto publicado</div><p>Un intervalo no transforma nada por el mero hecho de existir. La pregunta no es dónde está el límite, sino qué permite, qué impide y qué altera.</p><div><a class="text-link" href="https://diegobravo.es/notas/no-todo-entre-es-umbral.html">Leer la nota</a><p style="margin-top:20px"><a class="text-link" href="/notas.html">Entrar en el cuaderno</a></p></div></div>
     </section>
   </main>
@@ -368,7 +401,7 @@
       <div><span class="eyebrow">Diego Bravo / Artista e investigador</span><h2>Contacto.</h2><p>Escritura, investigación artística y práctica material. Para preguntas concretas, documentación, derechos, invitaciones o propuestas con un alcance definido.</p></div>
       <div><span class="eyebrow">Correspondencia profesional</span><p><a class="email" href="mailto:diegobravorelova1991@gmail.com">diegobravorelova1991@gmail.com ↗</a></p><p><a href="https://diegobravo.es/sobre.html">Sobre el trabajo</a> · <a href="https://diegobravo.es/colofon.html">Derechos y procedencia</a></p></div>
     </div>
-    <div class="footnotes"><span>© Diego Bravo 2026</span><span>Versión pública v0.17 · 16.10.2026 · <a href="/feed.xml">RSS</a></span><a href="#inicio">Volver arriba ↑</a></div>
+    <div class="footnotes"><span>© Diego Bravo 2026</span><span>Versión pública v0.19 · 16.10.2026 · <a href="/feed.xml">RSS</a></span><a href="#inicio">Volver arriba ↑</a></div>
   </footer>
   <script>
     (function(){
