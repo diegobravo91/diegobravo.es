@@ -1,6 +1,6 @@
 # PUBLICACIÓN, DERECHOS Y CIRCULACIÓN · diegobravo.es
 Fecha de revisión: 16.10.2026
-Estado: protocolo editorial interno del repositorio. No sustituye asesoramiento jurídico.
+Estado: protocolo editorial de trabajo; este repositorio es público. No incluir en él datos privados. No sustituye asesoramiento jurídico.
 
 ## Finalidad
 
