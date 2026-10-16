@@ -149,3 +149,11 @@ Sitio estático servido con GitHub Pages en [diegobravo.es](https://diegobravo.e
 - La portada enlaza directamente a Sobre → Contacto.
 - La dirección de contacto queda visible sin formularios, tracking ni intermediarios.
 - La web mantiene separadas la superficie pública y las correspondencias privadas: publicar una vía de contacto no convierte los hilos de correo en contenido.
+
+## v0.17 — portada editorial (2026-10-16)
+- Se rediseña la portada con entrada clara, tres trabajos de distinta condición pública, selección visual de Archivo abierto, índice breve filtrable y enlace al índice completo.
+- Se conservan las imágenes anteriormente acreditadas de Piranesi, Anna Atkins y Muybridge, con fuentes y enlace a sus entradas del Atlas.
+- La nueva navegación mantiene acceso a Libro, Atlas, Diccionario, Práctica, Notas, Mapa, Investigaciones y Sobre.
+- Estados editoriales visibles: F-001 es investigación reabierta; A-023 es relación de Atlas; P-001 es propuesta material no realizada.
+- Se preservan metadatos SEO/OG, RSS, colofón y contacto profesional; la web continúa siendo estática, sin analítica.
+- El estudio separado de v0.17 permanece fuera de producción; la portada publicada no afirma que diagramas ilustrativos sean obras materiales ejecutadas.
