@@ -1,241 +1,164 @@
 <!doctype html>
-<html lang="es">
-<head>
+<html lang="es"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Notas y cuaderno — Diego Bravo</title>
-<meta name="description" content="Notas y cuaderno de Diego Bravo: arte, imágenes, lecturas, crítica, archivo y otras historias. Ensayos, fragmentos y publicaciones en curso.">
+<title>Cuaderno — Diego Bravo · Arte, imágenes y otras historias</title>
+<meta name="description" content="Cuaderno de Diego Bravo: ensayos breves, imágenes, arte, cine, materia y cultura. Busca, elige una lectura o sigue un recorrido.">
 <meta name="author" content="Diego Bravo"><meta name="robots" content="index,follow,max-image-preview:large">
-<link rel="canonical" href="https://diegobravo.es/notas.html">
-<link rel="alternate" type="application/rss+xml" title="Notas de Diego Bravo" href="/feed.xml">
-<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-<meta name="theme-color" content="#eceae4">
-<meta property="og:type" content="website"><meta property="og:title" content="Notas y cuaderno — Diego Bravo">
-<meta property="og:description" content="Un cuaderno editorial de arte, lecturas, cultura e imágenes. No todo tiene que pasar por el umbral.">
-<meta property="og:url" content="https://diegobravo.es/notas.html">
-<meta property="og:image" content="https://diegobravo.es/assets/social-card.jpg">
-<meta property="og:image:alt" content="Diego Bravo — Notas y cuaderno">
+<link rel="canonical" href="https://diegobravo.es/notas.html"><link rel="alternate" type="application/rss+xml" title="Cuaderno — Diego Bravo" href="/feed.xml">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg"><meta name="theme-color" content="#eceae4">
+<meta property="og:type" content="website"><meta property="og:title" content="Cuaderno — Diego Bravo">
+<meta property="og:description" content="Ideas, obras, imágenes y otras historias. Entra por una pregunta, sin tener que verlo todo.">
+<meta property="og:url" content="https://diegobravo.es/notas.html"><meta property="og:image" content="https://diegobravo.es/assets/social-card.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="/assets/site.css">
-<link rel="stylesheet" href="/assets/mobile-shell.css">
+<link rel="stylesheet" href="/assets/site.css"><link rel="stylesheet" href="/assets/mobile-shell.css">
 <style>
-:root{--paper:#eceae4;--ink:#161714;--accent:#a52e17;--orange:#f45028;--muted:#575851;--line:#b9b9b0;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;--pad:clamp(18px,3.2vw,52px)}
-*{box-sizing:border-box}
-html{background:var(--paper);scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.48 Arial,Helvetica,sans-serif}
-a{color:inherit;text-underline-offset:4px}
-a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-::selection{background:var(--ink);color:var(--paper)}
-.skip-link{position:fixed;left:16px;top:0;z-index:300;padding:9px 13px;color:var(--paper);background:var(--ink);transform:translateY(-140%)}
-.skip-link:focus{transform:translateY(0)}
-.top{min-height:64px;border-bottom:1px solid var(--ink);display:flex;justify-content:space-between;align-items:center;gap:24px;padding:12px var(--pad);position:sticky;top:0;z-index:50;background:rgba(236,234,228,.97);backdrop-filter:blur(12px)}
-.brand{font-size:15px;font-weight:700;text-decoration:none;white-space:nowrap}
-.nav{display:flex;gap:16px;align-items:center;white-space:nowrap;overflow-x:auto;max-width:80vw}
-.nav a{font:10px/1.6 var(--mono);text-decoration:none;text-transform:uppercase}
-.nav a[aria-current="page"]{text-decoration:underline}
-.overline,.section-kicker,.meta,.tiny,.filter,.count,.serial,.tag,.article-fact,.footer,.hero-index{font:11px/1.5 var(--mono);text-transform:uppercase;letter-spacing:.02em}
-.hero{display:grid;grid-template-columns:1.25fr .75fr;min-height:44svh;border-bottom:1px solid var(--ink)}
-.hero-main{padding:clamp(42px,6vw,92px) var(--pad) 35px;border-right:1px solid var(--ink);display:flex;flex-direction:column;justify-content:space-between;gap:35px}
-.overline{color:var(--muted)}
-.hero h1{font-size:clamp(74px,11vw,170px);font-weight:500;line-height:.77;letter-spacing:-.086em;margin:15px 0 0}
-.hero h1 em{font-style:normal;color:transparent;-webkit-text-stroke:1px var(--ink)}
-.hero-index{display:flex;justify-content:space-between;gap:18px;border-top:1px solid var(--line);padding-top:14px;color:var(--muted)}
-.hero-description{padding:clamp(32px,4vw,65px) var(--pad);display:flex;flex-direction:column;justify-content:space-between;gap:50px}
-.hero-description p{font-size:clamp(21px,2.6vw,40px);line-height:1.12;letter-spacing:-.04em;margin:0;max-width:540px}
-.hero-description p strong{font-weight:500}
-.hero-description .tiny{color:var(--muted)}
-.section-head{display:grid;grid-template-columns:160px 1fr auto;gap:20px;align-items:baseline;padding:18px var(--pad);border-bottom:1px solid var(--ink)}
-.section-kicker{color:var(--muted)}.section-head h2{font-size:clamp(23px,2.6vw,36px);font-weight:500;letter-spacing:-.045em;line-height:1.1;margin:0}
-.meta{color:var(--muted)}
-.featured{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--ink)}
-.featured-visual{min-height:420px;background:var(--ink);color:var(--paper);padding:var(--pad);display:flex;flex-direction:column;justify-content:space-between}
-.featured-visual .micro{font:10px/1.5 var(--mono);text-transform:uppercase;color:#bebfb8}
-.featured-visual .title{font-size:clamp(45px,6vw,90px);font-weight:400;letter-spacing:-.075em;line-height:.87;max-width:720px}
-.featured-visual .line{height:3px;width:100%;background:var(--orange);transform:rotate(-6deg);margin:10px auto}
-.featured-copy{padding:var(--pad);display:flex;flex-direction:column;gap:25px;justify-content:space-between}
-.tag{color:var(--accent)}.featured-copy h3{font-size:clamp(35px,4.2vw,74px);font-weight:500;line-height:.96;letter-spacing:-.06em;margin:20px 0}
-.featured-copy p{font-size:17px;line-height:1.58;max-width:550px}
-.text-link{display:inline-flex;gap:14px;align-items:center;text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:6px;font:14px/1.4 Arial,Helvetica,sans-serif;max-width:100%}
-.text-link::after{content:"↗";color:var(--accent)}
-.toolbar{display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap;padding:17px var(--pad);border-bottom:1px solid var(--line)}
-.filters{display:flex;gap:6px;flex-wrap:wrap}
-.filter{color:var(--ink);background:transparent;border:1px solid var(--line);padding:9px 12px;cursor:pointer;min-height:42px}
-.filter[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
-.filter:hover:not([aria-pressed="true"]){border-color:var(--ink)}
-.search{min-width:180px;max-width:320px;flex:1}
-.search label{font:10px/1.5 var(--mono);text-transform:uppercase;display:block;margin-bottom:4px}
-.search input{width:100%;height:43px;min-width:0;border:1px solid var(--line);color:var(--ink);background:transparent;border-radius:0;padding:8px 11px;font:15px Arial}
-.note-list{padding:0 var(--pad);border-bottom:1px solid var(--ink)}
-.note{display:grid;grid-template-columns:95px minmax(0,1fr) 1.1fr 125px;gap:clamp(12px,2vw,32px);padding:27px 0;border-bottom:1px solid var(--line);align-items:start}
-.note:last-of-type{border-bottom:0}
-.note .serial{color:var(--accent)}
-.note-title{font-size:clamp(24px,3.2vw,50px);font-weight:500;letter-spacing:-.055em;line-height:1;margin:0}
-.note-title a{text-decoration:none}.note-title a:hover{text-decoration:underline}
-.note p{font-size:16px;line-height:1.55;margin:0}
-.note .date{font:10px/1.5 var(--mono);color:var(--muted);text-align:right}
-.note[hidden]{display:none}
-.empty{padding:35px 0;font-size:18px}
-.manifest{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--ink)}
-.manifest-quote{padding:clamp(34px,4vw,72px) var(--pad);background:#c9c9c0;display:flex;flex-direction:column;justify-content:space-between;gap:45px}
-.manifest-quote div:first-child{font:11px var(--mono);text-transform:uppercase}
-.manifest-quote h2{font-size:clamp(38px,5vw,88px);line-height:.9;letter-spacing:-.07em;font-weight:500;margin:0}
-.manifest-copy{padding:clamp(34px,4vw,72px) var(--pad);display:flex;flex-direction:column;gap:23px;justify-content:space-between}
-.manifest-copy p{font-size:18px;line-height:1.6;max-width:650px}
-.manifest-copy strong{font-weight:500}
-.futures{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-bottom:1px solid var(--ink)}
-.future{padding:25px var(--pad) 30px;border-right:1px solid var(--line);min-height:230px}
-.future:last-child{border-right:0}
-.future strong{font-weight:500;display:block;margin:20px 0;font-size:clamp(23px,2.6vw,39px);letter-spacing:-.045em;line-height:1}
-.future p{font-size:14px;line-height:1.5;margin:0;color:#474943}
-.footer{padding:22px var(--pad);display:flex;justify-content:space-between;gap:22px;color:var(--muted)}
-@media(max-width:900px){
-.hero,.featured,.manifest{grid-template-columns:1fr}
-.hero-main{border-right:0;border-bottom:1px solid var(--ink)}
-.hero-description{min-height:240px}
-.section-head{grid-template-columns:95px 1fr}
-.section-head .meta{grid-column:2}
-.note{grid-template-columns:65px minmax(0,1fr) 110px}
-.note p{grid-column:2 / 4}
-.futures{grid-template-columns:repeat(2,1fr)}
-.future:nth-child(2){border-right:0}
-.future:nth-child(-n+2){border-bottom:1px solid var(--line)}
-}
+:root{--paper:#eceae4;--ink:#161714;--muted:#555850;--line:#a8a79f;--accent:#a52e17;--white:#f6f5f0;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;--pad:clamp(18px,3.2vw,52px)}
+*{box-sizing:border-box}html{background:var(--paper);scroll-behavior:smooth}
+body{margin:0;color:var(--ink);background:var(--paper);font:16px/1.5 Arial,Helvetica,sans-serif}
+a{color:inherit;text-underline-offset:.27em}a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.skip-link{position:fixed;top:0;left:16px;padding:10px;background:var(--ink);color:var(--paper);z-index:300;transform:translateY(-140%)}.skip-link:focus{transform:none}
+.top{min-height:62px;position:sticky;top:0;z-index:55;background:rgba(236,234,228,.97);border-bottom:1px solid var(--ink);padding:10px var(--pad);display:flex;justify-content:space-between;align-items:center;gap:20px}
+.brand{font:700 15px Arial,Helvetica,sans-serif;text-decoration:none}.nav{display:flex;gap:15px}.nav a{text-decoration:none;font:11px var(--mono)}
+.kicker,.micro,.counter,.chip,.date,.eyebrow,.article-tag,.bottom,.mini{font:11px/1.5 var(--mono);letter-spacing:.02em}
+.kicker,.micro,.date,.eyebrow,.article-tag{color:var(--muted)}
+.hero{padding:clamp(25px,4vw,60px) var(--pad) clamp(24px,3vw,45px);border-bottom:1px solid var(--ink);display:grid;grid-template-columns:1fr minmax(210px,.55fr);gap:24px;align-items:end}
+.hero h1{font:500 clamp(64px,10vw,145px)/.84 Arial,Helvetica,sans-serif;letter-spacing:-.077em;margin:8px 0 15px}
+.hero p{font-size:clamp(18px,2vw,28px);line-height:1.22;letter-spacing:-.03em;max-width:520px;margin:0 0 7px}
+.hero .short{font-size:15px;line-height:1.6;letter-spacing:0;max-width:450px}
+.toolbar{display:grid;grid-template-columns:minmax(190px,1fr) auto;gap:clamp(14px,3vw,35px);align-items:end;padding:20px var(--pad);border-bottom:1px solid var(--line)}
+.search label{display:block;margin-bottom:7px;font:11px var(--mono);color:var(--muted)}
+.search input{background:var(--white);border:1px solid #77786d;border-radius:0;color:var(--ink);width:100%;max-width:620px;min-height:49px;padding:11px 15px;font:17px Arial,Helvetica,sans-serif}
+.random{display:flex;align-items:center;justify-content:center;border:1px solid var(--ink);padding:12px 18px;min-height:49px;min-width:180px;cursor:pointer;background:var(--ink);color:var(--paper);font:12px var(--mono)}
+.random:hover{background:#3a3b36}
+.chips{display:flex;flex-wrap:wrap;gap:7px;align-items:center;padding:14px var(--pad);border-bottom:1px solid var(--ink)}
+.chip{cursor:pointer;padding:9px 13px;min-height:42px;border:1px solid var(--line);background:transparent;color:var(--ink)}
+.chip[aria-pressed=true]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.counter{margin-left:auto;color:var(--muted)}
+.spotlight{display:none;gap:12px;grid-template-columns:minmax(0,1fr) auto;padding:19px var(--pad);background:#d4d1c7;border-bottom:1px solid var(--ink);align-items:center}
+.spotlight.is-visible{display:grid}
+.spotlight small{font:11px var(--mono);color:#5e5b53}
+.spotlight a{font:500 clamp(20px,3vw,36px)/1.05 Arial,Helvetica,sans-serif;letter-spacing:-.04em}
+.spotlight button{cursor:pointer;background:transparent;border:0;padding:12px;font-size:22px}
+.articles{padding:0 var(--pad)}
+.entry{display:grid;grid-template-columns:74px minmax(0,1fr) minmax(0,1fr) 115px;gap:clamp(10px,2vw,35px);align-items:baseline;border-bottom:1px solid var(--line);padding:clamp(18px,3vw,32px) 0}
+.entry[hidden]{display:none!important}
+.entry:nth-of-type(1){border-top:0}
+.entry .number{font:12px var(--mono);color:var(--accent)}
+.entry h2{font:500 clamp(24px,3.2vw,46px)/1.03 Arial,Helvetica,sans-serif;letter-spacing:-.055em;margin:0}
+.entry h2 a{text-decoration:none}.entry h2 a:hover{text-decoration:underline}
+.entry p{margin:0;font-size:15px;line-height:1.55}
+.entry .date{text-align:right}
+.more{border-bottom:1px solid var(--ink)}
+.more>details{padding:0 var(--pad)}
+.more summary{cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:18px;font:500 clamp(22px,2.5vw,36px)/1.1 Arial,Helvetica,sans-serif;letter-spacing:-.04em;padding:23px 0;min-height:70px}
+.more summary::after{content:"+";color:var(--accent);font-size:27px}
+.more details[open] summary::after{content:"−"}
+.more .intro{font-size:15px;max-width:800px;margin:0 0 22px}
+.more .route-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;padding:0 0 30px}
+.more .route{border-top:1px solid var(--line);padding:13px 0;display:flex;flex-direction:column;gap:10px}
+.more .route strong{font-weight:500;font-size:20px;line-height:1.2}
+.more .route a{font-size:14px}
+.more .ideas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 24px;padding-bottom:30px}
+.more .idea{border-top:1px solid var(--line);padding:13px 0;font-size:15px}
+.more .idea strong{font-weight:500;display:block;font-size:19px}
+.more .idea small{font:11px var(--mono);color:var(--muted);display:block;margin:5px 0}
+.empty{padding:25px 0;font-size:16px}
+.empty[hidden]{display:none}
+.bottom{padding:23px var(--pad);display:flex;justify-content:space-between;flex-wrap:wrap;gap:15px;color:var(--muted)}
+@media(max-width:850px){.entry{grid-template-columns:62px minmax(0,1fr) 90px}.entry p{grid-column:2 / 4}.more .route-grid{grid-template-columns:1fr}}
 @media(max-width:650px){
-.hero-main{padding-top:45px;padding-bottom:26px;min-height:310px}
-.hero h1{font-size:clamp(72px,17vw,116px)}
-.hero-description{padding-top:28px;min-height:220px;gap:25px}
-.hero-description p{font-size:24px}
-.featured-visual{min-height:300px}
-.featured-visual .title{font-size:clamp(42px,11vw,68px)}
-.featured-copy h3{font-size:45px}
-.section-head{grid-template-columns:70px 1fr;gap:10px}
-.section-head h2{font-size:25px}
-.section-head .meta{display:none}
-.toolbar{align-items:stretch}
-.filters{width:100%}
-.filter{flex:1 1 auto}
-.search{max-width:none;width:100%;flex:auto}
-.note{grid-template-columns:56px minmax(0,1fr);gap:12px}
-.note .date{grid-column:2;text-align:left}
-.note p{grid-column:2}
-.manifest-quote h2{font-size:clamp(43px,11vw,70px)}
-.future{min-height:180px}
-.future strong{font-size:26px}
-.footer{display:block}
+.hero{grid-template-columns:1fr;gap:5px}
+.hero h1{font-size:clamp(65px,18vw,100px)}
+.hero p{font-size:21px}
+.hero .short{font-size:15px}
+.toolbar{grid-template-columns:1fr auto}
+.search input{font-size:16px}
+.random{min-width:unset;font-size:10px;padding:10px 12px}
+.nav a:nth-child(2){display:none}
+.entry{grid-template-columns:52px minmax(0,1fr);gap:7px 14px;padding:21px 0}
+.entry h2{font-size:clamp(24px,6.5vw,35px)}
+.entry p{grid-column:2;font-size:14px}
+.entry .date{grid-column:2;text-align:left}
+.chip{padding-inline:11px}
+.counter{width:100%;margin-top:3px}
+.spotlight{grid-template-columns:1fr 30px}
+.more .ideas{grid-template-columns:1fr}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-
-/* Curaduría por recorridos, no por algoritmo ni calendario */
-.routes-intro{padding:22px var(--pad) 28px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:40px}
-.routes-intro p{max-width:740px;font-size:clamp(19px,2vw,28px);line-height:1.3;letter-spacing:-.025em;margin:0}
-.route-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-bottom:1px solid var(--ink)}
-.route-card{padding:clamp(22px,3vw,43px) var(--pad);border-right:1px solid var(--line);display:flex;flex-direction:column;gap:22px;min-height:345px}
-.route-card:last-child{border-right:0}
-.route-card .route-number{font:11px/1.5 var(--mono);color:var(--accent);letter-spacing:.05em}
-.route-card h3{font-size:clamp(29px,3.4vw,55px);line-height:.96;letter-spacing:-.055em;font-weight:500;margin:10px 0}
-.route-card p{font-size:15px;line-height:1.6;margin:0;max-width:460px}
-.route-links{display:grid;gap:9px;margin-top:auto;padding-top:20px;border-top:1px solid var(--line)}
-.route-links a{min-height:30px;font-size:13px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;gap:14px}
-.route-links a:hover{text-decoration:underline}
-.route-links a::after{content:"↗";color:var(--accent)}
-@media(max-width:900px){.route-grid{grid-template-columns:1fr}.route-card{border-right:0;border-bottom:1px solid var(--line);min-height:255px}.route-card:last-child{border-bottom:0}.routes-intro{grid-template-columns:1fr;gap:12px}}
-@media(max-width:650px){.route-card{min-height:unset;gap:16px}.route-card h3{font-size:34px}.route-links a{min-height:44px}}
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Notas y cuaderno — Diego Bravo","url":"https://diegobravo.es/notas.html","inLanguage":"es","author":{"@type":"Person","name":"Diego Bravo","url":"https://diegobravo.es/"}}</script>
-<script defer src="/assets/mobile-shell.js"></script>
-</head>
-<body>
-<a class="skip-link" href="#contenido">Saltar al contenido</a>
-<header class="top">
-<a class="brand" href="/">Diego Bravo / Notas</a>
-<nav class="nav" aria-label="Navegación principal">
-<a href="/investigaciones.html">Investigaciones</a><a href="/estetica-del-umbral.html">Libro</a><a href="/atlas.html">Atlas</a><a href="/diccionario.html">Diccionario</a><a href="/practica.html">Práctica</a><a href="/notas.html" aria-current="page">Notas</a><a href="/mapa.html">Mapa</a><a href="/sobre.html">Sobre</a>
-</nav>
-</header>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Cuaderno — Diego Bravo","url":"https://diegobravo.es/notas.html","inLanguage":"es","author":{"@type":"Person","name":"Diego Bravo","url":"https://diegobravo.es/"}}</script>
+<script defer src="/assets/mobile-shell.js"></script></head>
+<body><a class="skip-link" href="#contenido">Saltar a la lectura</a>
+<header class="top"><a class="brand" href="/">Diego Bravo / Cuaderno</a>
+<nav class="nav" aria-label="Principal"><a href="/">Inicio</a><a href="/atlas.html">Atlas</a><a href="/sobre.html">Sobre</a></nav></header>
 <main id="contenido" tabindex="-1">
-<section class="hero">
-<div class="hero-main"><div><div class="overline">Cuaderno público / arte · cultura · pensamiento</div><h1>Notas<em>.</em></h1></div><div class="hero-index"><span>Leer / mirar / relacionar</span><span>Publicación independiente</span></div></div>
-<div class="hero-description"><p>Un cuaderno para <strong>mirar, escribir, relacionar</strong>. Una imagen, una película o una pregunta pueden bastar; no todo tiene que pertenecer al Libro.</p><div class="tiny">Ensayo · Crítica · Lecturas · Archivo · Fragmentos · 3 textos publicados</div></div>
-</section>
-
-<section aria-labelledby="destacada">
-<div class="section-head"><span class="section-kicker">01 / Portada</span><h2 id="destacada">Una lectura destacada</h2><span class="meta">Selección editorial</span></div>
-<article class="featured">
-<div class="featured-visual" role="img" aria-label="Composición tipográfica editorial, no reproducción de una exposición ni obra artística">
-<div class="micro">N–003 / Relación, exposición, institución</div>
-<div class="title">Lo que<br>muestra.<br>Lo que<br>ordena.</div>
-<div class="line" aria-hidden="true"></div>
-<div class="micro">Composición tipográfica · No es una obra</div>
+<section class="hero"><div><div class="kicker">Arte · Cultura · Imágenes · Materia · Escritura</div><h1>Notas.</h1></div>
+<div><p>Una pregunta puede ser suficiente.</p><p class="short">Cinco textos para entrar por donde quieras. Sin obligación de leer el Libro ni recorrer toda la web.</p></div></section>
+<section id="archivo" aria-label="Buscar y elegir una nota">
+<div class="toolbar"><div class="search"><label for="buscar">Buscar una palabra, una obra, un problema</label><input type="search" id="buscar" placeholder="Ej. cartón, exposición, tiempo…" autocomplete="off"></div>
+<button class="random" type="button" id="sorpresa" aria-controls="sugerencia">Elegir una lectura ↗</button></div>
+<div class="chips" role="group" aria-label="Filtrar el cuaderno">
+<button type="button" class="chip" data-filter="todos" aria-pressed="true">Todo</button>
+<button type="button" class="chip" data-filter="materia" aria-pressed="false">Materia</button>
+<button type="button" class="chip" data-filter="imagen" aria-pressed="false">Imagen</button>
+<button type="button" class="chip" data-filter="ideas" aria-pressed="false">Ideas y crítica</button>
+<div class="counter" id="cuenta" aria-live="polite">5 entradas</div>
 </div>
-<div class="featured-copy">
-<div><div class="tag">Arte / Ensayo breve · 30.09.2026</div><h3>Una exposición no es un contenedor</h3><p>Las obras no aparecen en un espacio neutro. Una exposición establece vecindades, fronteras y posibilidades de contacto. Un texto que cruza exposición, montaje y mediación.</p></div>
-<div><a class="text-link" href="/notas/una-exposicion-no-es-un-contenedor.html">Leer la nota completa</a><p class="meta">Procedencia y referencias documentadas en el texto original</p></div>
-</div>
-</article>
-</section>
-
-<section aria-labelledby="indice">
-<div class="section-head"><span class="section-kicker">02 / Archivo</span><h2 id="indice">Textos publicados</h2><span class="meta">Entradas en orden de publicación</span></div>
-<div class="toolbar">
-<div class="filters" role="group" aria-label="Filtrar notas">
-<button type="button" class="filter" data-kind="todas" aria-pressed="true">Todas</button>
-<button type="button" class="filter" data-kind="arte" aria-pressed="false">Arte</button>
-<button type="button" class="filter" data-kind="ideas" aria-pressed="false">Ideas</button>
-<button type="button" class="filter" data-kind="tiempo" aria-pressed="false">Tiempo</button>
-</div>
-<div class="search"><label for="buscar">Buscar en títulos y resúmenes</label><input id="buscar" type="search" placeholder="Buscar una palabra…" autocomplete="off"></div>
-<div class="count" id="cuenta" aria-live="polite">3 entradas</div>
-</div>
-<div class="note-list">
-<article class="note" data-kind="arte" data-search="Una exposición no es un contenedor arte crítica exposición zona contacto"><div class="serial">N–003</div><h3 class="note-title"><a href="/notas/una-exposicion-no-es-un-contenedor.html">Una exposición no es un contenedor</a></h3><p>La exposición no sólo alberga: distribuye encuentros, fricciones y distancias.</p><div class="date">30.09.2026 / Arte</div></article>
-<article class="note" data-kind="ideas" data-search="No todo entre es umbral concepto criterio límite diferencia"><div class="serial">N–002</div><h3 class="note-title"><a href="/notas/no-todo-entre-es-umbral.html">No todo entre es umbral</a></h3><p>Una palabra deja de servir cuando pretende explicarlo todo.</p><div class="date">30.09.2026 / Ideas</div></article>
-<article class="note" data-kind="tiempo" data-search="El tiempo que no tenemos experiencia duración vida trabajo escritura"><div class="serial">N–001</div><h3 class="note-title"><a href="/notas/el-tiempo-que-no-tenemos.html">El tiempo que no tenemos</a></h3><p>El tiempo como condición de existencia y como problema de escritura.</p><div class="date">26.09.2026 / Tiempo</div></article>
-<p id="sin-resultados" class="empty" hidden>No hay entradas con esos criterios. Prueba otra búsqueda.</p>
-</div>
-</section>
-
-<section id="recorridos" aria-labelledby="recorridos-titulo">
-<div class="section-head"><span class="section-kicker">03 / Recorridos</span><h2 id="recorridos-titulo">Entrar de lado</h2><span class="meta">Tres caminos con materiales públicos existentes</span></div>
-<div class="routes-intro"><div class="overline">No son nuevas publicaciones</div><p>Una misma nota puede llevar hacia una obra, un concepto o un problema distinto. Son itinerarios de lectura, no categorías cerradas.</p></div>
+<div class="spotlight" id="sugerencia" aria-live="polite" aria-atomic="true"><div><small>UNA LECTURA PARA EMPEZAR</small><div id="sugerencia-contenido"></div></div><button type="button" id="cerrar-sugerencia" aria-label="Cerrar recomendación">×</button></div>
+<div class="articles">
+<article class="entry" data-type="materia imagen" data-search="imagen debia desaparecer hoarfrosts rauschenberg tejido litografia huella limpieza transferencia imagen resto"><span class="number">N–005</span><h2><a href="/notas/la-imagen-que-debia-desaparecer.html">La imagen que debía desaparecer</a></h2><p>Lo que debía limpiar conserva una imagen. Restos de tinta, tejido y una función que se invierte.</p><div class="date">16.10.2026<br>5 min</div></article>
+<article class="entry" data-type="materia imagen" data-search="carton imita carton rauschenberg cardboards cardbirds calavia basura imprenta copia huella"><span class="number">N–004</span><h2><a href="/notas/el-carton-que-imita-al-carton.html">El cartón que imita al cartón</a></h2><p>Una caja usada y una reproducción de sus heridas. ¿Cuál de las dos conserva realmente un pasado?</p><div class="date">16.10.2026<br>5 min</div></article>
+<article class="entry" data-type="imagen ideas" data-search="exposicion contenedor dispositivo castro clifford arte montaje zona contacto"><span class="number">N–003</span><h2><a href="/notas/una-exposicion-no-es-un-contenedor.html">Una exposición no es un contenedor</a></h2><p>El espacio no es neutral: decide qué se encuentra, qué se separa y cómo se mira.</p><div class="date">30.09.2026<br>Ensayo</div></article>
+<article class="entry" data-type="ideas" data-search="todo entre umbral limite lenguaje concepto diferencia"><span class="number">N–002</span><h2><a href="/notas/no-todo-entre-es-umbral.html">No todo entre es umbral</a></h2><p>Una palabra deja de servir cuando pretende nombrarlo todo.</p><div class="date">30.09.2026<br>Nota</div></article>
+<article class="entry" data-type="ideas" data-search="tiempo no tenemos cansancio trabajo escribir vida intervalo libro"><span class="number">N–001</span><h2><a href="/notas/el-tiempo-que-no-tenemos.html">El tiempo que no tenemos</a></h2><p>El tiempo libre no siempre es un tiempo disponible para pensar, mirar o crear.</p><div class="date">26.09.2026<br>Fragmento</div></article>
+<p class="empty" id="sin-resultados" hidden>No aparece ninguna entrada con esos criterios. Prueba otra palabra o selecciona «Todo».</p>
+</div></section>
+<section class="more" aria-label="Seguir explorando"><details id="recorridos"><summary>Tres recorridos para seguir pensando</summary>
+<p class="intro">No son nuevas publicaciones; relacionan páginas que ya existen y pueden leerse independientemente.</p>
 <div class="route-grid">
-<article class="route-card"><div class="route-number">R–01 / Mostrar</div><div><h3>El espacio también decide.</h3><p>De la disposición de una exposición a la idea de zona de contacto. Lo que se ve depende también de cómo se coloca.</p></div><div class="route-links"><a href="/notas/una-exposicion-no-es-un-contenedor.html">Leer la nota</a><a href="/atlas.html#exposicion-zona-contacto">Continuar en el Atlas</a></div></article>
-<article class="route-card"><div class="route-number">R–02 / Distinguir</div><div><h3>Una palabra tiene que poder fallar.</h3><p>El umbral no puede convertirse en nombre de cualquier intervalo. Una distinción necesita contraejemplos.</p></div><div class="route-links"><a href="/notas/no-todo-entre-es-umbral.html">Leer la nota</a><a href="/diccionario.html#umbral">Contrastar en el Diccionario</a></div></article>
-<article class="route-card"><div class="route-number">R–03 / Durar</div><div><h3>¿De quién es nuestro tiempo?</h3><p>El tiempo que hace posible trabajar, mirar y escribir no equivale a las horas que quedan libres.</p></div><div class="route-links"><a href="/notas/el-tiempo-que-no-tenemos.html">Leer el fragmento</a><a href="/estetica-del-umbral.html">Continuar en el Libro</a></div></article>
-</div>
-</section>
-
-<section class="manifest" aria-labelledby="manifiesto">
-<div class="manifest-quote"><div>04 / Posición editorial</div><h2 id="manifiesto">No todo tiene que ser umbral.</h2></div>
-<div class="manifest-copy"><p>Este cuaderno puede reunir una película, una exposición, un gesto encontrado, una imagen, un libro o un problema cotidiano. <strong>El criterio es la calidad de la mirada, no la obligación de pertenecer a una teoría.</strong></p>
-<p>Una biblioteca no es una lista de tareas pendientes. Leer, mirar y crear necesitan ritmos distintos: algunos libros se recorren enteros; otros esperan hasta que una pregunta los vuelva necesarios. Este cuaderno no aspira a registrar todo lo leído, sino aquello que llega a producir una forma propia.</p>
-<p>Los materiales ajenos se citan, enlazan o reproducen únicamente cuando el uso está justificado y los derechos lo permiten. Cada entrada debe distinguir hechos, interpretación, procedencia y condiciones de circulación.</p>
-<div><a class="text-link" href="/colofon.html">Derechos, citas y procedencia</a><p class="meta"><a href="/feed.xml">RSS de nuevas publicaciones ↗</a></p></div></div>
-</section>
-<section aria-labelledby="formas">
-<div class="section-head"><span class="section-kicker">05 / Formatos</span><h2 id="formas">Lo que puede entrar en este cuaderno</h2><span class="meta">Posibilidades editoriales / no entradas publicadas</span></div>
-<div class="futures">
-<div class="future"><div class="tag">01 / Mirar</div><strong>Imágenes</strong><p>Una obra, una secuencia, una comparación visual o un detalle que cambia la lectura.</p></div>
-<div class="future"><div class="tag">02 / Escuchar</div><strong>Cine y vídeo</strong><p>Documentales, cortos y fragmentos enlazados desde sus fuentes legítimas.</p></div>
-<div class="future"><div class="tag">03 / Pensar</div><strong>Notas</strong><p>Ensayos, reseñas, contradicciones, borradores revisados y citas justificadas.</p></div>
-<div class="future"><div class="tag">04 / Hacer</div><strong>Prácticas</strong><p>Dibujos, materiales, pruebas ejecutadas y registros de lo que realmente ocurrió.</p></div>
-</div>
-</section>
+<div class="route"><span class="micro">Mostrar</span><strong>La exposición decide.</strong><a href="/notas/una-exposicion-no-es-un-contenedor.html">Nota: una exposición no es un contenedor ↗</a><a href="/atlas.html#exposicion-zona-contacto">Atlas: zona de contacto ↗</a></div>
+<div class="route"><span class="micro">Distinguir</span><strong>El concepto debe poder fallar.</strong><a href="/notas/no-todo-entre-es-umbral.html">Nota: no todo entre es umbral ↗</a><a href="/diccionario.html#umbral">Diccionario: umbral ↗</a></div>
+<div class="route"><span class="micro">Durar</span><strong>El tiempo que nos queda.</strong><a href="/notas/el-tiempo-que-no-tenemos.html">Nota: el tiempo que no tenemos ↗</a><a href="/estetica-del-umbral.html">Fragmentos del Libro ↗</a></div></div></details></section>
+<section class="more" aria-label="Semillas de investigación"><details id="ideas"><summary>Ideas que todavía no son artículos</summary>
+<p class="intro">Se conservan aquí como líneas abiertas, no como obras ni textos terminados. Sólo pasarán al índice cuando exista una entrada revisada y con fuentes suficientes.</p>
+<div class="ideas">
+<div class="idea"><strong>De la letra al gesto</strong><small>Archivo personal · Taller pendiente</small>Qué queda de la caligrafía cuando ya no produce palabras.</div>
+<div class="idea"><strong>¿Quién llama infierno al vertedero?</strong><small>Lectura · Contraste necesario</small>Calavia, Dante, Cateura y las consecuencias de mirar desde fuera.</div>
+<div class="idea"><strong>Lo que crece en una grieta</strong><small>Fotografía propia · Pendiente</small>Vegetación ruderal, ruinas, abandono y territorios vivos.</div>
+<div class="idea"><strong>El cine que casi no se ve</strong><small>Audiovisual · Fuentes por contrastar</small>Carles Santos, Portabella, sonido y acontecimientos mínimos.</div>
+</div></details></section>
 </main>
-<footer class="footer"><span>Diego Bravo · Notas y cuaderno · 16.10.2026</span><span><a href="/feed.xml">RSS</a> · <a href="/sobre.html#contacto">Contacto</a> · <a href="/colofon.html">Derechos</a></span></footer>
+<footer class="bottom"><span>© Diego Bravo · Cuaderno · v0.20</span><span><a href="/feed.xml">RSS</a> · <a href="/colofon.html">Derechos y fuentes</a> · <a href="/sobre.html">Contacto</a></span></footer>
 <script>
 (function(){
-  var buttons=[].slice.call(document.querySelectorAll('[data-kind].filter'));
-  var notes=[].slice.call(document.querySelectorAll('article.note[data-kind]'));
-  var input=document.getElementById('buscar'),counter=document.getElementById('cuenta'),empty=document.getElementById('sin-resultados');
-  var selected='todas';
-  function normalize(t){return (t||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');}
-  function render(){var q=normalize(input.value.trim());var shown=0;
-    notes.forEach(function(n){var matches=selected==='todas'||selected===n.getAttribute('data-kind');var searchable=normalize(n.getAttribute('data-search')+' '+n.textContent);
-      n.hidden=!(matches&&searchable.includes(q));if(!n.hidden)shown++;});
-    empty.hidden=shown!==0;counter.textContent=shown+' '+(shown===1?'entrada':'entradas');
+  'use strict';
+  var nodes=[].slice.call(document.querySelectorAll('.entry[data-type]'));
+  var chips=[].slice.call(document.querySelectorAll('.chip[data-filter]'));
+  var input=document.getElementById('buscar'),counter=document.getElementById('cuenta');
+  var empty=document.getElementById('sin-resultados'),suggestion=document.getElementById('sugerencia'),text=document.getElementById('sugerencia-contenido');
+  var active='todos',lastHref='';
+  function normal(v){return String(v||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');}
+  function render(){var q=normal(input.value.trim()),n=0;nodes.forEach(function(el){
+    var categories=(el.getAttribute('data-type')||'').split(' ');
+    var match=(active==='todos'||categories.indexOf(active)!==-1)&&normal(el.getAttribute('data-search')+' '+el.textContent).indexOf(q)!==-1;
+    el.hidden=!match;if(match)n++;});
+    counter.textContent=n+' '+(n===1?'entrada':'entradas');empty.hidden=n!==0;
+    suggestion.classList.remove('is-visible');
   }
-  buttons.forEach(function(b){b.addEventListener('click',function(){selected=b.getAttribute('data-kind');
-    buttons.forEach(function(x){x.setAttribute('aria-pressed',String(x===b));});render();});});
+  chips.forEach(function(b){b.addEventListener('click',function(){active=b.getAttribute('data-filter');
+    chips.forEach(function(c){c.setAttribute('aria-pressed',String(c===b));});render();});});
   input.addEventListener('input',render);
+  document.getElementById('sorpresa').addEventListener('click',function(){
+    var available=nodes.filter(function(n){return !n.hidden;});
+    if(!available.length){input.focus();return;}
+    var different=available.filter(function(n){return n.querySelector('a').getAttribute('href')!==lastHref;});
+    var candidates=different.length?different:available;
+    var picked=candidates[Math.floor(Math.random()*candidates.length)];
+    var a=picked.querySelector('h2 a');
+    lastHref=a.getAttribute('href');
+    var out=document.createElement('a');out.href=lastHref;out.textContent=a.textContent+' ↗';
+    text.replaceChildren(out);suggestion.classList.add('is-visible');
+  });
+  document.getElementById('cerrar-sugerencia').addEventListener('click',function(){suggestion.classList.remove('is-visible');});
 })();
-</script>
-</body></html>
+</script></body></html>

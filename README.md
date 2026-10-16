@@ -175,3 +175,13 @@ Sitio estático servido con GitHub Pages en [diegobravo.es](https://diegobravo.e
 - `assets/entrada.css` y `web-lab/plantilla-nota.html` proporcionan maqueta y tipografía reutilizables para futuros artículos. La plantilla está expresamente `noindex,nofollow` y contiene marcadores; no es una publicación.
 - `EDITORIAL_PUBLICACION.md` registra el destino diferenciado de los dispositivos, los criterios de publicación, el procedimiento para nuevas notas y el control de derechos por medio.
 - No se añaden entradas ficticias, imágenes ajenas nuevas, automatismos de publicación, analítica ni dependencias externas.
+ 
+## v0.20 — Menos clics, más lectura (16.10.2026)
+- Portada simplificada: Cuaderno y lecturas concretas aparecen tras el encabezado, antes del resto de la investigación. Se eliminan secciones redundantes y el índice largo de la portada; sigue existiendo en `investigaciones.html`. Menú superior compacto con «Buscar» visible.
+- Nueva página `buscar.html` con índice local de 17 accesos: cinco notas, cinco casos/imágenes y siete zonas o secciones. Búsqueda y filtros en el navegador, sin llamadas externas ni analítica. Botón «Elegir al azar» para salir directamente a una página de resultados filtrados.
+- `notas.html` reducido en aproximadamente un cuarto: lista escaneable de cinco textos reales, búsqueda en la propia página, filtros temáticos, lectura sugerida a un clic y dos desplegables optativos (recorridos y semillas aún no publicadas).
+- Dos nuevas entradas argumentadas: `notas/el-carton-que-imita-al-carton.html` y `notas/la-imagen-que-debia-desaparecer.html`; ambas incluyen fuentes primarias de museo/fundación y esquemas originales sin rehostear reproducciones protegidas.
+- Android: cuatro accesos de navegación Inicio / Cuaderno / Buscar / Explorar, y estado del Cuaderno activo dentro de sus artículos.
+- `feed.xml` y `sitemap.xml` actualizados para las publicaciones efectivas. Las ideas en espera no son artículos.
+- Captura de hallazgos conservada en la bitácora privada de Google Drive `06_BITÁCORA DE SEGUIMIENTO — obras · vídeos · exposiciones · técnicas · ideas`, no en archivos públicos ni mediante seguimiento indiscriminado de chats.
+- QA estática antes de integrar; la visualización final en Android real y el estado de despliegue GitHub Pages deben comprobarse por separado.
