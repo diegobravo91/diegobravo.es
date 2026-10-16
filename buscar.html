@@ -1,0 +1,75 @@
+<!doctype html><html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="index,follow"><meta name="author" content="Diego Bravo">
+<meta name="description" content="Buscar sin salir de diegobravo.es: cuaderno, imágenes, Atlas, Libro, Diccionario y casos de investigación.">
+<title>Buscar — Diego Bravo</title><link rel="canonical" href="https://diegobravo.es/buscar.html">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="stylesheet" href="/assets/site.css"><link rel="stylesheet" href="/assets/mobile-shell.css">
+<style>
+:root{--paper:#eceae4;--ink:#161714;--muted:#555850;--line:#b9b9b0;--accent:#a52e17;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;--pad:clamp(18px,3.2vw,52px)}
+*{box-sizing:border-box}html{background:var(--paper)}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 Arial,Helvetica,sans-serif}
+a{color:inherit;text-underline-offset:.25em}a:focus-visible,input:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.skip-link{position:fixed;top:0;left:14px;padding:10px;background:var(--ink);color:var(--paper);z-index:200;transform:translateY(-150%)}.skip-link:focus{transform:none}
+.top{min-height:62px;display:flex;gap:18px;align-items:center;justify-content:space-between;padding:10px var(--pad);border-bottom:1px solid var(--ink);position:sticky;top:0;background:rgba(236,234,228,.98);z-index:50}
+.brand{font-weight:700;text-decoration:none}.nav{display:flex;gap:14px}.nav a{font:11px var(--mono);text-decoration:none}
+header.hero{padding:clamp(25px,5vw,65px) var(--pad) 22px;border-bottom:1px solid var(--ink)}
+h1{font:500 clamp(63px,11vw,145px)/.9 Arial,Helvetica,sans-serif;letter-spacing:-.08em;margin:10px 0}
+.hero p{font-size:clamp(18px,2.2vw,26px);line-height:1.25;max-width:740px}
+.tool{padding:20px var(--pad);display:grid;grid-template-columns:1fr auto;gap:15px;align-items:end}
+.tool label{font:11px var(--mono);display:block;margin-bottom:7px}
+.tool input{background:#f6f5f0;color:var(--ink);border-radius:0;border:1px solid #888980;width:100%;height:52px;padding:11px;font:17px Arial,Helvetica,sans-serif}
+.tool button{height:52px;background:var(--ink);color:var(--paper);border:0;padding:10px 19px;font:12px var(--mono);cursor:pointer}
+.filters{padding:10px var(--pad) 20px;display:flex;gap:8px;align-items:center;flex-wrap:wrap;border-bottom:1px solid var(--ink)}
+.filters button{background:transparent;color:var(--ink);border:1px solid var(--line);padding:8px 13px;min-height:43px;cursor:pointer;font:11px var(--mono)}
+.filters button[aria-pressed=true]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+#count{font:11px var(--mono);margin-left:auto;color:var(--muted)}
+.hits{padding:0 var(--pad)}
+.hit{display:grid;grid-template-columns:90px 1fr 22px;gap:15px;align-items:baseline;padding:clamp(15px,2vw,25px) 0;border-bottom:1px solid var(--line)}
+.hit[hidden]{display:none}
+.hit small{color:var(--muted);text-transform:uppercase;font:11px var(--mono)}
+.hit h2{font:500 clamp(23px,2.7vw,38px)/1.05 Arial,Helvetica,sans-serif;letter-spacing:-.04em;margin:0}
+.hit h2 a{text-decoration:none}.hit h2 a:hover{text-decoration:underline}
+.hit p{font-size:14px;color:var(--muted);margin:7px 0 0}
+.hit>span{color:var(--accent)}
+#empty{font-size:17px;padding:30px 0}#empty[hidden]{display:none}
+footer{padding:22px var(--pad);font:11px var(--mono)}
+@media(max-width:650px){.tool{grid-template-columns:1fr}.tool button{height:45px}.filters #count{width:100%}.hit{grid-template-columns:1fr 20px;gap:5px}.hit small{grid-column:1}.hit>div{grid-column:1}.hit>span{grid-column:2;grid-row:2}.nav a:last-child{display:none}}
+</style><script defer src="/assets/mobile-shell.js"></script></head><body>
+<a class="skip-link" href="#contenido">Saltar a la búsqueda</a>
+<header class="top"><a class="brand" href="/">Diego Bravo / Buscar</a><nav class="nav" aria-label="Principal"><a href="/notas.html">Cuaderno</a><a href="/atlas.html">Atlas</a></nav></header>
+<main id="contenido" tabindex="-1"><header class="hero"><h1>Buscar.</h1><p>Una sola puerta. No necesitas saber cómo está organizado el proyecto.</p></header>
+<div class="tool"><div><label for="q">Una palabra, una obra, un tema</label><input id="q" type="search" placeholder="Ej. cartón, ruina, tiempo…" autocomplete="off"></div><button type="button" id="azar">Elegir al azar ↗</button></div>
+<div class="filters" role="group" aria-label="Filtrar resultados">
+<button type="button" data-filter="todos" aria-pressed="true">Todo</button><button type="button" data-filter="nota" aria-pressed="false">Notas</button><button type="button" data-filter="caso" aria-pressed="false">Casos / imágenes</button><button type="button" data-filter="seccion" aria-pressed="false">Secciones</button><span id="count" aria-live="polite">17 accesos</span></div>
+<div class="hits"><article class="hit" data-kind="nota" data-key="huella hoarfrosts imagen litografia materia"><small>nota</small><div><h2><a href="/notas/la-imagen-que-debia-desaparecer.html">La imagen que debía desaparecer</a></h2><p>Tejido, tinta, limpieza y Rauschenberg</p></div><span aria-hidden="true">↗</span></article>
+<article class="hit" data-kind="nota" data-key="cardboards cardbirds calavia carton basura"><small>nota</small><div><h2><a href="/notas/el-carton-que-imita-al-carton.html">El cartón que imita al cartón</a></h2><p>Basura, impresión y memoria de uso</p></div><span aria-hidden="true">↗</span></article>
+<article class="hit" data-kind="nota" data-key="contacto exposicion arte"><small>nota</small><div><h2><a href="/notas/una-exposicion-no-es-un-contenedor.html">Una exposición no es un contenedor</a></h2><p>Espacio, institución y montaje</p></div><span aria-hidden="true">↗</span></article>
+<article class="hit" data-kind="nota" data-key="concepto limite diferencia"><small>nota</small><div><h2><a href="/notas/no-todo-entre-es-umbral.html">No todo entre es umbral</a></h2><p>Una palabra también debe fallar</p></div><span aria-hidden="true">↗</span></article>
+<article class="hit" data-kind="nota" data-key="tiempo escritura vida"><small>nota</small><div><h2><a href="/notas/el-tiempo-que-no-tenemos.html">El tiempo que no tenemos</a></h2><p>Trabajo, descanso y duración</p></div><span aria-hidden="true">↗</span></article>
+<article class="hit" data-kind="caso" data-key="documento huella practica"><small>caso</small><div><h2><a href="/fisura-documento.html">Fisura Documento / práctica</a></h2><p>Investigación abierta sobre la eficacia del registro</p></div><span aria-hidden="true">↗</span></article>
+<article class="hit" data-kind="caso" data-key="museo arte montaje"><small>caso</small><div><h2><a href="/atlas.html#exposicion-zona-contacto">Exposición / zona de contacto</a></h2><p>Relación activa en el Atlas</p></div><span aria-hidden="true">↗</span></article>
+<article class="hit" data-kind="caso" data-key="fotografia cianotipo luz"><small>caso</small><div><h2><a href="/atlas.html#oa-020">Anna Atkins / contacto y luz</a></h2><p>Cianotipo, planta, huella, imagen</p></div><span aria-hidden="true">↗</span></article>
+<article class="hit" data-kind="caso" data-key="grabado arquitectura"><small>caso</small><div><h2><a href="/atlas.html#oa-001">Piranesi / ruina y pasaje</a></h2><p>Arquitectura, ruina e interior</p></div><span aria-hidden="true">↗</span></article>
+<article class="hit" data-kind="caso" data-key="cine fotografia"><small>caso</small><div><h2><a href="/atlas.html#oa-021">Muybridge / secuencia y cuerpo</a></h2><p>Intervalo y fotografía del movimiento</p></div><span aria-hidden="true">↗</span></article>
+<article class="hit" data-kind="seccion" data-key="investigacion"><small>seccion</small><div><h2><a href="/atlas.html">Atlas</a></h2><p>Montajes, imágenes, relaciones y fuentes</p></div><span aria-hidden="true">↗</span></article>
+<article class="hit" data-kind="seccion" data-key="teoria escritura limite"><small>seccion</small><div><h2><a href="/estetica-del-umbral.html">Libro · Estética del umbral</a></h2><p>Ensayo público en revisión</p></div><span aria-hidden="true">↗</span></article>
+<article class="hit" data-kind="seccion" data-key="conceptos palabras"><small>seccion</small><div><h2><a href="/diccionario.html">Diccionario</a></h2><p>Diferencias conceptuales en revisión</p></div><span aria-hidden="true">↗</span></article>
+<article class="hit" data-kind="seccion" data-key="arte taller materia"><small>seccion</small><div><h2><a href="/practica.html">Práctica</a></h2><p>Pruebas, propuestas y estado real</p></div><span aria-hidden="true">↗</span></article>
+<article class="hit" data-kind="seccion" data-key="archivo"><small>seccion</small><div><h2><a href="/investigaciones.html">Investigaciones</a></h2><p>Índice de casos y textos</p></div><span aria-hidden="true">↗</span></article>
+<article class="hit" data-kind="seccion" data-key="relaciones rutas"><small>seccion</small><div><h2><a href="/mapa.html">Mapa</a></h2><p>Recorridos entre preguntas</p></div><span aria-hidden="true">↗</span></article>
+<article class="hit" data-kind="seccion" data-key="autor contacto"><small>seccion</small><div><h2><a href="/sobre.html">Sobre y contacto</a></h2><p>Presentación y correspondencia</p></div><span aria-hidden="true">↗</span></article><p id="empty" hidden>No hay resultados. Prueba otra palabra o selecciona «Todo».</p></div></main>
+<footer>© Diego Bravo · <a href="/notas.html">Cuaderno</a> · <a href="/colofon.html">Derechos</a></footer>
+<script>
+(function(){
+var cards=[].slice.call(document.querySelectorAll('.hit[data-kind]')),tabs=[].slice.call(document.querySelectorAll('[data-filter]'));
+var input=document.getElementById('q'),count=document.getElementById('count'),empty=document.getElementById('empty');
+var group='todos',last='';
+function norm(s){return String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');}
+function update(){var q=norm(input.value.trim()),n=0;cards.forEach(function(c){var ok=(group==='todos'||c.dataset.kind===group)&&norm(c.dataset.key+' '+c.textContent).includes(q);c.hidden=!ok;if(ok)n++;});count.textContent=n+' '+(n===1?'acceso':'accesos');empty.hidden=n!==0;}
+tabs.forEach(function(b){b.addEventListener('click',function(){group=b.dataset.filter;tabs.forEach(function(x){x.setAttribute('aria-pressed',String(x===b));});update();});});
+input.addEventListener('input',update);
+document.getElementById('azar').addEventListener('click',function(){var visible=cards.filter(function(c){return !c.hidden;});if(!visible.length){input.focus();return;}
+var fresh=visible.filter(function(c){return c.querySelector('a').getAttribute('href')!==last;});var list=fresh.length?fresh:visible;var chosen=list[Math.floor(Math.random()*list.length)];last=chosen.querySelector('a').getAttribute('href');location.href=last;});
+var query=new URLSearchParams(location.search).get('q');if(query){input.value=query;update();}
+})();
+</script></body></html>
