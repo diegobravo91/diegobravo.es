@@ -71,3 +71,9 @@
 }
 @media (min-width:851px) {.mobile-dock{display:none!important}}
 @media(prefers-reduced-motion:reduce) {.mobile-dock,.mobile-drawer{scroll-behavior:auto}}
+
+/* Current section includes individual notebook essays. */
+@media(max-width:850px){
+.mobile-dock a[aria-current="location"]{background:#161714;color:#eceae4}
+.mobile-dock a,.mobile-dock summary{touch-action:manipulation}
+}
