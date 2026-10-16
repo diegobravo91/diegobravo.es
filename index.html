@@ -224,6 +224,8 @@
     .evidence strong{display:block;font-size:clamp(19px,2.1vw,33px);font-weight:500;line-height:1.1;letter-spacing:-.035em;margin:7px 0}
     .evidence small{display:block;color:var(--grey);text-transform:uppercase;font:10px/1.5 var(--mono)}
     .evidence a:hover strong{text-decoration:underline;text-decoration-color:var(--orange-ink)}
+    .evidence .source-rights{padding:0 var(--space) 13px;color:var(--grey);text-transform:uppercase;font:10px/1.5 var(--mono)}
+    .evidence .source-rights a{text-decoration:underline;display:inline;color:var(--ink)}
     @media(max-width:700px){
       .topnav{max-width:100%}
       .evidence-strip{grid-template-columns:1fr}
@@ -232,6 +234,8 @@
       .evidence img{aspect-ratio:1.8}
     }
   </style>
+<link rel="stylesheet" href="/assets/mobile-shell.css">
+<script defer src="/assets/mobile-shell.js"></script>
 </head>
 <body>
   <a class="skip" href="#contenido">Saltar al contenido</a>
@@ -244,7 +248,7 @@
       <a href="/estetica-del-umbral.html">Libro</a>
       <a href="/diccionario.html">Diccionario</a>
       <a href="/practica.html">Práctica</a>
-      <a href="/notas.html">Notas</a>
+      <a href="/notas.html">Cuaderno</a>
       <a href="/mapa.html">Mapa</a>
       <a href="/sobre.html">Sobre</a>
     </nav>
@@ -313,9 +317,9 @@
       </div>
       <div class="section-title evidence-heading"><span class="serial">01b / Archivo</span><h2>Imágenes en relación</h2><span class="small">Fuentes externas / procedencia en el Atlas</span></div>
       <div class="evidence-strip" aria-label="Casos del Archivo abierto">
-<figure class="evidence"><a href="/atlas.html#oa-001"><img src="https://images.metmuseum.org/CRDImages/dp/original/DP828232.jpg" alt="Giovanni Battista Piranesi, interior de la llamada Villa de Mecenas en Tívoli" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption><div class="e-code">OA-001 · Atlas</div><strong>Piranesi — ruina / pasaje</strong><small>The Met · montaje / desestabilizar</small></figcaption></a></figure>
-<figure class="evidence"><a href="/atlas.html#oa-020"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Ulva_lactuca_MET_DP-17302-145.jpg" alt="Anna Atkins, Ulva lactuca, cianotipo" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption><div class="e-code">OA-020 · Atlas</div><strong>Anna Atkins — contacto / luz</strong><small>Met / Rijksmuseum · contacto / exposición</small></figcaption></a></figure>
-<figure class="evidence"><a href="/atlas.html#oa-021"><img src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/268638/631820/main-image" alt="Eadweard Muybridge, secuencia fotográfica de dos niños jugando a saltar uno sobre otro" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption><div class="e-code">OA-021 · Atlas</div><strong>Muybridge — secuencia / cuerpo</strong><small>The Met · secuenciación / cortar</small></figcaption></a></figure>
+<figure class="evidence"><a href="/atlas.html#oa-001"><img src="https://images.metmuseum.org/CRDImages/dp/original/DP828232.jpg" alt="Giovanni Battista Piranesi, interior de la llamada Villa de Mecenas en Tívoli" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption><div class="e-code">OA-001 · Atlas</div><strong>Piranesi — ruina / pasaje</strong><small>The Met · dominio público / CC0</small></figcaption></a><div class="source-rights">Fuente y derechos: <a href="https://www.metmuseum.org/art/collection/search/363252" rel="noopener noreferrer">The Met ↗</a></div></figure>
+<figure class="evidence"><a href="/atlas.html#oa-020"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Ulva_lactuca_MET_DP-17302-145.jpg" alt="Anna Atkins, Ulva lactuca, cianotipo" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption><div class="e-code">OA-020 · Atlas</div><strong>Anna Atkins — contacto / luz</strong><small>The Met · licencia CC0</small></figcaption></a><div class="source-rights">Fuente y derechos: <a href="https://commons.wikimedia.org/wiki/File:Ulva_lactuca_MET_DP-17302-145.jpg" rel="noopener noreferrer">Wikimedia Commons ↗</a></div></figure>
+<figure class="evidence"><a href="/atlas.html#oa-021"><img src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/268638/631820/main-image" alt="Eadweard Muybridge, secuencia fotográfica de dos niños jugando a saltar uno sobre otro" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption><div class="e-code">OA-021 · Atlas</div><strong>Muybridge — secuencia / cuerpo</strong><small>The Met · dominio público / CC0</small></figcaption></a><div class="source-rights">Fuente y derechos: <a href="https://www.metmuseum.org/art/collection/search/268638" rel="noopener noreferrer">The Met ↗</a></div></figure>
 </div>
     </section>
 
@@ -356,7 +360,7 @@
 
     <section class="note" aria-labelledby="note-heading">
       <div class="note-title"><div class="eyebrow">04 / Nota de lectura</div><h2 id="note-heading">No todo entre es umbral.</h2></div>
-      <div class="note-copy"><div class="eyebrow">N–002 · Texto publicado</div><p>Un intervalo no transforma nada por el mero hecho de existir. La pregunta no es dónde está el límite, sino qué permite, qué impide y qué altera.</p><a class="text-link" href="https://diegobravo.es/notas/no-todo-entre-es-umbral.html">Leer la nota</a></div>
+      <div class="note-copy"><div class="eyebrow">N–002 · Texto publicado</div><p>Un intervalo no transforma nada por el mero hecho de existir. La pregunta no es dónde está el límite, sino qué permite, qué impide y qué altera.</p><div><a class="text-link" href="https://diegobravo.es/notas/no-todo-entre-es-umbral.html">Leer la nota</a><p style="margin-top:20px"><a class="text-link" href="/notas.html">Entrar en el cuaderno</a></p></div></div>
     </section>
   </main>
   <footer class="foot" id="contacto">

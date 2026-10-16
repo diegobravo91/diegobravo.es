@@ -1,0 +1,58 @@
+{
+  "schema": "diegobravo.es/asset-rights-v1",
+  "reviewed_on": "2026-10-16",
+  "policy": "Every media item reused must have a traceable source, identified author/rightsholder, legal basis and scope. No blanket permission from link or attribution.",
+  "assets": [
+    {
+      "id": "OA-001",
+      "creator": "Giovanni Battista Piranesi",
+      "title": "The so-called Villa of Maecenas at Tivoli. Interior...",
+      "date": "ca. 1764",
+      "source": "https://www.metmuseum.org/art/collection/search/363252",
+      "file_ref": "DP828232.jpg",
+      "used_on": [
+        "/",
+        "/atlas.html"
+      ],
+      "legal_basis": "public_domain_work_and_Met_Open_Access_CC0",
+      "status": "verified_source_2026-10-16",
+      "web_use": "allowed_under_identified_Met_OA",
+      "social_reuse": "eligible_recheck_source_if_material_changed",
+      "attribution": "The Metropolitan Museum of Art / Giovanni Battista Piranesi / CC0"
+    },
+    {
+      "id": "OA-020",
+      "creator": "Anna Atkins",
+      "title": "Ulva lactuca",
+      "source": "https://commons.wikimedia.org/wiki/File:Ulva_lactuca_MET_DP-17302-145.jpg",
+      "original_work": "https://www.metmuseum.org/art/collection/search/291638",
+      "file_ref": "Ulva_lactuca_MET_DP-17302-145.jpg",
+      "used_on": [
+        "/",
+        "/atlas.html"
+      ],
+      "legal_basis": "CC0_1.0_recorded_on_Wikimedia_Commons_file_page",
+      "status": "verified_source_2026-10-16",
+      "web_use": "allowed_by_identified_CC0",
+      "social_reuse": "eligible_recheck_source_if_material_changed",
+      "attribution": "The Metropolitan Museum of Art / Anna Atkins / CC0"
+    },
+    {
+      "id": "OA-021",
+      "creator": "Eadweard Muybridge",
+      "title": "[Boys Playing Leap Frog]",
+      "date": "1883–86, printed 1887",
+      "source": "https://www.metmuseum.org/art/collection/search/268638",
+      "file_ref": "collectionapi.metmuseum.org/api/collection/v1/iiif/268638/631820/main-image",
+      "used_on": [
+        "/",
+        "/atlas.html"
+      ],
+      "legal_basis": "public_domain_work_and_Met_Open_Access_CC0",
+      "status": "verified_source_2026-10-16",
+      "web_use": "allowed_under_identified_Met_OA",
+      "social_reuse": "eligible_recheck_source_if_material_changed",
+      "attribution": "The Metropolitan Museum of Art / Eadweard Muybridge / CC0"
+    }
+  ]
+}
