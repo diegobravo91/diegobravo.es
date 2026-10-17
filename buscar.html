@@ -34,6 +34,14 @@ h1{font:500 clamp(63px,11vw,145px)/.9 Arial,Helvetica,sans-serif;letter-spacing:
 #empty{font-size:17px;padding:30px 0}#empty[hidden]{display:none}
 footer{padding:22px var(--pad);font:11px var(--mono)}
 @media(max-width:650px){.tool{grid-template-columns:1fr}.tool button{height:45px}.filters #count{width:100%}.hit{grid-template-columns:1fr 20px;gap:5px}.hit small{grid-column:1}.hit>div{grid-column:1}.hit>span{grid-column:2;grid-row:2}.nav a:last-child{display:none}}
+
+/* Search is not an unending index: curated preview; all matches stay reachable. */
+.search-more{display:flex;gap:24px;justify-content:space-between;align-items:center;padding:24px 0 35px;flex-wrap:wrap}
+.search-more[hidden]{display:none!important}
+.search-more button{padding:15px 20px;background:#161714;color:#f4f2eb;border:1px solid #161714;cursor:pointer;min-height:50px;font:12px ui-monospace,Consolas,monospace}
+.search-more button:hover{background:#3c3e38}
+.search-more span{font:12px/1.5 ui-monospace,Consolas,monospace;color:#555850}
+@media(max-width:650px){.search-more button{width:100%}}
 </style><script defer src="/assets/mobile-shell.js"></script></head><body>
 <a class="skip-link" href="#contenido">Saltar a la búsqueda</a>
 <header class="top"><a class="brand" href="/">Diego Bravo / Buscar</a><nav class="nav" aria-label="Navegación principal"><a href="/obra.html">Obra</a><a href="/notas.html">Cuaderno</a><a href="/investigaciones.html">Investigación</a><a href="/sobre.html">Sobre</a></nav></header>
@@ -41,7 +49,7 @@ footer{padding:22px var(--pad);font:11px var(--mono)}
 <div class="tool"><div><label for="q">Una palabra, una obra, un tema</label><input id="q" type="search" placeholder="Ej. cartón, ruina, tiempo…" autocomplete="off"></div><button type="button" id="azar">Elegir al azar ↗</button></div>
 <div class="filters" role="group" aria-label="Filtrar resultados">
 <button type="button" data-filter="todos" aria-pressed="true">Todo</button><button type="button" data-filter="nota" aria-pressed="false">Notas</button><button type="button" data-filter="caso" aria-pressed="false">Casos / imágenes</button><button type="button" data-filter="seccion" aria-pressed="false">Secciones</button><span id="count" aria-live="polite">37 accesos</span></div>
-<div class="hits">
+<div class="hits" id="resultados">
 <article class="hit" data-kind="nota" data-key="albufera bleda rosa lucia loren paisaje territorio piedra deslinde fibras tejer ivam 2026 fotografía propia"><small>Ensayo · Cuaderno</small><div><h2><a href="/notas/un-territorio-no-es-un-fondo.html">Un territorio no es un fondo</a></h2><p>Bleda y Rosa y Lucía Loren: piedras de límite y fibras vegetales, fotografiadas durante una visita a L’Albufera.</p></div><span aria-hidden="true">↗</span></article>
 <article class="hit" data-kind="nota" data-key="tania candiani radix raíces raiz vidrio crecer rizotron botanica laboratorio ivam 2026 fotografía propia"><small>Ensayo · Cuaderno</small><div><h2><a href="/notas/lo-que-sostiene-la-vida.html">Lo que sostiene la vida</a></h2><p>En Radix, lo que crece debajo pasa al primer plano. Dos fotografías y una pregunta sobre las condiciones de observación.</p></div><span aria-hidden="true">↗</span></article>
 <article class="hit" data-kind="nota" data-key="robert morris nazca dibujo pensamiento plano recorrido blind time atlas ivam cartografía espacio arquitectura"><small>Ensayo · Cuaderno</small><div><h2><a href="/notas/el-mapa-no-sabe-atravesar.html">El mapa no sabe atravesar</a></h2><p>Ensayo visual y fuentes originales</p></div><span aria-hidden="true">↗</span></article>
@@ -72,17 +80,26 @@ footer{padding:22px var(--pad);font:11px var(--mono)}
 <article class="hit" data-kind="seccion" data-key="arte taller materia"><small>seccion</small><div><h2><a href="/practica.html">Práctica</a></h2><p>Pruebas, propuestas y estado real</p></div><span aria-hidden="true">↗</span></article>
 <article class="hit" data-kind="seccion" data-key="archivo"><small>seccion</small><div><h2><a href="/investigaciones.html">Investigaciones</a></h2><p>Índice de casos y textos</p></div><span aria-hidden="true">↗</span></article>
 <article class="hit" data-kind="seccion" data-key="relaciones rutas"><small>seccion</small><div><h2><a href="/mapa.html">Mapa</a></h2><p>Recorridos entre preguntas</p></div><span aria-hidden="true">↗</span></article>
-<article class="hit" data-kind="seccion" data-key="autor contacto"><small>seccion</small><div><h2><a href="/sobre.html">Sobre y contacto</a></h2><p>Presentación y correspondencia</p></div><span aria-hidden="true">↗</span></article><p id="empty" hidden>No hay resultados. Prueba otra palabra o selecciona «Todo».</p></div></main>
+<article class="hit" data-kind="seccion" data-key="autor contacto"><small>seccion</small><div><h2><a href="/sobre.html">Sobre y contacto</a></h2><p>Presentación y correspondencia</p></div><span aria-hidden="true">↗</span></article><div class="search-more" id="buscar-ver-todas-area" hidden><button type="button" id="buscar-ver-todas" aria-expanded="false" aria-controls="resultados">Ver todos los 37 accesos ↓</button><span>Busca un término para ver todas las coincidencias.</span></div><p id="empty" hidden>No hay resultados. Prueba otra palabra o selecciona «Todo».</p></div></main>
 <footer>© Diego Bravo · <a href="/notas.html">Cuaderno</a> · <a href="/colofon.html">Derechos</a></footer>
 <script>
 (function(){
 var cards=[].slice.call(document.querySelectorAll('.hit[data-kind]')),tabs=[].slice.call(document.querySelectorAll('[data-filter]'));
 var input=document.getElementById('q'),count=document.getElementById('count'),empty=document.getElementById('empty');
-var group='todos',last='';
+var group='todos',last='',expanded=false,preview=9;
+var more=document.getElementById('buscar-ver-todas'),moreArea=document.getElementById('buscar-ver-todas-area');
 function norm(s){return String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');}
-function update(){var q=norm(input.value.trim()),n=0;cards.forEach(function(c){var ok=(group==='todos'||c.dataset.kind===group)&&norm(c.dataset.key+' '+c.textContent).includes(q);c.hidden=!ok;if(ok)n++;});count.textContent=n+' '+(n===1?'acceso':'accesos');empty.hidden=n!==0;}
+function update(){var q=norm(input.value.trim()),n=0,browse=group==='todos'&&!q;
+ cards.forEach(function(c){var ok=(group==='todos'||c.dataset.kind===group)&&norm(c.dataset.key+' '+c.textContent).includes(q);if(ok)n++;c.hidden=!ok||(browse&&!expanded&&n>preview);});
+ count.textContent=browse&&!expanded?'Primeros '+Math.min(n,preview)+' de '+n+' accesos':n+' '+(n===1?'acceso':'accesos');
+ empty.hidden=n!==0;moreArea.hidden=!browse||n<=preview;
+ more.textContent=expanded?'Mostrar menos ↑':'Ver todos los '+n+' accesos ↓';
+ more.setAttribute('aria-expanded',String(expanded));
+}
 tabs.forEach(function(b){b.addEventListener('click',function(){group=b.dataset.filter;tabs.forEach(function(x){x.setAttribute('aria-pressed',String(x===b));});update();});});
 input.addEventListener('input',update);
+more.addEventListener('click',function(){expanded=!expanded;update();if(!expanded)document.getElementById('resultados').scrollIntoView({block:'start'});});
+update();
 document.getElementById('azar').addEventListener('click',function(){var visible=cards.filter(function(c){return !c.hidden;});if(!visible.length){input.focus();return;}
 var fresh=visible.filter(function(c){return c.querySelector('a').getAttribute('href')!==last;});var list=fresh.length?fresh:visible;var chosen=list[Math.floor(Math.random()*list.length)];last=chosen.querySelector('a').getAttribute('href');location.href=last;});
 var query=new URLSearchParams(location.search).get('q');if(query){input.value=query;update();}
