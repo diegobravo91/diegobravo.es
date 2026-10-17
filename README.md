@@ -292,3 +292,19 @@ Actualización directamente publicada sobre `index.html`, basada en la auditorí
 - **Hallazgo conceptual negativo/objeción:** en la lectura de González García, Florenski/perspectiva inversa no es la clave final que revela un «otro lado». Un límite puede impedir el paso y no prometer una puerta. La lectura de Castro (2024) sobre blanco/parergon es diferente; no atribuirla a González.
 - **Libro maestro v0.3:** añadido borrador original insertable `EL CUADRADO QUE NO ABRE NINGUNA PUERTA` (~1.600 palabras + fuentes), propuesto después de «Mirar y perder el lugar». Es texto asistido por IA pendiente de selección y asunción autoral; **no se ha alterado PDF v0.6 ni se declara listo KDP**.
 - Sistema Maestro y Atlas A–028 corregidos, sin abrir otro silo. El despliegue en vivo/Android y los últimos ~7m del MP3 no están verificados; no confundir código guardado con página comprobada en navegador. Pruebas materiales abstractas pendientes.
+
+## Sistema editorial de lectura v1.0 — octubre 2026
+
+Esta web tiene una sola gramática de lectura, aunque reúna obra visual, ensayos, Atlas, Diccionario, operaciones, cuadernos y herramientas. La identidad de papel, tinta y acento cálido se conserva. La claridad de lectura tiene prioridad sobre la exhibición tipográfica.
+
+**Implementación:** `assets/reading-system.css` (carga posterior a los CSS históricos en los documentos HTML; clase `reading-v2` y clase de familia de página). No utiliza fuentes externas, cookies ni analítica. Los documentos antiguos no se borran: se corrigen progresivamente.
+
+**Jerarquía:** un único h1 por página; titulares grandes solo donde identifican el lugar; h2 de sección legible, no etiquetas diminutas; h3 para cada entrada; cuerpo de ensayo y definición con fuente de lectura, 1.65–1.72 de interlínea y medida máxima ~68ch; códigos y metadatos subordinados sin desaparecer. Párrafos alineados a izquierda y sin justificación forzada.
+
+**Pantallas:** lectura lineal en Android, navegación horizontal accesible en cabecera cuando no cabe; una columna de definición, objeción y relaciones en móvil; dos zonas claras en Diccionario de escritorio, nunca dos columnas simultáneas de prosa. Los grandes monitores ofrecen aire alrededor del texto en lugar de estirarlo. Las imágenes, diagramas y herramientas conservan su formato cuando la escala lo necesita.
+
+**Límites:** WCAG 2.2 1.4.12 exige que los cambios de espaciado por parte del lector no hagan perder contenidos ni funcionalidad: no significa que haya que imponer esos valores por defecto. Deben probarse zoom 200 %, navegación por teclado, móvil Android y escritorio. La revisión del HTML/CSS no sustituye la comprobación visual en navegadores reales.
+
+**Referencias:** GOV.UK Design System (layout); US Web Design System (typography / measure); Adobe Spectrum 2 (typography / attention hierarchy); W3C WCAG 2.2 (text spacing); web.dev (responsive typography); A List Apart (Surveying the Big Screen / Flexible Typesetting).
+
+**Regla de edición:** todo texto nuevo usa la misma jerarquía. Una entrada debe tener comienzo y cierre visibles; el Atlas publica montajes diferenciados, el Diccionario presenta una palabra y su desarrollo antes de las relaciones, el Libro y las notas se leen en una columna con interludios visuales dosificados. No introducir un titular gigante para dar importancia artificial a una idea. No imponer a herramientas gráficas los mismos límites de anchura del ensayo.
