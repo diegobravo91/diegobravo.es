@@ -1,0 +1,125 @@
+<!doctype html><html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Imágenes — Diego Bravo · Pasarela y archivo visual</title>
+<meta name="description" content="Pasarela visual del cuaderno: once entradas con imágenes, montajes gráficos y fotografías históricas de dominio público. Recorre y descubre sin necesidad de leerlo todo.">
+<meta name="robots" content="index,follow,max-image-preview:large"><meta name="author" content="Diego Bravo">
+<link rel="canonical" href="https://diegobravo.es/imagenes.html">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/site.css"><link rel="stylesheet" href="/assets/mobile-shell.css">
+<meta name="theme-color" content="#eceae4"><meta property="og:title" content="Imágenes — Diego Bravo"><meta property="og:type" content="website">
+<meta property="og:description" content="Pasarela visual para descubrir notas, imágenes y fuentes abiertas.">
+<meta property="og:url" content="https://diegobravo.es/imagenes.html">
+<meta property="og:image" content="https://diegobravo.es/assets/social-card.jpg">
+<style>
+:root{--paper:#eceae4;--ink:#161714;--white:#f6f5f0;--muted:#575851;--line:#b9b9b0;--accent:#a52e17;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;--pad:clamp(18px,3.2vw,52px)}
+*{box-sizing:border-box}html{background:var(--paper);scroll-behavior:smooth}
+body{margin:0;color:var(--ink);background:var(--paper);font:16px/1.45 Arial,Helvetica,sans-serif}
+a{color:inherit;text-underline-offset:.25em}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.skip{position:fixed;top:0;left:15px;padding:10px;background:var(--ink);color:var(--paper);transform:translateY(-150%);z-index:300}.skip:focus{transform:none}
+.top{display:flex;justify-content:space-between;align-items:center;gap:15px;border-bottom:1px solid var(--ink);padding:11px var(--pad);min-height:62px;position:sticky;top:0;z-index:50;background:rgba(236,234,228,.98)}
+.top .brand{font-size:15px;text-decoration:none;font-weight:700}
+.top nav{display:flex;gap:20px;align-items:center}.top nav a{font:11px var(--mono);text-decoration:none}
+.overline,.count,.eyebrow,.legal,.entry-mark,.thumb-meta,.archive-card small{font:11px/1.5 var(--mono);color:var(--muted);letter-spacing:.02em}
+.hero{padding:clamp(28px,5vw,70px) var(--pad) clamp(20px,3vw,36px);display:grid;grid-template-columns:1.4fr 1fr;gap:20px;align-items:end;border-bottom:1px solid var(--ink)}
+h1{font:500 clamp(69px,10vw,147px)/.84 Arial,Helvetica,sans-serif;letter-spacing:-.085em;margin:9px 0 4px}
+.hero p{font-size:clamp(19px,2vw,30px);letter-spacing:-.032em;line-height:1.2;max-width:520px;margin:0 0 5px}
+.block-head{display:flex;gap:20px;align-items:baseline;justify-content:space-between;padding:18px var(--pad);border-bottom:1px solid var(--ink)}
+.block-head h2{font-size:clamp(25px,2.8vw,38px);font-weight:500;letter-spacing:-.05em;margin:0}
+.passage{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(240px,.6fr);min-height:490px;border-bottom:1px solid var(--ink)}
+.image-panel{position:relative;display:flex;align-items:stretch;justify-content:center;background:#242522;overflow:hidden;min-width:0;min-height:450px}
+.image-panel img{display:block;width:100%;height:auto;max-height:min(70vw,610px);min-height:370px;object-fit:contain}
+.image-panel .no-image{display:none;color:#eceae4;align-self:center;padding:20px}
+.image-panel img.is-missing{display:none}.image-panel img.is-missing+.no-image{display:block}
+.read-panel{padding:clamp(24px,3vw,44px) var(--pad);background:var(--white);display:flex;justify-content:space-between;flex-direction:column;gap:30px}
+.read-panel h3{font:500 clamp(36px,4vw,62px)/.97 Arial,Helvetica,sans-serif;letter-spacing:-.07em;margin:10px 0 20px}
+.read-panel p{font-size:15px;max-width:400px;line-height:1.6}
+.read-panel .source-link{font:11px var(--mono)}
+.read-panel .start{display:inline-block;padding:13px 20px;background:var(--ink);color:var(--paper);text-decoration:none;font:12px var(--mono);min-height:47px}
+.read-panel .controls{display:flex;gap:8px;margin-top:20px}
+.read-panel button{min-height:48px;min-width:54px;cursor:pointer;background:transparent;color:var(--ink);border:1px solid var(--line);font:24px Arial}
+.read-panel button:hover{border-color:var(--ink)}
+.thumb-head{display:flex;gap:14px;align-items:baseline;justify-content:space-between;padding:15px var(--pad)}
+.thumb-head p{font-size:13px;color:var(--muted);margin:0}
+.thumbrail{display:flex;gap:12px;padding:0 var(--pad) 28px;overflow-x:auto;overscroll-behavior-inline:contain;scroll-snap-type:x mandatory;border-bottom:1px solid var(--ink);scrollbar-width:thin}
+.thumb{flex:0 0 clamp(175px,19vw,260px);min-width:0;display:flex;flex-direction:column;scroll-snap-align:start;gap:8px;text-decoration:none;padding:9px;border:2px solid transparent}
+.thumb[aria-current="true"]{border-color:var(--accent)}
+.thumb img{width:100%;height:clamp(115px,15vw,170px);object-fit:cover;background:#dedbd1}
+.thumb strong{font-size:15px;letter-spacing:-.02em;line-height:1.2;font-weight:500}
+.archive-intro{padding:20px var(--pad);border-bottom:1px solid var(--line);max-width:950px;font-size:18px;line-height:1.45}
+.archive-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;border-bottom:1px solid var(--ink)}
+.archive-card{margin:0;min-width:0;border-right:1px solid var(--line);padding:18px clamp(10px,1.8vw,26px) 25px}
+.archive-card:last-child{border:0}
+.archive-card img{display:block;aspect-ratio:3/4;object-fit:contain;width:100%;background:#d9d6ce}
+.archive-card figcaption{padding-top:14px;display:flex;flex-direction:column;gap:7px}
+.archive-card figcaption strong{font-size:19px;line-height:1.1;font-weight:500;letter-spacing:-.03em}
+.archive-card figcaption span{font-size:13px;line-height:1.35}
+.archive-card figcaption a{font:11px/1.5 var(--mono);overflow-wrap:anywhere}
+.archive-card small{display:block}
+.under{padding:30px var(--pad);display:grid;grid-template-columns:1fr 1fr;gap:40px;border-bottom:1px solid var(--ink)}
+.under p{max-width:600px;font-size:16px;line-height:1.6;margin:0}
+footer{padding:20px var(--pad);font:11px var(--mono);display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px}
+@media(max-width:950px){.passage{grid-template-columns:1fr}.image-panel{min-height:unset}.image-panel img{height:54vw;min-height:260px;max-height:500px}.read-panel{gap:18px}.read-panel h3{font-size:38px}.archive-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.archive-card:nth-child(3){border-right:0}}
+@media(max-width:650px){.hero{grid-template-columns:1fr}.hero h1{font-size:clamp(67px,18vw,98px)}.hero p{font-size:20px}.top nav a:nth-child(2){display:none}.passage{min-height:unset}.image-panel img{height:65vw;max-height:430px;min-height:245px}.thumb{flex-basis:190px}.archive-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.archive-card:nth-child(odd){border-right:1px solid var(--line)}.archive-card:nth-child(even){border-right:0}.archive-card{border-bottom:1px solid var(--line)}.under{grid-template-columns:1fr;gap:18px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style><script defer src="/assets/mobile-shell.js"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Imágenes — Diego Bravo","url":"https://diegobravo.es/imagenes.html","inLanguage":"es"}</script>
+</head><body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="top"><a class="brand" href="/">Diego Bravo / Imágenes</a><nav aria-label="Principal"><a href="/notas.html">Cuaderno</a><a href="/atlas.html">Atlas</a><a href="/buscar.html">Buscar</a></nav></header>
+<main id="contenido" tabindex="-1">
+<section class="hero"><div><div class="overline">Una entrada visual a la investigación</div><h1>Imágenes.</h1></div><p>Once puertas para mirar antes de leer. Obras históricas, gráficos editoriales y preguntas que conducen al cuaderno.</p></section>
+<section aria-labelledby="pasarela"><div class="block-head"><h2 id="pasarela">01 / Pasarela de lecturas</h2><span class="count">11 imágenes · usa las flechas o toca una miniatura</span></div>
+<div class="passage" id="pasarela-visor" tabindex="0" aria-label="Pasarela de imágenes, pulsa las flechas para avanzar">
+<div class="image-panel"><img id="image-actual" src="/assets/visual/nota-004-carton.svg" alt="Diagrama original de un cartón usado frente a su reproducción gráfica" referrerpolicy="no-referrer" decoding="async"><span class="no-image" role="status">Esta imagen no está disponible ahora. Puedes abrir el ensayo o consultar su fuente.</span></div>
+<div class="read-panel"><div><div class="entry-mark" id="image-kicker">N–004 · Materia / Reproducción · 1 / 11</div>
+<h3 id="image-title">El cartón que imita al cartón</h3><p id="image-rights">Gráfica editorial original. No reproduce una obra de Rauschenberg.</p><a class="source-link" id="image-source" href="/notas/el-carton-que-imita-al-carton.html"  hidden>Consultar registro de procedencia ↗</a></div>
+<div><a id="image-reading" class="start" href="/notas/el-carton-que-imita-al-carton.html">Leer esta entrada ↗</a>
+<div class="controls"><button type="button" id="prev" aria-label="Imagen anterior">←</button><button type="button" id="next" aria-label="Imagen siguiente">→</button><span class="count" style="align-self:center" id="count-live" aria-live="polite">1 de 11</span></div></div></div></div>
+<div class="thumb-head"><div class="overline">Seleccionar una entrada</div><p>Las miniaturas también enlazan al artículo si el visor no se ejecuta.</p></div>
+<div class="thumbrail" id="miniaturas" aria-label="Seleccionar entrada de la pasarela"><a class="thumb" href="/notas/el-carton-que-imita-al-carton.html" data-slide="0" aria-current="true"><img src="/assets/visual/nota-004-carton.svg" alt="Diagrama original de un cartón usado frente a su reproducción gráfica" loading="eager" decoding="async" referrerpolicy="no-referrer"><span class="thumb-meta">N–004 · Materia / Reproducción</span><strong>El cartón que imita al cartón</strong></a>
+<a class="thumb" href="/notas/la-imagen-que-debia-desaparecer.html" data-slide="1" ><img src="/assets/visual/nota-005-transferencia.svg" alt="Dos tejidos superpuestos con trazos parciales, una transferencia incompleta" loading="eager" decoding="async" referrerpolicy="no-referrer"><span class="thumb-meta">N–005 · Huella / Transferencia</span><strong>La imagen que debía desaparecer</strong></a>
+<a class="thumb" href="/notas/la-imagen-cambia-de-vecina.html" data-slide="2" ><img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Ulva_lactuca_MET_DP-17302-145.jpg" alt="Anna Atkins, Ulva lactuca, cianotipo blanco sobre fondo azul, circa 1853" loading="eager" decoding="async" referrerpolicy="no-referrer"><span class="thumb-meta">N–006 · Montaje / Archivo</span><strong>La imagen cambia de vecina</strong></a>
+<a class="thumb" href="/notas/una-planta-fuera-de-lugar.html" data-slide="3" ><img src="https://images.metmuseum.org/CRDImages/ph/original/DP-17302-144.jpg" alt="Anna Atkins, Ulva latissima, cianotipo de alga blanca sobre fondo azul, circa 1853" loading="eager" decoding="async" referrerpolicy="no-referrer"><span class="thumb-meta">N–009 · Botánica / Territorio</span><strong>Una planta fuera de lugar</strong></a>
+<a class="thumb" href="/notas/lo-que-el-borrado-no-consigue-borrar.html" data-slide="4" ><img src="/assets/visual/nota-007-borrado.svg" alt="Trazos oscuros parcialmente cubiertos por una capa pálida que deja huellas" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="thumb-meta">N–007 · Dibujo / Tiempo</span><strong>Lo que el borrado no consigue borrar</strong></a>
+<a class="thumb" href="/notas/un-camino-no-cabe-en-un-mapa.html" data-slide="5" ><img src="/assets/visual/nota-008-camino.svg" alt="Línea roja de recorrido que atraviesa curvas de nivel grises" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="thumb-meta">N–008 · Caminar / Cartografía</span><strong>Un camino no cabe en un mapa</strong></a>
+<a class="thumb" href="/notas/una-forma-que-cambia-sin-romperse.html" data-slide="6" ><img src="/assets/visual/nota-010-condensacion.svg" alt="Cubo transparente dibujado sobre fondo oscuro con gotas en su interior" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="thumb-meta">N–010 · Materia / Condensación</span><strong>Una forma que cambia sin romperse</strong></a>
+<a class="thumb" href="/notas/el-instante-en-que-deja-de-hacer-gracia.html" data-slide="7" ><img src="/assets/visual/nota-011-escena.svg" alt="Tres figuras y una tensión de miradas en una escena diagramada" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="thumb-meta">N–011 · Escena / Conducta</span><strong>El instante en que deja de hacer gracia</strong></a>
+<a class="thumb" href="/notas/una-exposicion-no-es-un-contenedor.html" data-slide="8" ><img src="/assets/visual/nota-003-exposicion.svg" alt="Planta abstracta de dos salas y un recorrido que conecta posiciones" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="thumb-meta">N–003 · Montaje / Museo</span><strong>Una exposición no es un contenedor</strong></a>
+<a class="thumb" href="/notas/no-todo-entre-es-umbral.html" data-slide="9" ><img src="/assets/visual/nota-002-criterio.svg" alt="Dos campos de contraste, intervalo y transformación, separados por una distinción" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="thumb-meta">N–002 · Concepto / Contraejemplo</span><strong>No todo entre es umbral</strong></a>
+<a class="thumb" href="/notas/el-tiempo-que-no-tenemos.html" data-slide="10" ><img src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/268638/631820/main-image" alt="Muybridge, Boys Playing Leap Frog, sucesión fotográfica de niños saltando, 1883-1886" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="thumb-meta">N–001 · Tiempo / Secuencia</span><strong>El tiempo que no tenemos</strong></a></div>
+</section>
+<section id="archivo" aria-labelledby="archivo-title"><div class="block-head"><h2 id="archivo-title">02 / Archivo abierto</h2><span class="count">5 reproducciones verificadas · dominio público / CC0</span></div>
+<p class="archive-intro">Estas fotografías y grabados sí pertenecen a artistas históricos. Se presentan con sus nombres y fuentes, no como obras realizadas por Diego Bravo. Las imágenes pueden llevar a otras preguntas; el derecho de uso se comprueba en cada registro institucional.</p>
+<div class="archive-grid"><figure class="archive-card"><a href="https://www.metmuseum.org/art/collection/search/363252" rel="noopener noreferrer"><img src="https://images.metmuseum.org/CRDImages/dp/original/DP828232.jpg" alt="Piranesi, interior arqueado de la llamada Villa de Mecenas" loading="lazy" decoding="async" referrerpolicy="no-referrer"></a><figcaption><strong>Giovanni Battista Piranesi</strong><span>Villa de Mecenas en Tívoli, ca. 1764</span><small>Ruina / arquitectura / pasaje</small><a href="https://www.metmuseum.org/art/collection/search/363252" rel="noopener noreferrer">Fuente y derechos: The Met · Open Access CC0 ↗</a></figcaption></figure>
+<figure class="archive-card"><a href="https://www.metmuseum.org/art/collection/search/291638" rel="noopener noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Ulva_lactuca_MET_DP-17302-145.jpg" alt="Anna Atkins, Ulva lactuca, cianotipo en azul" loading="lazy" decoding="async" referrerpolicy="no-referrer"></a><figcaption><strong>Anna Atkins</strong><span>Ulva lactuca, ca. 1853</span><small>Contacto / negativo / herbario</small><a href="https://www.metmuseum.org/art/collection/search/291638" rel="noopener noreferrer">Fuente y derechos: The Met · Open Access CC0 ↗</a></figcaption></figure>
+<figure class="archive-card"><a href="https://www.metmuseum.org/art/collection/search/291637" rel="noopener noreferrer"><img src="https://images.metmuseum.org/CRDImages/ph/original/DP-17302-144.jpg" alt="Anna Atkins, Ulva latissima, cianotipo en azul" loading="lazy" decoding="async" referrerpolicy="no-referrer"></a><figcaption><strong>Anna Atkins</strong><span>Ulva latissima, ca. 1853</span><small>Serie / especie / diferencia</small><a href="https://www.metmuseum.org/art/collection/search/291637" rel="noopener noreferrer">Fuente y derechos: The Met · Open Access CC0 ↗</a></figcaption></figure>
+<figure class="archive-card"><a href="https://www.metmuseum.org/art/collection/search/291634" rel="noopener noreferrer"><img src="https://images.metmuseum.org/CRDImages/ph/original/DP-17302-141.jpg" alt="Anna Atkins, Porphyra laciniata, cianotipo en azul" loading="lazy" decoding="async" referrerpolicy="no-referrer"></a><figcaption><strong>Anna Atkins</strong><span>Porphyra laciniata, ca. 1853</span><small>Forma / huella / ciencia</small><a href="https://www.metmuseum.org/art/collection/search/291634" rel="noopener noreferrer">Fuente y derechos: The Met · Open Access CC0 ↗</a></figcaption></figure>
+<figure class="archive-card"><a href="https://www.metmuseum.org/art/collection/search/268638" rel="noopener noreferrer"><img src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/268638/631820/main-image" alt="Muybridge, niños saltando en varias fotografías sucesivas" loading="lazy" decoding="async" referrerpolicy="no-referrer"></a><figcaption><strong>Eadweard Muybridge</strong><span>Boys Playing Leap Frog, 1883–1887</span><small>Movimiento / sucesión / cuerpo</small><a href="https://www.metmuseum.org/art/collection/search/268638" rel="noopener noreferrer">Fuente y derechos: The Met · Open Access CC0 ↗</a></figcaption></figure></div></section>
+<section class="under" aria-label="Acerca de las imágenes"><p>Los dibujos de portada del cuaderno son <strong>composiciones editoriales originales</strong>. Son imágenes para orientar la lectura, no documentación de obras, exposiciones o pruebas materiales realizadas.</p>
+<p>Esta galería no sustituye una futura sección de trabajo propio. Para incorporar fotografías de taller, caligrafía o pruebas reales habrá que verificar primero la autoría, la procedencia y qué puede circular públicamente. <a href="/colofon.html">Derechos y procedencia ↗</a></p></section>
+</main><footer><span>Diego Bravo · Pasarela visual v0.1 · 17.10.2026</span><span><a href="/notas.html">Cuaderno</a> · <a href="/feed.xml">RSS</a> · <a href="/colofon.html">Derechos</a></span></footer>
+<script>
+(function(){
+ 'use strict';
+ var data=[{"id":"N–004","title":"El cartón que imita al cartón","tag":"Materia / Reproducción","src":"/assets/visual/nota-004-carton.svg","alt":"Diagrama original de un cartón usado frente a su reproducción gráfica","url":"/notas/el-carton-que-imita-al-carton.html","rights":"Gráfica editorial original. No reproduce una obra de Rauschenberg.","source":""},{"id":"N–005","title":"La imagen que debía desaparecer","tag":"Huella / Transferencia","src":"/assets/visual/nota-005-transferencia.svg","alt":"Dos tejidos superpuestos con trazos parciales, una transferencia incompleta","url":"/notas/la-imagen-que-debia-desaparecer.html","rights":"Gráfica editorial original. No reproduce los Hoarfrosts.","source":""},{"id":"N–006","title":"La imagen cambia de vecina","tag":"Montaje / Archivo","src":"https://upload.wikimedia.org/wikipedia/commons/d/d4/Ulva_lactuca_MET_DP-17302-145.jpg","alt":"Anna Atkins, Ulva lactuca, cianotipo blanco sobre fondo azul, circa 1853","url":"/notas/la-imagen-cambia-de-vecina.html","rights":"Anna Atkins · Ulva lactuca · The Met / Wikimedia Commons · dominio público, CC0.","source":"https://www.metmuseum.org/art/collection/search/291638"},{"id":"N–009","title":"Una planta fuera de lugar","tag":"Botánica / Territorio","src":"https://images.metmuseum.org/CRDImages/ph/original/DP-17302-144.jpg","alt":"Anna Atkins, Ulva latissima, cianotipo de alga blanca sobre fondo azul, circa 1853","url":"/notas/una-planta-fuera-de-lugar.html","rights":"Anna Atkins · Ulva latissima · The Met · dominio público, Open Access CC0.","source":"https://www.metmuseum.org/art/collection/search/291637"},{"id":"N–007","title":"Lo que el borrado no consigue borrar","tag":"Dibujo / Tiempo","src":"/assets/visual/nota-007-borrado.svg","alt":"Trazos oscuros parcialmente cubiertos por una capa pálida que deja huellas","url":"/notas/lo-que-el-borrado-no-consigue-borrar.html","rights":"Gráfica editorial original. No es una obra de William Kentridge.","source":""},{"id":"N–008","title":"Un camino no cabe en un mapa","tag":"Caminar / Cartografía","src":"/assets/visual/nota-008-camino.svg","alt":"Línea roja de recorrido que atraviesa curvas de nivel grises","url":"/notas/un-camino-no-cabe-en-un-mapa.html","rights":"Gráfica editorial original, mapa conceptual y no topografía real.","source":""},{"id":"N–010","title":"Una forma que cambia sin romperse","tag":"Materia / Condensación","src":"/assets/visual/nota-010-condensacion.svg","alt":"Cubo transparente dibujado sobre fondo oscuro con gotas en su interior","url":"/notas/una-forma-que-cambia-sin-romperse.html","rights":"Gráfica editorial original. No reproduce Condensation Cube de Haacke.","source":""},{"id":"N–011","title":"El instante en que deja de hacer gracia","tag":"Escena / Conducta","src":"/assets/visual/nota-011-escena.svg","alt":"Tres figuras y una tensión de miradas en una escena diagramada","url":"/notas/el-instante-en-que-deja-de-hacer-gracia.html","rights":"Gráfica editorial original. No reproduce obras de Schiele, Ono o Nauman.","source":""},{"id":"N–003","title":"Una exposición no es un contenedor","tag":"Montaje / Museo","src":"/assets/visual/nota-003-exposicion.svg","alt":"Planta abstracta de dos salas y un recorrido que conecta posiciones","url":"/notas/una-exposicion-no-es-un-contenedor.html","rights":"Diagrama editorial original, no fotografía de una exposición.","source":""},{"id":"N–002","title":"No todo entre es umbral","tag":"Concepto / Contraejemplo","src":"/assets/visual/nota-002-criterio.svg","alt":"Dos campos de contraste, intervalo y transformación, separados por una distinción","url":"/notas/no-todo-entre-es-umbral.html","rights":"Diagrama editorial original, no obra realizada.","source":""},{"id":"N–001","title":"El tiempo que no tenemos","tag":"Tiempo / Secuencia","src":"https://collectionapi.metmuseum.org/api/collection/v1/iiif/268638/631820/main-image","alt":"Muybridge, Boys Playing Leap Frog, sucesión fotográfica de niños saltando, 1883-1886","url":"/notas/el-tiempo-que-no-tenemos.html","rights":"Eadweard Muybridge · Boys Playing Leap Frog · The Met · dominio público, CC0. Relación de lectura, no ilustración histórica del texto.","source":"https://www.metmuseum.org/art/collection/search/268638"}];
+ var curr=0,thumbs=[].slice.call(document.querySelectorAll('[data-slide]'));
+ var img=document.getElementById('image-actual'),title=document.getElementById('image-title'),rights=document.getElementById('image-rights'),kicker=document.getElementById('image-kicker'),source=document.getElementById('image-source'),reading=document.getElementById('image-reading'),counter=document.getElementById('count-live'),panel=document.getElementById('pasarela-visor');
+ function show(n,scroll){
+   curr=(n+data.length)%data.length;
+   var d=data[curr];
+   img.classList.remove('is-missing');img.src=d.src;img.alt=d.alt;
+   kicker.textContent=d.id+' · '+d.tag+' · '+(curr+1)+' / '+data.length;
+   title.textContent=d.title;rights.textContent=d.rights;
+   reading.href=d.url;source.hidden=!d.source;
+   if(d.source){source.href=d.source;}
+   counter.textContent=(curr+1)+' de '+data.length;
+   thumbs.forEach(function(el,i){if(i===curr){el.setAttribute('aria-current','true');if(scroll)el.scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'});}else el.removeAttribute('aria-current');});
+ }
+ img.addEventListener('error',function(){img.classList.add('is-missing');});
+ document.getElementById('prev').addEventListener('click',function(){show(curr-1,true)});
+ document.getElementById('next').addEventListener('click',function(){show(curr+1,true)});
+ thumbs.forEach(function(el){el.addEventListener('click',function(e){if(e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;e.preventDefault();show(Number(el.getAttribute('data-slide')),false);panel.focus({preventScroll:true});});});
+ panel.addEventListener('keydown',function(e){if(e.key==='ArrowLeft'){e.preventDefault();show(curr-1,true)}if(e.key==='ArrowRight'){e.preventDefault();show(curr+1,true)}});
+})();
+</script></body></html>
