@@ -98,7 +98,7 @@ main{width:100%;overflow:clip}.eyebrow{text-transform:uppercase;color:var(--rust
 <div class="studio-top"><span class="eyebrow">01 / Mesa de trazo</span><span class="micro">Un estudio digital que puedes intervenir</span></div>
 <div class="surface" id="surface"><span class="studio-hint micro" id="surface-hint">Traza sobre la imagen con el dedo o el ratón</span><canvas id="trace" tabindex="0" role="img" aria-label="Superficie de dibujo digital con un gesto inicial de muestra. Puedes añadir tus trazos con el ratón o el dedo; los controles permiten borrar, restaurar y guardar."></canvas><noscript><p style="padding:35px">Abre <a href="/mesa-de-trazo.html">Mesa de trazo</a> para trabajar con el dibujo.</p></noscript></div>
 <div class="studio-bottom"><div class="studio-controls"><button class="studio-control" id="clear" type="button">Limpiar</button><button class="studio-control" id="restore" type="button">Restaurar estudio</button><button class="studio-control" id="save" type="button">Guardar PNG</button></div><a class="small-link" href="/mesa-de-trazo.html">Abrir mesa completa ↗</a></div>
-<div class="studio-note" id="studio-status" aria-live="polite">Estudio gráfico generado para la web, no fotografía de una obra material. Los trazos que hagas se quedan en tu navegador.</div>
+<div class="studio-note" id="studio-status" aria-live="polite">Estudio gráfico digital desarrollado con asistencia de IA para esta web, no fotografía de una obra material. Los trazos que hagas se quedan en tu navegador.</div>
 </div></section>
 <section class="projects section-pad" aria-labelledby="projects-title"><div class="section-head"><div><span class="eyebrow">Selección del Cuaderno visual</span><h2 id="projects-title">Tres imágenes. Tres preguntas.</h2></div><p>Empieza por mirar. La documentación, las referencias y las objeciones aparecen dentro de cada ensayo, no antes de las imágenes.</p></div>
 <div class="project-grid">
@@ -143,7 +143,7 @@ function end(e){if(pointer!==e.pointerId||!current)return;strokes.push(current);
 canvas.addEventListener('pointerup',end);canvas.addEventListener('pointercancel',end);
 document.getElementById('clear').addEventListener('click',()=>{strokes=[];current=null;paint();status.textContent='Superficie limpia. Ahora puedes dibujar desde cero.';});
 document.getElementById('restore').addEventListener('click',()=>{strokes=example.map(s=>({color:s.color,pts:s.pts.map(p=>p.slice())}));current=null;paint();status.textContent='Estudio digital restaurado.';});
-document.getElementById('save').addEventListener('click',()=>{const file=document.createElement('a');file.download='estudio-de-trazo-diegobravo.png';file.href=canvas.toDataURL('image/png');file.click();status.textContent='Se ha preparado una imagen PNG de los trazos.';});
+document.getElementById('save').addEventListener('click',()=>{const file=document.createElement('a');file.download='estudio-de-trazo-diegobravo.png';const exported=document.createElement('canvas');exported.width=canvas.width;exported.height=canvas.height;const bx=exported.getContext('2d');bx.fillStyle='#ded9cb';bx.fillRect(0,0,exported.width,exported.height);bx.drawImage(canvas,0,0);file.href=exported.toDataURL('image/png');file.click();status.textContent='Se ha preparado una imagen PNG con fondo y trazos.';});
 if('ResizeObserver' in window)new ResizeObserver(size).observe(frame);else window.addEventListener('resize',size);size();
 })();
 </script>
