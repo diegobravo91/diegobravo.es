@@ -1,6 +1,6 @@
 {
   "schema": "diegobravo.es/asset-rights-v1",
-  "reviewed_on": "2026-10-17",
+  "reviewed_on": "2026-10-18",
   "policy": "Every media item reused must have a traceable source, identified author/rightsholder, legal basis and scope. No blanket permission from link or attribution.",
   "assets": [
     {
@@ -260,6 +260,91 @@
       "rights_note": "Credit does not itself grant permission. Commentary context only; reevaluate licenses or request permission for continued display or other uses.",
       "publication_date": "2026-10-17",
       "license_claim": null
+    },
+    {
+      "id": "OA-ENSOR-INTRIGUE-1890",
+      "creator": "James Ensor",
+      "title": "The Intrigue / La intriga",
+      "date": "1890",
+      "source": "https://vlaamsekunstcollectie.be/en/collectie/1856",
+      "file_page": "https://commons.wikimedia.org/wiki/File:L%27Intrigue_(James_Ensor,_1890).jpg",
+      "legal_basis": "Museum image marked CC0 / Wikimedia faithful public-domain reproduction",
+      "status": "verified_museum_and_commons_2026-10-18",
+      "used_on": [
+        "/notas/schiele-la-verdad-tambien-posa.html",
+        "/notas/goya-nadie-se-conoce-y-las-mascaras.html",
+        "/notas/el-instante-en-que-deja-de-hacer-gracia.html",
+        "/constelaciones.html",
+        "/cuaderno/mascara-compostura-ridiculo.html",
+        "/notas.html"
+      ],
+      "attribution": "James Ensor · Royal Museum of Fine Arts Antwerp (KMSKA) · CC0"
+    },
+    {
+      "id": "OA-ENSOR-SELF-MASKS-1899",
+      "creator": "James Ensor",
+      "title": "Self-Portrait with Masks",
+      "date": "1899",
+      "source": "https://museum.menard.co.jp/english/collection/european/ensor_ja_01.html",
+      "file_page": "https://commons.wikimedia.org/wiki/File:James_Ensor,_Self_Portrait_with_Masks_(1899)_oil_on_canvas,_117_x_82_cm.,_Menard_Art_Museum,_Komaki,_Japan.jpg",
+      "legal_basis": "Wikimedia Commons faithful public-domain reproduction; source institution verified",
+      "status": "verified_museum_and_commons_2026-10-18",
+      "used_on": [
+        "/notas/schiele-la-verdad-tambien-posa.html",
+        "/notas/goya-nadie-se-conoce-y-las-mascaras.html",
+        "/notas/el-instante-en-que-deja-de-hacer-gracia.html",
+        "/constelaciones.html"
+      ],
+      "attribution": "James Ensor · Menard Art Museum · public domain reproduction"
+    },
+    {
+      "id": "OA-SCHIELE-NGA-1912",
+      "creator": "Egon Schiele",
+      "title": "Self-Portrait",
+      "date": "1912",
+      "source": "https://www.nga.gov/artworks/82933-self-portrait",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Egon_Schiele,_Self-Portrait,_1912,_NGA_82933.jpg",
+      "legal_basis": "National Gallery of Art Open Access / Commons CC0",
+      "status": "verified_nga_commons_2026-10-18",
+      "used_on": [
+        "/notas/schiele-la-verdad-tambien-posa.html",
+        "/notas/el-instante-en-que-deja-de-hacer-gracia.html",
+        "/constelaciones.html",
+        "/cuaderno/mascara-compostura-ridiculo.html"
+      ],
+      "attribution": "Egon Schiele · National Gallery of Art · Open Access / CC0"
+    },
+    {
+      "id": "OA-SCHIELE-1910",
+      "creator": "Egon Schiele",
+      "title": "Self-Portrait / Selbstporträt",
+      "date": "1910",
+      "source": "https://commons.wikimedia.org/wiki/File:Egon_Schiele_-_Selbstportr%C3%A4t_(1910).jpg",
+      "legal_basis": "Commons public-domain artwork reproduction; existing site image",
+      "status": "existing_site_file_attribution_2026-10-18",
+      "used_on": [
+        "/notas/schiele-la-verdad-tambien-posa.html",
+        "/notas/goya-nadie-se-conoce-y-las-mascaras.html",
+        "/constelaciones.html",
+        "/notas.html"
+      ],
+      "attribution": "Egon Schiele · public-domain reproduction / Wikimedia Commons"
+    },
+    {
+      "id": "OA-GOYA-CAPRICHO-06",
+      "creator": "Francisco de Goya",
+      "title": "Nadie se conoce (Los Caprichos no. 6)",
+      "date": "1799",
+      "source": "https://www.metmuseum.org/art/collection/search/377785",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Museo_del_Prado_-_Goya_-_Caprichos_-_No._06_-_Nadie_se_conoce.jpg",
+      "legal_basis": "Met Public Domain / Open Access and Commons historical reproduction",
+      "status": "existing_site_open_access_2026-10-18",
+      "used_on": [
+        "/notas/goya-nadie-se-conoce-y-las-mascaras.html",
+        "/constelaciones.html",
+        "/notas.html"
+      ],
+      "attribution": "Francisco de Goya · Public Domain"
     }
   ],
   "digital_visual_essays": {
@@ -291,5 +376,18 @@
     "rights_separation": "Historical public-domain reproductions are differentiated from digital editorial graphics, visitor-made drawings and original physical artwork. No original artwork was fabricated.",
     "status": "reverted",
     "note": "El rediseño interactivo de portada publicado en commit 0dbaa603 fue retirado en commit 2b081276 tras rechazo explícito. La portada index.html vuelve al blob 506f43c565d4cccdd7b4e6b5eaba7f65292e5219. Este registro anterior se conserva como histórico, no como estado actual."
+  },
+  "editorial_dialogue_2026_10_18": {
+    "approach": "Real historical artwork beside the precise paragraphs about pose, masks, gaze and embarrassment. No generated faux artworks. Gallery-only-before-prose layouts removed in Schiele and Goya. Goffman's hypothetical interactive stage retained but moved after the argumentative reading.",
+    "pages": [
+      "/notas/schiele-la-verdad-tambien-posa.html",
+      "/notas/goya-nadie-se-conoce-y-las-mascaras.html",
+      "/notas/el-instante-en-que-deja-de-hacer-gracia.html",
+      "/cuaderno/mascara-compostura-ridiculo.html",
+      "/constelaciones.html",
+      "/notas.html"
+    ],
+    "difference": "Ensor's literal carnival masks are not equated with Goffman's dramaturgical interaction concepts. Image captions link to original source and license.",
+    "secondary_stylesheet": "/assets/imagen-texto-contextual.css"
   }
 }
