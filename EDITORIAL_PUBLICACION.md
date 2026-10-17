@@ -122,3 +122,14 @@ Las miniaturas de `notas.html` y la pasarela `imagenes.html` representan once en
 El registro `data/media-rights.json` documenta las imágenes históricas realmente reusadas. Los dos nuevos archivos de Anna Atkins proceden del Metropolitan Museum y están identificados individualmente como obras en dominio público/Open Access. Una imagen de un museo NO implica licenciamiento de todo su catálogo.
 
 Los SVGs de `assets/visual/` son composiciones editoriales interpretativas para artículos concretos; no son fotos de las obras de artistas citados ni pruebas reales. No aumentar su presencia por decoración: cada dibujo debe formular una operación visual y llevar pie claro. Conservación de accesibilidad: `alt`, leyenda y ruta a fuente; evitar dependencias exclusivas de JS o interacciones opacas.
+
+
+## Cuaderno de campo — València 2026 (integración publicada 17/10/2026)
+
+Punto de entrada: `/visitas-valencia-2026.html`. Dos ensayos públicos, no una nueva obra ni una carpeta maestra: `/notas/lo-que-sostiene-la-vida.html` (Tania Candiani, *Radix*) y `/notas/un-territorio-no-es-un-fondo.html` (Bleda y Rosa y Lucía Loren, *L’Albufera*). Se vinculan desde portada, `notas.html` e `imagenes.html`. El montaje transversal de cuatro fotografías existe sólo en el punto de entrada a la visita.
+
+Originales documentales: Biblioteca Visual de Drive, visita 22.08.2026. Copias de lectura web: `assets/visitas-2026/`. El crédito de Diego corresponde a la fotografía y al ensayo, **no a las obras fotografiadas**. Las obras contemporáneas conservan su protección y no se ha comprobado autorización expresa de todos sus titulares. Mantener registro en `data/media-rights.json`, evaluar proporcionalidad y fundamento legal para futuras reproducciones y retirar o sustituir material si procede. No usar las fotografías como imágenes de promoción en redes sin evaluación específica.
+
+Vídeos institucionales: enlaces oficiales del IVAM, mostrados mediante reproductor YouTube de carga voluntaria en las páginas de ensayo. Los archivos audiovisuales no se copian al repositorio. El módulo `assets/visita-2026.css` usa variables confinadas a `.visit-page`, `.visit-home` y `.visit-gallery`, y las páginas de visita identifican el body con `visit-page`. No volver a introducir estilos de `:root` o `body` sin aislar: podrían alterar todo el sitio.
+
+Estado de control: enlaces internos de once páginas relevantes contrastados con el árbol del repositorio (sin rutas inexistentes); 21 entradas detectadas en el Cuaderno, sin identificadores repetidos; navegación con acceso a Imágenes en las páginas principales. GitHub Pages reportó despliegue satisfactorio. Sigue pendiente una inspección visual manual final en navegador real (especialmente móvil), porque el control de código y el despliegue no prueban por sí solos la composición renderizada.
