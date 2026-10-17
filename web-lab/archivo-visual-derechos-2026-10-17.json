@@ -676,7 +676,127 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Plantstudie_Urformen_der_Kunst_%28serietitel%29%2C_RP-F-2008-51-2170-98.jpg",
       "research_use": "Comparar ampliación, aislado, escala, montaje e intersticio con cianotipias de Anna Atkins",
       "preview_url": ""
+    },
+    {
+      "id": "VA-056",
+      "creator": "Wilson A. Bentley",
+      "title": "Photomicrograph of Snowflake No. 342",
+      "year": "c. 1890",
+      "axis": "ciencia",
+      "rights": "CC0",
+      "rights_note": "Smithsonian Archives ficha CC0 y reproducción libre; comprobar archivo final seleccionado",
+      "source_url": "https://siarchives.si.edu/collections/siris_arc_308074",
+      "research_use": "Cristal efímero, fotomicrografía y edición de negativos",
+      "preview_url": ""
+    },
+    {
+      "id": "VA-057",
+      "creator": "Wilson A. Bentley",
+      "title": "Photomicrograph of Lamellar Snowflake No. 188",
+      "year": "c. 1890",
+      "axis": "ciencia",
+      "rights": "CC0",
+      "rights_note": "Smithsonian objeto individual declara Public Domain y dispone de JPEG; registrar ID al usar",
+      "source_url": "https://www.si.edu/object/wilson-bentley-photomicrograph-lamellar-snowflake-no-188%3Asiris_arc_403528",
+      "research_use": "Instrumento que captura estructuras fugaces, compararlo con borraduras",
+      "preview_url": ""
+    },
+    {
+      "id": "VA-058",
+      "creator": "James Nasmyth",
+      "title": "Normal Lunar Crater",
+      "year": "1874",
+      "axis": "archivo",
+      "rights": "CC0",
+      "rights_note": "Rijksmuseum/PDIA objeto declarado dominio público mundial y fichero CC0",
+      "source_url": "https://pdimagearchive.org/images/05cf11f7-4693-43aa-a5c1-7aa063de1e08/",
+      "research_use": "Fotografía de un relieve lunar fabricado en yeso a partir de observaciones",
+      "preview_url": ""
+    },
+    {
+      "id": "VA-059",
+      "creator": "James Nasmyth",
+      "title": "Group of Lunar Mountains",
+      "year": "1874",
+      "axis": "archivo",
+      "rights": "CC0",
+      "rights_note": "Rijksmuseum/PDIA objeto declarado dominio público mundial y fichero CC0",
+      "source_url": "https://pdimagearchive.org/images/7e1dcb6e-01d5-474b-8364-992cdcfe92e8/",
+      "research_use": "Modelo de yeso iluminado y fotografiado como representación científica",
+      "preview_url": ""
+    },
+    {
+      "id": "VA-060",
+      "creator": "Joan Fontcuberta",
+      "title": "Giliandria Escoliforcia, Herbarium",
+      "year": "1984",
+      "axis": "botanica",
+      "rights": "ENLACE",
+      "rights_note": "Obra contemporánea de Fontcuberta, sin licencia identificada para copiar imagen del Museo Reina Sofía",
+      "source_url": "https://www.museoreinasofia.es/colecciones/obra/giliandria-escoliforcia/",
+      "research_use": "Herbario ficticio: fotografía verdadera del espécimen inventado",
+      "preview_url": ""
+    },
+    {
+      "id": "VA-061",
+      "creator": "Susan Derges",
+      "title": "River Taw, fotogramas nocturnos",
+      "year": "1990s",
+      "axis": "materia",
+      "rights": "ENLACE",
+      "rights_note": "Obra contemporánea; imagen V&A no autorizada para rehostear por mero acceso web",
+      "source_url": "https://www.vam.ac.uk/articles/cameraless-photography",
+      "research_use": "Paisaje y agua intervienen físicamente en un registro fotográfico",
+      "preview_url": ""
+    },
+    {
+      "id": "VA-062",
+      "creator": "Santiago Ramón y Cajal",
+      "title": "Dibujos neurohistológicos, Colección Museo Cajal",
+      "year": "c. 1900",
+      "axis": "ciencia",
+      "rights": "PENDIENTE",
+      "rights_note": "Obra histórica y archivos IIIF con términos institucionales específicos; consultar permiso de reproducción de ficheros CSIC",
+      "source_url": "https://www.santiagoramonycajal.org/museo-cajal/dibujos/",
+      "research_use": "Ramificaciones neuronales como dibujo e interpretación de microscopia",
+      "preview_url": ""
+    },
+    {
+      "id": "VA-063",
+      "creator": "D'Arcy Wentworth Thompson",
+      "title": "On Growth and Form, diagramas de transformación",
+      "year": "1917",
+      "axis": "ciencia",
+      "rights": "PENDIENTE",
+      "rights_note": "Edición disponible como dominio público estadounidense, pero plazo de derechos original en España requiere análisis. Enlazar y dibujar gráfico propio.",
+      "source_url": "https://mathshistory.st-andrews.ac.uk/Darcy/transformation/",
+      "research_use": "Cuadrícula deformada entre morfologías; experimento de interfaz",
+      "preview_url": ""
+    },
+    {
+      "id": "VA-064",
+      "creator": "Berenice Abbott",
+      "title": "Parabolic Mirror, MIT scientific photography",
+      "year": "c. 1958",
+      "axis": "ciencia",
+      "rights": "ENLACE",
+      "rights_note": "Reproducción y obra moderna con derechos a confirmar, enlazar ficha del MIT Museum",
+      "source_url": "https://mitmuseum.mit.edu/collections/object/2013.018.047",
+      "research_use": "La fotografía científica hace aparecer principios ópticos mediante una puesta en escena",
+      "preview_url": ""
+    },
+    {
+      "id": "VA-065",
+      "creator": "Joana Cera",
+      "title": "Reconstruir Castells",
+      "year": "2017",
+      "axis": "materia",
+      "rights": "ENLACE",
+      "rights_note": "MACBA atribuye © Joana Cera VEGAP; solicita permiso para publicar fotografía",
+      "source_url": "https://www.macba.cat/es/obra/r6721-reconstruir-castells/",
+      "research_use": "Cocción de porcelana desmorona estructura de naipes; recomenzar tras proceso",
+      "preview_url": ""
     }
   ],
-  "update_note": "55 fuentes de imagen; 2 fotograbados originales de Blossfeldt (Rijksmuseum) añadidos con licencia CC0 del fichero exacto. No confundirlos con la reproducción restringida del Met."
+  "update_note": "Actualización de analogías: 65 fichas; nuevas CC0 Bentley y Nasmyth; Fontcuberta, Derges, Cajal, Thompson, Abbott y Cera se enlazan o requieren revisar derechos por obra y reproducción. Atlas de investigación; no implica permiso genérico."
 }
