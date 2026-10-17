@@ -114,3 +114,11 @@ Si la entrada es más visual que verbal, dejar que el montaje mande y que el tex
 **Libro** = argumenta. **Diccionario** = distingue. **Atlas** = monta. **Práctica** = demuestra o falla materialmente. **Cuaderno** = publica una experiencia de lectura, imagen, crítica u observación con entidad propia. **Archivo** = conserva fuentes. La web puede mostrar un acceso a cada uno, pero no debe duplicar su documentación interna.
 
 El próximo crecimiento verdadero no será un nuevo menú: será una entrada madura, bien escrita, visualmente necesaria y con al menos un material propio o un montaje crítico suficientemente singular.
+
+## Galería visual v0.22 — reglas de presentación
+
+Las miniaturas de `notas.html` y la pasarela `imagenes.html` representan once entradas publicadas: el número real de publicaciones se comprueba antes de actualizar textos o contadores. La galería no es un portfolio: debe distinguir imágenes de archivo de otros autores, composiciones editoriales originales, fotografías propias y obras materiales ejecutadas. No identificar ninguna de esas categorías con otra.
+
+El registro `data/media-rights.json` documenta las imágenes históricas realmente reusadas. Los dos nuevos archivos de Anna Atkins proceden del Metropolitan Museum y están identificados individualmente como obras en dominio público/Open Access. Una imagen de un museo NO implica licenciamiento de todo su catálogo.
+
+Los SVGs de `assets/visual/` son composiciones editoriales interpretativas para artículos concretos; no son fotos de las obras de artistas citados ni pruebas reales. No aumentar su presencia por decoración: cada dibujo debe formular una operación visual y llevar pie claro. Conservación de accesibilidad: `alt`, leyenda y ruta a fuente; evitar dependencias exclusivas de JS o interacciones opacas.

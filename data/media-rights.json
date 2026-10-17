@@ -13,7 +13,8 @@
       "used_on": [
         "/",
         "/atlas.html",
-        "/notas/la-imagen-cambia-de-vecina.html"
+        "/notas/la-imagen-cambia-de-vecina.html",
+        "/imagenes.html"
       ],
       "legal_basis": "public_domain_work_and_Met_Open_Access_CC0",
       "status": "verified_source_2026-10-16",
@@ -31,7 +32,9 @@
       "used_on": [
         "/",
         "/atlas.html",
-        "/notas/la-imagen-cambia-de-vecina.html"
+        "/notas/la-imagen-cambia-de-vecina.html",
+        "/imagenes.html",
+        "/notas.html"
       ],
       "legal_basis": "CC0_1.0_recorded_on_Wikimedia_Commons_file_page",
       "status": "verified_source_2026-10-16",
@@ -49,13 +52,50 @@
       "used_on": [
         "/",
         "/atlas.html",
-        "/notas/la-imagen-cambia-de-vecina.html"
+        "/notas/la-imagen-cambia-de-vecina.html",
+        "/imagenes.html",
+        "/notas.html",
+        "/notas/el-tiempo-que-no-tenemos.html"
       ],
       "legal_basis": "public_domain_work_and_Met_Open_Access_CC0",
       "status": "verified_source_2026-10-16",
       "web_use": "allowed_under_identified_Met_OA",
       "social_reuse": "eligible_recheck_source_if_material_changed",
       "attribution": "The Metropolitan Museum of Art / Eadweard Muybridge / CC0"
+    },
+    {
+      "id": "OA-022",
+      "creator": "Anna Atkins",
+      "title": "Ulva latissima",
+      "date": "ca. 1853",
+      "source": "https://www.metmuseum.org/art/collection/search/291637",
+      "file_ref": "https://images.metmuseum.org/CRDImages/ph/original/DP-17302-144.jpg",
+      "used_on": [
+        "/imagenes.html",
+        "/notas.html",
+        "/"
+      ],
+      "legal_basis": "public_domain_artwork_Met_Open_Access_CC0",
+      "status": "source_record_checked_2026-10-17",
+      "web_use": "allowed_under_identified_Met_OA",
+      "social_reuse": "eligible_but_source_and_platform_should_be_rechecked",
+      "attribution": "Anna Atkins / The Metropolitan Museum of Art / Open Access CC0"
+    },
+    {
+      "id": "OA-023",
+      "creator": "Anna Atkins",
+      "title": "Porphyra laciniata",
+      "date": "ca. 1853",
+      "source": "https://www.metmuseum.org/art/collection/search/291634",
+      "file_ref": "https://images.metmuseum.org/CRDImages/ph/original/DP-17302-141.jpg",
+      "used_on": [
+        "/imagenes.html"
+      ],
+      "legal_basis": "public_domain_artwork_Met_Open_Access_CC0",
+      "status": "source_record_checked_2026-10-17",
+      "web_use": "allowed_under_identified_Met_OA",
+      "social_reuse": "eligible_but_source_and_platform_should_be_rechecked",
+      "attribution": "Anna Atkins / The Metropolitan Museum of Art / Open Access CC0"
     }
   ],
   "digital_visual_essays": {

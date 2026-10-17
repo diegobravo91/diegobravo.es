@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="t d"><title id="t">Intervalo no equivale a transformación</title><desc id="d">Composición editorial original de Diego Bravo para la web. No reproduce una obra artística de terceros ni documenta un experimento realizado.</desc><defs></defs>
+<rect width="1200" height="800" fill="#e4e0d5"/>
+<rect x="75" y="80" width="500" height="640" fill="none" stroke="#242522" stroke-width="3"/>
+<rect x="625" y="80" width="500" height="640" fill="#242522"/>
+<path d="M142 390 H510" stroke="#a52e17" stroke-width="20" stroke-dasharray="50 28"/>
+<path d="M688 390 H1064" stroke="#e4e0d5" stroke-width="17"/>
+<path d="M876 170 V610" stroke="#f45028" stroke-width="2"/>
+<circle cx="876" cy="390" r="91" fill="#f45028"/>
+<circle cx="876" cy="390" r="46" fill="#242522"/>
+<text x="110" y="145" fill="#242522" font-family="monospace" font-size="19" letter-spacing="3">INTERVALO</text>
+<text x="660" y="145" fill="#e4e0d5" font-family="monospace" font-size="19" letter-spacing="3">TRANSFORMACIÓN</text>
+<path d="M575 390 L625 390" stroke="#a52e17" stroke-width="14"/>
+</svg>

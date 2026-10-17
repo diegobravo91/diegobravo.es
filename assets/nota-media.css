@@ -1,0 +1,6 @@
+/* Editorial imagery for existing 2026 articles. */
+.prose figure.editorial-image{margin:1.1em 0 2.3em;max-width:100%;padding:0}
+.prose figure.editorial-image img{width:100%;height:auto;max-height:550px;object-fit:contain;display:block;background:#252623}
+.prose figure.editorial-image figcaption{padding:12px 2px;color:#575851;font:11px/1.55 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;text-transform:none}
+.prose figure.editorial-image figcaption a{display:inline;text-decoration:underline;overflow-wrap:anywhere}
+@media(max-width:700px){.prose figure.editorial-image{margin:1em 0 1.8em}.prose figure.editorial-image figcaption{font-size:11px}}
