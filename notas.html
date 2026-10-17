@@ -116,6 +116,9 @@ a{color:inherit;text-underline-offset:.27em}a:focus-visible,button:focus-visible
 
 /* Cuaderno: tipografía editorial discreta */
 .hero h1{font-size:clamp(49px,7vw,96px);line-height:.98}.hero{min-height:0}
+
+/* Un único acceso al explorador, sin añadir menús */
+.cruces-teaser{padding:19px var(--pad);border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);background:#dfe3d9;display:flex;justify-content:space-between;align-items:center;gap:24px}.cruces-teaser div{display:flex;flex-direction:column;gap:6px}.cruces-teaser span{font:10px/1.5 var(--mono);color:#53634f}.cruces-teaser strong{font-size:clamp(16px,1.65vw,22px);font-weight:500;letter-spacing:-.025em;max-width:800px}.cruces-teaser a{flex:0 0 auto;font-size:13px;text-decoration:underline;text-underline-offset:4px}@media(max-width:680px){.cruces-teaser{align-items:start;flex-direction:column;gap:12px}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Cuaderno — Diego Bravo","url":"https://diegobravo.es/notas.html","inLanguage":"es","author":{"@type":"Person","name":"Diego Bravo","url":"https://diegobravo.es/"}}</script>
 <script defer src="/assets/mobile-shell.js"></script></head>
@@ -125,6 +128,7 @@ a{color:inherit;text-underline-offset:.27em}a:focus-visible,button:focus-visible
 <main id="contenido" tabindex="-1">
 <section class="hero"><div><div class="kicker">Arte · Cultura · Imágenes · Materia · Escritura</div><h1>Notas.</h1></div>
 <div><p>Una pregunta puede ser suficiente.</p><p class="short">Dieciséis entradas: ensayos visuales, esquemas y archivos abiertos. Puedes empezar por una fotografía o por una pregunta, sin recorrerlo todo.</p><a class="gallery-link" href="/imagenes.html">Ver la pasarela de imágenes ↗</a></div></section>
+<aside class="cruces-teaser" aria-label="Explorar relaciones visuales"><div><span>EXPERIENCIA INTERACTIVA</span><strong>¿Qué tiene que ver una hierba con una grieta, un cuerpo o una idea de futuro?</strong></div><a href="/cruces.html">Probar «Cruces» ↗</a></aside>
 <section id="archivo" aria-label="Buscar y elegir una nota">
 <div class="toolbar"><div class="search"><label for="buscar">Buscar una palabra, una obra, un problema</label><input type="search" id="buscar" placeholder="Ej. cartón, exposición, tiempo…" autocomplete="off"></div>
 <button class="random" type="button" id="sorpresa" aria-controls="sugerencia">Elegir una lectura ↗</button></div>
