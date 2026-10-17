@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#eceae4"><meta name="author" content="Diego Bravo">
+<meta name="description" content="Mesa de trabajo gráfica en el navegador: gesto, repetición, borrado y relación entre imagen analógica y trazo digital. Herramienta experimental, no catálogo de obra realizada.">
+<title>Mesa de trazo — Estudio digital | Diego Bravo</title>
+<link rel="canonical" href="https://diegobravo.es/mesa-de-trazo.html">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/mobile-shell.css">
+<meta property="og:title" content="Mesa de trazo — Diego Bravo">
+<meta property="og:description" content="Dibujar, repetir, borrar, importar y exportar. Un instrumento web para explorar el gesto.">
+<meta property="og:url" content="https://diegobravo.es/mesa-de-trazo.html">
+<style>
+:root{--paper:#eceae4;--ink:#161714;--muted:#565951;--line:#a6a59c;--rust:#9c3826;--white:#f8f7f1;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;--pad:clamp(18px,3.2vw,52px)}
+*{box-sizing:border-box}html{background:var(--paper);scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--paper);font:16px/1.48 Arial,Helvetica,sans-serif}a{color:inherit;text-underline-offset:4px}
+button,input,select{font:inherit}button{cursor:pointer}button:disabled{opacity:.45;cursor:not-allowed}
+:focus-visible{outline:2px solid var(--rust);outline-offset:3px}.skip-link{position:fixed;top:6px;left:var(--pad);background:var(--ink);color:white;padding:10px;z-index:200;transform:translateY(-160%)}.skip-link:focus{transform:none}
+.top{padding:14px var(--pad);border-bottom:1px solid var(--ink);display:flex;align-items:center;justify-content:space-between;gap:20px;position:sticky;top:0;z-index:60;background:rgba(236,234,228,.97);min-height:64px}.brand{font-size:17px;font-weight:700;text-decoration:none}.topnav{display:flex;gap:clamp(12px,2vw,28px);font:11px/1.3 var(--mono);white-space:nowrap;overflow-x:auto}.topnav a{text-decoration:none}.topnav a[aria-current]{text-decoration:underline}
+.kicker,.eyebrow,.detail,.field-label,.foot,.actions button,.upload-label,.small-link,.swatch-label,.status{font:11px/1.5 var(--mono)}
+.kicker,.eyebrow,.field-label,.swatch-label{text-transform:uppercase}.kicker{color:var(--rust)}
+.intro{padding:clamp(30px,5vw,70px) var(--pad);border-bottom:1px solid var(--ink);display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(20px,5vw,85px);align-items:end}.intro h1{font:500 clamp(61px,9vw,148px)/.85 Arial,Helvetica,sans-serif;letter-spacing:-.082em;margin:18px 0 0}.intro .blurb{font-size:clamp(21px,2.5vw,36px);line-height:1.15;letter-spacing:-.03em;margin:0 0 20px}.intro .detail{color:var(--muted);max-width:600px}
+.workbench{padding:clamp(18px,2.5vw,40px) var(--pad) 45px;display:grid;grid-template-columns:minmax(0,1fr) minmax(270px,320px);gap:clamp(20px,3vw,42px);align-items:start}
+.paper-pane{min-width:0}.paper-top{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-bottom:13px}.paper-top .small-link{color:var(--muted);text-align:right}
+.paper{position:relative;aspect-ratio:14/9;background:var(--white);border:1px solid var(--ink);overflow:hidden;box-shadow:11px 11px 0 rgba(22,23,20,.055)}
+.paper canvas{position:absolute;inset:0;display:block;width:100%;height:100%}.paper canvas#ink{touch-action:none;cursor:crosshair;outline-offset:-3px}
+.paper-note{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-top:18px;color:var(--muted);font:11px/1.55 var(--mono)}
+.control-panel{border-top:1px solid var(--ink);padding-top:15px}.control-heading{display:flex;justify-content:space-between;gap:12px;margin-bottom:16px}.control-heading h2{font-size:30px;letter-spacing:-.06em;font-weight:500;line-height:1;margin:0}.control-heading span{font:11px var(--mono);color:var(--rust)}
+.group{padding:20px 0;border-top:1px solid var(--line)}.field-label{display:block;color:var(--muted);margin-bottom:12px}
+.mode-group{display:grid;grid-template-columns:repeat(3,1fr);gap:5px}.mode-group button{background:transparent;border:1px solid var(--line);min-height:51px;padding:9px 4px;font-size:12px}.mode-group button[aria-pressed="true"]{color:var(--white);background:var(--ink);border-color:var(--ink)}
+.slider-row{display:flex;align-items:center;gap:20px}.slider-row input{flex:1;accent-color:var(--ink);min-width:0}.slider-row output{font:12px var(--mono);min-width:52px;text-align:right}
+.swatches{display:flex;gap:9px;align-items:center;flex-wrap:wrap}.swatches button{height:38px;width:38px;border:2px solid transparent;border-radius:100%;box-shadow:inset 0 0 0 1px rgba(255,255,255,.35)}.swatches button[aria-pressed="true"]{outline:2px solid var(--ink);outline-offset:3px}.swatches button[data-color="black"]{background:#1d1d1c}.swatches button[data-color="oxide"]{background:#9c3826}.swatches button[data-color="slate"]{background:#354e58}.swatches .swatch-label{color:var(--muted);margin-left:auto}
+.group p{font-size:13px;line-height:1.6;color:var(--muted);margin:12px 0 0}
+.upload-label{min-height:44px;display:flex;align-items:center;justify-content:center;text-align:center;padding:12px;border:1px dashed var(--ink);cursor:pointer}.upload-label:hover{background:var(--white)}.upload-label input{position:absolute;width:1px;height:1px;opacity:0;overflow:hidden}.upload-label:focus-within{outline:2px solid var(--rust);outline-offset:3px}
+.actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}.actions button{min-height:45px;padding:10px 12px;border:1px solid var(--ink);background:transparent;color:var(--ink)}.actions button.primary{grid-column:span 2;background:var(--ink);color:var(--white)}.actions button:hover:not(:disabled){background:#dcdad3}.actions button.primary:hover{background:#3b3c37}.status{margin-top:12px;min-height:2.6em;color:var(--rust)}
+.endnote{display:grid;grid-template-columns:1fr 1fr;gap:55px;padding:40px var(--pad) 65px;border-top:1px solid var(--ink)}.endnote h2{font-size:clamp(38px,5vw,75px);font-weight:500;letter-spacing:-.065em;line-height:.98;margin:12px 0}.endnote p{font-size:17px;max-width:650px;line-height:1.7}.endnote a{font-size:14px}.foot{padding:18px var(--pad);border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;color:var(--muted)}
+@media(max-width:1040px){.workbench{grid-template-columns:1fr}.control-panel{display:grid;grid-template-columns:repeat(2,1fr);column-gap:28px}.control-heading{grid-column:span 2}.control-panel>.group:last-child{grid-column:span 2}.paper{max-height:none}}
+@media(max-width:640px){.intro,.endnote{grid-template-columns:1fr}.intro h1{font-size:clamp(58px,14vw,95px)}.workbench{padding:18px var(--pad) 30px}.paper{aspect-ratio:1.28}.control-panel{grid-template-columns:1fr}.control-heading,.control-panel>.group:last-child{grid-column:1}.paper-note{font-size:10px}.top{gap:10px}.topnav{font-size:10px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Saltar al contenido</a>
+<header class="top"><a class="brand" href="/">Diego Bravo</a><nav class="topnav" aria-label="Principal"><a href="/obra.html">Obra</a><a href="/mesa-de-trazo.html" aria-current="page">Mesa de trazo</a><a href="/notas.html">Cuaderno</a><a href="/investigaciones.html">Investigación</a><a href="/sobre.html">Contacto</a></nav></header>
+<main id="main">
+<section class="intro"><div><span class="kicker">Estudio digital 01 · dispositivo de práctica</span><h1>Mesa<br>de trazo.</h1></div><div><p class="blurb">Una superficie para dibujar, repetir, borrar y volver a mirar.</p><p class="detail">No es una obra histórica recuperada ni un generador de caligrafía con estilo prefabricado. Es una herramienta web experimental para trabajar con tus propios gestos e imágenes.</p></div></section>
+<section class="workbench" aria-label="Herramienta de dibujo">
+<div class="paper-pane">
+<div class="paper-top"><span class="eyebrow">01 / Superficie</span><span class="small-link">Ratón, dedo o lápiz digital</span></div>
+<div class="paper"><canvas id="base" width="1400" height="900" aria-hidden="true"></canvas><canvas id="ink" width="1400" height="900" tabindex="0" aria-label="Lienzo digital para dibujar. Puedes trazar con ratón, dedo o lápiz, o usar las flechas del teclado para dibujar desde el centro."></canvas></div>
+<div class="paper-note"><span id="gesture-count">0 gestos · superficie vacía</span><span>Todo permanece en este navegador · nada se sube a la web</span></div>
+</div>
+<aside class="control-panel">
+<div class="control-heading"><h2>Herramientas.</h2><span>02 / Ajustar</span></div>
+<div class="group"><span class="field-label">Operación</span><div class="mode-group" role="group" aria-label="Elegir operación"><button type="button" data-mode="trace" aria-pressed="true">Trazo</button><button type="button" data-mode="echo" aria-pressed="false">Eco</button><button type="button" data-mode="erase" aria-pressed="false">Borrar</button></div><p id="mode-help">Un gesto conserva las variaciones de presión y movimiento que permita el dispositivo.</p></div>
+<div class="group"><label class="field-label" for="size">Peso del trazo</label><div class="slider-row"><input type="range" id="size" min="2" max="85" value="23"><output id="size-val" for="size">23</output></div><p>Con lápiz sensible a presión, el grosor responde también al contacto. Con ratón y dedo se adapta a la velocidad.</p></div>
+<div class="group"><span class="field-label">Materia cromática</span><div class="swatches" role="group" aria-label="Color del trazo"><button type="button" data-color="black" data-value="#1d1d1c" aria-label="Negro" aria-pressed="true"></button><button type="button" data-color="oxide" data-value="#9c3826" aria-label="Óxido" aria-pressed="false"></button><button type="button" data-color="slate" data-value="#354e58" aria-label="Pizarra" aria-pressed="false"></button><span class="swatch-label">3 tintas</span></div></div>
+<div class="group"><span class="field-label">Imagen de partida (opcional)</span><label class="upload-label">Importar foto o escaneo desde este dispositivo<input type="file" id="file" accept="image/*"></label><label class="field-label" for="opacity" style="margin-top:17px">Presencia de la imagen</label><div class="slider-row"><input id="opacity" type="range" min="0" max="100" value="100"><output id="opacity-val" for="opacity">100%</output></div><p>Puedes dibujar o borrar tus trazos sobre una foto propia. La imagen no se envía a ningún servidor.</p></div>
+<div class="group"><span class="field-label">Intervenir la superficie</span><div class="actions"><button id="undo" type="button" disabled>Deshacer gesto</button><button id="clear" type="button">Limpiar trazos</button><button id="remove-image" type="button" disabled>Quitar imagen</button><button id="reset" type="button">Reiniciar todo</button><button class="primary" id="export" type="button">Exportar composición PNG ↓</button></div><div id="status" role="status" aria-live="polite" class="status">Prueba con un solo trazo. No hace falta que sea una letra.</div></div>
+</aside>
+</section>
+<section class="endnote"><div><span class="kicker">Una pregunta para continuar</span><h2>¿Qué queda del gesto cuando cambia de medio?</h2></div><div><p>El dibujo realizado con una Rekab, una brocha y tinta no se reproduce de manera idéntica en una pantalla. Aquí se ensayan tres operaciones digitales simples —trazar, repetir y borrar— para observar la diferencia sin pretender que el píxel sustituye a la materia.</p><p>La obra material y este dispositivo tienen estatutos distintos. Si una prueba produce algo interesante, el siguiente paso es volver a imprimirla, tocarla o intervenirla fuera de la pantalla.</p><p><a href="/obra.html">Volver a Obra y procesos ↗</a> · <a href="/practica.html">Ver la investigación material ↗</a></p></div></section>
+</main>
+<footer class="foot"><span>Diego Bravo · Herramienta experimental de interacción gráfica · 2026</span><span><a href="/colofon.html">Autoría y derechos</a> · <a href="/">Inicio</a></span></footer>
+<script>
+(function(){
+'use strict';
+var W=1400,H=900,canvas=document.getElementById('ink'),base=document.getElementById('base'),ctx=canvas.getContext('2d',{willReadFrequently:false}),bg=base.getContext('2d');
+var strokes=[],ongoing=null,backgroundImage=null,backgroundUrl=null,color='#1d1d1c',mode='trace',size=23,maxStrokes=220;
+var status=document.getElementById('status'),count=document.getElementById('gesture-count'),undo=document.getElementById('undo'),remove=document.getElementById('remove-image');
+var $=function(id){return document.getElementById(id);};
+function announce(v){status.textContent=v;}
+function number(){count.textContent=strokes.length+' '+(strokes.length===1?'gesto':'gestos')+(backgroundImage?' · imagen local':'');undo.disabled=strokes.length===0;remove.disabled=!backgroundImage;}
+function point(e){var r=canvas.getBoundingClientRect();return {x:Math.max(0,Math.min(W,(e.clientX-r.left)/r.width*W)),y:Math.max(0,Math.min(H,(e.clientY-r.top)/r.height*H)),p:(e.pointerType==='pen'&&e.pressure>0)?Math.max(.2,e.pressure*1.7):null};}
+function widthFor(a,b,baseWidth){if(b.p!==null)return Math.max(1,baseWidth*(.25+b.p));var distance=Math.hypot(b.x-a.x,b.y-a.y);return Math.max(1,baseWidth*(1.1-Math.min(.56,distance/120)));}
+function pathSegment(a,b,st){var w=widthFor(a,b,st.size),g=ctx;g.save();g.globalCompositeOperation=st.mode==='erase'?'destination-out':'source-over';g.strokeStyle=st.mode==='erase'?'#000':st.color;g.fillStyle=st.mode==='erase'?'#000':st.color;g.lineCap='round';g.lineJoin='round';var offsets=st.mode==='echo'?[-25,0,25]:[0];offsets.forEach(function(d,i){g.globalAlpha=st.mode==='echo'?(i===1?1:.35):1;var vx=b.x-a.x,vy=b.y-a.y,len=Math.hypot(vx,vy)||1,dx=-vy/len*d,dy=vx/len*d;g.lineWidth=w*(st.mode==='erase'?2.5:st.mode==='echo'&&i!==1?.5:1);g.beginPath();g.moveTo(a.x+dx,a.y+dy);g.lineTo(b.x+dx,b.y+dy);g.stroke();});g.restore();}
+function dot(p,st){ctx.save();ctx.globalCompositeOperation=st.mode==='erase'?'destination-out':'source-over';ctx.fillStyle=st.color;var w=Math.max(1,st.size*(p.p===null?1:(.25+p.p)));ctx.beginPath();ctx.arc(p.x,p.y,st.mode==='erase'?w*1.25:w*.5,0,Math.PI*2);ctx.fill();ctx.restore();}
+function replay(){ctx.clearRect(0,0,W,H);strokes.forEach(function(st){if(!st.points.length)return;dot(st.points[0],st);for(var i=1;i<st.points.length;i++)pathSegment(st.points[i-1],st.points[i],st);});number();}
+function begin(p,pointerId){if(ongoing||strokes.length>=maxStrokes){if(strokes.length>=maxStrokes)announce('Máximo de 220 gestos. Exporta o limpia para continuar.');return;}ongoing={id:pointerId,mode:mode,color:color,size:size,points:[p]};strokes.push(ongoing);dot(p,ongoing);number();}
+function move(p){if(!ongoing)return;var last=ongoing.points[ongoing.points.length-1];if(Math.hypot(p.x-last.x,p.y-last.y)<1.1)return;ongoing.points.push(p);pathSegment(last,p,ongoing);}
+function end(){if(!ongoing)return;ongoing=null;number();}
+canvas.addEventListener('pointerdown',function(e){if(e.button!==0&&e.pointerType==='mouse')return;canvas.setPointerCapture(e.pointerId);begin(point(e),e.pointerId);e.preventDefault();});
+canvas.addEventListener('pointermove',function(e){if(ongoing&&ongoing.id===e.pointerId){move(point(e));e.preventDefault();}});
+canvas.addEventListener('pointerup',function(e){if(ongoing&&ongoing.id===e.pointerId){move(point(e));end();}});
+canvas.addEventListener('pointercancel',end);canvas.addEventListener('lostpointercapture',end);
+var keyboard={x:W/2,y:H/2};
+canvas.addEventListener('keydown',function(e){var delta={ArrowLeft:[-21,0],ArrowRight:[21,0],ArrowUp:[0,-21],ArrowDown:[0,21]}[e.key];if(!delta)return;e.preventDefault();var before={x:keyboard.x,y:keyboard.y,p:null};keyboard.x=Math.max(0,Math.min(W,keyboard.x+delta[0]));keyboard.y=Math.max(0,Math.min(H,keyboard.y+delta[1]));var after={x:keyboard.x,y:keyboard.y,p:null};var st={mode:mode,color:color,size:size,points:[before,after]};if(strokes.length>=maxStrokes)return;strokes.push(st);pathSegment(before,after,st);number();});
+document.querySelectorAll('[data-mode]').forEach(function(b){b.addEventListener('click',function(){mode=b.dataset.mode;document.querySelectorAll('[data-mode]').forEach(function(x){x.setAttribute('aria-pressed',String(x===b));});$('mode-help').textContent={trace:'Un gesto conserva las variaciones de presión y movimiento que permita el dispositivo.',echo:'Un trazo genera dos repeticiones desplazadas: la copia nunca equivale al contacto original.',erase:'Borra los trazos realizados en esta mesa; la imagen de fondo se conserva.'}[mode];});});
+document.querySelectorAll('[data-color]').forEach(function(b){b.addEventListener('click',function(){color=b.dataset.value;document.querySelectorAll('[data-color]').forEach(function(x){x.setAttribute('aria-pressed',String(x===b));});});});
+$('size').addEventListener('input',function(){size=Number(this.value);$('size-val').textContent=String(size);});
+function redrawBackground(){bg.clearRect(0,0,W,H);if(!backgroundImage)return;var im=backgroundImage,ratio=Math.min(W/im.naturalWidth,H/im.naturalHeight),w=im.naturalWidth*ratio,h=im.naturalHeight*ratio;bg.save();bg.globalAlpha=Number($('opacity').value)/100;bg.drawImage(im,(W-w)/2,(H-h)/2,w,h);bg.restore();}
+$('opacity').addEventListener('input',function(){$('opacity-val').textContent=this.value+'%';redrawBackground();});
+$('file').addEventListener('change',function(e){var f=e.target.files&&e.target.files[0];if(!f)return;if(!f.type.startsWith('image/')){announce('Selecciona un archivo de imagen.');return;}if(f.size>30*1024*1024){announce('La imagen supera 30 MB. Prueba con un archivo más pequeño.');this.value='';return;}var url=URL.createObjectURL(f),im=new Image();im.onload=function(){if(backgroundUrl)URL.revokeObjectURL(backgroundUrl);backgroundUrl=url;backgroundImage=im;redrawBackground();number();announce('Imagen cargada localmente. Puedes intervenirla, variar su presencia y exportar.');};im.onerror=function(){URL.revokeObjectURL(url);announce('No se ha podido leer esta imagen.');};im.src=url;});
+undo.addEventListener('click',function(){end();if(strokes.length){strokes.pop();replay();announce('Último gesto eliminado.');}});
+$('clear').addEventListener('click',function(){end();strokes=[];replay();announce('Trazos limpios. La imagen importada se conserva.');});
+remove.addEventListener('click',function(){backgroundImage=null;if(backgroundUrl){URL.revokeObjectURL(backgroundUrl);backgroundUrl=null;}$('file').value='';redrawBackground();number();announce('Imagen eliminada de esta sesión local.');});
+$('reset').addEventListener('click',function(){end();strokes=[];backgroundImage=null;if(backgroundUrl){URL.revokeObjectURL(backgroundUrl);backgroundUrl=null;}$('file').value='';$('opacity').value=100;$('opacity-val').textContent='100%';redrawBackground();replay();announce('Mesa reiniciada.');});
+$('export').addEventListener('click',function(){end();var out=document.createElement('canvas');out.width=W;out.height=H;var g=out.getContext('2d');g.fillStyle='#f8f7f1';g.fillRect(0,0,W,H);g.drawImage(base,0,0);g.drawImage(canvas,0,0);try{out.toBlob(function(blob){if(!blob){announce('No se ha podido exportar esta composición.');return;}var url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='mesa-de-trazo-'+new Date().toISOString().slice(0,10)+'.png';document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(url);},2000);announce('PNG generado: 1400 × 900 px. Ningún archivo se ha subido.');},'image/png');}catch(err){announce('No se ha podido exportar. Prueba en otro navegador.');}});
+number();
+})();
+</script>
+<script defer src="/assets/mobile-shell.js"></script>
+</body></html>
