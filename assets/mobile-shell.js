@@ -8,6 +8,7 @@
   function current(url){
     if(route===url)return ' aria-current="page"';
     if(url==='/notas.html'&&route.indexOf('/notas/')===0)return ' aria-current="location"';
+    if(url==='/notas.html'&&route==='/cruces.html')return ' aria-current="location"';
     if(url==='/investigaciones.html'&&['/estetica-del-umbral.html','/atlas.html','/diccionario.html','/practica.html','/mapa.html','/constelaciones.html','/fisura-documento.html'].indexOf(route)!==-1)return ' aria-current="location"';
     if(url==='/obra.html'&&route==='/mesa-de-trazo.html')return ' aria-current="location"';
     return '';
