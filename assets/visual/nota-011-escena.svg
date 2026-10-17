@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="t d"><title id="t">Tres figuras en una escena con miradas y tensión orientadas al centro</title><desc id="d">Composición editorial original de Diego Bravo para la web. No reproduce una obra artística de terceros ni documenta un experimento realizado.</desc><defs></defs>
+<rect width="1200" height="800" fill="#251e1d"/>
+<path d="M135 90 H1065 V680 H135 Z" fill="#e6d9ca"/>
+<g fill="#302623">
+<circle cx="305" cy="333" r="65"/><rect x="260" y="397" width="92" height="175" rx="20"/>
+<circle cx="890" cy="325" r="65"/><rect x="846" y="389" width="90" height="183" rx="20"/>
+</g>
+<g fill="#a53e30"><circle cx="580" cy="385" r="92"/><path d="M515 470 H660 L690 602 H478 Z"/></g>
+<path d="M405 309 Q574 222 764 307" stroke="#302623" stroke-width="10" fill="none" stroke-dasharray="5 25"/>
+<path d="M580 190 V277" stroke="#b3422b" stroke-width="9"/><path d="M552 230 L579 260 L608 231" stroke="#b3422b" stroke-width="8" fill="none"/>
+<path d="M150 680 H1050" stroke="#251e1d" stroke-width="8"/>
+<text x="172" y="755" fill="#e6d9ca" font-family="monospace" font-size="19" letter-spacing="3">¿QUIÉN CONTROLA LA ESCENA?</text>
+</svg>
