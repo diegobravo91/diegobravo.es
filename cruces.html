@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#f2f0ea">
+<meta name="author" content="Diego Bravo">
+<meta name="description" content="Cruces: un ensayo visual interactivo entre arte, ciencia, vida rural, cuerpo, surrealismo, crítica, nihilismo y esperanza. Preguntas y analogías que no confunden las diferencias.">
+<title>Cruces — Un atlas de preguntas | Diego Bravo</title>
+<link rel="canonical" href="https://diegobravo.es/cruces.html">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/mobile-shell.css">
+<meta property="og:type" content="article"><meta property="og:title" content="Cruces — Diego Bravo"><meta property="og:description" content="Arte, vida rural, ciencia, cuerpo y pensamiento en un atlas de preguntas interactivo."><meta property="og:url" content="https://diegobravo.es/cruces.html">
+<style>
+:root{--paper:#f2f0ea;--ink:#20221f;--secondary:#5c6058;--rule:#c5c4b9;--accent:#ae512f;--green:#46584d;--serif:Georgia,'Times New Roman',serif;--sans:Arial,Helvetica,sans-serif;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;--g:clamp(19px,3.7vw,57px)}
+*,*::before,*::after{box-sizing:border-box}
+html{background:var(--paper);scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);margin:0;font:16px/1.55 var(--sans)}
+a{color:inherit;text-underline-offset:4px}a:hover{text-decoration-color:var(--accent)}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.skip{position:fixed;top:8px;left:var(--g);z-index:100;background:var(--ink);color:#fff;padding:10px;transform:translateY(-170%)}.skip:focus{transform:none}
+.top{padding:13px var(--g);border-bottom:1px solid var(--rule);display:flex;justify-content:space-between;align-items:center;gap:18px;position:sticky;top:0;z-index:30;background:rgba(242,240,234,.97);min-height:65px}.brand{font-size:18px;letter-spacing:-.045em;font-weight:700;text-decoration:none}.top nav{display:flex;gap:clamp(13px,2.1vw,33px);white-space:nowrap}.top nav a{font:13px var(--sans);color:var(--secondary);text-decoration:none}.top nav a[aria-current]{color:var(--ink);text-decoration:underline}
+main{max-width:1660px;margin:auto}
+.intro{padding:clamp(38px,6vw,95px) var(--g) clamp(26px,4vw,60px);display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(25px,4vw,90px);align-items:end}
+.eyebrow,.micro,.counter,.label,.caption,footer{font:11px/1.55 var(--mono)}
+.eyebrow{color:var(--accent);letter-spacing:.05em;text-transform:uppercase}
+h1{font:500 clamp(70px,11vw,175px)/.8 var(--serif);letter-spacing:-.095em;margin:24px 0 14px}
+.intro .lead{font:clamp(21px,2.15vw,33px)/1.23 var(--serif);letter-spacing:-.032em;margin:0;max-width:600px}
+.intro .note{color:var(--secondary);max-width:510px;font-size:15px;line-height:1.63;margin:0}
+.specimen{border-top:1px solid var(--ink);display:grid;grid-template-columns:minmax(240px,26%) minmax(0,1fr);min-height:680px}
+.topics{padding:24px 22px 40px var(--g);border-right:1px solid var(--rule)}
+.topics h2{font:11px var(--mono);text-transform:uppercase;font-weight:400;letter-spacing:.045em;margin:0 0 17px;color:var(--secondary)}
+.topic-buttons{display:flex;flex-direction:column;gap:0}
+.topic-buttons button{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:14px 0;border:0;border-top:1px solid var(--rule);background:transparent;text-align:left;font:clamp(17px,1.55vw,23px)/1.24 var(--serif);letter-spacing:-.035em}
+.topic-buttons button:last-child{border-bottom:1px solid var(--rule)}
+.topic-buttons button:hover{color:var(--accent)}
+.topic-buttons button[aria-pressed="true"]{font-weight:700;color:var(--accent)}
+.topic-buttons button span{font:10px var(--mono);color:var(--secondary)}
+.topic-buttons button[aria-pressed="true"] span{color:var(--accent)}
+.shuffle{display:block;margin-top:22px;border:1px solid var(--ink);background:transparent;padding:12px 15px;font:12px var(--mono);width:100%;text-align:left}
+.shuffle:hover{background:var(--ink);color:var(--paper)}
+.feature{min-width:0}
+.plate{min-height:440px;background:#dadfd7;position:relative;overflow:hidden}
+.plate svg{display:block;width:100%;height:clamp(350px,42vw,590px)}
+.plate .plate-meta{position:absolute;bottom:14px;left:22px;right:22px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font:10px var(--mono);color:#393e37}
+.drawing:not([data-active="true"]){display:none}
+.plate svg .paper{fill:#e1e5da}.plate svg .hair{fill:none;stroke:#212923;stroke-width:2}.plate svg .thick{fill:none;stroke:#212923;stroke-width:4}.plate svg .oxide{fill:none;stroke:#98472f;stroke-width:4}.plate svg .thin-oxide{fill:none;stroke:#98472f;stroke-width:1.8}.plate svg .line-text{font:12px var(--mono);letter-spacing:.1em;fill:#354338}.plate svg .huge{font:500 75px var(--serif);letter-spacing:-.06em;fill:#29382b}
+.selection{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(22px,4vw,70px);padding:clamp(25px,3vw,48px) clamp(22px,3vw,55px);border-bottom:1px solid var(--rule)}
+.selection h2{font:500 clamp(37px,4.2vw,64px)/1.02 var(--serif);letter-spacing:-.055em;margin:15px 0 17px}
+.selection .question{font:clamp(20px,2.1vw,30px)/1.28 var(--serif);margin:0 0 18px}
+.selection .statement{font-size:15px;line-height:1.75;color:var(--secondary);max-width:620px;margin:0}
+.selection .label{color:var(--accent);text-transform:uppercase}
+.small-panel{display:flex;flex-direction:column;justify-content:end;gap:18px}
+.small-panel dl{margin:0}
+.small-panel dt{font:11px var(--mono);text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+.small-panel dd{margin:0;color:var(--secondary);font-size:14px;line-height:1.7}
+.small-panel .boundary{border-top:1px solid var(--rule);padding-top:17px}
+.related{margin-top:6px}
+.related a{display:inline-block;border-bottom:1px solid var(--ink);padding:0 0 6px;text-decoration:none;font-size:14px}
+.compare{padding:24px clamp(22px,3vw,55px) 32px;background:#e8e9e0;display:grid;grid-template-columns:1fr 1fr;gap:25px;border-bottom:1px solid var(--rule)}
+.compare h3{font:400 27px/1.16 var(--serif);letter-spacing:-.04em;margin:0 0 10px}
+.compare p{margin:0 0 13px;font-size:14px;color:var(--secondary);line-height:1.7}
+.compare button{border:1px solid var(--ink);background:transparent;padding:11px 14px;font:12px var(--mono);margin-top:8px}
+.compare button:hover{background:var(--ink);color:#fff}
+#cross-note{border-left:1px solid var(--rule);padding-left:30px}
+.end{padding:clamp(35px,6vw,85px) var(--g);border-top:1px solid var(--ink);display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,6vw,90px)}
+.end h2{font:400 clamp(35px,5vw,71px)/1.05 var(--serif);letter-spacing:-.06em;margin:13px 0}
+.end p{font-size:16px;line-height:1.75;max-width:670px}
+.end p.small{font:12px/1.7 var(--mono);color:var(--secondary)}
+.sources{border-top:1px solid var(--rule);padding:26px var(--g) 48px}
+.sources summary{font:14px var(--sans);cursor:pointer}.sources ul{margin:20px 0 0;padding-left:19px;max-width:900px}.sources li{font-size:13px;color:var(--secondary);line-height:1.75;margin:5px 0}
+footer{border-top:1px solid var(--rule);padding:20px var(--g) 34px;display:flex;gap:20px;justify-content:space-between;flex-wrap:wrap;color:var(--secondary)}
+@media(max-width:990px){.specimen{grid-template-columns:1fr}.topics{border-right:0;border-bottom:1px solid var(--rule);padding:21px var(--g)}.topic-buttons{display:flex;flex-direction:row;gap:9px;overflow-x:auto;padding:0 2px 8px;scrollbar-width:thin}.topic-buttons button,.topic-buttons button:last-child{border:1px solid var(--rule);padding:11px 14px;white-space:nowrap;flex:0 0 auto;font:16px var(--serif)}.topic-buttons button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}.topic-buttons button[aria-pressed="true"] span{color:var(--paper)}.shuffle{width:auto}.selection{grid-template-columns:1fr 1fr}}
+@media(max-width:720px){.top{min-height:60px}.top nav{display:none}.intro{grid-template-columns:1fr;padding-top:38px;gap:18px}.intro h1{font-size:clamp(66px,16vw,105px)}.intro .lead{font-size:26px}.selection,.compare,.end{grid-template-columns:1fr}.selection h2{font-size:42px}.selection{gap:23px}.plate svg{height:340px}.plate{min-height:340px}.compare{gap:28px}#cross-note{border-left:0;border-top:1px solid var(--rule);padding:20px 0 0}.end{padding-block:45px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<a class="skip" href="#experimento">Saltar al experimento</a>
+<header class="top"><a class="brand" href="/">Diego Bravo</a><nav aria-label="Navegación principal"><a href="/obra.html">Obra</a><a href="/notas.html" aria-current="page">Cuaderno</a><a href="/investigaciones.html">Investigación</a><a href="/sobre.html">Sobre</a></nav></header>
+<main>
+<section class="intro"><div><span class="eyebrow">Cuaderno / explorador visual 01</span><h1>Cruces.</h1></div><div><p class="lead">A veces una cosa nos hace mirar otra. El encuentro puede ser fértil. También puede ser un error.</p><p class="note">Ocho preguntas entre la tierra y la imagen, el cuerpo y el signo, el absurdo y la posibilidad de seguir haciendo. Elige una. Después cruza dos.</p></div></section>
+<section class="specimen" id="experimento">
+<aside class="topics"><h2>Elige desde dónde mirar</h2><div class="topic-buttons" role="group" aria-label="Elegir una pregunta">
+<button type="button" data-topic="0" aria-pressed="true">Hierba y hormigón <span>01</span></button>
+<button type="button" data-topic="1" aria-pressed="false">Un cuerpo que traza <span>02</span></button>
+<button type="button" data-topic="2" aria-pressed="false">La puerta sin destino <span>03</span></button>
+<button type="button" data-topic="3" aria-pressed="false">El borde del ecosistema <span>04</span></button>
+<button type="button" data-topic="4" aria-pressed="false">El animal imposible <span>05</span></button>
+<button type="button" data-topic="5" aria-pressed="false">Quién puede mirar <span>06</span></button>
+<button type="button" data-topic="6" aria-pressed="false">¿Y si no significa nada? <span>07</span></button>
+<button type="button" data-topic="7" aria-pressed="false">Reparar sin prometer <span>08</span></button>
+</div><button class="shuffle" id="another" type="button">Otra pregunta al azar ↗</button></aside>
+<div class="feature">
+<div class="plate" id="plate">
+<svg viewBox="0 0 850 530" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="plate-title plate-desc" preserveAspectRatio="xMidYMid meet">
+<title id="plate-title">Hierba que atraviesa el pavimento</title><desc id="plate-desc">Dibujos diagramáticos editoriales realizados para este explorador, no documentación de una obra ejecutada.</desc>
+<rect width="850" height="530" fill="#e3e5db"/>
+<!-- 01 planta en asfalto -->
+<g class="drawing" data-drawing="0" data-active="true">
+<path d="M0 345H850M0 348L850 350" class="thick"/><path d="M392 350l-30 65 54 26 -28 90 M397 351l48 33-20 39 48 29" class="hair"/>
+<path d="M396 344 C374 283 356 232 378 115 M398 344 C414 275 469 247 480 162 M398 344 C385 274 313 268 284 222" fill="none" stroke="#415946" stroke-width="7" stroke-linecap="round"/>
+<path d="M373 253 Q318 195 312 247 Q336 281 373 253M423 257 Q490 194 485 261 Q441 287 423 257M382 176 Q424 105 376 118 Q351 140 382 176M310 250 Q245 207 254 273 Q276 292 310 250M466 207 Q526 171 514 236 Q495 250 466 207" fill="#768e70" stroke="#445746" stroke-width="2"/>
+<path d="M0 385h340M446 385h404" class="hair" stroke-dasharray="9 13"/><text x="37" y="72" class="line-text">01 / RUDERAL</text><text x="36" y="494" class="line-text">PAVIMENTO</text><text x="594" y="494" class="line-text">NO ES UNA VICTORIA</text>
+</g>
+<!-- 02 cuerpo -->
+<g class="drawing" data-drawing="1">
+<path d="M160 470C155 418 129 336 155 280C175 241 189 239 193 166L199 91C200 61 232 55 243 90L253 212L273 65C281 35 314 41 319 73L319 213L346 95C358 59 391 66 395 105L375 243L405 176C427 132 452 161 448 194L418 329C406 365 391 422 415 471" fill="#b9c0ac" stroke="#303c34" stroke-width="5"/>
+<path d="M202 295C247 263 283 252 329 280C366 301 385 342 363 370" class="oxide" stroke-linecap="round" stroke-dasharray="9 18"/>
+<path d="M454 180C531 216 497 309 595 333S742 310 802 408" class="thick" stroke-linecap="round"/>
+<path d="M484 222C540 232 519 291 600 304S729 289 768 350" class="thin-oxide"/>
+<text x="43" y="73" class="line-text">02 / PRESIÓN</text><text x="515" y="466" class="line-text">EL TRAZO TIENE PESO</text>
+</g>
+<!-- 03 puerta -->
+<g class="drawing" data-drawing="2">
+<path d="M175 480V72H504V480Z" fill="#c2c9b9" stroke="#2e3930" stroke-width="5"/>
+<path d="M234 480V136H445V480Z" fill="#87988c" stroke="#2d3930" stroke-width="3"/>
+<path d="M287 480V206H398V480Z" fill="#475d54" stroke="#2d3930" stroke-width="3"/>
+<path d="M332 480V273H373V480Z" fill="#1f3430"/>
+<path d="M175 480H740L505 247" class="hair"/><path d="M505 480H740L505 247" class="thin-oxide"/>
+<path d="M0 481H850" class="thick"/>
+<text x="40" y="70" class="line-text">03 / INTERVALO</text><text x="538" y="135" class="line-text">¿A DÓNDE?</text>
+</g>
+<!-- 04 ecotono -->
+<g class="drawing" data-drawing="3">
+<path d="M0 0H460Q510 160 455 240T480 530H0Z" fill="#c0d4c3"/>
+<path d="M460 0H850V530H480Q450 408 475 315T455 0Z" fill="#9baca4"/>
+<path d="M455 0Q520 156 470 251T478 530" class="oxide"/>
+<path d="M0 120Q200 95 419 148 M0 200Q240 155 438 225 M0 350Q220 300 459 350 M0 462Q190 430 467 470" class="hair" stroke-dasharray="4 7"/>
+<path d="M520 42Q600 150 560 225M620 0Q712 137 675 285M540 290Q600 385 575 530M700 315Q715 425 760 530" class="hair"/>
+<text x="35" y="60" class="line-text">04 / TRANSICIÓN ECOLÓGICA</text><text x="100" y="300" class="huge">A</text><text x="695" y="300" class="huge">B</text>
+</g>
+<!-- 05 surreal -->
+<g class="drawing" data-drawing="4">
+<ellipse cx="430" cy="245" rx="257" ry="144" fill="#c4cec2" stroke="#303d35" stroke-width="4"/>
+<ellipse cx="430" cy="245" rx="99" ry="135" fill="#6b7e70" stroke="#303d35" stroke-width="3"/>
+<circle cx="430" cy="245" r="66" fill="#273e35"/><circle cx="448" cy="224" r="20" fill="#dae0d6"/>
+<path d="M175 300L119 454L270 409L299 512L359 354" fill="#a3b5a1" stroke="#35463c" stroke-width="3"/>
+<path d="M611 287L693 470L745 413L796 500L836 316" fill="#bbc4b4" stroke="#35463c" stroke-width="3"/>
+<path d="M315 150Q265 76 199 89M545 134Q613 39 676 101" class="oxide" stroke-linecap="round"/>
+<path d="M360 348L369 433L430 371L485 455L500 348" class="hair"/>
+<text x="43" y="72" class="line-text">05 / EXTRAÑAR</text><text x="490" y="499" class="line-text">UN OJO NO ES UN BOSQUE</text>
+</g>
+<!-- 06 acceso -->
+<g class="drawing" data-drawing="5">
+<rect x="118" y="93" width="610" height="350" fill="#d3dacd" stroke="#344238" stroke-width="3"/>
+<path d="M133 111L715 424M715 111L133 424" stroke="#6c816f" stroke-width="2"/>
+<rect x="220" y="145" width="178" height="240" fill="#4c6257"/><rect x="429" y="145" width="181" height="240" fill="#c1cac0" stroke="#354238" stroke-width="2"/>
+<path d="M310 145V385M429 272H610" class="oxide"/>
+<path d="M44 267L145 267 M702 267H806" class="hair" stroke-dasharray="13 7"/>
+<text x="43" y="68" class="line-text">06 / VISIBILIDAD</text><text x="246" y="416" class="line-text">VISIBLE</text><text x="477" y="416" class="line-text">ACCESIBLE</text>
+</g>
+<!-- 07 nihilismo -->
+<g class="drawing" data-drawing="6">
+<rect x="119" y="90" width="609" height="356" fill="#202b28"/>
+<path d="M160 138H675M160 193H675M160 246H675M160 299H675M160 356H675M160 403H675" stroke="#799186" stroke-width="1" stroke-dasharray="2 11"/>
+<path d="M402 153Q342 224 394 268Q441 315 405 383" stroke="#f1f0e9" stroke-width="15" stroke-linecap="round" fill="none"/>
+<circle cx="399" cy="397" r="6" fill="#f1f0e9"/>
+<path d="M400 50V90M400 446V485" class="oxide"/><text x="42" y="71" class="line-text">07 / SIN GARANTÍA</text><text x="550" y="487" class="line-text">¿Y AHORA?</text>
+</g>
+<!-- 08 reparación -->
+<g class="drawing" data-drawing="7">
+<path d="M0 0H850V530H0Z" fill="#d0d8cb"/>
+<path d="M440 0L388 97L418 162L355 254L395 315L330 410L380 530" fill="none" stroke="#263b30" stroke-width="8"/>
+<path d="M448 0L395 98L425 164L362 256L402 317L336 411L388 530" fill="none" stroke="#ecede3" stroke-width="24"/>
+<path d="M440 0L388 97L418 162L355 254L395 315L330 410L380 530" fill="none" stroke="#9e4e35" stroke-width="3"/>
+<path d="M364 58L461 72M341 131L452 156M335 222L443 241M330 305L442 337M315 402L422 423" fill="none" stroke="#2e5742" stroke-width="3"/>
+<circle cx="364" cy="58" r="5" fill="#2e5742"/><circle cx="461" cy="72" r="5" fill="#2e5742"/>
+<text x="40" y="72" class="line-text">08 / SIN FINAL FELIZ</text><text x="470" y="465" class="line-text">CONTINUIDAD ≠ CURACIÓN</text>
+</g>
+</svg>
+<div class="plate-meta"><span>Estudios de relaciones / diagramas editoriales</span><span id="plate-index">01 / 08</span></div>
+</div>
+<div class="selection" aria-live="polite" aria-atomic="true">
+<div><span class="label" id="label">Ruralidad · persistencia</span><h2 id="name">Hierba y hormigón</h2><p class="question" id="question">¿Una planta en la grieta es una conquista o sólo una superviviente provisional?</p><p class="statement" id="reading">El margen de un camino no es un decorado romántico: conviven la colonización vegetal, el mantenimiento, el agua y decisiones humanas sobre qué debe permanecer.</p></div>
+<div class="small-panel"><dl><dt>Un cruce posible</dt><dd id="analogy">Botánica ↔ cuidado de infraestructuras ↔ dibujo de una fisura.</dd></dl><dl class="boundary"><dt>Lo que no debemos confundir</dt><dd id="limit">La capacidad de crecer no demuestra que una planta sea invencible ni que un terreno sea libre.</dd></dl><div class="related"><a id="essay" href="/notas/una-planta-fuera-de-lugar.html">Leer «Una planta fuera de lugar» ↗</a></div></div>
+</div>
+<div class="compare"><div><h3>Forzar un encuentro</h3><p>La semejanza no basta. ¿Qué aparece cuando esta pregunta se encuentra con otra disciplina o situación?</p><button id="cross" type="button">Cruzar con otra pregunta ↗</button></div><div id="cross-note" aria-live="polite"><span class="label">Una relación propuesta</span><h3 id="cross-title">Lo que crece / lo que se controla</h3><p id="cross-text">La grieta ofrece una oportunidad a la planta, pero también revela decisiones de mantenimiento, propiedad y uso. No confundir vitalidad biológica con emancipación política.</p></div></div>
+</div>
+</section>
+<section class="end"><div><span class="eyebrow">Cómo utilizarlo</span><h2>No es un test. No hay respuesta correcta.</h2></div><div><p>Este explorador es un montaje editorial experimental. Las ilustraciones son diagramas creados para la página, no obras plásticas anteriores de Diego Bravo. Las conexiones se proponen como hipótesis: pueden fallar, resultar excesivas o exigir observación sobre el terreno.</p><p>Una investigación puede empezar aquí y continuar fuera de la pantalla: un camino rural, una fotografía de una planta, un gesto sobre papel, una conversación o una lectura que contradice nuestra primera interpretación.</p><p><a href="/notas.html">Volver al Cuaderno ↗</a> · <a href="/mesa-de-trazo.html">Probar un gesto en Mesa de trazo ↗</a> · <a href="/constelaciones.html">Ver montajes de obras históricas ↗</a></p><p class="small">Regla del archivo: una analogía produce una pregunta; no demuestra que los fenómenos tengan la misma causa. Ningún lugar, imagen de campo o trabajo manual se presenta como documentado si aún no se ha registrado.</p></div></section>
+<details class="sources"><summary>Fuentes para profundizar y comprobar las diferencias ↗</summary><ul>
+<li><a href="https://pubs.usgs.gov/rp/0133/report.pdf">USGS — Definición de ecotono y borde de hábitat</a>: transiciones ecológicas, no categorías filosóficas universales.</li>
+<li><a href="https://www.usgs.gov/publications/towards-a-theory-ecotone-resilience-coastal-vegetation-a-salinity-gradient">USGS — Dinámica y resiliencia de un ecotono</a>: caso de vegetación y salinidad.</li>
+<li><a href="https://www.metmuseum.org/exhibitions/listings/2005/max-ernst">Met — Max Ernst: A Retrospective</a>: collage, frottage, grattage y decalcomanía como procedimientos.</li>
+<li><a href="https://annex.exploratorium.edu/knowing/program.html">Exploratorium — Art as a Way of Knowing</a>: arte y ciencia como modos de investigación distintos y relacionados.</li>
+<li><a href="https://plato.stanford.edu/entries/nietzsche/">Stanford Encyclopedia of Philosophy — Nietzsche</a>: crisis del nihilismo y problema de la afirmación.</li>
+<li><a href="/notas/una-planta-fuera-de-lugar.html">Cuaderno — Una planta fuera de lugar</a>, <a href="/notas/lo-que-el-borrado-no-consigue-borrar.html">Lo que el borrado no consigue borrar</a>, <a href="/notas/un-camino-no-cabe-en-un-mapa.html">Un camino no cabe en un mapa</a>, <a href="/notas/el-instante-en-que-deja-de-hacer-gracia.html">El instante en que deja de hacer gracia</a>.</li>
+</ul></details>
+</main><footer><span>Diego Bravo · Cruces · prototipo editorial interactivo · 17.10.2026</span><span><a href="/colofon.html">Autoría, fuentes y derechos</a> · <a href="/notas.html">Cuaderno</a></span></footer>
+<script>
+(function(){
+'use strict';
+var data=[
+{tag:'Ruralidad · persistencia',name:'Hierba y hormigón',q:'¿Una planta en la grieta es una conquista o sólo una superviviente provisional?',text:'El margen de un camino no es un decorado romántico: conviven la colonización vegetal, el mantenimiento, el agua y decisiones humanas sobre qué debe permanecer.',analog:'Botánica ↔ cuidado de infraestructuras ↔ dibujo de una fisura.',limit:'La capacidad de crecer no demuestra que una planta sea invencible ni que un terreno sea libre.',link:'/notas/una-planta-fuera-de-lugar.html',label:'Leer «Una planta fuera de lugar» ↗',alt:'Planta esquemática que atraviesa una grieta en pavimento',pair:3,crossTitle:'Un límite vegetal no es una frontera jurídica',cross:'El ecotono describe cambios entre comunidades ecológicas; el borde de un camino incluye normas de acceso, trabajo y propiedad. La metáfora del umbral no sustituye el estudio de ninguna de las dos cosas.'},
+{tag:'Cuerpo · oficio',name:'Un cuerpo que traza',q:'¿Cuánto de una letra está en la mano antes de que aparezca su significado?',text:'Presión, velocidad, cansancio y postura participan en un trazo. La escritura es lenguaje, pero también es tiempo y contacto corporal con una herramienta.',analog:'Caligrafía ↔ movimiento corporal ↔ huella material.',limit:'La fuerza expresiva de un gesto no permite deducir automáticamente el estado psicológico de quien lo realizó.',link:'/mesa-de-trazo.html',label:'Experimentar en Mesa de trazo ↗',alt:'Diagrama de una mano, líneas de presión y rastros caligráficos',pair:4,crossTitle:'Automatismo surrealista / decisión muscular',cross:'Max Ernst hizo del accidente un procedimiento. Pero ningún gesto está libre de herramienta, aprendizaje, gravedad o resistencia material. El azar también se construye.'},
+{tag:'Arquitectura · extrañeza',name:'La puerta sin destino',q:'¿Qué convierte un pasillo ordinario en un lugar inquietante?',text:'A veces no hay nada sobrenatural: sólo una función suspendida. Una estación vacía, una puerta bloqueada o un local cerrado pueden alterar nuestras expectativas de orientación y uso.',analog:'Arquitectura cotidiana ↔ espera ↔ extrañamiento.',limit:'No todo espacio vacío es un lugar liminal, ni toda ruina guarda una historia misteriosa.',link:'/atlas.html#oa-001',label:'Ver Piranesi en el Atlas ↗',alt:'Secuencia de puertas interiores que se estrechan hacia un fondo oscuro',pair:6,crossTitle:'La ausencia no prueba que todo carezca de sentido',cross:'Un pasillo sin salida inquieta porque esperamos una función. El nihilismo es un problema sobre valor y sentido, no una propiedad de las habitaciones vacías.'},
+{tag:'Ciencia · transición',name:'El borde del ecosistema',q:'¿Dónde termina realmente un ecosistema y empieza otro?',text:'Las zonas de transición no siempre son líneas fijas. Cambian por humedad, temperatura, salinidad, uso del suelo y relaciones entre organismos. La ciencia pregunta por los mecanismos.',analog:'Ecología del ecotono ↔ cartografías ↔ límites móviles.',limit:'Un ecotono es una noción ecológica, no una prueba de que cualquier experiencia intermedia sea un umbral.',link:'/notas/un-camino-no-cabe-en-un-mapa.html',label:'Leer «Un camino no cabe en un mapa» ↗',alt:'Dos campos cromáticos atravesados por una zona de contacto ondulante',pair:0,crossTitle:'La precisión puede devolver complejidad a la metáfora',cross:'Si el borde ecológico varía según especies y procesos, también debemos preguntar de qué borde habla realmente una obra. Afinidad formal no equivale a explicación científica.'},
+{tag:'Surrealismo · azar',name:'El animal imposible',q:'¿Cómo puede una textura cualquiera parecer de pronto un ser vivo?',text:'El frotamiento, el collage y el raspado permiten que una imagen aparezca sin haber sido diseñada por completo. Reconocer una figura inesperada no significa que estuviera escondida ahí esperando.',analog:'Max Ernst ↔ pareidolia visual ↔ huellas del mundo material.',limit:'Las técnicas surrealistas no demuestran la existencia de un mensaje inconsciente universal; el contexto histórico y la intervención del artista importan.',link:'/constelaciones.html',label:'Ver Constelaciones visuales ↗',alt:'Collage esquemático de un ojo, paisaje y estructuras vegetales',pair:1,crossTitle:'Ver animales en una mancha y controlar la mano',cross:'El cuerpo hace marcas; la percepción encuentra figuras en ellas. El desplazamiento de una cosa a otra puede producir una obra, pero la interpretación no es una prueba psicológica del autor.'},
+{tag:'Crítica · acceso',name:'Quién puede mirar',q:'¿Una imagen está disponible simplemente porque podemos verla?',text:'La circulación de una imagen implica decisiones sobre permisos, reproducción, traducción, catalogación y quién consigue llegar hasta ella. Lo visible y lo accesible no son sinónimos.',analog:'Museo ↔ archivo ↔ derechos ↔ experiencia del espectador.',limit:'Crítica no significa sospechar automáticamente de toda institución; exige identificar decisiones y consecuencias verificables.',link:'/atlas.html#regimenes-aparicion-acceso',label:'Explorar acceso e imagen en el Atlas ↗',alt:'Dos superficies de imagen separadas por barreras de acceso',pair:7,crossTitle:'Una apertura pequeña puede ser un cambio efectivo',cross:'Abrir una reproducción de dominio público puede ampliar el acceso real; no repara por sí mismo todas las desigualdades institucionales. Esperanza no equivale a publicidad optimista.'},
+{tag:'Filosofía · crisis',name:'¿Y si no significa nada?',q:'¿Se puede crear cuando ya no creemos en un sentido garantizado?',text:'El nihilismo plantea una dificultad radical sobre valor y fundamento. La respuesta no tiene por qué ser entusiasmo obligatorio, ni cinismo, ni convertir cualquier gesto en una salvación.',analog:'Nietzsche ↔ valor ↔ creación sin garantía trascendente.',limit:'Que no exista un sentido dado no prueba que todas las acciones, vidas u obras valgan exactamente lo mismo.',link:'/notas/el-tiempo-que-no-tenemos.html',label:'Leer «El tiempo que no tenemos» ↗',alt:'Fondo oscuro con signo de interrogación incompleto',pair:7,crossTitle:'El cuidado no exige prometer redención',cross:'Una reparación puede ser concreta aunque no resuelva el sentido de la existencia. La esperanza puede actuar como compromiso situado, no como garantía de un final feliz.'},
+{tag:'Esperanza · crítica',name:'Reparar sin prometer',q:'¿Qué significa cuidar algo sin poder asegurar que se salvará?',text:'Reparar un objeto, mantener un camino accesible, proteger un dibujo o acompañar un proceso son acciones limitadas. Pueden importar sin convertir el deterioro en una bella metáfora.',analog:'Cuidado material ↔ responsabilidad ↔ imaginación de futuro.',limit:'No debemos romantizar la precariedad, el esfuerzo obligado ni la ruina. Algunas cosas necesitan recursos, derechos y soluciones concretas.',link:'/notas/el-tiempo-que-no-tenemos.html',label:'Leer «El tiempo que no tenemos» ↗',alt:'Grieta esquemática reparada con varias puntadas verdes',pair:6,crossTitle:'Un futuro posible sin sentido garantizado',cross:'El nihilismo cuestiona fundamentos; la reparación responde a una situación. Su encuentro no produce una doctrina, pero sí una pregunta práctica: ¿qué merece nuestro cuidado ahora?'}
+];
+var buttons=Array.prototype.slice.call(document.querySelectorAll('[data-topic]')),drawings=Array.prototype.slice.call(document.querySelectorAll('[data-drawing]'));
+var $=function(id){return document.getElementById(id);},current=0,crossed=false;
+function show(i){
+ if(i<0||i>=data.length)return;current=i;crossed=false;var x=data[i];
+ buttons.forEach(function(b,k){b.setAttribute('aria-pressed',String(k===i));});
+ drawings.forEach(function(g,k){g.setAttribute('data-active',String(k===i));});
+ $('label').textContent=x.tag;$('name').textContent=x.name;$('question').textContent=x.q;$('reading').textContent=x.text;$('analogy').textContent=x.analog;$('limit').textContent=x.limit;
+ $('essay').href=x.link;$('essay').textContent=x.label;$('plate-index').textContent=String(i+1).padStart(2,'0')+' / 08';
+ $('plate-title').textContent=x.name;$('plate-desc').textContent=x.alt+'; diagrama editorial, no documento de una obra ejecutada.';
+ $('cross-title').textContent='Dos preguntas, una distancia';
+ $('cross-text').textContent='Pulsa «Cruzar con otra pregunta» para ver una relación escogida y su límite.';
+ try{history.replaceState(null,'','#'+(i+1));}catch(e){}
+}
+buttons.forEach(function(b){b.addEventListener('click',function(){show(Number(b.dataset.topic));});});
+$('another').addEventListener('click',function(){var j=Math.floor(Math.random()*(data.length-1));if(j>=current)j++;show(j);});
+$('cross').addEventListener('click',function(){var x=data[current];$('cross-title').textContent=x.crossTitle;$('cross-text').textContent=x.cross+' También puedes explorar «'+data[x.pair].name+'» en el selector.';crossed=true;});
+var hash=Number(location.hash.slice(1));if(Number.isInteger(hash)&&hash>=1&&hash<=8)show(hash-1);
+})();
+</script>
+<script defer src="/assets/mobile-shell.js"></script>
+</body></html>
