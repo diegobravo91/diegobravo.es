@@ -239,3 +239,12 @@ La web pública incluye ahora **fichas CF** enlazadas desde el bloque "Ideas que
 - Criterio histórico: "amigos/colegas documentados" (Klee/Kandinsky, Bauhaus, Lenbachhaus https://www.lenbachhaus.de/en/program/exhibitions/details/klee-kandinsky), "contacto imposible" (Schiele/Goffman), "analogía sin filiación probada" (af Klint/Cajal/Haeckel, etc.). Un parecido formal no demuestra contacto; siempre buscar diferencia.
 - Continuidad: V-001 no sustituye al `atlas-relaciones-vivas.html`, al Cuaderno, al Atlas, al Libro ni a obras propias. Referencias principales: `cuaderno/mascara-compostura-ridiculo.html`, `cuaderno/cuerpo-que-aguanta.html`, `atlas-relaciones-vivas.html`. El archivo es una selección y no una enciclopedia cerrada.
 - Futura mejora concreta: probar en Android/Chrome que cargan las quince imágenes; si alguna falla, sustituir por descarga local autorizada y optimizada, preservando la ficha de procedencia.
+
+## v0.25 — Limpieza editorial de la web · 17.10.2026
+- Portada reemplazada por una presentación breve con tres rutas claras: Obra, Cuaderno e Investigación. Sobre permanece en el menú y el contacto.
+- La selección visual enlaza ensayos propios y distingue imágenes históricas de dominio público y gráfico editorial de obras propias del artista. No se inventa portfolio visual.
+- Navegación principal de cuatro puertas, homogénea en las páginas públicas revisadas. Navegación móvil breve: Inicio, Obra, Cuaderno y Más (Investigación / Sobre / Buscar / Mesa de trazo).
+- Investigación ofrece primero Libro, Atlas y Diccionario y conserva el inventario de fichas y filtros dentro de un desplegable bajo demanda.
+- Tipografía de Obra y Sobre menos monumental; la infraestructura de investigación sigue disponible pero no se impone en portada.
+- Criterios observados: separación de Obras / Textos / CV de Inma Femenía y Cristina Garrido, y referencias artísticas estudiadas en Drive. La auditoría de redes disponible incluye censo de seguidos de Xavi Ceerre, no acceso directo verificable a los seguidos personales actuales de Diego.
+- Pendiente: verificación visual móvil/escritorio sobre el despliegue real; recuperar originales propios para galería de obra documentada.
