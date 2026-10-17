@@ -43,6 +43,31 @@ footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;paddin
 .sources a{font:12px/1.5 var(--mono)}
 @media(max-width:800px){.resource-grid{grid-template-columns:1fr}.official-film{min-height:auto}.resources{padding-top:36px}}
 
+
+/* Official audiovisual and catalogue readers — same-page, flexible layout */
+.resources{background:#dad8ce;padding:clamp(38px,5vw,78px) var(--pad);border-bottom:1px solid var(--ink)}
+.resources h2{font:500 clamp(41px,6vw,91px)/.93 Arial,Helvetica,sans-serif;letter-spacing:-.07em;margin:15px 0 18px;max-width:1100px}
+.resources-intro{max-width:820px;font-size:clamp(17px,1.7vw,22px);line-height:1.4;margin:0 0 30px}
+.media-pair{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}
+.media-panel{min-width:0;background:var(--paper);border:1px solid var(--line)}
+.media-head{min-height:127px;padding:23px 24px 16px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:start;gap:10px}
+.media-head h3{font:500 clamp(22px,2.4vw,34px)/1.06 Arial,Helvetica,sans-serif;letter-spacing:-.05em;margin:11px 0 0}
+.media-head .external,.media-foot a{font:12px/1.4 var(--mono)}
+.media-head .external{padding:8px 0}
+.film-embed{aspect-ratio:16/9;min-height:240px;background:#151713;display:block;margin:0}
+.film-embed iframe{display:block;width:100%;height:100%;min-height:240px;border:0}
+.pdf-frame{height:clamp(440px,60vw,790px);background:#b6b7b1}
+.pdf-frame iframe{display:block;width:100%;height:100%;border:0}
+.media-foot{font-size:13px;line-height:1.5;color:var(--quiet);padding:16px 24px 19px;margin:0}
+.other-resources{padding-top:50px}.other-resources h3{font:500 clamp(27px,3vw,45px)/1.06 Arial;letter-spacing:-.045em;margin:0 0 20px}
+.other-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px;border-top:1px solid var(--ink)}
+.other-list a{display:grid;grid-template-columns:1fr auto;gap:4px 16px;padding:18px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.other-list a span:first-child{grid-column:1/-1;font:11px var(--mono);color:var(--quiet)}
+.other-list a strong{font:500 19px/1.15 Arial;letter-spacing:-.025em}
+.other-list a span:last-child{font:11px var(--mono);align-self:end;white-space:nowrap;text-decoration:underline}
+.other-list a:hover strong{text-decoration:underline}
+@media(max-width:1000px){.media-pair{grid-template-columns:1fr}.pdf-frame{height:70vh;min-height:420px}.film-embed,.film-embed iframe{min-height:0}}
+@media(max-width:650px){.resources{padding-inline:20px}.media-head{min-height:0}.other-list{grid-template-columns:1fr}.other-list a{grid-template-columns:1fr}.other-list a span:last-child{margin-top:7px}}
 </style>
 </head>
 <body>
@@ -69,25 +94,35 @@ footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;paddin
 <article class="case"><div class="lab">03 / Pintura<br>montaje<br>ausencia</div><div class="content"><div class="tag">Centre Pompidou Málaga · 2026</div><h3>Un gesto cambia de exposición.</h3><p><em>El gesto y la materia</em> reunió en Málaga obras de la abstracción internacional entre 1945 y 1965. Allí el gesto no es solo una huella sobre el lienzo: también es una categoría curatorial que agrupa pinturas y hace visibles ciertas relaciones.</p><p>Cuando una obra entra en una nueva selección, cambia su vecindad. El color y la materia permanecen; la pregunta que se les dirige puede ser otra. Investigar una exposición exige estudiar también sus decisiones de montaje.</p><details><summary>Pregunta abierta</summary><p>¿Qué modifica el nuevo recorrido respecto de las precedentes exposiciones sobre abstracción gestual? La respuesta requiere cotejar listas de obras, textos y material de sala: no se obtiene solo por compartir un título o una cronología.</p></details></div><aside class="evidence"><div><div class="lab">Fuentes institucionales</div><a href="https://centrepompidou-malaga.eu/expo/el-gesto-y-la-materia/" target="_blank" rel="noopener noreferrer">Centre Pompidou Málaga — exposición y folleto (2026)</a></div><div><a href="https://www.centrepompidou.fr/es/programa/agenda/evento/eTy0sgi" target="_blank" rel="noopener noreferrer">Centre Pompidou — ficha de la exposición</a></div><small>Sin imágenes de obras con derechos de terceros. Contraste curatorial todavía abierto.</small></aside></article>
 </section>
 
-<section class="resources" id="fuentes-para-escuchar">
-<div class="lab">Recursos originales / acceso desde su institución</div>
-<h2>Ver y escuchar sin apropiarse del archivo.</h2>
-<div class="resource-grid">
-<div class="official-film">
-<div><div class="lab" style="color:#d0c9bd">Vídeo institucional / CA2M / 2021</div><h3>Javier Utray.<br>Un retrato anamórfico.</h3><p>La exposición no se reproduce aquí. Se abre el reproductor oficial, alojado por la institución en YouTube, solamente cuando el visitante lo solicita.</p></div>
-<div>
-<div class="film-embed" id="ca2m-video">
-<button id="activate-ca2m" type="button">Reproducir vídeo oficial del CA2M</button>
+
+<section class="resources" id="fuentes-para-escuchar" aria-labelledby="fuentes-titulo">
+<div class="lab">Javier Utray / CA2M · Dos fuentes completas</div>
+<h2 id="fuentes-titulo">Mira la exposición.<br>Lee el catálogo.</h2>
+<p class="resources-intro">Dos documentos del CA2M, juntos en esta página. El vídeo se reproduce desde el canal oficial; el PDF se visualiza directamente desde el servidor del museo. No se guardan copias en esta web.</p>
+<div class="media-pair">
+  <section class="media-panel film-panel" aria-labelledby="titulo-video">
+    <div class="media-head"><div><div class="lab">01 / Vídeo de la exposición · CA2M, 2021</div><h3 id="titulo-video">Javier Utray. Un retrato anamórfico</h3></div><a class="external" href="https://www.youtube.com/watch?v=u31PgEFJyn8" target="_blank" rel="noopener noreferrer">Ver en YouTube ↗</a></div>
+    <div class="film-embed">
+      <iframe src="https://www.youtube-nocookie.com/embed/u31PgEFJyn8?rel=0" title="CA2M — Javier Utray. Un retrato anamórfico, vídeo oficial de la exposición" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <p class="media-foot">Fuente: <a href="https://ca2m.org/exposiciones/javier-utray-un-retrato-anamorfico" target="_blank" rel="noopener noreferrer">CA2M Centro de Arte Dos de Mayo, exposición de 2021 ↗</a>.</p>
+  </section>
+  <section class="media-panel pdf-panel" aria-labelledby="titulo-pdf">
+    <div class="media-head"><div><div class="lab">02 / Catálogo íntegro · CA2M, 2021</div><h3 id="titulo-pdf">Javier Utray. Un retrato anamórfico</h3></div><a class="external" href="https://www.ca2m.org/sites/default/files/2021-07/Javier_Utray_publicacion.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF original ↗</a></div>
+    <div class="pdf-frame">
+      <iframe src="https://www.ca2m.org/sites/default/files/2021-07/Javier_Utray_publicacion.pdf#view=FitH" title="Leer el catálogo completo Javier Utray. Un retrato anamórfico, CA2M, 2021" loading="lazy"></iframe>
+    </div>
+    <p class="media-foot">Mariano Navarro y Andrés Mengs (eds.). CA2M, 2021. ISBN 978-84-451-3904-2. Si tu móvil no muestra el PDF incrustado, utiliza <a href="https://www.ca2m.org/sites/default/files/2021-07/Javier_Utray_publicacion.pdf" target="_blank" rel="noopener noreferrer">el enlace directo ↗</a>.</p>
+  </section>
 </div>
-<p class="caption">Al activar el vídeo, se cargará el reproductor de YouTube. <a href="https://ca2m.org/exposiciones/javier-utray-un-retrato-anamorfico" target="_blank" rel="noopener noreferrer">Consultar también la página oficial del museo</a>.</p>
-</div>
-</div>
-<div class="sources">
-<article><div class="lab">PDF / Catálogo institucional</div><strong>Utray: un retrato anamórfico</strong><p>Investigación, obras, documentos y testimonios. Lectura desde el sitio del CA2M; no se alojan copias.</p><a href="https://www.ca2m.org/publicaciones/javier-utray-un-retrato-anamorfico" target="_blank" rel="noopener noreferrer">Abrir catálogo y descarga oficial ↗</a></article>
-<article><div class="lab">Audio original / Canal UNED / 2009</div><strong>Simón Marchán: Reflexiones sobre la Estética</strong><p>Dos emisiones de unos 26 minutos. Se mantienen en el alojamiento original de UNED Media.</p><a href="https://canal.uned.es/video/5a6f9cc8b1111f0b4c8b4b8f" target="_blank" rel="noopener noreferrer">Escuchar primera parte ↗</a><br><a href="https://canal.uned.es/video/5a6f9cc7b1111f0b4c8b4b8a" target="_blank" rel="noopener noreferrer">Escuchar segunda parte ↗</a></article>
-<article><div class="lab">Texto / folleto institucional / 2026</div><strong>El gesto y la materia</strong><p>Descripción, selección y créditos de obra del Centre Pompidou Málaga. El folleto se obtiene en su web.</p><a href="https://centrepompidou-malaga.eu/exposicion/el-gesto-y-la-materia/" target="_blank" rel="noopener noreferrer">Abrir exposición y folleto ↗</a></article>
-<article><div class="lab">Imagen reutilizable / CC0</div><strong>Anna Atkins: <em>Part X</em>, c. 1853</strong><p>Cianotipia identificada como dominio público por The Met. Se puede reutilizar la imagen Open Access con ficha y procedencia.</p><a href="https://www.metmuseum.org/art/collection/search/291537" target="_blank" rel="noopener noreferrer">Ver imagen y descargar en The Met ↗</a></article>
-</div>
+<div class="other-resources">
+  <h3>Para continuar la investigación</h3>
+  <div class="other-list">
+    <a href="https://canal.uned.es/video/5a6f9cc8b1111f0b4c8b4b8f" target="_blank" rel="noopener noreferrer"><span>Canal UNED · 2009</span><strong>Simón Marchán — Reflexiones sobre la Estética, I</strong><span>Vídeo original ↗</span></a>
+    <a href="https://canal.uned.es/video/5a6f9cc7b1111f0b4c8b4b8a" target="_blank" rel="noopener noreferrer"><span>Canal UNED · 2009</span><strong>Simón Marchán — Reflexiones sobre la Estética, II</strong><span>Vídeo original ↗</span></a>
+    <a href="https://centrepompidou-malaga.eu/exposicion/el-gesto-y-la-materia/" target="_blank" rel="noopener noreferrer"><span>Centre Pompidou Málaga</span><strong>El gesto y la materia</strong><span>Exposición ↗</span></a>
+    <a href="https://www.metmuseum.org/art/collection/search/291537" target="_blank" rel="noopener noreferrer"><span>The Met · Open Access</span><strong>Anna Atkins — Part X, c. 1853</strong><span>Imagen y ficha ↗</span></a>
+  </div>
 </div>
 </section>
 <section class="operation"><div class="lab">Método / de la solicitud a la obra</div><h2>Una carta no es todavía un encuentro.</h2><div class="steps"><article><div class="lab">01 — Pregunta</div><strong>Localizar lo que falta.</strong><p>Empezar por una diferencia concreta entre el documento público y aquello que sigue sin poder examinarse. No pedir «todo el archivo».</p></article><article><div class="lab">02 — Respuesta</div><strong>Admitir una corrección.</strong><p>Un interlocutor puede indicar una fuente, negar un supuesto o cambiar el objeto de estudio. El valor de la respuesta no depende de que conceda permiso.</p></article><article><div class="lab">03 — Devolución</div><strong>Hacer aparecer otra cosa.</strong><p>Redactar, montar, dibujar, citar, abrir preguntas. Distinguir siempre el hallazgo ajeno de la operación propia.</p></article></div></section>
@@ -103,16 +138,4 @@ const payload=[
 ];
 const btns=[...document.querySelectorAll(".states button")];const title=document.getElementById("state-title");const txt=document.getElementById("state-text");
 btns.forEach(b=>b.addEventListener("click",()=>{const i=Number(b.dataset.i);btns.forEach(v=>v.setAttribute("aria-pressed",String(v===b)));title.textContent=payload[i][0];txt.textContent=payload[i][1]}));
-const launch=document.getElementById("activate-ca2m");
-launch?.addEventListener("click",()=>{
-const host=document.getElementById("ca2m-video");
-if(!host||host.querySelector("iframe"))return;
-const frame=document.createElement("iframe");
-frame.src="https://www.youtube-nocookie.com/embed/u31PgEFJyn8?rel=0";
-frame.title="Javier Utray. Un retrato anamórfico — vídeo del CA2M";
-frame.allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-frame.allowFullscreen=true;
-host.replaceChildren(frame);
-frame.focus();
-});
 </script></body></html>
