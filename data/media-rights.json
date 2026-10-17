@@ -225,6 +225,8 @@
       "OA-021"
     ],
     "own_editorial_image": "/assets/visual/nota-007-borrado.svg",
-    "rights_separation": "Historical public-domain reproductions are differentiated from digital editorial graphics, visitor-made drawings and original physical artwork. No original artwork was fabricated."
+    "rights_separation": "Historical public-domain reproductions are differentiated from digital editorial graphics, visitor-made drawings and original physical artwork. No original artwork was fabricated.",
+    "status": "reverted",
+    "note": "El rediseño interactivo de portada publicado en commit 0dbaa603 fue retirado en commit 2b081276 tras rechazo explícito. La portada index.html vuelve al blob 506f43c565d4cccdd7b4e6b5eaba7f65292e5219. Este registro anterior se conserva como histórico, no como estado actual."
   }
 }
