@@ -104,12 +104,13 @@
     {
       "id": "OA-ATK-291513",
       "creator": "Anna Atkins",
-      "title": "Desmarestia liqulata",
+      "title": "Desmarestia ligulata",
       "date": "ca. 1853",
       "source": "https://www.metmuseum.org/art/collection/search/291513",
       "file_ref": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/291513/1897730/main-image",
       "used_on": [
-        "/notas/anna-atkins-el-azul-que-no-pertenece-al-alga.html"
+        "/notas/anna-atkins-el-azul-que-no-pertenece-al-alga.html",
+        "/"
       ],
       "legal_basis": "public_domain_work_and_Met_Open_Access_CC0",
       "status": "verified_source_2026-10-17",
@@ -216,5 +217,14 @@
       "editorial_status": "unapproved_preview_not_live_homepage",
       "notes": "The six SVGs in the proposed homepage are original AI-assisted editorial studies, not executed art works or documentation of field research. Anna Atkins Ulva lactuca (OA-020) is reused under documented CC0/Open Access."
     }
+  },
+  "homepage_2026_10_17": {
+    "description": "Live homepage redesign focused on drawing and visible editorial projects; includes an optional interactive canvas. Canvas initial strokes are a generated, AI-assisted digital study and are not attributed as physical artwork by Diego Bravo. Visitor strokes remain in-browser and exported PNGs are local.",
+    "outside_image_sources": [
+      "OA-ATK-291513",
+      "OA-021"
+    ],
+    "own_editorial_image": "/assets/visual/nota-007-borrado.svg",
+    "rights_separation": "Historical public-domain reproductions are differentiated from digital editorial graphics, visitor-made drawings and original physical artwork. No original artwork was fabricated."
   }
 }
