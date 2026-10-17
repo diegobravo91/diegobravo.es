@@ -4,7 +4,7 @@
   if(!window.matchMedia || !document.body || !document.createElement) return;
   var mobile=window.matchMedia('(max-width: 850px)');
   var items=[
-    ['Inicio','/'],['Investigaciones','/investigaciones.html'],
+    ['Inicio','/'],['Obra','/obra.html'],['Investigaciones','/investigaciones.html'],
     ['Buscar','/buscar.html'],['Atlas','/atlas.html'],['Libro','/estetica-del-umbral.html'],
     ['Diccionario','/diccionario.html'],['Práctica','/practica.html'],
     ['Cuaderno','/notas.html'],['Imágenes','/imagenes.html'],['Mapa','/mapa.html'],
@@ -21,7 +21,7 @@
   var a=function(title,url,icon){return '<a href="'+url+'"'+active(url)+'><span class="dock-icon" aria-hidden="true">'+icon+'</span>'+esc(title)+'</a>';};
   var dock=document.createElement('nav');
   dock.className='mobile-dock';dock.setAttribute('aria-label','Navegación móvil');
-  dock.innerHTML=a('Inicio','/','⌂')+a('Cuaderno','/notas.html','≡')+a('Buscar','/buscar.html','⌕')
+  dock.innerHTML=a('Inicio','/','⌂')+a('Obra','/obra.html','✳')+a('Buscar','/buscar.html','⌕')
     +'<details class="mobile-more"><summary><span class="dock-icon" aria-hidden="true">☷</span>Explorar</summary>'
     +'<div class="mobile-drawer"><div class="mobile-drawer-head">Diego Bravo — Todas las secciones</div>'
     +'<div class="mobile-drawer-links">'+items.map(function(x){return '<a href="'+x[1]+'"'+active(x[1])+'>'+esc(x[0])+' ↗</a>';}).join('')+'</div>'
