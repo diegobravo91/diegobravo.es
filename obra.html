@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#eceae4">
+<meta name="author" content="Diego Bravo">
+<meta name="description" content="Obra y procesos de Diego Bravo: archivo gráfico en recuperación, caligrafía expresiva, dibujo, gesto, materia y conexión entre lo analógico y lo digital.">
+<link rel="canonical" href="https://diegobravo.es/obra.html">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/mobile-shell.css">
+<title>Obra y procesos — Diego Bravo</title>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Diego Bravo">
+<meta property="og:title" content="Obra y procesos — Diego Bravo">
+<meta property="og:description" content="Gesto, dibujo, letra y materia. Archivo gráfico en recuperación y práctica artística actual.">
+<meta property="og:url" content="https://diegobravo.es/obra.html">
+<meta property="og:image" content="https://diegobravo.es/assets/social-card.jpg">
+<style>
+:root{--paper:#eceae4;--white:#f6f5f0;--ink:#161714;--muted:#575851;--line:#b9b9b0;--accent:#a52e17;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;--pad:clamp(18px,3.2vw,52px)}
+*,*::before,*::after{box-sizing:border-box}
+html{background:var(--paper);scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 Arial,Helvetica,sans-serif}
+a{color:inherit;text-underline-offset:.24em} a:hover{text-decoration-color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.skip-link{position:absolute;top:0;left:var(--pad);background:var(--ink);color:var(--paper);padding:10px;transform:translateY(-150%);z-index:150}
+.skip-link:focus{transform:none}
+.top{position:sticky;top:0;z-index:30;background:rgba(236,234,228,.97);display:flex;justify-content:space-between;align-items:center;gap:24px;padding:16px var(--pad);border-bottom:1px solid var(--ink);min-height:65px}
+.brand{text-decoration:none;font-size:17px;font-weight:700;letter-spacing:-.03em}
+.topnav{display:flex;gap:clamp(12px,2vw,28px);font:11px/1.4 var(--mono);overflow-x:auto;white-space:nowrap;scrollbar-width:none}
+.topnav a{text-decoration:none}.topnav a[aria-current]{text-decoration:underline}
+.kicker,.meta,.counter,.section-kicker,.subtle,.footer{font:11px/1.5 var(--mono);letter-spacing:.015em}
+.kicker,.section-kicker{text-transform:uppercase;color:var(--accent)}
+.hero{padding:clamp(40px,7vw,100px) var(--pad) clamp(36px,5vw,70px);display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(30px,6vw,100px);border-bottom:1px solid var(--ink)}
+.hero h1{font:500 clamp(65px,10vw,155px)/.82 Arial,Helvetica,sans-serif;letter-spacing:-.088em;margin:25px 0 40px}
+.hero .lead{font-size:clamp(23px,2.4vw,36px);line-height:1.16;letter-spacing:-.035em;max-width:720px;margin:0}
+.hero aside{display:flex;flex-direction:column;justify-content:end;gap:18px;border-left:1px solid var(--line);padding-left:clamp(20px,3vw,56px)}
+.hero aside p{font-size:17px;line-height:1.6;margin:0}.hero aside a{display:inline-block;width:max-content;max-width:100%;border-bottom:1px solid currentColor;text-decoration:none;padding-bottom:6px}
+.section-head{display:flex;justify-content:space-between;align-items:baseline;gap:18px;padding:20px var(--pad);border-bottom:1px solid var(--ink)}
+.section-head h2{font-size:clamp(25px,3.5vw,49px);line-height:1;letter-spacing:-.055em;font-weight:500;margin:0}
+.section-head .counter{color:var(--muted)}
+.archive-intro{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,6vw,110px);padding:clamp(28px,4vw,60px) var(--pad);border-bottom:1px solid var(--line)}
+.archive-intro p{font-size:clamp(18px,1.8vw,25px);line-height:1.4;letter-spacing:-.025em;margin:0;max-width:740px}
+.archive-intro .detail{font-size:15px;line-height:1.65;color:var(--muted)}
+.process-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-bottom:1px solid var(--ink)}
+.process-card{min-width:0;padding:clamp(25px,3vw,44px) var(--pad) clamp(30px,4vw,60px);border-right:1px solid var(--line)}
+.process-card:last-child{border-right:0}
+.process-card .num{font:11px var(--mono);color:var(--accent)}
+.process-card h3{font-size:clamp(30px,3.4vw,53px);font-weight:500;line-height:.98;letter-spacing:-.058em;margin:40px 0 20px}
+.process-card p{line-height:1.65;max-width:490px}
+.process-card .tags{font:11px/1.7 var(--mono);text-transform:uppercase;color:var(--muted);border-top:1px solid var(--line);padding-top:15px;margin-top:34px}
+.pending{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,100px);background:#222420;color:var(--paper);padding:clamp(34px,5vw,78px) var(--pad)}
+.pending h2{font:500 clamp(44px,6vw,86px)/.95 Arial,Helvetica,sans-serif;letter-spacing:-.065em;margin:18px 0 0;max-width:650px}
+.pending p{font-size:17px;line-height:1.7;max-width:570px;margin:0 0 16px}.pending .subtle{color:#c9c8c2}
+.pending a{color:var(--paper)}
+.current{padding:clamp(35px,5vw,70px) var(--pad);display:grid;grid-template-columns:1fr 1fr;gap:clamp(35px,5vw,90px);border-bottom:1px solid var(--ink)}
+.current h2{font:500 clamp(43px,6vw,82px)/.95 Arial,Helvetica,sans-serif;letter-spacing:-.067em;margin:15px 0}
+.current p{font-size:17px;line-height:1.65;max-width:570px}
+.linkline{display:block;text-decoration:none;border-top:1px solid var(--line);padding:18px 0;font-size:clamp(16px,2vw,22px)}
+.linkline:hover{text-decoration:underline}
+.contact{display:flex;justify-content:space-between;gap:20px;align-items:center;padding:28px var(--pad);background:var(--white)}
+.contact p{margin:0;max-width:650px}.contact a{overflow-wrap:anywhere}
+.footer{padding:18px var(--pad);border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--muted)}
+@media(max-width:850px){.hero,.archive-intro,.pending,.current{grid-template-columns:1fr}.hero aside{border-left:0;border-top:1px solid var(--line);padding:24px 0 0}.process-grid{grid-template-columns:1fr}.process-card{border-right:0;border-bottom:1px solid var(--line)}.process-card:last-child{border-bottom:0}.process-card h3{margin-top:16px}.top{padding-block:12px}.contact{display:block}.contact a{display:block;margin-top:14px}.hero h1{font-size:clamp(64px,16vw,118px)}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header class="top"><a class="brand" href="/">Diego Bravo</a>
+<nav class="topnav" aria-label="Navegación principal"><a href="/obra.html" aria-current="page">Obra</a><a href="/notas.html">Cuaderno</a><a href="/investigaciones.html">Investigación</a><a href="/sobre.html">Sobre / contacto</a></nav></header>
+<main id="contenido">
+<section class="hero" aria-labelledby="titulo">
+ <div><div class="kicker">Diego Bravo / práctica artística</div><h1 id="titulo">Obra y<br>procesos.</h1><p class="lead">La mano, la letra, la materia y sus transformaciones. Una trayectoria gráfica que vuelve a ponerse en movimiento.</p></div>
+ <aside><span class="kicker">Una presentación honesta</span><p>Esta sección reúne el campo de trabajo, las operaciones y los materiales de una práctica. El archivo de obras anteriores está en recuperación y la nueva producción no se mostrará como terminada antes de existir.</p><a href="#archivo">Conocer la trayectoria ↘</a><a href="#actual">Ver el trabajo actual ↘</a></aside>
+</section>
+<section id="archivo" aria-labelledby="archivo-titulo">
+ <div class="section-head"><h2 id="archivo-titulo">Una trayectoria gráfica</h2><span class="counter">Archivo en recuperación</span></div>
+ <div class="archive-intro"><p>Durante sus años de formación en Alcoi, Diego Bravo desarrolló una práctica intensiva de caligrafía expresiva, lettering y composición gráfica. El interés no estaba sólo en la palabra: también en el peso del trazo, su ritmo, la herramienta y la posibilidad de construir imágenes con signos.</p><p class="detail">Aquella práctica conectaba herramientas manuales, tinta, letras y composiciones que podían perder su legibilidad con recursos de edición digital. El archivo se está revisando antes de seleccionar y publicar fotografías o reproducciones de obras concretas. No se atribuyen aquí piezas ni fechas que todavía no hayan sido documentadas.</p></div>
+ <div class="process-grid" aria-label="Tres campos de trabajo">
+  <article class="process-card"><span class="num">01 / Oficio</span><h3>Trazo y presión</h3><p>Plumillas, herramientas de punta ancha, Rekab, pinceles y tintas; variaciones de velocidad, dirección y contacto con el soporte. La precisión técnica como condición para hacer algo inesperado.</p><div class="tags">Caligrafía · herramienta · ritmo · materia</div></article>
+  <article class="process-card"><span class="num">02 / Imagen</span><h3>La letra desbordada</h3><p>Composiciones donde la escritura se transforma en forma, densidad o movimiento. La legibilidad puede mantenerse, fragmentarse o desaparecer sin que el gesto deje de conservar memoria de la letra.</p><div class="tags">Lettering · composición · signo · ilegibilidad</div></article>
+  <article class="process-card"><span class="num">03 / Cruce</span><h3>Mano y pantalla</h3><p>El dibujo y la caligrafía dialogan con la digitalización, la escala, las superposiciones y la edición. Interesa tanto lo que la pantalla permite como lo que no consigue conservar del original.</p><div class="tags">Analógico · digital · escala · reproducción</div></article>
+ </div>
+</section>
+<section class="pending" aria-labelledby="pendiente-titulo">
+ <div><span class="subtle">Archivo de obra / estado público</span><h2 id="pendiente-titulo">Las imágenes propias importan.</h2></div>
+ <div><p>El siguiente paso es incorporar una selección pequeña y rigurosa de obras auténticas: vistas completas, detalles de trazo, materiales, fecha aproximada cuando pueda verificarse y, si existe, registro del proceso.</p><p>No se han insertado imágenes generadas, obras ajenas ni simulaciones para aparentar que esta galería ya está documentada.</p><span class="subtle">En preparación · sin catálogo ficticio · sin obras inventadas</span></div>
+</section>
+<section class="current" id="actual" aria-labelledby="actual-titulo">
+ <div><span class="section-kicker">Práctica presente</span><h2 id="actual-titulo">Volver a trabajar, no a repetir.</h2><p>Retomar el dibujo y el trabajo material no significa reconstruir un estilo anterior. El interés actual está en lo que sucede al presionar, borrar, repetir, desplazar, transferir o interrumpir una forma.</p><p>Los ensayos y las hipótesis pueden orientar esa práctica, pero no sustituyen una obra física.</p></div>
+ <div><span class="section-kicker">Dos recorridos, sin confundir sus estados</span>
+ <a class="linkline" href="/practica.html">Pruebas y protocolos de investigación ↗</a>
+ <a class="linkline" href="/imagenes.html">Imágenes editoriales y archivo histórico ↗</a>
+ <a class="linkline" href="/notas.html">Cuaderno de ideas y ensayos visuales ↗</a>
+ <a class="linkline" href="/estetica-del-umbral.html">Estética del umbral: proyecto de investigación ↗</a>
+ <p class="detail">Estas páginas muestran trabajos editoriales, ideas y fuentes con sus respectivos estados. No son un catálogo de piezas materiales ya ejecutadas.</p>
+ </div>
+</section>
+<section class="contact" aria-label="Contacto"><p>¿Interesa una conversación sobre dibujo, caligrafía, obra gráfica, publicación o colaboración? <a href="/sobre.html">Conocer al autor ↗</a></p><a href="mailto:diegobravorelova1991@gmail.com">diegobravorelova1991@gmail.com</a></section>
+</main>
+<footer class="footer"><span>© Diego Bravo · Obra y procesos · 17.10.2026</span><span><a href="/colofon.html">Derechos y procedencia</a> · <a href="/">Inicio</a></span></footer>
+<script defer src="/assets/mobile-shell.js"></script>
+</body></html>
