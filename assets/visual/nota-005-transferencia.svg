@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="t d"><title id="t">Trama fragmentaria sobre dos tejidos que deja un resto al transferirse</title><desc id="d">Composición editorial original de Diego Bravo para la web. No reproduce una obra artística de terceros ni documenta un experimento realizado.</desc><defs></defs>
+<rect width="1200" height="800" fill="#242a27"/>
+<rect x="125" y="70" width="420" height="630" fill="#b8b9ac" opacity=".78" transform="rotate(4 335 385)"/>
+<rect x="640" y="88" width="380" height="620" fill="#d8d6c9" opacity=".65" transform="rotate(-5 840 388)"/>
+<g fill="none" stroke="#282c27" stroke-width="12" opacity=".65"><path d="M220 155 L451 260 L230 390 L448 490 L245 615" stroke-dasharray="110 40"/>
+<path d="M720 190 L917 285 L734 406 L910 520" stroke-dasharray="23 24"/></g>
+<g fill="#f45028" opacity=".8"><circle cx="331" cy="410" r="15"/><circle cx="750" cy="445" r="8"/><circle cx="859" cy="344" r="4"/></g>
+<path d="M557 401 L629 401" stroke="#f45028" stroke-width="8"/><path d="M606 378 L632 400 L607 421" fill="none" stroke="#f45028" stroke-width="8"/>
+<text x="108" y="764" fill="#e4e0d5" font-family="monospace" font-size="19" letter-spacing="3">LIMPIAR / RETENER / TRANSFERIR</text>
+</svg>
