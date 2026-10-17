@@ -1,0 +1,38 @@
+/* 2026-10-18 · Ensor / Schiele / Goffman: obra real junto al argumento.
+   Complemento progresivo de las páginas existentes, sin modificar otras notas. */
+.hero.hero-with-art{grid-template-columns:minmax(0,1.05fr) minmax(255px,.85fr);gap:clamp(20px,4vw,60px);align-items:center;padding-block:clamp(24px,3.4vw,49px)}
+.hero-with-art h1{font-size:clamp(44px,5.3vw,86px);line-height:.99;max-width:13ch;margin:12px 0 17px}
+.hero-with-art .subtitle{font-size:clamp(18px,2vw,27px);line-height:1.35;margin:0}
+.hero-work,.inline-work,.series-work{margin:0;min-width:0}
+.hero-work>a,.inline-work>a,.series-work>a{display:block;background:#dbd8cc}
+.hero-work img{display:block;width:100%;height:clamp(260px,34vw,500px);object-fit:contain;background:#dcd9cd}
+.hero-work figcaption,.inline-work figcaption,.series-work figcaption{font:11px/1.55 ui-monospace,Consolas,monospace;color:#50534e;padding:9px 0 0}
+.hero-work figcaption strong,.inline-work figcaption strong,.series-work figcaption strong{display:block;font:600 12px/1.5 Arial,sans-serif;color:#222820}
+.hero-work figcaption a,.inline-work figcaption a,.series-work figcaption a{text-decoration:underline;text-underline-offset:3px}
+.reading-note{padding:12px clamp(18px,6vw,85px);font:11px/1.6 ui-monospace,Consolas,monospace;color:#50564e;border-bottom:1px solid #b8b9af}
+.prose section>div:last-child{min-width:0}
+.prose section>div:last-child:after{content:"";display:block;clear:both}
+.inline-work{float:right;width:min(45%,350px);margin:3px 0 20px clamp(18px,2.6vw,34px)}
+.inline-work img{display:block;width:100%;max-height:410px;min-height:180px;object-fit:contain;background:#e0dfd7}
+.inline-work.wide img{max-height:350px}
+.prose section .inline-work+p{margin-top:0}
+.prose p+p{margin-top:14px}
+.comparison-note{margin:14px 0;padding:12px 16px;border-left:3px solid #965038;background:#e4e0d4;font-size:15px;line-height:1.55}
+.comparison-note strong{color:#793823}
+.visual-debate{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(18px,3vw,38px);padding:clamp(22px,3.6vw,55px) clamp(18px,4vw,60px);border-bottom:1px solid #b3b5aa}
+.visual-debate figure{margin:0;min-width:0}
+.visual-debate img{width:100%;height:clamp(220px,38vw,420px);display:block;object-fit:contain;background:#e1dfd5}
+.visual-debate figcaption{font:12px/1.5 ui-monospace,Consolas,monospace;margin:8px 0;color:#404640}
+.visual-debate h2{font:400 clamp(23px,3vw,40px)/1.18 Georgia,serif;margin:12px 0}
+.visual-debate p{font:16px/1.65 Arial,sans-serif;max-width:610px}
+.visual-debate a{text-underline-offset:3px}
+.panels .prose section .inline-work{width:min(44%,360px);margin:5px 0 17px 24px}
+.panels .prose section .inline-work img{max-height:340px}
+.stage.is-secondary{margin-top:0}
+.mask-context{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1fr);gap:clamp(20px,4vw,60px);padding:24px clamp(18px,4vw,60px);background:#e5e2d9;border-bottom:1px solid #aeafa5}
+.mask-context p{font:clamp(17px,1.7vw,24px)/1.5 Georgia,serif;margin:0}
+.mask-context strong{display:block;font:11px/1.6 ui-monospace,Consolas,monospace;color:#8e442e;text-transform:uppercase;margin-bottom:11px}
+#r05 .plates{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:900px){.hero.hero-with-art{grid-template-columns:minmax(0,1fr) minmax(210px,.9fr)}}
+@media(max-width:700px){.hero.hero-with-art{display:grid;grid-template-columns:1fr;gap:19px;padding-top:28px;padding-bottom:22px}.hero-with-art h1{font-size:clamp(46px,11vw,76px);max-width:100%}.hero-work img{height:auto;max-height:46vh;min-height:220px;object-fit:contain}.inline-work,.panels .prose section .inline-work{float:none;width:100%;margin:12px 0 17px}.inline-work img{max-height:48vh;min-height:0}.visual-debate,.mask-context{grid-template-columns:1fr}.visual-debate img{height:auto;max-height:48vh}.reading-note{padding-inline:18px}#r05 .plates{grid-template-columns:1fr}}
+@media(max-width:430px){.hero-with-art h1{font-size:45px}.visual-debate{padding:18px}.hero-work img{max-height:42vh}}
