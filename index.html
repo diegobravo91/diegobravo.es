@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <meta name="theme-color" content="#eceae4">
-  <meta name="description" content="Diego Bravo — Estética del umbral. Investigación y práctica artística entre escritura, materia, archivo y transformación. Libro, Atlas, Diccionario y notas.">
-  <title>Diego Bravo — Estética del umbral · Arte e investigación</title>
+  <meta name="description" content="Diego Bravo, artista visual: dibujo, caligrafía expresiva, obra gráfica, escritura y experimentación material. Cuaderno e investigación.">
+  <title>Diego Bravo — Artista visual · Dibujo, imagen y materia</title>
 <meta name="author" content="Diego Bravo">
 <meta name="copyright" content="© Diego Bravo, 2026">
 <link rel="author" href="/sobre.html">
@@ -14,8 +14,8 @@
 <link rel="alternate" type="application/rss+xml" title="Notas — Diego Bravo" href="https://diegobravo.es/feed.xml">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Diego Bravo — Estética del umbral">
-<meta property="og:description" content="Escritura, materia, archivo e investigación artística: trabajos, Atlas del Umbral, Libro, Diccionario y notas.">
+<meta property="og:title" content="Diego Bravo — artista visual">
+<meta property="og:description" content="Obra, dibujo, caligrafía, procesos gráficos y una investigación artística en curso.">
 <meta property="og:url" content="https://diegobravo.es/">
 <meta property="og:image" content="https://diegobravo.es/assets/social-card.jpg">
 <meta property="og:image:type" content="image/jpeg">
@@ -288,6 +288,12 @@
 .visual-shelf-scroll a:hover span{text-decoration:underline}
 .visual-shelf-foot{padding:10px var(--space) 20px;border-top:1px solid var(--rule);font:11px/1.5 var(--mono);color:var(--grey)}
 @media(max-width:650px){.visual-shelf-top{align-items:start;flex-direction:column;gap:13px}.visual-shelf-scroll a{flex-basis:180px}}
+
+/* v0.23 / Artist-first */
+.hero h1{max-width:8ch;font-size:clamp(70px,9vw,140px)}.study-new::before,.study-new::after{display:none}
+.study-words{display:flex;flex:1;flex-direction:column;justify-content:center;gap:7px;padding:25px 0;font-size:clamp(42px,5.4vw,88px);line-height:.93;letter-spacing:-.075em}.study-words span:nth-child(2){margin-left:13%;color:var(--orange-ink)}.study-words span:nth-child(3){font-style:italic;margin-left:3%}
+.author-work{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--ink)}.author-intro{background:var(--white);border-right:1px solid var(--ink);padding:clamp(35px,5vw,70px) var(--space);display:flex;flex-direction:column;align-items:flex-start;gap:24px}.author-intro .overline,.author-links span,.author-links small{font:11px/1.55 var(--mono);color:var(--grey)}.author-intro .overline,.author-links span{text-transform:uppercase;color:var(--orange-ink)}.author-intro h2{font-size:clamp(45px,5.8vw,85px);font-weight:500;line-height:.95;letter-spacing:-.07em;margin:0}.author-intro p{font-size:clamp(19px,1.9vw,27px);line-height:1.3;letter-spacing:-.025em;max-width:680px;margin:0}.author-links{display:grid;grid-template-rows:repeat(3,minmax(135px,1fr))}.author-links a{padding:22px var(--space);border-bottom:1px solid var(--rule);display:flex;flex-direction:column;justify-content:center;gap:8px;text-decoration:none}.author-links a:last-child{border:0}.author-links strong{font-weight:500;font-size:clamp(22px,2.4vw,37px);line-height:1.05;letter-spacing:-.045em}.author-links a:hover strong{text-decoration:underline}
+@media(max-width:900px){.author-work{grid-template-columns:1fr}.author-intro{border-right:0;border-bottom:1px solid var(--ink)}.author-links{grid-template-rows:none}.author-links a{min-height:135px}}@media(max-width:700px){.hero h1{font-size:clamp(70px,15vw,104px)}.study-new{min-height:290px}.study-words{font-size:clamp(48px,11vw,76px)}}
 </style>
 <link rel="stylesheet" href="/assets/mobile-shell.css">
 <script defer src="/assets/mobile-shell.js"></script>
@@ -295,49 +301,15 @@
 <body>
   <a class="skip" href="#contenido">Saltar al contenido</a>
   <header class="top">
-    <a class="brand" href="/" aria-label="Diego Bravo — inicio">Diego Bravo<span class="slash">/</span>Estética del umbral</a>
-    <nav class="topnav" aria-label="Navegación principal">
-      <a href="/notas.html">Leer / Cuaderno</a>
-      <a href="/imagenes.html">Imágenes</a>
-      <a href="/buscar.html">Buscar ⌕</a>
-      <a href="#trabajo">Trabajo</a>
-      <a href="/atlas.html">Atlas</a>
-      <details class="extra-nav"><summary>Más secciones <span aria-hidden="true">+</span></summary>
-        <div class="extra-links"><a href="/investigaciones.html">Investigaciones</a><a href="/estetica-del-umbral.html">Libro</a><a href="/diccionario.html">Diccionario</a><a href="/practica.html">Práctica</a><a href="/mapa.html">Mapa</a><a href="/sobre.html">Sobre / contacto</a></div>
-      </details>
-    </nav>
+    <a class="brand" href="/" aria-label="Diego Bravo — inicio">Diego Bravo</a>
+    <nav class="topnav" aria-label="Navegación principal"><a href="/obra.html">Obra</a><a href="/notas.html">Cuaderno</a><a href="/imagenes.html">Imágenes</a><a href="/investigaciones.html">Investigación</a><a href="/sobre.html">Sobre / contacto</a><details class="extra-nav"><summary>Explorar <span aria-hidden="true">+</span></summary><div class="extra-links"><a href="/buscar.html">Buscar</a><a href="/estetica-del-umbral.html">Estética del umbral</a><a href="/atlas.html">Atlas</a><a href="/diccionario.html">Diccionario</a><a href="/practica.html">Práctica</a><a href="/mapa.html">Mapa</a></div></details></nav>
   </header>
   <main id="contenido" tabindex="-1">
-    <section class="hero" id="inicio" aria-labelledby="principal">
-      <div class="hero-copy">
-        <div>
-          <div class="eyebrow"><i class="dot" aria-hidden="true"></i> Artista · escritura, imagen, materia</div>
-          <h1 id="principal">Estética <span>del <em class="hollow" style="font-style:normal">umbral.</em></span></h1>
-        </div>
-        <div>
-          <p class="statement">Arte, imágenes, escritura y materia. Investigar lo que cambia al mirar, trabajar y relacionar.</p>
-          <div class="hero-bottom">
-            <a href="/notas/la-imagen-que-debia-desaparecer.html">Leer una nota de 5 minutos ↗</a> <a href="#trabajo">Ver trabajo ↘</a>
-            <div class="micro">Diego Bravo · Edición pública en curso</div>
-          </div>
-        </div>
-      </div>
-      <div class="hero-display" aria-label="Diagrama editorial abstracto que no representa una obra realizada">
-        <div class="study">
-          <div class="study-title mono">Fig. 00 / Diferencia entre borde y transformación</div>
-          <div class="orbital" aria-hidden="true">
-            <div class="ring"></div><div class="ring two"></div>
-            <div class="square"></div><div class="line"></div><div class="center"></div>
-          </div>
-          <div class="annotation mono"><span>Antes / condición</span><span>Después / consecuencia</span></div>
-        </div>
-        <div class="display-note"><span>Esquema conceptual</span><span>No es una obra realizada</span></div>
-      </div>
-    </section>
-
+    <section class="hero" id="inicio" aria-labelledby="principal"><div class="hero-copy"><div><div class="eyebrow"><i class="dot" aria-hidden="true"></i> Artista visual · dibujo, imagen y materia</div><h1 id="principal">Diego <span>Bravo.</span></h1></div><div><p class="statement">Una práctica entre el gesto, la imagen, el oficio gráfico y la investigación.</p><div class="hero-bottom"><a href="/obra.html">Obra y procesos ↗</a><a href="/notas.html">Leer el cuaderno ↗</a><div class="micro">Caligrafía · dibujo · experimentación</div></div></div></div><div class="hero-display" aria-label="Composición tipográfica editorial; no representa una obra realizada"><div class="study study-new"><div class="study-title mono">El trabajo comienza en la mano</div><div class="study-words" aria-hidden="true"><span>Trazo</span><span>Materia</span><span>Imagen</span></div><div class="annotation mono"><span>Presión · accidente</span><span>Signo · transformación</span></div></div><div class="display-note"><span>Composición editorial</span><span>No es una obra realizada</span></div></div></section>
+<section id="obra" class="author-work" aria-labelledby="obra-title"><div class="author-intro"><div class="overline">01 / Obra y procesos</div><h2 id="obra-title">La mano tiene una historia.</h2><p>Caligrafía expresiva, lettering y dibujo: el oficio del trazo fue un punto de partida. Ahora interesa recuperar su capacidad de sorprender, no repetir un estilo anterior.</p><a class="text-link" href="/obra.html">Entrar en obra y procesos</a></div><div class="author-links"><a href="/obra.html#archivo"><span>Archivo en recuperación</span><strong>Letra, gesto y composición</strong><small>Trayectoria gráfica · sin piezas inventadas</small></a><a href="/obra.html#actual"><span>Práctica actual</span><strong>Materia, repetición y accidente</strong><small>Proceso abierto · no equivale a obra terminada</small></a><a href="/sobre.html"><span>El artista</span><strong>Trayectoria y contacto</strong><small>Conocer a Diego Bravo</small></a></div></section>
 <section class="journal-feature" id="cuaderno" aria-labelledby="journal-title">
 <div class="journal-voice">
-<div><div class="overline">01 / Leer / 11 entradas publicadas</div><h2 id="journal-title">Notas.</h2><p>Una pregunta, una imagen, cinco minutos. No necesitas recorrer toda la web.</p></div>
+<div><div class="overline">02 / Leer / 11 entradas publicadas</div><h2 id="journal-title">Notas.</h2><p>Una pregunta, una imagen, cinco minutos. No necesitas recorrer toda la web.</p></div>
 <a class="text-link" href="/notas.html">Entrar en el cuaderno</a>
 </div>
 <div class="journal-readings">
@@ -354,7 +326,7 @@
 
 
     <section class="visual-shelf" id="imagenes" aria-labelledby="visual-shelf-heading">
-<div class="visual-shelf-top"><div><span class="eyebrow">02 / Mirar antes de leer</span><h2 id="visual-shelf-heading">Pasarela de imágenes.</h2></div><a class="text-link" href="/imagenes.html">Abrir galería y archivo visual</a></div>
+<div class="visual-shelf-top"><div><span class="eyebrow">03 / Mirar antes de leer</span><h2 id="visual-shelf-heading">Cuaderno en imágenes.</h2></div><a class="text-link" href="/imagenes.html">Abrir galería y archivo visual</a></div>
 <div class="visual-shelf-scroll">
 <a href="/notas/el-carton-que-imita-al-carton.html"><img src="/assets/visual/nota-004-carton.svg" alt="Cartón usado frente a su facsímil, gráfico original" loading="lazy" decoding="async"><span>N–004 · Materia y reproducción ↗</span></a>
 <a href="/notas/la-imagen-que-debia-desaparecer.html"><img src="/assets/visual/nota-005-transferencia.svg" alt="Transferencia parcial entre telas, gráfico original" loading="lazy" decoding="async"><span>N–005 · Transferencia ↗</span></a>
@@ -365,7 +337,7 @@
 <div class="visual-shelf-foot">Composiciones editoriales originales y reproducciones del archivo histórico en dominio público. Fuentes y derechos en <a href="/imagenes.html#archivo">Imágenes ↗</a></div>
 </section>
 <section id="trabajo" aria-labelledby="work-heading">
-      <div class="section-title"><span class="serial">02 / Muestra</span><h2 id="work-heading">Trabajo que ya puede leerse</h2><span class="small">Selección razonada · no catálogo completo</span></div>
+      <div class="section-title"><span class="serial">04 / Investigación</span><h2 id="work-heading">Investigaciones en curso</h2><span class="small">Escritura, proyectos y pruebas con estados diferenciados</span></div>
       <div class="lead-work">
         <div class="lead-figure" role="img" aria-label="Composición tipográfica conceptual: documento no equivale a práctica. No es una obra realizada.">
           <div class="overline">F–001 · Investigación abierta</div>
@@ -398,7 +370,7 @@
           </div>
         </article>
       </div>
-      <div class="section-title evidence-heading"><span class="serial">01b / Archivo</span><h2>Imágenes en relación</h2><span class="small">Fuentes externas / procedencia en el Atlas</span></div>
+      <div class="section-title evidence-heading"><span class="serial">04b / Archivo</span><h2>Imágenes en relación</h2><span class="small">Fuentes externas / procedencia en el Atlas</span></div>
       <div class="evidence-strip" aria-label="Casos del Archivo abierto">
 <figure class="evidence"><a href="/atlas.html#oa-001"><img src="https://images.metmuseum.org/CRDImages/dp/original/DP828232.jpg" alt="Giovanni Battista Piranesi, interior de la llamada Villa de Mecenas en Tívoli" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption><div class="e-code">OA-001 · Atlas</div><strong>Piranesi — ruina / pasaje</strong><small>The Met · dominio público / CC0</small></figcaption></a><div class="source-rights">Fuente y derechos: <a href="https://www.metmuseum.org/art/collection/search/363252" rel="noopener noreferrer">The Met ↗</a></div></figure>
 <figure class="evidence"><a href="/atlas.html#oa-020"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Ulva_lactuca_MET_DP-17302-145.jpg" alt="Anna Atkins, Ulva lactuca, cianotipo" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption><div class="e-code">OA-020 · Atlas</div><strong>Anna Atkins — contacto / luz</strong><small>The Met · licencia CC0</small></figcaption></a><div class="source-rights">Fuente y derechos: <a href="https://commons.wikimedia.org/wiki/File:Ulva_lactuca_MET_DP-17302-145.jpg" rel="noopener noreferrer">Wikimedia Commons ↗</a></div></figure>
@@ -407,7 +379,7 @@
     </section>
 
     <section class="quick-explore" id="investigaciones" aria-labelledby="explore-heading">
-<div class="section-title"><span class="serial">03 / Continuar</span><h2 id="explore-heading">La investigación sigue abierta.</h2><span class="small">Elegir un acceso, no recorrerlo todo</span></div>
+<div class="section-title"><span class="serial">05 / Continuar</span><h2 id="explore-heading">Más caminos para explorar.</h2><span class="small">Elegir un acceso, no recorrerlo todo</span></div>
 <div class="quick-links">
 <a href="/buscar.html"><span>Encontrar una idea</span><strong>Buscar en toda la web ↗</strong></a>
 <a href="/estetica-del-umbral.html"><span>Argumento</span><strong>Libro · Estética del umbral ↗</strong></a>
