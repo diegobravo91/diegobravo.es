@@ -1,0 +1,384 @@
+/*
+ * DIEGOBRAVO.ES — sistema editorial de lectura v1.0
+ * Escala, longitud de línea, jerarquía y ritmo para monitor y móvil.
+ * Carga DESPUÉS del CSS histórico; no modifica la identidad gráfica ni los controles de dibujo.
+ * Referencias de criterio: USWDS, GOV.UK, Adobe Spectrum, W3C/WAI.
+ */
+:root{
+  --read-sans: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+  --read-serif: Georgia,Cambria,"Times New Roman",serif;
+  --read-ink: #171916;
+  --read-muted: #50564f;
+  --read-measure: 68ch;
+  --read-measure-wide: 76ch;
+  --read-body: clamp(1.0625rem,1.12vw,1.1875rem);
+  --read-label: .76rem;
+  --read-rule: rgba(29,32,28,.27);
+}
+html{scroll-padding-top:6rem;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body.reading-v2{
+  font-family:var(--read-sans);
+  line-height:1.58;
+  font-size:1rem;
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:auto;
+}
+body.reading-v2 *{min-width:0}
+body.reading-v2 img,body.reading-v2 video,body.reading-v2 svg{max-width:100%}
+body.reading-v2 p,body.reading-v2 li{overflow-wrap:break-word;hyphens:auto}
+body.reading-v2 p{orphans:2;widows:2}
+body.reading-v2 a{text-underline-offset:.2em;text-decoration-thickness:.065em}
+body.reading-v2 :focus-visible{outline:2px solid #bb431e;outline-offset:3px}
+body.reading-v2 h1,body.reading-v2 h2,body.reading-v2 h3,body.reading-v2 h4{
+  text-wrap:balance;overflow-wrap:break-word;hyphens:none;
+}
+body.reading-v2 h1{
+  letter-spacing:-.042em;
+  line-height:1.06;
+  font-weight:550;
+  text-transform:none;
+}
+body.reading-v2 .hero{min-height:0;gap:clamp(1rem,3vw,2.4rem)}
+body.reading-v2 .hero h1,
+body.reading-v2 h1:not(.visually-hidden){
+  font-size:clamp(2.75rem,6vw,5rem);
+  line-height:1.06;
+  letter-spacing:-.045em;
+  font-weight:550;
+  text-transform:none;
+  max-width:19ch;
+  margin-block:.32em .36em;
+}
+body.reading-v2.page-index .hero h1{font-size:clamp(3rem,7vw,5.5rem);max-width:14ch}
+body.reading-v2 .hero .kicker,
+body.reading-v2 .hero .lead,
+body.reading-v2 .hero .dek,
+body.reading-v2 .hero .deck,
+body.reading-v2 .hero-side .kicker{
+  font-size:clamp(1.1rem,1.9vw,1.5rem);
+  line-height:1.45;letter-spacing:-.018em;max-width:56ch;
+}
+body.reading-v2 .big,
+body.reading-v2 .statement .big,
+body.reading-v2 .constellation .lead,
+body.reading-v2 .hero .statement,
+body.reading-v2 .hero .lead-work{
+  font-size:clamp(1.55rem,3.2vw,2.65rem);
+  line-height:1.21;
+  letter-spacing:-.027em;
+  font-weight:440;
+  max-width:30ch;
+}
+body.reading-v2 .constellation .lead{max-width:29ch}
+body.reading-v2 .head{
+  display:grid;
+  grid-template-columns:minmax(115px,155px) minmax(0,1fr);
+  align-items:stretch;
+  border-bottom:1px solid var(--read-rule);
+}
+body.reading-v2 .head h2,
+body.reading-v2 .head>h2,
+body.reading-v2 .section-head h2{
+  font-family:var(--read-sans);
+  font-size:clamp(1.3rem,2vw,1.65rem);
+  line-height:1.27;
+  letter-spacing:-.02em;
+  font-weight:620;
+  text-transform:none;
+  margin:0;
+  padding:clamp(1rem,2vw,1.5rem) clamp(1rem,2.5vw,2.5rem);
+  text-wrap:pretty;
+}
+body.reading-v2 .head>.label,
+body.reading-v2 .head>span{
+  font:500 var(--read-label)/1.45 var(--read-sans);
+  text-transform:none;
+  letter-spacing:.025em;
+  color:var(--read-muted);
+  padding:clamp(1rem,2vw,1.5rem) clamp(1rem,2.5vw,2.5rem);
+  border-right:1px solid var(--read-rule);
+}
+body.reading-v2 .head:not(:first-child){border-top:1px solid var(--read-rule)}
+body.reading-v2 .section,
+body.reading-v2 .sec,
+body.reading-v2 .chapter{scroll-margin-top:6rem}
+body.reading-v2 .statement{
+  min-height:0;
+  gap:clamp(1.2rem,3vw,2.4rem);
+  padding-block:clamp(1.75rem,3.4vw,3.3rem);
+}
+body.reading-v2 .statement .text,
+body.reading-v2 .constellation .copy,
+body.reading-v2 .text:not(.label),
+body.reading-v2 .archive-copy p,
+body.reading-v2 .entry-right .definition,
+body.reading-v2 .entry-right .distinction,
+body.reading-v2 .prose p,
+body.reading-v2 .chapter .main>p,
+body.reading-v2 .chapter .main .lead,
+body.reading-v2.page-cuaderno .section .body>p,
+body.reading-v2.page-cuaderno .section .body .lead{
+  font:400 var(--read-body)/1.67 var(--read-serif);
+  letter-spacing:0;
+  max-width:var(--read-measure);
+}
+body.reading-v2 .constellation{padding-block:clamp(2rem,4vw,4rem)}
+body.reading-v2 .constellation .copy + .copy{margin-top:1.2em}
+body.reading-v2 .statement .text p + p,
+body.reading-v2 .prose p + p,
+body.reading-v2.page-cuaderno .main>p+p,
+body.reading-v2.page-cuaderno .body>p+p{margin-top:1.1em}
+body.reading-v2 blockquote{max-width:var(--read-measure);line-height:1.6}
+body.reading-v2 .eyebrow,
+body.reading-v2 .kicker:not(.hero .kicker),
+body.reading-v2 .meta:not(.hero-side .meta),
+body.reading-v2 .state,
+body.reading-v2 .id,
+body.reading-v2 .micro,
+body.reading-v2 .archive-credit,
+body.reading-v2 .entry-meta{
+  font-size:clamp(.7rem,.8vw,.78rem);
+  line-height:1.55;
+  letter-spacing:.015em;
+}
+body.reading-v2 .archive-credit{max-width:var(--read-measure-wide);margin-top:1.3rem}
+body.reading-v2 .row h3{font-size:clamp(1.07rem,1.35vw,1.3rem);line-height:1.4;letter-spacing:-.015em;font-weight:570}
+body.reading-v2 .row{align-items:center}
+body.reading-v2 .op h3,
+body.reading-v2 .cell h3,
+body.reading-v2 .archive-copy h3,
+body.reading-v2 .case-mini h3,
+body.reading-v2 .process-card h3,
+body.reading-v2 .linkcard h3{
+  font-size:clamp(1.4rem,2.15vw,2.05rem);
+  line-height:1.18;
+  font-weight:560;
+  letter-spacing:-.025em;
+  margin-block:.6em .4em;
+}
+body.reading-v2 .op p,
+body.reading-v2 .cell p,
+body.reading-v2 .case-mini p,
+body.reading-v2 .process-card p,
+body.reading-v2 .linkcard p{
+  font-size:clamp(.98rem,1.2vw,1.06rem);
+  line-height:1.63;
+  max-width:65ch;
+}
+body.reading-v2 .op,
+body.reading-v2 .cell{min-height:0}
+body.reading-v2 .op .state,
+body.reading-v2 .cell .state{text-transform:none;font-weight:550}
+body.reading-v2 .archive-copy .state{font-size:var(--read-label)}
+body.reading-v2 .hero-side .meta{font-size:.82rem;line-height:1.6}
+body.reading-v2 .facts strong{font-size:.8rem;line-height:1.4}
+body.reading-v2 .facts span{font-size:.7rem;line-height:1.4}
+
+/* Diccionario: la palabra manda, la explicación tiene una sola secuencia. */
+body.reading-v2.page-diccionario .entry{
+  display:grid;grid-template-columns:minmax(210px,.35fr) minmax(0,.65fr);
+  border-top:1px solid var(--read-rule);
+  border-bottom:0;
+  scroll-margin-top:6rem;
+}
+body.reading-v2.page-diccionario .entry:first-of-type{border-top:1px solid var(--read-rule)}
+body.reading-v2.page-diccionario .entry-left{
+  padding:clamp(1.5rem,3vw,2.8rem);
+  border-right:1px solid var(--read-rule);
+  background:rgba(0,0,0,.018);
+}
+body.reading-v2.page-diccionario .entry-left h3{
+  font:600 clamp(1.55rem,2.7vw,2.35rem)/1.16 var(--read-sans);
+  letter-spacing:-.035em;
+  margin:.25em 0 .8em;
+  text-transform:none;
+}
+body.reading-v2.page-diccionario .entry-left .id{font-size:.75rem;color:var(--read-muted)}
+body.reading-v2.page-diccionario .entry-meta{font-size:.78rem;line-height:1.7;text-transform:none}
+body.reading-v2.page-diccionario .entry-right{
+  display:flex;
+  flex-direction:column;
+  align-items:stretch;
+  gap:0;
+  padding:clamp(1.45rem,3vw,2.85rem);
+}
+body.reading-v2.page-diccionario .entry-right p{
+  font:400 clamp(1.075rem,1.22vw,1.2rem)/1.68 var(--read-serif);
+  max-width:65ch;
+  letter-spacing:0;
+  margin:0;
+}
+body.reading-v2.page-diccionario .entry-right p+p{margin-top:.9em}
+body.reading-v2.page-diccionario .entry-right .definition{font-weight:500}
+body.reading-v2.page-diccionario .entry-right .distinction{
+  margin-top:1em;padding-top:1em;border-top:1px solid var(--read-rule)
+}
+body.reading-v2.page-diccionario .entry-right .distinction b{display:none}
+body.reading-v2.page-diccionario .index .row{padding-block:1rem}
+body.reading-v2.page-diccionario .index .row h3{font-weight:550}
+
+/* Atlas: conexiones visuales, pero unidades inequívocas. */
+body.reading-v2.page-atlas .constellation{max-width:1120px}
+body.reading-v2.page-atlas .constellation .copy{max-width:68ch}
+body.reading-v2.page-atlas .op{border-bottom:1px solid var(--read-rule)}
+body.reading-v2.page-atlas .archive-figure img{min-height:0;object-fit:contain}
+body.reading-v2.page-atlas .archive-open{min-height:0}
+body.reading-v2.page-atlas .archive-copy{gap:1.4rem}
+body.reading-v2.page-atlas .ops{border-top:1px solid var(--read-rule)}
+body.reading-v2.page-atlas .morris-matrix h3{font-size:clamp(1.5rem,2.3vw,2.15rem)}
+
+/* Índices de artículos: cada nota tiene su propio comienzo y final. */
+body.reading-v2.page-notas .entry{
+  border-top:1px solid var(--read-rule);border-bottom:0;
+  padding-block:clamp(1.4rem,2.8vw,2.5rem);
+  align-items:start;
+}
+body.reading-v2.page-notas .entry h2{
+  font:560 clamp(1.3rem,2.1vw,1.85rem)/1.24 var(--read-sans);
+  letter-spacing:-.025em;
+  margin:0 0 .6em;
+}
+body.reading-v2.page-notas .entry p{font-size:1rem;line-height:1.6}
+body.reading-v2.page-notas .entry .date{font-size:.76rem}
+body.reading-v2.page-notas .entry-image img{height:auto;max-height:230px;object-fit:contain}
+
+/* Ensayos y cuadernos: se lee en líneas, no en pantallas llenas de titulares. */
+body.reading-v2.page-articulo .prose{
+  max-width:var(--read-measure-wide);
+  font-family:var(--read-serif);
+  font-size:var(--read-body);
+  line-height:1.72;
+}
+body.reading-v2.page-articulo .prose p{
+  max-width:var(--read-measure);
+  font-size:var(--read-body);
+  line-height:1.72;
+}
+body.reading-v2.page-articulo .prose .pull{
+  font-size:clamp(1.35rem,2.6vw,2.2rem);
+  line-height:1.3;letter-spacing:-.015em;
+}
+body.reading-v2.page-articulo figure{max-width:100%}
+body.reading-v2.page-articulo figcaption{font:400 .85rem/1.6 var(--read-sans);color:var(--read-muted)}
+body.reading-v2.page-cuaderno .chapter h2,
+body.reading-v2.page-cuaderno .section .body h2{
+  font:500 clamp(1.55rem,2.8vw,2.2rem)/1.22 var(--read-serif);
+  letter-spacing:-.022em;
+  max-width:28ch;
+  margin:0 0 1.1rem;
+}
+body.reading-v2.page-cuaderno .chapter h3,
+body.reading-v2.page-cuaderno .section .body h3{
+  font:600 clamp(1.15rem,1.5vw,1.35rem)/1.3 var(--read-sans);
+  margin-block:1.65rem .65rem;
+  letter-spacing:-.01em;
+}
+body.reading-v2.page-cuaderno .chapter,
+body.reading-v2.page-cuaderno .section{
+  padding-block:clamp(2.2rem,4.2vw,4.5rem);
+  border-bottom:1px solid var(--read-rule);
+}
+body.reading-v2.page-cuaderno .section .body,
+body.reading-v2.page-cuaderno .chapter .main{max-width:950px}
+body.reading-v2.page-cuaderno .heroaside,
+body.reading-v2.page-cuaderno .hero aside{
+  font-size:.94rem;line-height:1.65;
+}
+body.reading-v2.page-cuaderno .toc a{font-size:.85rem;line-height:1.55}
+body.reading-v2.page-cuaderno .note{font-size:1rem;line-height:1.64}
+
+/* No forzar el tamaño de herramientas, campos de dibujo ni elementos de interfaz. */
+body.reading-v2.page-mesa-de-trazo canvas{max-width:none}
+body.reading-v2.page-mesa-de-trazo .panel,
+body.reading-v2.page-mesa-de-trazo button,
+body.reading-v2.page-mesa-de-trazo input{font-family:var(--read-sans)}
+body.reading-v2 .mesa-output h3{font-size:clamp(1.45rem,2.15vw,2.1rem)}
+body.reading-v2 .mesa-output p{font-size:1.02rem;line-height:1.65}
+body.reading-v2 .toc{scroll-margin-top:6rem}
+body.reading-v2 .toc a{min-height:2.5rem}
+
+/* Monitor ancho: texto limitado, imágenes y mapas conservan su anchura. */
+@media(min-width:1050px){
+  body.reading-v2 .constellation .copy,
+  body.reading-v2 .prose p,
+  body.reading-v2 .chapter .main>p,
+  body.reading-v2 .chapter .body>p{max-width:68ch}
+  body.reading-v2 .statement .text{max-width:68ch}
+}
+
+/* Android y pantallas pequeñas: evitar columnas diminutas y horizontales. */
+@media(max-width:760px){
+  html{scroll-padding-top:1.5rem}
+  body.reading-v2 .hero{padding-top:clamp(1.75rem,4vw,3rem);padding-bottom:2rem}
+  body.reading-v2 .hero h1,
+  body.reading-v2 h1:not(.visually-hidden),
+  body.reading-v2.page-index .hero h1{
+    font-size:clamp(2.3rem,9.5vw,3.55rem);
+    line-height:1.09;letter-spacing:-.035em;
+    max-width:none;
+    margin-block:.34em;
+  }
+  body.reading-v2 .head{grid-template-columns:minmax(0,1fr)}
+  body.reading-v2 .head>.label,
+  body.reading-v2 .head>span{
+    padding:1.1rem 1.3rem .25rem;
+    border-right:0;
+    font-size:.74rem
+  }
+  body.reading-v2 .head h2,
+  body.reading-v2 .head>h2{
+    font-size:1.4rem;
+    padding:.25rem 1.3rem 1.2rem;
+  }
+  body.reading-v2 .statement{display:block;padding-block:1.75rem}
+  body.reading-v2 .statement .big{margin-bottom:1.1rem}
+  body.reading-v2 .big,
+  body.reading-v2 .constellation .lead{font-size:clamp(1.5rem,6vw,2rem)}
+  body.reading-v2 .constellation{padding-block:2rem}
+  body.reading-v2.page-diccionario .entry{display:block}
+  body.reading-v2.page-diccionario .entry-left{
+    border-right:0;border-bottom:0;
+    background:none;padding:1.65rem 1.3rem .35rem;
+  }
+  body.reading-v2.page-diccionario .entry-left h3{font-size:1.75rem;margin:.25rem 0 .15rem}
+  body.reading-v2.page-diccionario .entry-right{
+    padding:.7rem 1.3rem 1.85rem;
+  }
+  body.reading-v2.page-diccionario .entry-right p{font-size:1.09rem;line-height:1.68}
+  body.reading-v2.page-cuaderno .chapter,
+  body.reading-v2.page-cuaderno .section{padding-block:2.1rem}
+  body.reading-v2 .op h3,body.reading-v2 .cell h3,body.reading-v2 .archive-copy h3{
+    font-size:clamp(1.4rem,6vw,1.8rem)
+  }
+  body.reading-v2 .top{position:relative;height:auto;min-height:0}
+  body.reading-v2 .nav{
+    width:100%;
+    display:flex;
+    flex-wrap:nowrap;
+    overflow-x:auto;
+    overscroll-behavior-x:contain;
+    -webkit-overflow-scrolling:touch;
+    gap:1rem;
+  }
+  body.reading-v2 .nav a{
+    display:inline-flex;align-items:center;
+    min-height:2.6rem;
+    white-space:nowrap;
+    flex:0 0 auto;
+    font-size:.73rem;
+  }
+  body.reading-v2 .topnav a{min-height:2.6rem}
+  body.reading-v2 .row{gap:.75rem}
+  body.reading-v2 .hero aside,body.reading-v2 .heroaside{max-width:100%}
+}
+@media(prefers-reduced-motion:reduce){
+  body.reading-v2,body.reading-v2 *{scroll-behavior:auto}
+}
+@media print{
+  body.reading-v2{font-size:11pt;line-height:1.55;background:#fff;color:#000}
+  body.reading-v2 .top,body.reading-v2 .topnav,body.reading-v2 .nav{position:static}
+  body.reading-v2 p{max-width:72ch}
+  body.reading-v2 .hero h1{font-size:28pt}
+  body.reading-v2 .sec,body.reading-v2 .section,body.reading-v2 .chapter{break-inside:auto}
+  body.reading-v2 .entry,body.reading-v2 .op,body.reading-v2 figure{break-inside:avoid}
+}
