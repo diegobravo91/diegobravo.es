@@ -12,7 +12,8 @@
       "https://www.boe.es/buscar/act.php?id=BOE-A-1996-8930",
       "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32019L0790"
     ],
-    "image_policy": "Commons files checked individually; use each file page for provenance/rights; links are remote embed, browser render/deployment still to verify"
+    "image_policy": "Commons files checked individually; use each file page for provenance/rights; links are remote embed, browser render/deployment still to verify",
+    "review_note": "2026-10-17: verified 15 Commons file pages exist via web source, but not live image rendering, exact image metadata/collection for every file, or HTTP response from all file paths. Not all files are CC0; most are Public Domain Mark PD-Art."
   },
   "proven_links": [
     {
@@ -40,8 +41,8 @@
       "date": "1910",
       "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Egon_Schiele_-_Selbstportr%C3%A4t_(1910).jpg?width=760",
       "image_source": "https://commons.wikimedia.org/wiki/File:Egon_Schiele_-_Selbstportr%C3%A4t_(1910).jpg",
-      "image_status": "commons_public_domain_faithful_reproduction_source_record_verified",
-      "display_status": "embedded_remotely_unverified_in_live_browser",
+      "image_status": "file_page_confirmed_wikimedia_commons_2026_10_17; see source for PD or other license; external usage still subject to applicable laws",
+      "display_status": "remote_embedding_code_present_not_verified_in_final_browser",
       "classification": "visual_constellation_not_historical_influence_without_evidence"
     },
     {
@@ -51,8 +52,8 @@
       "date": "1930",
       "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paul_Klee_Was_fehlt_ihm_1930.jpg?width=760",
       "image_source": "https://commons.wikimedia.org/wiki/File:Paul_Klee_Was_fehlt_ihm_1930.jpg",
-      "image_status": "commons_public_domain_faithful_reproduction_source_record_verified",
-      "display_status": "embedded_remotely_unverified_in_live_browser",
+      "image_status": "file_page_confirmed_wikimedia_commons_2026_10_17; see source for PD or other license; external usage still subject to applicable laws",
+      "display_status": "remote_embedding_code_present_not_verified_in_final_browser",
       "classification": "visual_constellation_not_historical_influence_without_evidence"
     },
     {
@@ -62,8 +63,8 @@
       "date": "1916–1919",
       "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mar%C3%ADa_Guti%C3%A9rrez_Blanchard-_Composici%C3%B3n_cubista_(Cubist_Composition).jpg?width=760",
       "image_source": "https://commons.wikimedia.org/wiki/File:Mar%C3%ADa_Guti%C3%A9rrez_Blanchard-_Composici%C3%B3n_cubista_(Cubist_Composition).jpg",
-      "image_status": "commons_public_domain_faithful_reproduction_source_record_verified",
-      "display_status": "embedded_remotely_unverified_in_live_browser",
+      "image_status": "file_page_confirmed_wikimedia_commons_2026_10_17; see source for PD or other license; external usage still subject to applicable laws",
+      "display_status": "remote_embedding_code_present_not_verified_in_final_browser",
       "classification": "visual_constellation_not_historical_influence_without_evidence"
     },
     {
@@ -73,8 +74,8 @@
       "date": "1916",
       "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sophie_Taeuber-Arp_Vertical-Horizontal_Composition_1916.jpg?width=760",
       "image_source": "https://commons.wikimedia.org/wiki/File:Sophie_Taeuber-Arp_Vertical-Horizontal_Composition_1916.jpg",
-      "image_status": "commons_public_domain_faithful_reproduction_source_record_verified",
-      "display_status": "embedded_remotely_unverified_in_live_browser",
+      "image_status": "file_page_confirmed_wikimedia_commons_2026_10_17; see source for PD or other license; external usage still subject to applicable laws",
+      "display_status": "remote_embedding_code_present_not_verified_in_final_browser",
       "classification": "visual_constellation_not_historical_influence_without_evidence"
     },
     {
@@ -84,8 +85,8 @@
       "date": "s. XX",
       "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Piet_Mondrian_-_Composition_with_Blue%2C_Yellow%2C_and_Red_-_2009.5042_-_Museum_of_Fine_Arts_Boston.jpg?width=760",
       "image_source": "https://commons.wikimedia.org/wiki/File:Piet_Mondrian_-_Composition_with_Blue%2C_Yellow%2C_and_Red_-_2009.5042_-_Museum_of_Fine_Arts_Boston.jpg",
-      "image_status": "commons_public_domain_faithful_reproduction_source_record_verified",
-      "display_status": "embedded_remotely_unverified_in_live_browser",
+      "image_status": "file_page_confirmed_wikimedia_commons_2026_10_17; see source for PD or other license; external usage still subject to applicable laws",
+      "display_status": "remote_embedding_code_present_not_verified_in_final_browser",
       "classification": "visual_constellation_not_historical_influence_without_evidence"
     },
     {
@@ -95,8 +96,8 @@
       "date": "1923",
       "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Wassily_Kandinsky_Composition_VIII.jpg?width=760",
       "image_source": "https://commons.wikimedia.org/wiki/File:Wassily_Kandinsky_Composition_VIII.jpg",
-      "image_status": "commons_public_domain_faithful_reproduction_source_record_verified",
-      "display_status": "embedded_remotely_unverified_in_live_browser",
+      "image_status": "file_page_confirmed_wikimedia_commons_2026_10_17; see source for PD or other license; external usage still subject to applicable laws",
+      "display_status": "remote_embedding_code_present_not_verified_in_final_browser",
       "classification": "visual_constellation_not_historical_influence_without_evidence"
     },
     {
@@ -106,8 +107,8 @@
       "date": "1907",
       "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hilma_af_Klint_-_1907_-_The_Ten_Largest.jpg?width=760",
       "image_source": "https://commons.wikimedia.org/wiki/File:Hilma_af_Klint_-_1907_-_The_Ten_Largest.jpg",
-      "image_status": "commons_public_domain_faithful_reproduction_source_record_verified",
-      "display_status": "embedded_remotely_unverified_in_live_browser",
+      "image_status": "file_page_confirmed_wikimedia_commons_2026_10_17; see source for PD or other license; external usage still subject to applicable laws",
+      "display_status": "remote_embedding_code_present_not_verified_in_final_browser",
       "classification": "visual_constellation_not_historical_influence_without_evidence"
     },
     {
@@ -117,8 +118,8 @@
       "date": "c. 1900",
       "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Narcomedusae_Tafel_16_Kunstformen_der_Natur_Ernst_Haeckel.jpg?width=760",
       "image_source": "https://commons.wikimedia.org/wiki/File:Narcomedusae_Tafel_16_Kunstformen_der_Natur_Ernst_Haeckel.jpg",
-      "image_status": "commons_public_domain_faithful_reproduction_source_record_verified",
-      "display_status": "embedded_remotely_unverified_in_live_browser",
+      "image_status": "file_page_confirmed_wikimedia_commons_2026_10_17; see source for PD or other license; external usage still subject to applicable laws",
+      "display_status": "remote_embedding_code_present_not_verified_in_final_browser",
       "classification": "visual_constellation_not_historical_influence_without_evidence"
     },
     {
@@ -128,8 +129,8 @@
       "date": "1899",
       "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/PurkinjeCell.jpg?width=760",
       "image_source": "https://commons.wikimedia.org/wiki/File:PurkinjeCell.jpg",
-      "image_status": "commons_public_domain_faithful_reproduction_source_record_verified",
-      "display_status": "embedded_remotely_unverified_in_live_browser",
+      "image_status": "file_page_confirmed_wikimedia_commons_2026_10_17; see source for PD or other license; external usage still subject to applicable laws",
+      "display_status": "remote_embedding_code_present_not_verified_in_final_browser",
       "classification": "visual_constellation_not_historical_influence_without_evidence"
     },
     {
@@ -139,8 +140,8 @@
       "date": "c. 1750",
       "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Giovanni_Battista_Piranesi_-_Le_Carceri_d'Invenzione_-_First_Edition_-_1750_-_09_-_The_Giant_Wheel.jpg?width=760",
       "image_source": "https://commons.wikimedia.org/wiki/File:Giovanni_Battista_Piranesi_-_Le_Carceri_d'Invenzione_-_First_Edition_-_1750_-_09_-_The_Giant_Wheel.jpg",
-      "image_status": "commons_public_domain_faithful_reproduction_source_record_verified",
-      "display_status": "embedded_remotely_unverified_in_live_browser",
+      "image_status": "file_page_confirmed_wikimedia_commons_2026_10_17; see source for PD or other license; external usage still subject to applicable laws",
+      "display_status": "remote_embedding_code_present_not_verified_in_final_browser",
       "classification": "visual_constellation_not_historical_influence_without_evidence"
     },
     {
@@ -150,21 +151,21 @@
       "date": "1911",
       "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Boccioni_-_States_of_Mind_Those_Who_Go%2C_1911.jpg?width=760",
       "image_source": "https://commons.wikimedia.org/wiki/File:Boccioni_-_States_of_Mind_Those_Who_Go%2C_1911.jpg",
-      "image_status": "commons_public_domain_faithful_reproduction_source_record_verified",
-      "display_status": "embedded_remotely_unverified_in_live_browser",
+      "image_status": "file_page_confirmed_wikimedia_commons_2026_10_17; see source for PD or other license; external usage still subject to applicable laws",
+      "display_status": "remote_embedding_code_present_not_verified_in_final_browser",
       "classification": "visual_constellation_not_historical_influence_without_evidence"
     },
     {
       "group": "r04",
       "creator": "Kazimir Malévich · 1879–1935",
-      "title": "Cuadrado negro (versión 1924, Museo Ruso)",
+      "title": "Cuadrado negro, versión 1924",
       "date": "1924",
       "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Malevich.black-square.jpg?width=760",
       "image_source": "https://commons.wikimedia.org/wiki/File:Malevich.black-square.jpg",
-      "image_status": "commons_public_domain_faithful_reproduction_source_record_verified",
-      "display_status": "embedded_remotely_unverified_in_live_browser",
+      "image_status": "file_page_confirmed_wikimedia_commons_2026_10_17; see source for PD or other license; external usage still subject to applicable laws",
+      "display_status": "remote_embedding_code_present_not_verified_in_final_browser",
       "classification": "visual_constellation_not_historical_influence_without_evidence",
-      "version_note": "Commons indica objeto 1924 en Museo Ruso; no atribuir fotografía a la versión 1915"
+      "version_note": "Commons metadata states 1924 Russian Museum; not first 1915 version"
     },
     {
       "group": "r05",
@@ -173,8 +174,8 @@
       "date": "1799 · Los Caprichos, n.º 6",
       "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Museo_del_Prado_-_Goya_-_Caprichos_-_No._06_-_Nadie_se_conoce.jpg?width=760",
       "image_source": "https://commons.wikimedia.org/wiki/File:Museo_del_Prado_-_Goya_-_Caprichos_-_No._06_-_Nadie_se_conoce.jpg",
-      "image_status": "commons_public_domain_faithful_reproduction_source_record_verified",
-      "display_status": "embedded_remotely_unverified_in_live_browser",
+      "image_status": "file_page_confirmed_wikimedia_commons_2026_10_17; see source for PD or other license; external usage still subject to applicable laws",
+      "display_status": "remote_embedding_code_present_not_verified_in_final_browser",
       "classification": "visual_constellation_not_historical_influence_without_evidence"
     },
     {
@@ -184,8 +185,8 @@
       "date": "c. 1845–1848 · Satira de las profesiones y el poder",
       "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Les_Gens_de_Justice_-_01.jpg?width=760",
       "image_source": "https://commons.wikimedia.org/wiki/File:Les_Gens_de_Justice_-_01.jpg",
-      "image_status": "commons_public_domain_faithful_reproduction_source_record_verified",
-      "display_status": "embedded_remotely_unverified_in_live_browser",
+      "image_status": "file_page_confirmed_wikimedia_commons_2026_10_17; see source for PD or other license; external usage still subject to applicable laws",
+      "display_status": "remote_embedding_code_present_not_verified_in_final_browser",
       "classification": "visual_constellation_not_historical_influence_without_evidence"
     },
     {
@@ -195,8 +196,8 @@
       "date": "1898 · La intimidad y su escena",
       "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/F%C3%A9lix_Vallotton%2C_1898_-_Le_mensonge.jpg?width=760",
       "image_source": "https://commons.wikimedia.org/wiki/File:F%C3%A9lix_Vallotton%2C_1898_-_Le_mensonge.jpg",
-      "image_status": "commons_public_domain_faithful_reproduction_source_record_verified",
-      "display_status": "embedded_remotely_unverified_in_live_browser",
+      "image_status": "file_page_confirmed_wikimedia_commons_2026_10_17; see source for PD or other license; external usage still subject to applicable laws",
+      "display_status": "remote_embedding_code_present_not_verified_in_final_browser",
       "classification": "visual_constellation_not_historical_influence_without_evidence"
     }
   ],
