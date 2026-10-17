@@ -185,3 +185,10 @@ Sitio estático servido con GitHub Pages en [diegobravo.es](https://diegobravo.e
 - `feed.xml` y `sitemap.xml` actualizados para las publicaciones efectivas. Las ideas en espera no son artículos.
 - Captura de hallazgos conservada en la bitácora privada de Google Drive `06_BITÁCORA DE SEGUIMIENTO — obras · vídeos · exposiciones · técnicas · ideas`, no en archivos públicos ni mediante seguimiento indiscriminado de chats.
 - QA estática antes de integrar; la visualización final en Android real y el estado de despliegue GitHub Pages deben comprobarse por separado.
+
+## v0.21 — Seis ensayos visuales interactivos (17.10.2026)
+- Publicados N–006 a N–011, con escritura crítica, montaje visual, fuentes primarias y controles accesibles: montaje/vecindad; borradura; caminar/cartografiar; planta ruderal; condensación; vergüenza y mirada social.
+- Cada visualización SVG declara su carácter conceptual, sin simular obras materiales, caminatas realizadas ni mediciones científicas. N–006 reutiliza tres imágenes de dominio público previamente verificadas y acreditadas (Atkins, Piranesi y Muybridge).
+- Nuevos recursos compartidos `assets/ensayo-visual.css` y `assets/ensayo-visual.js` sin analítica ni librerías externas.
+- Añadidas las seis entradas a Cuaderno, portada, búsqueda local, RSS, sitemap y registro de derechos.
+- Desarrollo de textos y diagramas con asistencia de IA declarado en los propios artículos; requieren revisión autoral continua, como toda la publicación.
