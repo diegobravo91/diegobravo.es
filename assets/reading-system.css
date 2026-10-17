@@ -511,3 +511,50 @@ body.reading-v2.page-articulo figure figcaption{font-size:.82rem;line-height:1.5
  body.reading-v2.page-articulo .stage-title{font-size:1.5rem}
  body.reading-v2.page-articulo .entry-article{grid-template-columns:1fr}
 }
+
+
+/* Ediciones recientes: relaciones visuales, constelaciones y páginas de investigación. */
+body.reading-v2.page-constelaciones .chapter-head h2,
+body.reading-v2.page-atlas-relaciones-vivas .section-heading h2,
+body.reading-v2.page-articulo .chapter-head h2,
+body.reading-v2.page-archivo-guia-derechos-imagenes-textos h2{
+  font:550 clamp(1.5rem,2.6vw,2.18rem)/1.22 var(--read-sans);
+  letter-spacing:-.02em;
+  text-transform:none;
+  max-width:33ch;
+}
+body.reading-v2.page-constelaciones .reading,
+body.reading-v2.page-constelaciones .reading p,
+body.reading-v2.page-atlas-relaciones-vivas .reading,
+body.reading-v2.page-atlas-relaciones-vivas .body p,
+body.reading-v2.page-archivo-guia-derechos-imagenes-textos section p{
+  font:400 var(--read-body)/1.66 var(--read-serif);
+  max-width:var(--read-measure);
+}
+body.reading-v2.page-constelaciones .chapter,
+body.reading-v2.page-atlas-relaciones-vivas .section{
+  border-top:1px solid var(--read-rule);
+  scroll-margin-top:5rem;
+}
+body.reading-v2.page-constelaciones .plate,
+body.reading-v2.page-atlas-relaciones-vivas figure{
+  min-width:0;
+}
+body.reading-v2.page-constelaciones .plate h3{
+  font:550 clamp(1.13rem,1.6vw,1.43rem)/1.29 var(--read-sans);
+}
+body.reading-v2.page-constelaciones .plate-meta,
+body.reading-v2.page-constelaciones .plate-date,
+body.reading-v2.page-atlas-relaciones-vivas .figid{
+  font-size:.78rem;line-height:1.55
+}
+body.reading-v2.page-cruces .intro h1{font-size:clamp(2.75rem,6vw,5rem);line-height:1.07;letter-spacing:-.045em}
+body.reading-v2.page-cruces .lead{font-size:clamp(1.1rem,1.85vw,1.5rem);line-height:1.52;max-width:62ch}
+body.reading-v2.page-cruces .note{font-size:1rem;line-height:1.64}
+body.reading-v2.page-atlas-relaciones-vivas .challenge,
+body.reading-v2.page-constelaciones .caption{font-size:1rem;line-height:1.62}
+@media(max-width:760px){
+ body.reading-v2.page-constelaciones .chapter-head h2,
+ body.reading-v2.page-atlas-relaciones-vivas .section-heading h2,
+ body.reading-v2.page-articulo .chapter-head h2{font-size:1.55rem}
+}
