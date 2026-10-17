@@ -23,6 +23,13 @@
 
 .archive-toggle{border-bottom:1px solid var(--ink)}.archive-toggle>summary{list-style:none;cursor:pointer;padding:24px var(--pad);display:flex;justify-content:space-between;gap:18px;align-items:baseline;font-size:clamp(18px,2.2vw,25px);letter-spacing:-.03em}.archive-toggle>summary::-webkit-details-marker{display:none}.archive-toggle>summary span{font:11px var(--mono);color:var(--soft);letter-spacing:0}.archive-toggle[open]>summary{border-bottom:1px solid var(--hair)}.archive-toggle>.sec{border-bottom:0}.hero h1{font-size:clamp(48px,6.4vw,90px);line-height:.93}.hero .lead{font-size:clamp(20px,2.2vw,29px);line-height:1.25}
 @media(max-width:650px){.archive-toggle>summary{align-items:start;flex-direction:column;gap:8px}}
+
+/* Research overview: editorial hierarchy before the detailed archive */
+.hero h1{font-size:clamp(41px,7.7vw,115px);letter-spacing:-.063em;overflow-wrap:normal}
+.new-reading{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;border-bottom:1px solid var(--ink);padding:20px var(--pad);background:#dedbd0}
+.new-reading p{font:500 clamp(20px,2.3vw,30px)/1.1 Arial,sans-serif;letter-spacing:-.04em;margin:8px 0}
+.new-reading a{font:500 clamp(17px,1.7vw,23px)/1.14 Arial,sans-serif;letter-spacing:-.02em;line-height:1.3;max-width:500px}
+@media(max-width:720px){.new-reading{grid-template-columns:1fr;gap:8px}.hero h1{font-size:clamp(38px,9vw,60px)}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Investigaciones — Estética del umbral","url":"https://diegobravo.es/investigaciones.html","inLanguage":"es","author":{"@type":"Person","name":"Diego Bravo","url":"https://diegobravo.es/"},"dateModified":"2026-09-30"}</script>
 <link rel="stylesheet" href="/assets/site.css">
@@ -32,9 +39,9 @@
 <a class="skip-link" href="#contenido">Saltar al contenido</a>
 <header class="top"><a class="brand" href="/">Diego Bravo</a><nav class="nav" aria-label="Navegación principal"><a href="/obra.html">Obra</a><a href="/notas.html">Cuaderno</a><a href="/investigaciones.html" aria-current="page">Investigación</a><a href="/sobre.html">Sobre</a></nav></header>
 <main id="contenido" tabindex="-1">
-<section class="hero"><div><div class="eyebrow">Archivo editorial / superficie pública</div><h1>Investiga-<br>ción</h1></div><div><p class="lead">Un libro, un atlas de imágenes y un diccionario de conceptos. Tres vías para profundizar en un trabajo que sigue abierto.</p><div class="meta">16 unidades públicas · 7 tipos · estados explícitos<br>versión 0.6 · 30.09.2026</div></div></section>
+<section class="hero"><div><div class="eyebrow">Archivo editorial / superficie pública</div><h1>Investigación</h1></div><div><p class="lead">Un libro, un atlas de imágenes y un diccionario de conceptos. Tres vías para profundizar en un trabajo que sigue abierto.</p><div class="meta">Libro · Atlas · Diccionario · práctica · fuentes<br>Selección editorial · 18.10.2026</div></div></section>
 
-<section class="intro-doors" aria-label="Recorridos principales"><a href="/estetica-del-umbral.html"><span>Libro</span><h2>Estética del umbral</h2><p>Ensayo artístico y escrito en desarrollo.</p><strong>Leer ↗</strong></a><a href="/atlas.html"><span>Imágenes</span><h2>Atlas</h2><p>Obras, documentos y montajes en relación.</p><strong>Explorar ↗</strong></a><a href="/diccionario.html"><span>Conceptos</span><h2>Diccionario</h2><p>Distinciones para pensar con más precisión.</p><strong>Consultar ↗</strong></a></section><div class="extra-doors"><a href="/constelaciones.html">Constelaciones visuales ↗</a><a href="/practica.html">Práctica ↗</a><a href="/mapa.html">Mapa ↗</a></div><details class="archive-toggle"><summary>Ver índice completo de fichas y filtros <span>Archivo detallado ↓</span></summary>
+<section class="intro-doors" aria-label="Recorridos principales"><a href="/estetica-del-umbral.html"><span>Libro</span><h2>Estética del umbral</h2><p>Ensayo artístico y escrito en desarrollo.</p><strong>Leer ↗</strong></a><a href="/atlas.html"><span>Imágenes</span><h2>Atlas</h2><p>Obras, documentos y montajes en relación.</p><strong>Explorar ↗</strong></a><a href="/diccionario.html"><span>Conceptos</span><h2>Diccionario</h2><p>Distinciones para pensar con más precisión.</p><strong>Consultar ↗</strong></a></section><aside class="new-reading"><div><span class="meta">Lectura reciente · vídeo + libro · 18.10.2026</span><p>El archivo no se lee desde fuera de las fuentes.</p></div><a href="/notas/no-todo-lo-que-existe-circula.html">Javier Utray: abrir vídeo y catálogo en esta web <span aria-hidden="true">↗</span></a></aside><div class="extra-doors"><a href="/constelaciones.html">Constelaciones visuales ↗</a><a href="/practica.html">Práctica ↗</a><a href="/mapa.html">Mapa ↗</a></div><details class="archive-toggle"><summary>Ver índice completo de fichas y filtros <span>Archivo detallado ↓</span></summary>
 <section class="sec"><div class="head"><span>01 / Índice</span><h2>Fichas de investigación y archivo público</h2></div>
 <div class="filters" aria-label="Filtrar investigaciones">
 <button class="filter" type="button" data-filter="all" aria-pressed="true">Todo</button>
@@ -45,6 +52,7 @@
 <button class="filter" type="button" data-filter="sistema" aria-pressed="false">Sistema</button>
 </div>
 <div class="archive" id="archivo">
+<article class="item" data-kind="texto"><div class="id">N–021</div><div class="type">Ensayo visual</div><div class="titlewrap"><h3><a href="/notas/no-todo-lo-que-existe-circula.html">No todo lo que existe circula — Javier Utray y el archivo</a></h3><div class="summary">Vídeo de la exposición y catálogo completo del CA2M para ver en la propia web. Tres casos para distinguir reconstrucción, acceso y reutilización.</div></div><div class="method">Vídeo y PDF original · ensayo</div><div class="state">Publicado · revisión</div><div class="date">18.10.26</div></article>
 <article class="item" data-kind="atlas"><div class="id">V–001</div><div class="type">Constelaciones</div><div class="titlewrap"><h3><a href="/constelaciones.html">Constelaciones visuales · 15 obras para pensar relaciones</a></h3><div class="summary">Schiele, Klee, Blanchard, Taeuber-Arp, Kandinsky, Mondrian, af Klint, Haeckel, Cajal, Piranesi, Boccioni, Malévich, Goya, Daumier y Vallotton. Cinco montajes con imágenes en dominio público, fuentes y diferencias históricas.</div></div><div class="method">Montaje visual / procedencia</div><div class="state">Investigación abierta</div><div class="date">17.10.26</div></article>
 
 <article class="item" data-kind="atlas"><div class="id">A-023</div><div class="type">Atlas</div><div class="titlewrap"><h3><a href="/atlas.html#exposicion-zona-contacto">Exposición / zona de contacto / dispositivo</a></h3><div class="summary">Castro y Clifford desplazan la exposición del contenedor al dispositivo relacional.</div></div><div class="method">Montaje relacional</div><div class="state">Incorporado</div><div class="date">30.09.26</div></article>
@@ -75,7 +83,7 @@
 
 <section class="sec"><div class="head"><span>03 / Regla</span><h2>Qué todavía no aparece aquí</h2></div><div class="rule"><div class="big">Investigar no obliga a publicar.</div><div><p>Expedientes documentales, hipótesis tempranas, correspondencias privadas y vías todavía inmaduras permanecen fuera. Cuando una investigación nueva —territorial, científica, material, audiovisual o de archivo— alcance suficiente consistencia, entrará aquí con el medio que corresponda.</p><p>Este índice está preparado para admitir texto, imagen, audio, vídeo, práctica, correspondencia o pieza digital sin obligar a que todos adopten la misma forma.</p></div></div></section>
 </main>
-<footer class="footer"><span>© Diego Bravo, 2026</span><span>Investigaciones · v0.6 · 30.09.2026 · <a href="/colofon.html#trazabilidad">Trazabilidad</a></span></footer>
+<footer class="footer"><span>© Diego Bravo, 2026</span><span>Investigaciones · actualización 18.10.2026 · <a href="/colofon.html#trazabilidad">Trazabilidad</a></span></footer>
 <script>
 const filters=[...document.querySelectorAll('.filter')];
 const items=[...document.querySelectorAll('.item[data-kind]')];
