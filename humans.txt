@@ -1,12 +1,12 @@
 /* TEAM */
 Author: Diego Bravo
 Site: https://diegobravo.es/
-Project: Estética del umbral / Atlas del Umbral
+Projects: Obra gráfica y procesos; Estética del umbral / Atlas del Umbral
 
 /* SITE */
 Language: Spanish
 First public cycle: 2026
-Approach: static research site, versioned and provenance-aware
+Approach: static artist website; practice, editorial work and research clearly separated, versioned and provenance-aware
 Repository: https://github.com/diegobravo91/diegobravo.es
 
 /* RIGHTS */
