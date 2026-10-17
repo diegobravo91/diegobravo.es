@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#eae8df">
+<meta name="author" content="Diego Bravo">
+<meta name="description" content="Un ensayo visual en investigación sobre obras reconstruidas, archivos consultables y materiales que no pueden circular.">
+<title>No todo lo que existe circula — Diego Bravo / Estética del umbral</title>
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/site.css">
+<style>
+:root{--paper:#eae8df;--ink:#151713;--quiet:#53554e;--line:#a9a99f;--red:#a52e17;--white:#f9f8f3;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;--pad:clamp(20px,4.6vw,70px)}
+*{box-sizing:border-box}html{background:var(--paper);scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.54 Arial,Helvetica,sans-serif}a{color:inherit;text-underline-offset:4px}a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+.skip{position:fixed;left:16px;top:10px;z-index:100;background:var(--ink);color:var(--paper);padding:8px 12px;transform:translateY(-150%)}.skip:focus{transform:translateY(0)}
+.top{padding:12px var(--pad);border-bottom:1px solid var(--ink);display:flex;justify-content:space-between;gap:20px;align-items:center}.top .brand{font-weight:700;text-decoration:none;font-size:15px}.top nav{display:flex;gap:17px;flex-wrap:wrap;font:11px var(--mono)}.top nav a{text-decoration:none}
+.lab{font:11px/1.45 var(--mono);text-transform:uppercase;letter-spacing:.03em;color:var(--quiet)}.hero{padding:clamp(50px,9vw,145px) var(--pad) 44px;border-bottom:1px solid var(--ink);display:grid;grid-template-columns:minmax(0,1.35fr) minmax(210px,.5fr);gap:32px;align-items:end}.hero h1{margin:22px 0 0;font-size:clamp(70px,11.3vw,174px);line-height:.81;letter-spacing:-.092em;font-weight:500;max-width:1450px}.hero .side{border-left:1px solid var(--ink);padding-left:20px;max-width:430px}.side p{font-size:18px;line-height:1.31;letter-spacing:-.02em}.big-word{color:var(--red);font-size:clamp(88px,15vw,224px);letter-spacing:-.12em;line-height:.85}
+.intro{display:grid;grid-template-columns:1fr 1.35fr;border-bottom:1px solid var(--ink)}.intro>*{padding:clamp(26px,5vw,70px) var(--pad)}.intro .question{font-size:clamp(27px,4vw,56px);line-height:1.02;letter-spacing:-.05em;margin:0}.intro .prose{border-left:1px solid var(--line);max-width:910px;font-size:clamp(16px,1.4vw,20px);line-height:1.6}.intro .prose p:first-child{margin-top:0}.intro .prose p:last-child{margin-bottom:0}
+.control{padding:24px var(--pad) 34px;border-bottom:1px solid var(--ink)}.control h2{font-size:clamp(27px,4vw,54px);line-height:1;letter-spacing:-.055em;font-weight:500;margin:15px 0 20px}.states{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--ink);border:1px solid var(--ink)}.states button{border:0;min-height:130px;background:var(--paper);color:var(--ink);text-align:left;display:flex;flex-direction:column;justify-content:space-between;padding:16px;cursor:pointer;font:11px var(--mono)}.states button span:last-child{font:clamp(15px,2vw,26px)/1.08 Arial;letter-spacing:-.03em}.states button[aria-pressed=true]{background:var(--ink);color:var(--paper)}.result{padding:24px 0 0;display:grid;grid-template-columns:minmax(0,.6fr) 1fr;gap:22px;align-items:start}.result strong{font:500 clamp(30px,5vw,68px)/.98 Arial;letter-spacing:-.06em}.result p{font-size:clamp(17px,2vw,27px);line-height:1.2;margin:0;max-width:680px}
+.cases{padding:0 var(--pad);border-bottom:1px solid var(--ink)}.case{display:grid;grid-template-columns:13% minmax(250px,1fr) minmax(220px,.95fr);column-gap:4%;border-bottom:1px solid var(--line);padding:36px 0 50px}.case:last-child{border-bottom:0}.case h3{font-size:clamp(39px,5vw,79px);line-height:.91;letter-spacing:-.065em;font-weight:500;margin:0 0 20px}.case .content p{font-size:clamp(16px,1.55vw,21px);max-width:650px;line-height:1.5}.case .evidence{border-left:1px solid var(--line);padding-left:24px;display:flex;flex-direction:column;gap:20px}.tag{font:10px/1.5 var(--mono);text-transform:uppercase;color:var(--red)}.evidence a{font-size:14px;line-height:1.45}.evidence small{font:11px/1.5 var(--mono);color:var(--quiet)}.case details{border-top:1px solid var(--line);padding-top:10px;margin-top:24px}.case details summary{cursor:pointer;font:11px var(--mono);text-transform:uppercase;color:var(--red)}.case details p{font-size:15px!important;margin:12px 0}
+.operation{background:var(--ink);color:var(--paper);padding:clamp(50px,8vw,120px) var(--pad)}.operation h2{font-size:clamp(55px,9vw,140px);line-height:.85;letter-spacing:-.085em;font-weight:500;max-width:1000px;margin:0 0 45px}.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.steps article{border-top:1px solid #a8a89d;padding:16px 0}.steps strong{display:block;font-size:clamp(22px,2.6vw,38px);font-weight:500;letter-spacing:-.05em;line-height:1.07;margin:25px 0 10px}.steps p{max-width:320px;color:#e3dfd5}.steps .lab{color:#b9b4a9}
+.closing{display:grid;grid-template-columns:1fr 1fr;gap:8vw;padding:clamp(55px,8vw,130px) var(--pad);border-bottom:1px solid var(--ink)}.closing blockquote{margin:0;font-size:clamp(34px,5vw,78px);line-height:1.01;letter-spacing:-.065em}.closing .note{max-width:600px;align-self:end;font-size:17px;line-height:1.6}
+footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:28px var(--pad);font:11px/1.6 var(--mono);color:var(--quiet)}
+@media(max-width:950px){.hero{grid-template-columns:1fr}.hero .side{max-width:690px}.case{grid-template-columns:76px 1fr;gap:14px 20px}.case .evidence{grid-column:2}.intro{grid-template-columns:1fr}.intro .prose{border-left:0;border-top:1px solid var(--line)}}
+@media(max-width:650px){.hero{padding-top:60px}.hero h1{font-size:clamp(62px,17vw,115px)}.states{grid-template-columns:repeat(2,1fr)}.states button{min-height:106px}.result{grid-template-columns:1fr}.case{grid-template-columns:1fr}.case .content,.case .evidence{grid-column:1}.case .evidence{padding-left:14px}.steps,.closing{grid-template-columns:1fr}.closing{gap:50px}.top nav{gap:10px;font-size:10px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.resources{padding:48px var(--pad) 70px;border-bottom:1px solid var(--ink);background:#dcd9cd}
+.resources h2{font:500 clamp(38px,5.6vw,84px)/.92 Arial,Helvetica,sans-serif;letter-spacing:-.065em;margin:10px 0 30px;max-width:1000px}
+.resource-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.8fr);gap:24px}
+.official-film{background:var(--ink);color:var(--paper);padding:clamp(20px,3vw,40px);min-height:390px;display:flex;flex-direction:column;justify-content:space-between}
+.official-film .caption{color:#dedbd1;font:12px/1.5 var(--mono)}
+.official-film h3{font:500 clamp(30px,4vw,59px)/.95 Arial,Helvetica,sans-serif;letter-spacing:-.055em;margin:20px 0}
+.film-embed{aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;background:#2c302c;margin:22px 0 0}
+.film-embed button{background:#eeeae1;border:1px solid #eeeae1;padding:15px 20px;color:var(--ink);cursor:pointer;font:12px var(--mono);max-width:260px}
+.film-embed button:hover{background:white}
+.film-embed iframe{width:100%;height:100%;border:0}
+.sources{display:flex;flex-direction:column;border-top:1px solid var(--ink)}
+.sources article{padding:16px 0 18px;border-bottom:1px solid var(--line)}
+.sources strong{font:500 22px/1.15 Arial;letter-spacing:-.035em;display:block;margin:4px 0}
+.sources p{font-size:14px;margin:8px 0;color:var(--quiet)}
+.sources a{font:12px/1.5 var(--mono)}
+@media(max-width:800px){.resource-grid{grid-template-columns:1fr}.official-film{min-height:auto}.resources{padding-top:36px}}
+
+</style>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al texto</a>
+<header class="top"><a href="/" class="brand">Diego Bravo</a><nav aria-label="Navegación"><a href="/investigaciones.html">Investigaciones</a><a href="/atlas.html">Atlas</a><a href="/notas.html">Cuaderno</a><a href="/sobre.html">Sobre</a></nav></header>
+<main id="contenido">
+<section class="hero">
+<div><div class="lab">Cuaderno / investigación visual / 17.10.2026</div><h1>No todo<br>lo que existe<br><span style="color:var(--red)">circula.</span></h1></div>
+<div class="side"><div class="lab">Hipótesis 01 — acceso</div><p>Una obra puede haber sido destruida y seguir presente. Un vídeo puede estar disponible y no poder republicarse. Una exposición puede terminar sin dejar un catálogo.</p><div class="big-word" aria-hidden="true">≠</div><div class="lab">Existir / aparecer / consultar / reproducir</div></div>
+</section>
+<section class="intro"><p class="question">El archivo no guarda simplemente el pasado. También decide bajo qué condiciones puede volver.</p><div class="prose"><p>Una ficha de catálogo no es la obra. Una grabación no es una experiencia reproducida a voluntad. Un permiso para consultar no equivale al derecho a publicar. Entre cada uno de esos verbos hay instituciones, tecnologías, personas y decisiones.</p><p>Estas diferencias no interesan aquí como obstáculos administrativos. Interesan porque modifican el objeto que creemos estudiar. El original puede faltar; su reconstrucción puede ser rigurosa y, sin embargo, no coincidir con él. Un documento puede sobrevivir mientras su acción ha desaparecido.</p><p>La investigación comienza cuando dejamos de llamar «acceso» a todas estas situaciones.</p></div></section>
+<section class="control" aria-labelledby="operador"><div class="lab">Dispositivo de lectura · pulsar un estado</div><h2 id="operador">Cuatro verbos, cuatro poderes distintos.</h2>
+<div class="states" role="group" aria-label="Cambiar estado de acceso">
+<button type="button" data-i="0" aria-pressed="true"><span>01 / IDENTIFICAR</span><span>Está catalogado.</span></button>
+<button type="button" data-i="1" aria-pressed="false"><span>02 / VER</span><span>Es visible.</span></button>
+<button type="button" data-i="2" aria-pressed="false"><span>03 / CONSULTAR</span><span>Es accesible.</span></button>
+<button type="button" data-i="3" aria-pressed="false"><span>04 / REUTILIZAR</span><span>Puede circular.</span></button>
+</div>
+<div class="result" aria-live="polite"><strong id="state-title">La ficha no es el objeto.</strong><p id="state-text">Saber que algo existe y disponer de una referencia exacta permite formular una pregunta. No garantiza poder verlo ni conocer su soporte, su procedencia o su estado.</p></div>
+</section>
+<section class="cases" aria-label="Tres situaciones comprobables">
+<article class="case"><div class="lab">01 / Obra<br>destrucción<br>reconstrucción</div><div class="content"><div class="tag">Javier Utray · 1977 / 2021</div><h3>La obra que sobrevivió a su destrucción.</h3><p>El <em>Panteón pentamarceliano</em> fue censurado y destruido por su autor durante una acción en 1977. El CA2M presentó una reconstrucción en 2021. Lo reconstruido devuelve al público una estructura; no restaura el acontecimiento de su destrucción.</p><p>La pregunta no es si la reconstrucción es verdadera o falsa. Es qué conocimiento produce y qué parte del acto no puede conservar.</p><details><summary>Pregunta abierta</summary><p>¿Qué decisiones materiales, testimonios o documentos permitieron reconstruir la obra? ¿Qué queda fuera del dispositivo expositivo cuando el acto original ya no puede repetirse?</p></details></div><aside class="evidence"><div><div class="lab">Procedencia primaria</div><a href="https://ca2m.org/exposiciones/javier-utray-un-retrato-anamorfico" target="_blank" rel="noopener noreferrer">CA2M — Javier Utray. Un retrato anamórfico (exposición, 2021)</a></div><div><a href="https://www.ca2m.org/publicaciones/javier-utray-un-retrato-anamorfico" target="_blank" rel="noopener noreferrer">Catálogo oficial, con textos y documentación histórica</a></div><small>No se reproducen imágenes de archivo ni correspondencia privada. Investigación en curso; no afirmar que se haya consultado documentación inédita.</small></aside></article>
+<article class="case"><div class="lab">02 / Registro<br>voz<br>licencia</div><div class="content"><div class="tag">Simón Marchán Fiz · UNED / 2009</div><h3>Escuchar no es poseer.</h3><p>Dos emisiones dedicadas a la estética permanecen disponibles en Canal UNED. Podemos escucharlas y enlazarlas desde una investigación propia. Su acceso público no obliga a convertirlas en copias nuevas alojadas en otra plataforma.</p><p>La voz viaja; su reproducción sigue teniendo condiciones. Tal vez la tarea del archivo independiente no sea duplicar, sino componer una escucha capaz de preguntar algo nuevo.</p><details><summary>Operación posible</summary><p>Tomar notas propias de escucha sobre el concepto de experiencia estética. Contrastar dos momentos del discurso, identificar las preguntas que sobreviven y dirigir a las grabaciones completas originales sin extraer ni resubir el vídeo.</p></details></div><aside class="evidence"><div><div class="lab">Fuente audiovisual original</div><a href="https://canal.uned.es/video/5a6f9cc8b1111f0b4c8b4b8f" target="_blank" rel="noopener noreferrer">Reflexiones sobre la Estética, primera parte (27.11.2009)</a></div><div><a href="https://canal.uned.es/video/5a6f9cc7b1111f0b4c8b4b8a" target="_blank" rel="noopener noreferrer">Reflexiones sobre la Estética, segunda parte (04.12.2009)</a></div><small>Enlaces al origen; ninguna copia de los archivos audiovisuales.</small></aside></article>
+<article class="case"><div class="lab">03 / Pintura<br>montaje<br>ausencia</div><div class="content"><div class="tag">Centre Pompidou Málaga · 2026</div><h3>Un gesto cambia de exposición.</h3><p><em>El gesto y la materia</em> reunió en Málaga obras de la abstracción internacional entre 1945 y 1965. Allí el gesto no es solo una huella sobre el lienzo: también es una categoría curatorial que agrupa pinturas y hace visibles ciertas relaciones.</p><p>Cuando una obra entra en una nueva selección, cambia su vecindad. El color y la materia permanecen; la pregunta que se les dirige puede ser otra. Investigar una exposición exige estudiar también sus decisiones de montaje.</p><details><summary>Pregunta abierta</summary><p>¿Qué modifica el nuevo recorrido respecto de las precedentes exposiciones sobre abstracción gestual? La respuesta requiere cotejar listas de obras, textos y material de sala: no se obtiene solo por compartir un título o una cronología.</p></details></div><aside class="evidence"><div><div class="lab">Fuentes institucionales</div><a href="https://centrepompidou-malaga.eu/expo/el-gesto-y-la-materia/" target="_blank" rel="noopener noreferrer">Centre Pompidou Málaga — exposición y folleto (2026)</a></div><div><a href="https://www.centrepompidou.fr/es/programa/agenda/evento/eTy0sgi" target="_blank" rel="noopener noreferrer">Centre Pompidou — ficha de la exposición</a></div><small>Sin imágenes de obras con derechos de terceros. Contraste curatorial todavía abierto.</small></aside></article>
+</section>
+
+<section class="resources" id="fuentes-para-escuchar">
+<div class="lab">Recursos originales / acceso desde su institución</div>
+<h2>Ver y escuchar sin apropiarse del archivo.</h2>
+<div class="resource-grid">
+<div class="official-film">
+<div><div class="lab" style="color:#d0c9bd">Vídeo institucional / CA2M / 2021</div><h3>Javier Utray.<br>Un retrato anamórfico.</h3><p>La exposición no se reproduce aquí. Se abre el reproductor oficial, alojado por la institución en YouTube, solamente cuando el visitante lo solicita.</p></div>
+<div>
+<div class="film-embed" id="ca2m-video">
+<button id="activate-ca2m" type="button">Reproducir vídeo oficial del CA2M</button>
+</div>
+<p class="caption">Al activar el vídeo, se cargará el reproductor de YouTube. <a href="https://ca2m.org/exposiciones/javier-utray-un-retrato-anamorfico" target="_blank" rel="noopener noreferrer">Consultar también la página oficial del museo</a>.</p>
+</div>
+</div>
+<div class="sources">
+<article><div class="lab">PDF / Catálogo institucional</div><strong>Utray: un retrato anamórfico</strong><p>Investigación, obras, documentos y testimonios. Lectura desde el sitio del CA2M; no se alojan copias.</p><a href="https://www.ca2m.org/publicaciones/javier-utray-un-retrato-anamorfico" target="_blank" rel="noopener noreferrer">Abrir catálogo y descarga oficial ↗</a></article>
+<article><div class="lab">Audio original / Canal UNED / 2009</div><strong>Simón Marchán: Reflexiones sobre la Estética</strong><p>Dos emisiones de unos 26 minutos. Se mantienen en el alojamiento original de UNED Media.</p><a href="https://canal.uned.es/video/5a6f9cc8b1111f0b4c8b4b8f" target="_blank" rel="noopener noreferrer">Escuchar primera parte ↗</a><br><a href="https://canal.uned.es/video/5a6f9cc7b1111f0b4c8b4b8a" target="_blank" rel="noopener noreferrer">Escuchar segunda parte ↗</a></article>
+<article><div class="lab">Texto / folleto institucional / 2026</div><strong>El gesto y la materia</strong><p>Descripción, selección y créditos de obra del Centre Pompidou Málaga. El folleto se obtiene en su web.</p><a href="https://centrepompidou-malaga.eu/exposicion/el-gesto-y-la-materia/" target="_blank" rel="noopener noreferrer">Abrir exposición y folleto ↗</a></article>
+<article><div class="lab">Imagen reutilizable / CC0</div><strong>Anna Atkins: <em>Part X</em>, c. 1853</strong><p>Cianotipia identificada como dominio público por The Met. Se puede reutilizar la imagen Open Access con ficha y procedencia.</p><a href="https://www.metmuseum.org/art/collection/search/291537" target="_blank" rel="noopener noreferrer">Ver imagen y descargar en The Met ↗</a></article>
+</div>
+</div>
+</section>
+<section class="operation"><div class="lab">Método / de la solicitud a la obra</div><h2>Una carta no es todavía un encuentro.</h2><div class="steps"><article><div class="lab">01 — Pregunta</div><strong>Localizar lo que falta.</strong><p>Empezar por una diferencia concreta entre el documento público y aquello que sigue sin poder examinarse. No pedir «todo el archivo».</p></article><article><div class="lab">02 — Respuesta</div><strong>Admitir una corrección.</strong><p>Un interlocutor puede indicar una fuente, negar un supuesto o cambiar el objeto de estudio. El valor de la respuesta no depende de que conceda permiso.</p></article><article><div class="lab">03 — Devolución</div><strong>Hacer aparecer otra cosa.</strong><p>Redactar, montar, dibujar, citar, abrir preguntas. Distinguir siempre el hallazgo ajeno de la operación propia.</p></article></div></section>
+<section class="closing"><blockquote>Lo que falta no es automáticamente misterioso. A veces falta porque nadie lo conservó. A veces porque todavía no hemos sabido preguntar.</blockquote><div class="note"><div class="lab">Estado editorial / prueba de composición</div><p>Esta página es una hipótesis de ensayo visual, no una exposición realizada ni un relato de acceso a archivos privados. Las relaciones entre casos son propuestas críticas actuales, no genealogías documentadas entre artistas.</p><p>La investigación continúa en el <a href="/atlas.html">Atlas</a>, la distinción entre acceso y publicación en el <a href="/diccionario.html#acceso">Diccionario</a> y los materiales no públicos permanecen fuera de esta página.</p></div></section>
+</main>
+<footer><span>Diego Bravo · Estética del umbral · borrador en rama editorial · 17.10.2026</span><span><a href="/colofon.html#trazabilidad">Procedencia y derechos</a> · <a href="/notas.html">Cuaderno</a></span></footer>
+<script>
+const payload=[
+["La ficha no es el objeto.","Saber que algo existe y disponer de una referencia exacta permite formular una pregunta. No garantiza poder verlo ni conocer su soporte, su procedencia o su estado."],
+["La imagen visible tampoco es la obra entera.","Una miniatura, un fotograma, una reproducción parcial o una instalación fotografiada pueden mostrar algo real sin volver transparente todo el proceso."],
+["La consulta tiene un lugar y una regla.","Un material puede examinarse solo en sala, bajo cita, en un equipo específico o a través de un registro incompleto. Tener una vía de estudio no equivale a disponer libremente de una copia."],
+["Circulación no es acceso.","Reproducir o publicar supone condiciones distintas: autoría, derechos, contexto, integridad del material, licencia y alcance de la autorización. Cada uso debe verificarse."]
+];
+const btns=[...document.querySelectorAll(".states button")];const title=document.getElementById("state-title");const txt=document.getElementById("state-text");
+btns.forEach(b=>b.addEventListener("click",()=>{const i=Number(b.dataset.i);btns.forEach(v=>v.setAttribute("aria-pressed",String(v===b)));title.textContent=payload[i][0];txt.textContent=payload[i][1]}));
+const launch=document.getElementById("activate-ca2m");
+launch?.addEventListener("click",()=>{
+const host=document.getElementById("ca2m-video");
+if(!host||host.querySelector("iframe"))return;
+const frame=document.createElement("iframe");
+frame.src="https://www.youtube-nocookie.com/embed/u31PgEFJyn8?rel=0";
+frame.title="Javier Utray. Un retrato anamórfico — vídeo del CA2M";
+frame.allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+frame.allowFullscreen=true;
+host.replaceChildren(frame);
+frame.focus();
+});
+</script></body></html>
