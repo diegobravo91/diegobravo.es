@@ -21,7 +21,7 @@
   var a=function(title,url,icon){return '<a href="'+url+'"'+active(url)+'><span class="dock-icon" aria-hidden="true">'+icon+'</span>'+esc(title)+'</a>';};
   var dock=document.createElement('nav');
   dock.className='mobile-dock';dock.setAttribute('aria-label','Navegación móvil');
-  dock.innerHTML=a('Inicio','/','⌂')+a('Obra','/obra.html','✳')+a('Buscar','/buscar.html','⌕')
+  dock.innerHTML=a('Inicio','/','⌂')+a('Obra','/obra.html','✳')+a('Cuaderno','/notas.html','≡')
     +'<details class="mobile-more"><summary><span class="dock-icon" aria-hidden="true">☷</span>Explorar</summary>'
     +'<div class="mobile-drawer"><div class="mobile-drawer-head">Diego Bravo — Todas las secciones</div>'
     +'<div class="mobile-drawer-links">'+items.map(function(x){return '<a href="'+x[1]+'"'+active(x[1])+'>'+esc(x[0])+' ↗</a>';}).join('')+'</div>'
