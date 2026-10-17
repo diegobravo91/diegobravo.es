@@ -119,6 +119,21 @@ a{color:inherit;text-underline-offset:.27em}a:focus-visible,button:focus-visible
 
 /* Un único acceso al explorador, sin añadir menús */
 .cruces-teaser{padding:19px var(--pad);border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);background:#dfe3d9;display:flex;justify-content:space-between;align-items:center;gap:24px}.cruces-teaser div{display:flex;flex-direction:column;gap:6px}.cruces-teaser span{font:10px/1.5 var(--mono);color:#53634f}.cruces-teaser strong{font-size:clamp(16px,1.65vw,22px);font-weight:500;letter-spacing:-.025em;max-width:800px}.cruces-teaser a{flex:0 0 auto;font-size:13px;text-decoration:underline;text-underline-offset:4px}@media(max-width:680px){.cruces-teaser{align-items:start;flex-direction:column;gap:12px}}
+
+/* Curated first screen + quiet long-form archive, progressive disclosure */
+.archive-actions{padding:25px 0 42px;border-bottom:1px solid var(--ink);display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.archive-actions[hidden]{display:none!important}
+.archive-actions button{background:var(--ink);color:var(--paper);border:1px solid var(--ink);font:12px/1.3 var(--mono);padding:17px 20px;min-height:54px;cursor:pointer}
+.archive-actions button:hover{background:#3d3d36}
+.archive-actions p{font:12px/1.5 var(--mono);color:var(--muted);margin:0;max-width:310px}
+.articles{max-width:1500px;margin:0 auto}
+.entry{transition:background-color .18s ease}
+.entry:hover{background:rgba(255,255,255,.2)}
+.entry h2 a{text-decoration-thickness:1px;text-underline-offset:5px}
+.entry h2,.entry p,.entry .date{min-width:0;overflow-wrap:break-word}
+.entry .entry-image{overflow:hidden}
+.entry .entry-image svg{display:block;width:100%;height:auto;aspect-ratio:5/4}
+@media(max-width:650px){.entry .entry-image svg{aspect-ratio:4/5}.archive-actions{padding:24px 0}.archive-actions button{width:100%}.hero .short{max-width:540px}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Cuaderno — Diego Bravo","url":"https://diegobravo.es/notas.html","inLanguage":"es","author":{"@type":"Person","name":"Diego Bravo","url":"https://diegobravo.es/"}}</script>
 <script defer src="/assets/mobile-shell.js"></script></head>
@@ -183,6 +198,7 @@ a{color:inherit;text-underline-offset:.27em}a:focus-visible,button:focus-visible
 <article class="entry" data-type="imagen ideas" data-search="exposicion contenedor dispositivo castro clifford arte montaje zona contacto"><span class="number">N–003</span><a class="entry-image" href="/imagenes.html" aria-label="Ver la galería visual: Dos salas en una planta imaginaria de exposición"><img src="/assets/visual/nota-003-exposicion.svg" alt="Dos salas en una planta imaginaria de exposición" loading="lazy" decoding="async" referrerpolicy="no-referrer"></a><h2><a href="/notas/una-exposicion-no-es-un-contenedor.html">Una exposición no es un contenedor</a></h2><p>El espacio no es neutral: decide qué se encuentra, qué se separa y cómo se mira.</p><div class="date">30.09.2026<br>Ensayo</div></article>
 <article class="entry" data-type="ideas" data-search="todo entre umbral limite lenguaje concepto diferencia"><span class="number">N–002</span><a class="entry-image" href="/imagenes.html" aria-label="Ver la galería visual: Esquema de un intervalo frente a una transformación"><img src="/assets/visual/nota-002-criterio.svg" alt="Esquema de un intervalo frente a una transformación" loading="lazy" decoding="async" referrerpolicy="no-referrer"></a><h2><a href="/notas/no-todo-entre-es-umbral.html">No todo entre es umbral</a></h2><p>Una palabra deja de servir cuando pretende nombrarlo todo.</p><div class="date">30.09.2026<br>Nota</div></article>
 <article class="entry" data-type="ideas" data-search="tiempo no tenemos cansancio trabajo escribir vida intervalo libro"><span class="number">N–001</span><a class="entry-image" href="/imagenes.html" aria-label="Ver la galería visual: Eadweard Muybridge, serie fotográfica de niños saltando"><img src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/268638/631820/main-image" alt="Eadweard Muybridge, serie fotográfica de niños saltando" loading="lazy" decoding="async" referrerpolicy="no-referrer"></a><h2><a href="/notas/el-tiempo-que-no-tenemos.html">El tiempo que no tenemos</a></h2><p>El tiempo libre no siempre es un tiempo disponible para pensar, mirar o crear.</p><div class="date">26.09.2026<br>Fragmento</div></article>
+<div class="archive-actions" id="archivo-acciones"><button type="button" id="ver-mas-entradas" aria-controls="archivo" aria-expanded="false">Ver las 21 entradas del Cuaderno <span aria-hidden="true">↓</span></button><p>Busca una palabra o selecciona una categoría para ver todas las coincidencias.</p></div>
 <p class="empty" id="sin-resultados" hidden>No aparece ninguna entrada con esos criterios. Prueba otra palabra o selecciona «Todo».</p>
 </div></section>
 <section class="more" aria-label="Seguir explorando"><details id="recorridos"><summary>Tres recorridos para seguir pensando</summary>
@@ -211,15 +227,27 @@ a{color:inherit;text-underline-offset:.27em}a:focus-visible,button:focus-visible
   var chips=[].slice.call(document.querySelectorAll('.chip[data-filter]'));
   var input=document.getElementById('buscar'),counter=document.getElementById('cuenta');
   var empty=document.getElementById('sin-resultados'),suggestion=document.getElementById('sugerencia'),text=document.getElementById('sugerencia-contenido');
-  var active='todos',lastHref='';
+  var active='todos',lastHref='',expanded=false,previewLimit=7;
+  var showAll=document.getElementById('ver-mas-entradas');
+  var actions=document.getElementById('archivo-acciones');
   function normal(v){return String(v||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');}
-  function render(){var q=normal(input.value.trim()),n=0;nodes.forEach(function(el){
-    var categories=(el.getAttribute('data-type')||'').split(' ');
-    var match=(active==='todos'||categories.indexOf(active)!==-1)&&normal(el.getAttribute('data-search')+' '+el.textContent).indexOf(q)!==-1;
-    el.hidden=!match;if(match)n++;});
-    counter.textContent=n+' '+(n===1?'entrada':'entradas');empty.hidden=n!==0;
+  function render(){var q=normal(input.value.trim()),n=0;
+    var browsingAll=active==='todos'&&!q;
+    nodes.forEach(function(el){
+      var categories=(el.getAttribute('data-type')||'').split(' ');
+      var match=(active==='todos'||categories.indexOf(active)!==-1)&&normal(el.getAttribute('data-search')+' '+el.textContent).indexOf(q)!==-1;
+      if(match)n++;
+      el.hidden=!match||(browsingAll&&!expanded&&n>previewLimit);
+    });
+    counter.textContent=browsingAll&&!expanded?'Primeras '+Math.min(n,previewLimit)+' de '+n+' entradas':n+' '+(n===1?'entrada':'entradas');
+    empty.hidden=n!==0;
+    actions.hidden=!browsingAll||n<=previewLimit;
+    showAll.setAttribute('aria-expanded',String(expanded));
+    showAll.innerHTML=expanded?'Mostrar menos entradas <span aria-hidden="true">↑</span>':'Ver las '+n+' entradas del Cuaderno <span aria-hidden="true">↓</span>';
     suggestion.classList.remove('is-visible');
   }
+  showAll.addEventListener('click',function(){expanded=!expanded;render();if(!expanded)document.getElementById('archivo').scrollIntoView({block:'start'});});
+  render();
   chips.forEach(function(b){b.addEventListener('click',function(){active=b.getAttribute('data-filter');
     chips.forEach(function(c){c.setAttribute('aria-pressed',String(c===b));});render();});});
   input.addEventListener('input',render);
