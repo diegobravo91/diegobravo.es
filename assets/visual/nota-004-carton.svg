@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="t d"><title id="t">Cartón usado frente a huella impresa, diagrama gráfico</title><desc id="d">Composición editorial original de Diego Bravo para la web. No reproduce una obra artística de terceros ni documenta un experimento realizado.</desc><defs></defs>
+<rect width="1200" height="800" fill="#e0d9c9"/>
+<rect x="75" y="108" width="490" height="560" fill="#b8a68a" stroke="#33322f" stroke-width="5" transform="rotate(-4 300 400)"/>
+<path d="M140 170 L490 640" stroke="#534b3e" stroke-width="14" stroke-opacity=".35"/>
+<path d="M187 130 L280 180 L262 217 L192 183" fill="#d2c5ab" stroke="#6d5e48" stroke-width="2"/>
+<path d="M105 520 C205 490 250 590 350 541 S468 515 550 593" fill="none" stroke="#715944" stroke-width="17" opacity=".4"/>
+<g transform="translate(655 85)"><rect width="470" height="590" fill="#d9d2c5" stroke="#2b2b29" stroke-width="3"/>
+<g stroke="#6e6457" stroke-width="1.6" fill="none" opacity=".8">
+<path d="M40 55 L412 520 M76 36 L446 498 M21 155 L320 580 M166 33 L450 387"/>
+<path d="M10 498 C128 400 155 582 300 495 S360 480 448 538"/>
+</g>
+<path d="M38 60 L133 110 L116 147 L44 112" fill="none" stroke="#716454" stroke-width="6" stroke-dasharray="6 5"/>
+</g>
+<path d="M575 398 L630 398" stroke="#b74325" stroke-width="11"/>
+<text x="114" y="748" fill="#252623" font-family="monospace" font-size="19" letter-spacing="3">USO / REPRODUCCIÓN</text>
+</svg>
