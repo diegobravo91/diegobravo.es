@@ -7,6 +7,7 @@ Fuente pública del sitio web de Diego Bravo.
 Superficie pública actual:
 - `index.html` — portada centrada en el artista, la obra y el acceso simple a los contenidos.
 - `obra.html` — obra y procesos: trayectoria gráfica, caligrafía expresiva, archivo en recuperación y situación pública de la práctica.
+- `mesa-de-trazo.html` — herramienta experimental local de interacción con el gesto: dibujar con puntero, lápiz y teclado, eco, borrado, imagen importada, exportación PNG. No almacena ni sube archivos.
 - `investigaciones.html` — índice editorial común de casos, pruebas, textos y relaciones públicas.
 - `estetica-del-umbral.html` — selección pública del libro.
 - `atlas.html` — selección pública del Atlas.
@@ -223,3 +224,8 @@ La web pública incluye ahora **fichas CF** enlazadas desde el bloque "Ideas que
 6. Tras una prueba de taller documentada, decidir si la relación merece pasar a `Práctica`, Atlas, Diccionario, ensayo N, Libro o presentación pública; la WEB no sustituye la obra.
 7. En futuras conversaciones, pedir expresamente «revisar/actualizar el cuaderno de campo de diegobravo.es» para que el asistente consulte GitHub: no existe sincronización automática entre cada chat y el sitio ni edición de fondo por el mero hecho de investigar.
 
+
+## v0.24 — Instrumento de experimentación gráfica · 17.10.2026
+- Nueva Mesa de trazo: lienzo web sin librerías ni terceros. Permite probar relaciones entre gesto, copia y borrado e intervenir imágenes propias cargadas únicamente en el navegador.
+- El resultado pertenece a quien ejecuta los gestos y aporta las imágenes. La programación se desarrolla con asistencia de IA; no debe confundirse con una obra material ejecutada por Diego Bravo.
+- Accesos integrados desde portada, obra, práctica, biografía, búsqueda y móvil. Pendiente prueba visual y funcional en dispositivos físicos antes de considerarla versión final.
