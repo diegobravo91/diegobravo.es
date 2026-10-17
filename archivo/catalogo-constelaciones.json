@@ -1,0 +1,350 @@
+{
+  "title": "V-001 | Constelaciones visuales — catálogo de procedencia",
+  "version": "2026-10-17-v2",
+  "site": "https://diegobravo.es/constelaciones.html",
+  "policy": {
+    "publisher": "Diego Bravo",
+    "status": "working_editorial_selection_not_original_artwork",
+    "rights_safety": "Original artwork PD does not clear all independent original photos, rights in international jurisdictions, personality rights or coauthors",
+    "spain_rule": "life+70 general; transitional life+80 for creators deceased before 7 Dec 1987; conservative selection through death 1945 in 2026",
+    "references": [
+      "https://www.bne.es/es/servicios/autores-dominio-publico",
+      "https://www.boe.es/buscar/act.php?id=BOE-A-1996-8930",
+      "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32019L0790"
+    ],
+    "image_policy": "Commons files checked individually; use each file page for provenance/rights; links are remote embed, browser render/deployment still to verify"
+  },
+  "proven_links": [
+    {
+      "a": "Egon Schiele",
+      "b": "Erving Goffman",
+      "relation": "meeting impossible: 1918 death before 1922 birth; curatorial analogy only"
+    },
+    {
+      "a": "Paul Klee",
+      "b": "Wassily Kandinsky",
+      "relation": "documented friends and Bauhaus colleagues",
+      "source": "https://www.lenbachhaus.de/en/program/exhibitions/details/klee-kandinsky"
+    },
+    {
+      "a": "Giovanni Battista Piranesi",
+      "b": "Umberto Boccioni",
+      "relation": "meeting impossible; historical analogy only"
+    }
+  ],
+  "embedded_works": [
+    {
+      "group": "r01",
+      "creator": "Egon Schiele · 1890–1918",
+      "title": "Autorretrato",
+      "date": "1910",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Egon_Schiele_-_Selbstportr%C3%A4t_(1910).jpg?width=760",
+      "image_source": "https://commons.wikimedia.org/wiki/File:Egon_Schiele_-_Selbstportr%C3%A4t_(1910).jpg",
+      "image_status": "commons_public_domain_faithful_reproduction_source_record_verified",
+      "display_status": "embedded_remotely_unverified_in_live_browser",
+      "classification": "visual_constellation_not_historical_influence_without_evidence"
+    },
+    {
+      "group": "r01",
+      "creator": "Paul Klee · 1879–1940",
+      "title": "Was fehlt ihm?",
+      "date": "1930",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paul_Klee_Was_fehlt_ihm_1930.jpg?width=760",
+      "image_source": "https://commons.wikimedia.org/wiki/File:Paul_Klee_Was_fehlt_ihm_1930.jpg",
+      "image_status": "commons_public_domain_faithful_reproduction_source_record_verified",
+      "display_status": "embedded_remotely_unverified_in_live_browser",
+      "classification": "visual_constellation_not_historical_influence_without_evidence"
+    },
+    {
+      "group": "r01",
+      "creator": "María Blanchard · 1881–1932",
+      "title": "Composición cubista",
+      "date": "1916–1919",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mar%C3%ADa_Guti%C3%A9rrez_Blanchard-_Composici%C3%B3n_cubista_(Cubist_Composition).jpg?width=760",
+      "image_source": "https://commons.wikimedia.org/wiki/File:Mar%C3%ADa_Guti%C3%A9rrez_Blanchard-_Composici%C3%B3n_cubista_(Cubist_Composition).jpg",
+      "image_status": "commons_public_domain_faithful_reproduction_source_record_verified",
+      "display_status": "embedded_remotely_unverified_in_live_browser",
+      "classification": "visual_constellation_not_historical_influence_without_evidence"
+    },
+    {
+      "group": "r02",
+      "creator": "Sophie Taeuber-Arp · 1889–1943",
+      "title": "Composición vertical-horizontal",
+      "date": "1916",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sophie_Taeuber-Arp_Vertical-Horizontal_Composition_1916.jpg?width=760",
+      "image_source": "https://commons.wikimedia.org/wiki/File:Sophie_Taeuber-Arp_Vertical-Horizontal_Composition_1916.jpg",
+      "image_status": "commons_public_domain_faithful_reproduction_source_record_verified",
+      "display_status": "embedded_remotely_unverified_in_live_browser",
+      "classification": "visual_constellation_not_historical_influence_without_evidence"
+    },
+    {
+      "group": "r02",
+      "creator": "Piet Mondrian · 1872–1944",
+      "title": "Composición con azul, amarillo y rojo",
+      "date": "s. XX",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Piet_Mondrian_-_Composition_with_Blue%2C_Yellow%2C_and_Red_-_2009.5042_-_Museum_of_Fine_Arts_Boston.jpg?width=760",
+      "image_source": "https://commons.wikimedia.org/wiki/File:Piet_Mondrian_-_Composition_with_Blue%2C_Yellow%2C_and_Red_-_2009.5042_-_Museum_of_Fine_Arts_Boston.jpg",
+      "image_status": "commons_public_domain_faithful_reproduction_source_record_verified",
+      "display_status": "embedded_remotely_unverified_in_live_browser",
+      "classification": "visual_constellation_not_historical_influence_without_evidence"
+    },
+    {
+      "group": "r02",
+      "creator": "Vasili Kandinsky · 1866–1944",
+      "title": "Composición VIII",
+      "date": "1923",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Wassily_Kandinsky_Composition_VIII.jpg?width=760",
+      "image_source": "https://commons.wikimedia.org/wiki/File:Wassily_Kandinsky_Composition_VIII.jpg",
+      "image_status": "commons_public_domain_faithful_reproduction_source_record_verified",
+      "display_status": "embedded_remotely_unverified_in_live_browser",
+      "classification": "visual_constellation_not_historical_influence_without_evidence"
+    },
+    {
+      "group": "r03",
+      "creator": "Hilma af Klint · 1862–1944",
+      "title": "The Ten Largest (serie)",
+      "date": "1907",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hilma_af_Klint_-_1907_-_The_Ten_Largest.jpg?width=760",
+      "image_source": "https://commons.wikimedia.org/wiki/File:Hilma_af_Klint_-_1907_-_The_Ten_Largest.jpg",
+      "image_status": "commons_public_domain_faithful_reproduction_source_record_verified",
+      "display_status": "embedded_remotely_unverified_in_live_browser",
+      "classification": "visual_constellation_not_historical_influence_without_evidence"
+    },
+    {
+      "group": "r03",
+      "creator": "Ernst Haeckel · 1834–1919",
+      "title": "Kunstformen der Natur · Narcomedusae",
+      "date": "c. 1900",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Narcomedusae_Tafel_16_Kunstformen_der_Natur_Ernst_Haeckel.jpg?width=760",
+      "image_source": "https://commons.wikimedia.org/wiki/File:Narcomedusae_Tafel_16_Kunstformen_der_Natur_Ernst_Haeckel.jpg",
+      "image_status": "commons_public_domain_faithful_reproduction_source_record_verified",
+      "display_status": "embedded_remotely_unverified_in_live_browser",
+      "classification": "visual_constellation_not_historical_influence_without_evidence"
+    },
+    {
+      "group": "r03",
+      "creator": "Santiago Ramón y Cajal · 1852–1934",
+      "title": "Células de Purkinje y granulares",
+      "date": "1899",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/PurkinjeCell.jpg?width=760",
+      "image_source": "https://commons.wikimedia.org/wiki/File:PurkinjeCell.jpg",
+      "image_status": "commons_public_domain_faithful_reproduction_source_record_verified",
+      "display_status": "embedded_remotely_unverified_in_live_browser",
+      "classification": "visual_constellation_not_historical_influence_without_evidence"
+    },
+    {
+      "group": "r04",
+      "creator": "Giovanni Battista Piranesi · 1720–1778",
+      "title": "Carceri d’Invenzione · La gran rueda",
+      "date": "c. 1750",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Giovanni_Battista_Piranesi_-_Le_Carceri_d'Invenzione_-_First_Edition_-_1750_-_09_-_The_Giant_Wheel.jpg?width=760",
+      "image_source": "https://commons.wikimedia.org/wiki/File:Giovanni_Battista_Piranesi_-_Le_Carceri_d'Invenzione_-_First_Edition_-_1750_-_09_-_The_Giant_Wheel.jpg",
+      "image_status": "commons_public_domain_faithful_reproduction_source_record_verified",
+      "display_status": "embedded_remotely_unverified_in_live_browser",
+      "classification": "visual_constellation_not_historical_influence_without_evidence"
+    },
+    {
+      "group": "r04",
+      "creator": "Umberto Boccioni · 1882–1916",
+      "title": "Estados de ánimo: los que se van",
+      "date": "1911",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Boccioni_-_States_of_Mind_Those_Who_Go%2C_1911.jpg?width=760",
+      "image_source": "https://commons.wikimedia.org/wiki/File:Boccioni_-_States_of_Mind_Those_Who_Go%2C_1911.jpg",
+      "image_status": "commons_public_domain_faithful_reproduction_source_record_verified",
+      "display_status": "embedded_remotely_unverified_in_live_browser",
+      "classification": "visual_constellation_not_historical_influence_without_evidence"
+    },
+    {
+      "group": "r04",
+      "creator": "Kazimir Malévich · 1879–1935",
+      "title": "Cuadrado negro",
+      "date": "1915",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Malevich.black-square.jpg?width=760",
+      "image_source": "https://commons.wikimedia.org/wiki/File:Malevich.black-square.jpg",
+      "image_status": "commons_public_domain_faithful_reproduction_source_record_verified",
+      "display_status": "embedded_remotely_unverified_in_live_browser",
+      "classification": "visual_constellation_not_historical_influence_without_evidence"
+    },
+    {
+      "group": "r05",
+      "creator": "Francisco de Goya · 1746–1828",
+      "title": "Nadie se conoce",
+      "date": "1799 · Los Caprichos, n.º 6",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Museo_del_Prado_-_Goya_-_Caprichos_-_No._06_-_Nadie_se_conoce.jpg?width=760",
+      "image_source": "https://commons.wikimedia.org/wiki/File:Museo_del_Prado_-_Goya_-_Caprichos_-_No._06_-_Nadie_se_conoce.jpg",
+      "image_status": "commons_public_domain_faithful_reproduction_source_record_verified",
+      "display_status": "embedded_remotely_unverified_in_live_browser",
+      "classification": "visual_constellation_not_historical_influence_without_evidence"
+    },
+    {
+      "group": "r05",
+      "creator": "Honoré Daumier · 1808–1879",
+      "title": "Les gens de justice",
+      "date": "c. 1845–1848 · Satira de las profesiones y el poder",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Les_Gens_de_Justice_-_01.jpg?width=760",
+      "image_source": "https://commons.wikimedia.org/wiki/File:Les_Gens_de_Justice_-_01.jpg",
+      "image_status": "commons_public_domain_faithful_reproduction_source_record_verified",
+      "display_status": "embedded_remotely_unverified_in_live_browser",
+      "classification": "visual_constellation_not_historical_influence_without_evidence"
+    },
+    {
+      "group": "r05",
+      "creator": "Félix Vallotton · 1865–1925",
+      "title": "Le Mensonge",
+      "date": "1898 · La intimidad y su escena",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/F%C3%A9lix_Vallotton%2C_1898_-_Le_mensonge.jpg?width=760",
+      "image_source": "https://commons.wikimedia.org/wiki/File:F%C3%A9lix_Vallotton%2C_1898_-_Le_mensonge.jpg",
+      "image_status": "commons_public_domain_faithful_reproduction_source_record_verified",
+      "display_status": "embedded_remotely_unverified_in_live_browser",
+      "classification": "visual_constellation_not_historical_influence_without_evidence"
+    }
+  ],
+  "reserve_to_research": [
+    {
+      "creator": "Käthe Kollwitz",
+      "death": 1945,
+      "priority": "research_next",
+      "series": "Los tejedores (1893–1898); Guerra / Krieg (1922–1923)",
+      "operator": "cuerpo colectivo, maternidad, trabajo, resistencia",
+      "rights": "creator_date_pre_1946_check_specific_images_and_coauthorship",
+      "image_status": "not_selected_or_verified"
+    },
+    {
+      "creator": "Karl Blossfeldt",
+      "death": 1932,
+      "priority": "research_next",
+      "series": "Urformen der Kunst (1928)",
+      "operator": "formas vegetales, ampliación, repetición, botánica",
+      "rights": "creator_date_pre_1946_check_specific_images_and_coauthorship",
+      "image_status": "not_selected_or_verified"
+    },
+    {
+      "creator": "Anna Atkins",
+      "death": 1871,
+      "priority": "research_next",
+      "series": "Photographs of British Algae: Cyanotype Impressions (desde 1843)",
+      "operator": "contacto, archivo y reproducción por luz",
+      "rights": "creator_date_pre_1946_check_specific_images_and_coauthorship",
+      "image_status": "not_selected_or_verified"
+    },
+    {
+      "creator": "Oskar Schlemmer",
+      "death": 1943,
+      "priority": "research_next",
+      "series": "Das Triadische Ballett (1922)",
+      "operator": "cuerpo geométrico, coreografía, ejercicio",
+      "rights": "creator_date_pre_1946_check_specific_images_and_coauthorship",
+      "image_status": "not_selected_or_verified"
+    },
+    {
+      "creator": "Edvard Munch",
+      "death": 1944,
+      "priority": "research_next",
+      "series": "Ansiedad (1894); autorretratos",
+      "operator": "mirada social, multitud, miedo, rostro",
+      "rights": "creator_date_pre_1946_check_specific_images_and_coauthorship",
+      "image_status": "not_selected_or_verified"
+    },
+    {
+      "creator": "Franz Marc",
+      "death": 1916,
+      "priority": "research_next",
+      "series": "Pinturas animales (1911–1914)",
+      "operator": "formas vitales, especie, energía, color",
+      "rights": "creator_date_pre_1946_check_specific_images_and_coauthorship",
+      "image_status": "not_selected_or_verified"
+    },
+    {
+      "creator": "Odilon Redon",
+      "death": 1916,
+      "priority": "research_next",
+      "series": "Noirs; Songes (1891)",
+      "operator": "visión interior, extrañeza, formas mentales",
+      "rights": "creator_date_pre_1946_check_specific_images_and_coauthorship",
+      "image_status": "not_selected_or_verified"
+    },
+    {
+      "creator": "Eadweard Muybridge",
+      "death": 1904,
+      "priority": "research_next",
+      "series": "Animal Locomotion (1887)",
+      "operator": "movimiento, secuencia, técnica del cuerpo",
+      "rights": "creator_date_pre_1946_check_specific_images_and_coauthorship",
+      "image_status": "not_selected_or_verified"
+    },
+    {
+      "creator": "Étienne-Jules Marey",
+      "death": 1904,
+      "priority": "research_next",
+      "series": "Cronofotografías (1880s–1890s)",
+      "operator": "tiempo inscrito, gesto y técnica",
+      "rights": "creator_date_pre_1946_check_specific_images_and_coauthorship",
+      "image_status": "not_selected_or_verified"
+    },
+    {
+      "creator": "Lewis Hine",
+      "death": 1940,
+      "priority": "research_next",
+      "series": "Fotografías de trabajo infantil e industria",
+      "operator": "trabajo, cuerpo, derechos y documentación",
+      "rights": "creator_date_pre_1946_check_specific_images_and_coauthorship",
+      "image_status": "not_selected_or_verified"
+    },
+    {
+      "creator": "Aby Warburg",
+      "death": 1929,
+      "priority": "research_next",
+      "series": "Bilderatlas Mnemosyne (1924–1929)",
+      "operator": "montaje, supervivencia, memoria visual; fuentes fotográficas por verificar",
+      "rights": "creator_date_pre_1946_check_specific_images_and_coauthorship",
+      "image_status": "not_selected_or_verified"
+    },
+    {
+      "creator": "Alfred Jarry",
+      "death": 1907,
+      "priority": "research_next",
+      "series": "Ubu Roi (1896), dibujos, teatro",
+      "operator": "absurdo, poder, ridículo grotesco",
+      "rights": "creator_date_pre_1946_check_specific_images_and_coauthorship",
+      "image_status": "not_selected_or_verified"
+    }
+  ],
+  "sensitive_rights_cases": [
+    {
+      "creator": "James Ensor",
+      "death": 1949,
+      "topic": "Máscaras, caricatura y multitudes",
+      "status": "not_precleared_for_spanish_online_reproduction;seek_verified_permission_license_or_wait"
+    },
+    {
+      "creator": "Claude Cahun",
+      "death": 1954,
+      "topic": "Autorretrato, máscara, teatralidad del género",
+      "status": "not_precleared_for_spanish_online_reproduction;seek_verified_permission_license_or_wait"
+    },
+    {
+      "creator": "László Moholy-Nagy",
+      "death": 1946,
+      "topic": "Fotogramas, Bauhaus; verificar plazo antes de reutilizar",
+      "status": "not_precleared_for_spanish_online_reproduction;seek_verified_permission_license_or_wait"
+    },
+    {
+      "creator": "Lygia Clark",
+      "death": 1988,
+      "topic": "Cuerpo sensorial y obra relacional",
+      "status": "not_precleared_for_spanish_online_reproduction;seek_verified_permission_license_or_wait"
+    },
+    {
+      "creator": "Joan Miró",
+      "death": 1983,
+      "topic": "Abstracción, materia, signo y juego",
+      "status": "not_precleared_for_spanish_online_reproduction;seek_verified_permission_license_or_wait"
+    }
+  ],
+  "next_steps": [
+    "Test all 15 remote Wikimedia images in Chrome Android and desktop; replace broken redirects with verified OA local optimized copies",
+    "Find sources and differences for each new pairing before public display",
+    "Run one material experiment connecting an abstract operation to a constellation and document result",
+    "Keep artist works and descriptions as sourced archives, not works claimed by Diego"
+  ]
+}
