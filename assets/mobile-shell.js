@@ -4,7 +4,7 @@
   if(!window.matchMedia || !document.body || !document.createElement) return;
   var mobile=window.matchMedia('(max-width: 850px)');
   var items=[
-    ['Inicio','/'],['Obra','/obra.html'],['Investigaciones','/investigaciones.html'],
+    ['Inicio','/'],['Obra','/obra.html'],['Mesa de trazo','/mesa-de-trazo.html'],['Investigaciones','/investigaciones.html'],
     ['Buscar','/buscar.html'],['Atlas','/atlas.html'],['Libro','/estetica-del-umbral.html'],
     ['Diccionario','/diccionario.html'],['Práctica','/practica.html'],
     ['Cuaderno','/notas.html'],['Imágenes','/imagenes.html'],['Mapa','/mapa.html'],
