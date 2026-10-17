@@ -1,0 +1,110 @@
+{
+  "identifier": "FUENTE-GONZALEZ-MALEVICH-1993",
+  "updated": "2026-10-17",
+  "type": "oral_history_art_criticism_timed_source_notes",
+  "title": "El enigma del cuadrado negro. Inauguración de la exposición Malevich",
+  "speaker": "Ángel González García",
+  "date": "1993-01-15",
+  "publisher": "Fundación Juan March",
+  "official_audio_url": "https://canal.march.es/es/coleccion/enigma-cuadrado-negro-inauguracion-exposicion-malevich-20370",
+  "official_audio_duration_seconds": 2545,
+  "secondary_transcript": {
+    "source": "User-provided automatically generated YouTube transcript, published by D. Mambety (2024); privately archived in owner's Google Drive",
+    "max_time": "35:40",
+    "status": "OCR/ASR noisy, unverified against full official recording",
+    "location": "PRIVATE GOOGLE DRIVE. Do not put doc id or URL in public GitHub repository. User can search Drive for 'FUENTE PRIVADA — Ángel González García · El enigma del cuadrado negro (1993)'",
+    "rights": "private study; no rights to publish full transcript established"
+  },
+  "public_essay": "/notas/malevich-el-cuadrado-no-esta-solo.html",
+  "source_driven_timeline": [
+    {
+      "time": "00:00-04:00",
+      "subject": "Chagall Vitebsk and the metaphor of suprematism as a sect; remember rhetorical character."
+    },
+    {
+      "time": "04:00-09:25",
+      "subject": "Impossible to settle enigma as rise/fall or beginning/end; object interrupts orientation."
+    },
+    {
+      "time": "09:25-13:05",
+      "subject": "1913 Victory Over the Sun and 1915 0,10; stage and solar eclipse, not simplistic allegory."
+    },
+    {
+      "time": "13:05-17:40",
+      "subject": "Tafuri, future and lost origins; window, mirror, cross and icon considered critically."
+    },
+    {
+      "time": "17:40-21:10",
+      "subject": "Public circulation of Black Square as group emblem, funeral symbol and small signature in late painting."
+    },
+    {
+      "time": "21:10-23:15",
+      "subject": "Late figurative work, absent faces, interpretation under Soviet rule unresolved."
+    },
+    {
+      "time": "23:15-30:00",
+      "subject": "Desert, infrastructure, parousia, arrival and perspective reversal following Pavel Florensky."
+    },
+    {
+      "time": "30:00-34:40",
+      "subject": "Black Square beyond normal and reversed perspectives, non-objectivity and a present active nothing."
+    },
+    {
+      "time": "34:40-35:40",
+      "subject": "Concluding unverified reference to unnamed Spanish painter, evening darkness and imagining dawn."
+    }
+  ],
+  "historic_context": [
+    {
+      "item": "Exhibition of Malevich at Fundacion Juan March Madrid in 1993, then Valencia at IVAM 21 July - 29 Aug 1993",
+      "source": "https://ivam.es/es/exposiciones/malevich/"
+    },
+    {
+      "item": "El Lissitzky About Two Squares 1922 is actual suprematist historical milieu, not purely curatorial resemblance",
+      "source": "https://commons.wikimedia.org/wiki/File:About_Two_Squares_01.jpg"
+    },
+    {
+      "item": "Malevich Victory Over the Sun 1913 costume design from Commons; not original Black Square",
+      "source": "https://commons.wikimedia.org/wiki/File:Victory_over_the_Sun_07.jpg"
+    },
+    {
+      "item": "Black Square reproduction used by site is identified by Commons as 1924 version",
+      "source": "https://commons.wikimedia.org/wiki/File:Malevich.black-square.jpg"
+    }
+  ],
+  "conceptual_links": [
+    {
+      "term": "DESORIENTAR",
+      "reading": "Artwork can prevent resolution into beginning/end or rise/fall, not merely symbolize mystery.",
+      "candidate_practice": "Draw a course interrupted by an opaque shape."
+    },
+    {
+      "term": "CAMBIAR DE ESCALA",
+      "reading": "Black Square's circulation as monumental icon and late small signature changes its social function.",
+      "candidate_practice": "Apply one sign in very different scalar relations."
+    },
+    {
+      "term": "INVERTIR LA MIRADA",
+      "reading": "Reverse perspective and arrival of things into our field of vision, avoiding attribution of Florensky view to Malevich as simple theorem.",
+      "candidate_practice": "Interface reverses movement of viewer and image."
+    },
+    {
+      "term": "DEMORAR",
+      "reading": "Last painting darkening as day ends, making perceived visibility an event with duration.",
+      "candidate_practice": "Observe image under changing ambient light; record observations."
+    },
+    {
+      "term": "REPRESENTACION / SOCIABILIDAD",
+      "reading": "Suprematism as community with emblems, rituals and conflicts, not identical with Goffman's framework",
+      "candidate_practice": "Compare symbol as emblem vs signer in group setting."
+    }
+  ],
+  "not_yet_verified": [
+    "Transcript ends at ~35:40 while official audio displays 42:25; opening/other material likely differs, verify recording",
+    "Identity of Spanish painter invoked at ~34:40",
+    "Proper names mangled in ASR, avoid literal quoting without audio check",
+    "Accurate museum identities and versions in images",
+    "Permissions for publishing full recording/transcript or long extracts are not established"
+  ],
+  "publication_protocol": "Only original summaries with clear attribution. Brief quotation may require separate justification. Never publish raw user-provided automatic transcript in public repository. Check original official recording before changing quotations."
+}
