@@ -299,3 +299,19 @@ Actualización directamente publicada sobre `index.html`, basada en la auditorí
 - Nuevo orden: hero con **Cuadrado negro de 1915** (obra Tretiakov, no imagen ambigua), tesis en 2 párrafos, cuatro secciones consecutivas con obras contextualizadas, un solo bloque de contraste crítico, enlace de audio oficial March destacado, 1 salida al taller y **fuentes/derechos en `<details>`**. Texto más corto y lecturas diferenciadas González García 1993 / Castro Flórez 2024 / interpretación del proyecto.
 - 5 imágenes con procedencias individuales Commons, jerarquía visual, versión móvil en CSS, navegación visible y nombres de clase independientes de CSS global; sin JS decorativo, transcripciones protegidas ni links privados. Conserva `noindex` solo en guía jurídica, no en artículo público.
 - Comprobación a 18/10/2026: estructura HTML, tags emparejadas, cinco imágenes, anchors de índice, enlaces oficiales, `target=_blank` con `rel=noopener noreferrer`. **No** se ha certificado todavía el renderizado real en Safari/Android/Chrome ni el despliegue CDN público; revisarlo cuando navegador disponible.
+
+## Sistema editorial de lectura v1.0 — octubre 2026
+
+Esta web tiene una sola gramática de lectura, aunque reúna obra visual, ensayos, Atlas, Diccionario, operaciones, cuadernos y herramientas. La identidad de papel, tinta y acento cálido se conserva. La claridad de lectura tiene prioridad sobre la exhibición tipográfica.
+
+**Implementación:** `assets/reading-system.css` (carga posterior a los CSS históricos en los documentos HTML; clase `reading-v2` y clase de familia de página). No utiliza fuentes externas, cookies ni analítica. Los documentos antiguos no se borran: se corrigen progresivamente.
+
+**Jerarquía:** un único h1 por página; titulares grandes solo donde identifican el lugar; h2 de sección legible, no etiquetas diminutas; h3 para cada entrada; cuerpo de ensayo y definición con fuente de lectura, 1.65–1.72 de interlínea y medida máxima ~68ch; códigos y metadatos subordinados sin desaparecer. Párrafos alineados a izquierda y sin justificación forzada.
+
+**Pantallas:** lectura lineal en Android, navegación horizontal accesible en cabecera cuando no cabe; una columna de definición, objeción y relaciones en móvil; dos zonas claras en Diccionario de escritorio, nunca dos columnas simultáneas de prosa. Los grandes monitores ofrecen aire alrededor del texto en lugar de estirarlo. Las imágenes, diagramas y herramientas conservan su formato cuando la escala lo necesita.
+
+**Límites:** WCAG 2.2 1.4.12 exige que los cambios de espaciado por parte del lector no hagan perder contenidos ni funcionalidad: no significa que haya que imponer esos valores por defecto. Deben probarse zoom 200 %, navegación por teclado, móvil Android y escritorio. La revisión del HTML/CSS no sustituye la comprobación visual en navegadores reales.
+
+**Referencias:** GOV.UK Design System (layout); US Web Design System (typography / measure); Adobe Spectrum 2 (typography / attention hierarchy); W3C WCAG 2.2 (text spacing); web.dev (responsive typography); A List Apart (Surveying the Big Screen / Flexible Typesetting).
+
+**Regla de edición:** todo texto nuevo usa la misma jerarquía. Una entrada debe tener comienzo y cierre visibles; el Atlas publica montajes diferenciados, el Diccionario presenta una palabra y su desarrollo antes de las relaciones, el Libro y las notas se leen en una columna con interludios visuales dosificados. No introducir un titular gigante para dar importancia artificial a una idea. No imponer a herramientas gráficas los mismos límites de anchura del ensayo.
