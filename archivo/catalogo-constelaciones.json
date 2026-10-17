@@ -13,7 +13,7 @@
       "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32019L0790"
     ],
     "image_policy": "Commons files checked individually; use each file page for provenance/rights; links are remote embed, browser render/deployment still to verify",
-    "review_note": "2026-10-17: verified 15 Commons file pages exist via web source, but not live image rendering, exact image metadata/collection for every file, or HTTP response from all file paths. Not all files are CC0; most are Public Domain Mark PD-Art."
+    "review_note": "2026-10-17: verified 15 Commons file pages exist via web source, but not live image rendering, exact image metadata/collection for every file, or HTTP response from all file paths. Not all files are CC0; most are Public Domain Mark PD-Art.; 2026-10-17 replaced ambiguous Malevich.black-square.jpg with explicit Tretyakov 1915 first version, original source verified from Commons."
   },
   "proven_links": [
     {
@@ -158,14 +158,14 @@
     {
       "group": "r04",
       "creator": "Kazimir Malévich · 1879–1935",
-      "title": "Cuadrado negro, versión 1924",
-      "date": "1924",
-      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Malevich.black-square.jpg?width=760",
-      "image_source": "https://commons.wikimedia.org/wiki/File:Malevich.black-square.jpg",
+      "title": "Cuadrado negro · primera versión pictórica (Galería Tretiakov)",
+      "date": "1915",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kazimir_Malevich%2C_1915%2C_Black_Suprematic_Square%2C_oil_on_linen_canvas%2C_79.5_x_79.5_cm%2C_Tretyakov_Gallery%2C_Moscow.jpg?width=760",
+      "image_source": "https://commons.wikimedia.org/wiki/File:Kazimir_Malevich%2C_1915%2C_Black_Suprematic_Square%2C_oil_on_linen_canvas%2C_79.5_x_79.5_cm%2C_Tretyakov_Gallery%2C_Moscow.jpg",
       "image_status": "file_page_confirmed_wikimedia_commons_2026_10_17; see source for PD or other license; external usage still subject to applicable laws",
       "display_status": "remote_embedding_code_present_not_verified_in_final_browser",
       "classification": "visual_constellation_not_historical_influence_without_evidence",
-      "version_note": "Commons metadata states 1924 Russian Museum; not first 1915 version"
+      "version_note": "Fuente de imagen Wikimedia Commons ficha del original 1915 de Tretiakov (79.5 x 79.5). La antigua imagen Malevich.black-square.jpg tenía metadatos contradictorios de 1915/1924, museo y dimensiones; reemplazada el 17/10/2026. Otras versiones Ruso circa 1923 y Tretiakov 1929 tienen metadatos propios."
     },
     {
       "group": "r05",
