@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="t d"><title id="t">Dibujo de trazos oscuros parcialmente borrado que conserva restos</title><desc id="d">Composición editorial original de Diego Bravo para la web. No reproduce una obra artística de terceros ni documenta un experimento realizado.</desc><defs></defs>
+<rect width="1200" height="800" fill="#d7d1c2"/>
+<g stroke="#2a2d2b" fill="none" stroke-width="8" stroke-linecap="round">
+<path d="M180 190 Q365 105 540 225 T917 208" /><path d="M173 260 Q370 350 570 253 T1020 335"/>
+<path d="M160 405 C330 251 620 611 980 404"/><path d="M180 520 Q512 620 800 493 T1042 540"/>
+</g>
+<rect x="370" y="162" width="465" height="505" fill="#ddd9ce" opacity=".8" transform="rotate(9 602 415)"/>
+<g stroke="#424b49" stroke-width="3" stroke-opacity=".24" fill="none"><path d="M210 210 L990 594 M225 297 L901 557 M356 130 L882 615 M184 510 L999 320 M340 610 L775 220"/></g>
+<path d="M160 689 H1040" stroke="#af3d28" stroke-width="13" stroke-dasharray="48 38"/>
+<text x="125" y="760" fill="#272927" font-family="monospace" font-size="19" letter-spacing="3">BORRAR TAMBIÉN DEJA UN RESTO</text>
+</svg>
