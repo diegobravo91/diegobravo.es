@@ -103,8 +103,27 @@
     "Transcript ends at ~35:40 while official audio displays 42:25; opening/other material likely differs, verify recording",
     "Identity of Spanish painter invoked at ~34:40",
     "Proper names mangled in ASR, avoid literal quoting without audio check",
-    "Accurate museum identities and versions in images",
     "Permissions for publishing full recording/transcript or long extracts are not established"
   ],
-  "publication_protocol": "Only original summaries with clear attribution. Brief quotation may require separate justification. Never publish raw user-provided automatic transcript in public repository. Check original official recording before changing quotations."
+  "publication_protocol": "Only original summaries with clear attribution. Brief quotation may require separate justification. Never publish raw user-provided automatic transcript in public repository. Check original official recording before changing quotations.",
+  "source_audit_2026_10_17": {
+    "audio_file": "conferencias__inauguracion-de-la-exposi (1).mp3",
+    "mp3_duration_sec": 2568.601813,
+    "march_audio_duration_sec": 2545,
+    "automatic_text_coverage_sec": 2140,
+    "comparison_status": "Audio MP3 is available but has NOT been retranscribed or fully auditioned; timed automatic text ends at 35:40; remaining roughly 7:08.6 not established.",
+    "image_source_correction": {
+      "old": "Malevich.black-square.jpg (Commons metadata inconsistent)",
+      "new": "Kazimir Malevich, 1915, Black Suprematic Square, oil on linen canvas, 79.5 x 79.5 cm, Tretyakov Gallery, Moscow.jpg",
+      "new_source": "https://commons.wikimedia.org/wiki/File:Kazimir_Malevich%2C_1915%2C_Black_Suprematic_Square%2C_oil_on_linen_canvas%2C_79.5_x_79.5_cm%2C_Tretyakov_Gallery%2C_Moscow.jpg",
+      "version": "1915, 79.5 × 79.5 cm, Tretyakov Gallery"
+    },
+    "sources": [
+      "https://canal.march.es/es/coleccion/enigma-cuadrado-negro-inauguracion-exposicion-malevich-20370",
+      "https://www.vam.ac.uk/content/exhibitions/exhibition-russian-avant-garde-theatre-war-revolution-and-design-wwi/about-the-exhibition/",
+      "https://rmgallery.rusmuseumvrm.ru/es/189",
+      "https://ivam.es/es/exposiciones/malevich/"
+    ],
+    "publication": "N013 expanded to five works and a distinct critical objection to the assumption that an aesthetic threshold always leads elsewhere; Book master has draft insertable chapter, not final manuscript."
+  }
 }
