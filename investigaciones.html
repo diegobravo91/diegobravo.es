@@ -20,6 +20,9 @@
 
 /* Navigation layer before the technical archive */
 .intro-doors{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-bottom:1px solid var(--hair)}.intro-doors a{display:flex;flex-direction:column;gap:13px;padding:33px var(--pad);border-right:1px solid var(--hair);text-decoration:none;min-height:240px}.intro-doors a:last-child{border-right:0}.intro-doors a:hover h2{text-decoration:underline}.intro-doors span{font:11px var(--mono);color:var(--soft)}.intro-doors h2{font-size:clamp(25px,3vw,42px);font-weight:500;line-height:1.09;letter-spacing:-.047em;margin:0}.intro-doors p{font-size:15px;line-height:1.55;color:var(--soft);margin:0;flex:1}.intro-doors strong{font-size:13px;font-weight:500;text-decoration:underline;text-underline-offset:4px}.extra-doors{padding:19px var(--pad);display:flex;flex-wrap:wrap;gap:14px 32px;border-bottom:1px solid var(--ink)}.extra-doors a{font-size:13px}@media(max-width:700px){.intro-doors{grid-template-columns:1fr}.intro-doors a{min-height:0;border-right:0;border-bottom:1px solid var(--hair);padding-block:24px;gap:10px}.intro-doors h2{font-size:28px}.intro-doors a strong{margin-top:6px}}
+
+.archive-toggle{border-bottom:1px solid var(--ink)}.archive-toggle>summary{list-style:none;cursor:pointer;padding:24px var(--pad);display:flex;justify-content:space-between;gap:18px;align-items:baseline;font-size:clamp(18px,2.2vw,25px);letter-spacing:-.03em}.archive-toggle>summary::-webkit-details-marker{display:none}.archive-toggle>summary span{font:11px var(--mono);color:var(--soft);letter-spacing:0}.archive-toggle[open]>summary{border-bottom:1px solid var(--hair)}.archive-toggle>.sec{border-bottom:0}.hero h1{font-size:clamp(48px,6.4vw,90px);line-height:.93}.hero .lead{font-size:clamp(20px,2.2vw,29px);line-height:1.25}
+@media(max-width:650px){.archive-toggle>summary{align-items:start;flex-direction:column;gap:8px}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Investigaciones — Estética del umbral","url":"https://diegobravo.es/investigaciones.html","inLanguage":"es","author":{"@type":"Person","name":"Diego Bravo","url":"https://diegobravo.es/"},"dateModified":"2026-09-30"}</script>
 <link rel="stylesheet" href="/assets/site.css">
@@ -31,7 +34,8 @@
 <main id="contenido" tabindex="-1">
 <section class="hero"><div><div class="eyebrow">Archivo editorial / superficie pública</div><h1>Investiga-<br>ción</h1></div><div><p class="lead">Un libro, un atlas de imágenes y un diccionario de conceptos. Tres vías para profundizar en un trabajo que sigue abierto.</p><div class="meta">16 unidades públicas · 7 tipos · estados explícitos<br>versión 0.6 · 30.09.2026</div></div></section>
 
-<section class="intro-doors" aria-label="Recorridos principales"><a href="/estetica-del-umbral.html"><span>Libro</span><h2>Estética del umbral</h2><p>Ensayo artístico y escrito en desarrollo.</p><strong>Leer ↗</strong></a><a href="/atlas.html"><span>Imágenes</span><h2>Atlas</h2><p>Obras, documentos y montajes en relación.</p><strong>Explorar ↗</strong></a><a href="/diccionario.html"><span>Conceptos</span><h2>Diccionario</h2><p>Distinciones para pensar con más precisión.</p><strong>Consultar ↗</strong></a></section><div class="extra-doors"><a href="/constelaciones.html">Constelaciones visuales ↗</a><a href="/practica.html">Práctica ↗</a><a href="/mapa.html">Mapa ↗</a></div><section class="sec"><div class="head"><span>01 / Índice</span><h2>Filtrar por forma, no por jerarquía</h2></div>
+<section class="intro-doors" aria-label="Recorridos principales"><a href="/estetica-del-umbral.html"><span>Libro</span><h2>Estética del umbral</h2><p>Ensayo artístico y escrito en desarrollo.</p><strong>Leer ↗</strong></a><a href="/atlas.html"><span>Imágenes</span><h2>Atlas</h2><p>Obras, documentos y montajes en relación.</p><strong>Explorar ↗</strong></a><a href="/diccionario.html"><span>Conceptos</span><h2>Diccionario</h2><p>Distinciones para pensar con más precisión.</p><strong>Consultar ↗</strong></a></section><div class="extra-doors"><a href="/constelaciones.html">Constelaciones visuales ↗</a><a href="/practica.html">Práctica ↗</a><a href="/mapa.html">Mapa ↗</a></div><details class="archive-toggle"><summary>Ver índice completo de fichas y filtros <span>Archivo detallado ↓</span></summary>
+<section class="sec"><div class="head"><span>01 / Índice</span><h2>Fichas de investigación y archivo público</h2></div>
 <div class="filters" aria-label="Filtrar investigaciones">
 <button class="filter" type="button" data-filter="all" aria-pressed="true">Todo</button>
 <button class="filter" type="button" data-filter="investigacion" aria-pressed="false">Investigación</button>
@@ -61,6 +65,7 @@
 <article class="item" data-kind="sistema"><div class="id">M-001</div><div class="type">Mapa</div><div class="titlewrap"><h3><a href="/mapa.html">Recorridos públicos</a></h3><div class="summary">Cartografía de relaciones verificables entre textos, conceptos, imágenes, pruebas y consecuencias.</div></div><div class="method">Cartografía</div><div class="state">Publicado</div><div class="date">29.09.26</div></article>
 </div></section>
 
+</details>
 <section class="sec"><div class="head"><span>02 / Estados</span><h2>No todo lo público significa lo mismo</h2></div><div class="legend">
 <article><b>Publicado</b><p>Puede circular sin depender del contexto privado que lo produjo.</p></article>
 <article><b>Incorporado</b><p>Ha pasado una prueba suficiente para operar dentro del Atlas u otra estructura.</p></article>
