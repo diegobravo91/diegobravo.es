@@ -75,7 +75,8 @@
       "used_on": [
         "/imagenes.html",
         "/notas.html",
-        "/"
+        "/",
+        "/atlas-relaciones-vivas.html"
       ],
       "legal_basis": "public_domain_artwork_Met_Open_Access_CC0",
       "status": "source_record_checked_2026-10-17",
@@ -91,7 +92,8 @@
       "source": "https://www.metmuseum.org/art/collection/search/291634",
       "file_ref": "https://images.metmuseum.org/CRDImages/ph/original/DP-17302-141.jpg",
       "used_on": [
-        "/imagenes.html"
+        "/imagenes.html",
+        "/atlas-relaciones-vivas.html"
       ],
       "legal_basis": "public_domain_artwork_Met_Open_Access_CC0",
       "status": "source_record_checked_2026-10-17",
@@ -138,7 +140,8 @@
       "source": "https://commons.wikimedia.org/wiki/File:Plantstudie_Urformen_der_Kunst_%28serietitel%29%2C_RP-F-2008-51-2170-65.jpg",
       "file_ref": "Plantstudie_Urformen_der_Kunst_%28serietitel%29%2C_RP-F-2008-51-2170-65.jpg",
       "used_on": [
-        "/notas/anna-atkins-el-azul-que-no-pertenece-al-alga.html"
+        "/notas/anna-atkins-el-azul-que-no-pertenece-al-alga.html",
+        "/atlas-relaciones-vivas.html"
       ],
       "legal_basis": "Rijksmuseum_public_domain_Rijksmuseum_digital_file_CC0_via_Wikimedia_Commons",
       "status": "source_page_verified_2026-10-17",
@@ -155,13 +158,44 @@
       "source": "https://commons.wikimedia.org/wiki/File:Plantstudie_Urformen_der_Kunst_%28serietitel%29%2C_RP-F-2008-51-2170-98.jpg",
       "file_ref": "Plantstudie_Urformen_der_Kunst_%28serietitel%29%2C_RP-F-2008-51-2170-98.jpg",
       "used_on": [
-        "/notas/anna-atkins-el-azul-que-no-pertenece-al-alga.html"
+        "/notas/anna-atkins-el-azul-que-no-pertenece-al-alga.html",
+        "/atlas-relaciones-vivas.html"
       ],
       "legal_basis": "Rijksmuseum_public_domain_Rijksmuseum_digital_file_CC0_via_Wikimedia_Commons",
       "status": "source_page_verified_2026-10-17",
       "web_use": "allowed_under_CC0_checked_for_exact_file",
       "attribution": "Karl Blossfeldt · Urformen der Kunst (1928), Rijksmuseum · CC0 · lámina 98",
       "note": "Esta reproducción CC0 de Rijksmuseum es distinta de la fotografía de The Met anteriormente marcada como no descargable."
+    },
+    {
+      "id": "OA-CAJAL-PURKINJE",
+      "creator": "Santiago Ramón y Cajal",
+      "title": "Purkinje cell by Cajal",
+      "date": "ca. 1890–1911",
+      "source": "https://commons.wikimedia.org/wiki/File:Purkinje_cell_by_Cajal.png",
+      "file_ref": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Purkinje_cell_by_Cajal.png",
+      "used_on": [
+        "/atlas-relaciones-vivas.html"
+      ],
+      "legal_basis": "Public Domain Mark / old work, Wikimedia Commons file description, artwork by author died 1934",
+      "status": "checked_specific_file_page_2026-10-17",
+      "web_use": "public_domain_editorial",
+      "attribution": "Santiago Ramón y Cajal · original scientific drawing · Wikimedia Commons · Public Domain"
+    },
+    {
+      "id": "OA-CAJAL-HIPPO",
+      "creator": "Santiago Ramón y Cajal",
+      "title": "Rodent hippocampus neuronal circuits",
+      "date": "ca. 1890–1911",
+      "source": "https://commons.wikimedia.org/wiki/File:CajalHippocampus.jpeg",
+      "file_ref": "https://upload.wikimedia.org/wikipedia/commons/3/3b/CajalHippocampus.jpeg",
+      "used_on": [
+        "/atlas-relaciones-vivas.html"
+      ],
+      "legal_basis": "Public Domain Mark / old work, Wikimedia Commons file description, artwork by author died 1934",
+      "status": "checked_specific_file_page_2026-10-17",
+      "web_use": "public_domain_editorial",
+      "attribution": "Santiago Ramón y Cajal · original scientific drawing · Wikimedia Commons · Public Domain"
     }
   ],
   "digital_visual_essays": {
