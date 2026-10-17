@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="t d"><title id="t">Un trayecto rojo atraviesa un mapa de curvas grises sin coincidir con ellas</title><desc id="d">Composición editorial original de Diego Bravo para la web. No reproduce una obra artística de terceros ni documenta un experimento realizado.</desc><defs></defs>
+<rect width="1200" height="800" fill="#e8e2d6"/>
+<g fill="none" stroke="#9ca59b" stroke-width="3">
+<path d="M0 152 Q210 80 380 160 T770 170 T1200 110"/><path d="M0 275 Q215 171 440 275 T900 248 T1200 251"/>
+<path d="M0 425 Q350 301 540 439 T1200 400"/><path d="M0 567 Q360 490 540 562 T1200 580"/><path d="M0 695 Q470 598 700 692 T1200 685"/>
+</g>
+<path d="M70 630 C270 530 170 335 385 385 S575 624 695 420 S990 276 1084 155" stroke="#ad371f" stroke-width="19" stroke-linecap="round" fill="none"/>
+<g fill="#242522" stroke="#e7e0d3" stroke-width="5"><circle cx="70" cy="630" r="17"/><circle cx="385" cy="385" r="17"/><circle cx="695" cy="420" r="17"/><circle cx="1084" cy="155" r="17"/></g>
+<path d="M950 602 H1110 M1030 520 V680" stroke="#242522" stroke-width="2"/>
+<text x="110" y="747" fill="#242522" font-family="monospace" font-size="19" letter-spacing="3">RUTA / HUELLAS / RECUERDO</text>
+</svg>
