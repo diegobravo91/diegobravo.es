@@ -34,7 +34,8 @@
         "/atlas.html",
         "/notas/la-imagen-cambia-de-vecina.html",
         "/imagenes.html",
-        "/notas.html"
+        "/notas.html",
+        "/notas/anna-atkins-el-azul-que-no-pertenece-al-alga.html"
       ],
       "legal_basis": "CC0_1.0_recorded_on_Wikimedia_Commons_file_page",
       "status": "verified_source_2026-10-16",
@@ -96,6 +97,36 @@
       "web_use": "allowed_under_identified_Met_OA",
       "social_reuse": "eligible_but_source_and_platform_should_be_rechecked",
       "attribution": "Anna Atkins / The Metropolitan Museum of Art / Open Access CC0"
+    },
+    {
+      "id": "OA-ATK-291513",
+      "creator": "Anna Atkins",
+      "title": "Desmarestia liqulata",
+      "date": "ca. 1853",
+      "source": "https://www.metmuseum.org/art/collection/search/291513",
+      "file_ref": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/291513/1897730/main-image",
+      "used_on": [
+        "/notas/anna-atkins-el-azul-que-no-pertenece-al-alga.html"
+      ],
+      "legal_basis": "public_domain_work_and_Met_Open_Access_CC0",
+      "status": "verified_source_2026-10-17",
+      "web_use": "allowed_under_identified_Met_OA",
+      "attribution": "Anna Atkins · The Metropolitan Museum of Art · Public Domain / CC0"
+    },
+    {
+      "id": "OA-ATK-291619",
+      "creator": "Anna Atkins",
+      "title": "Bryopsis plumosa",
+      "date": "ca. 1853",
+      "source": "https://www.metmuseum.org/art/collection/search/291619",
+      "file_ref": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/291619/1904095/main-image",
+      "used_on": [
+        "/notas/anna-atkins-el-azul-que-no-pertenece-al-alga.html"
+      ],
+      "legal_basis": "public_domain_work_and_Met_Open_Access_CC0",
+      "status": "verified_source_2026-10-17",
+      "web_use": "allowed_under_identified_Met_OA",
+      "attribution": "Anna Atkins · The Metropolitan Museum of Art · Public Domain / CC0"
     }
   ],
   "digital_visual_essays": {
