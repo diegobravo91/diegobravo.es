@@ -2,149 +2,114 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="index,follow,max-image-preview:large">
-<meta name="theme-color" content="#e9e8e2">
+<meta name="theme-color" content="#f3f2ed">
 <meta name="author" content="Diego Bravo">
-<meta name="description" content="Diego Bravo: dibujo, caligrafía, materia e investigación visual. Obras y procesos, imágenes, cuaderno y una mesa interactiva de trazo.">
-<title>Diego Bravo — Dibujo, imagen y materia</title>
+<meta name="description" content="Diego Bravo. Arte, dibujo, imagen y escritura. Obra y procesos, cuaderno visual e investigación artística.">
+<title>Diego Bravo — Arte, imagen y escritura</title>
 <link rel="canonical" href="https://diegobravo.es/">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="Cuaderno — Diego Bravo" href="/feed.xml">
-<link rel="stylesheet" href="/assets/site.css">
-<link rel="stylesheet" href="/assets/mobile-shell.css">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Diego Bravo">
-<meta property="og:title" content="Diego Bravo — Dibujo, imagen y materia">
-<meta property="og:description" content="Una práctica visual entre el dibujo, la imagen y la investigación.">
+<meta property="og:title" content="Diego Bravo — Arte, imagen y escritura">
+<meta property="og:description" content="Obra y procesos, cuaderno visual e investigación artística.">
 <meta property="og:url" content="https://diegobravo.es/">
 <meta property="og:image" content="https://diegobravo.es/assets/social-card.jpg">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://diegobravo.es/assets/social-card.jpg">
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/mobile-shell.css">
 <style>
-:root{--paper:#e9e8e2;--white:#f6f5ee;--ink:#1b1d18;--muted:#5f625c;--line:#b6b8ad;--rust:#964735;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;--serif:Georgia,'Times New Roman',serif;--pad:clamp(18px,3.5vw,58px)}
-*{box-sizing:border-box}
+:root{--paper:#f3f2ed;--white:#fafaf7;--ink:#20211f;--muted:#676861;--line:#cccbc3;--accent:#8b4235;--gutter:clamp(20px,4vw,58px)}
+*,*::before,*::after{box-sizing:border-box}
 html{background:var(--paper);scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.52 Arial,Helvetica,sans-serif}
-a{color:inherit;text-underline-offset:4px}a:hover{color:var(--rust)}
-button{font:inherit}button:focus-visible,a:focus-visible,canvas:focus-visible{outline:3px solid var(--rust);outline-offset:3px}
-.skip{position:fixed;z-index:250;left:15px;top:5px;transform:translateY(-155%);padding:10px;background:var(--ink);color:var(--white)}.skip:focus{transform:none}
-.header{height:72px;padding:12px var(--pad);display:flex;align-items:center;justify-content:space-between;gap:18px;background:rgba(233,232,226,.98);border-bottom:1px solid var(--ink);position:sticky;z-index:60;top:0}
-.brand{font-size:19px;font-weight:700;letter-spacing:-.045em;text-decoration:none}
-.nav,.micro,.eyebrow,.caption,.stamp,.source,.footer,.studio-control,.small-link{font:11px/1.55 var(--mono);letter-spacing:.01em}
-.nav{display:flex;gap:clamp(13px,2.1vw,28px);align-items:center}.nav a{text-decoration:none}.nav a:hover{text-decoration:underline}
-main{width:100%;overflow:clip}.eyebrow{text-transform:uppercase;color:var(--rust)}
-.hero{display:grid;grid-template-columns:minmax(330px,.42fr) minmax(0,.58fr);border-bottom:1px solid var(--ink);min-height:clamp(620px,77vh,850px)}
-.hero-copy{padding:clamp(35px,5vw,74px) clamp(18px,4.5vw,76px) 30px var(--pad);display:flex;flex-direction:column;justify-content:space-between;gap:34px}
-.hero h1{font:400 clamp(64px,6.2vw,115px)/.92 var(--serif);letter-spacing:-.065em;margin:24px 0 22px;max-width:11ch}
-.hero-copy .intro{font:clamp(18px,1.6vw,24px)/1.39 var(--serif);max-width:490px;margin:0;color:#363932}
-.hero-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:35px}
-.hero-links a{display:inline-flex;min-height:48px;align-items:center;text-decoration:none;border:1px solid var(--ink);padding:11px 16px;font:12px var(--mono)}
-.hero-links a:first-child{background:var(--ink);color:var(--paper)}.hero-links a:hover{background:var(--rust);color:var(--white);border-color:var(--rust)}
-.hero-end{border-top:1px solid var(--line);padding-top:18px;display:flex;justify-content:space-between;gap:15px;color:var(--muted)}
-.studio{background:#d2d1c6;display:flex;flex-direction:column;min-width:0;border-left:1px solid var(--ink)}
-.studio-top{padding:16px clamp(18px,2.6vw,42px);display:flex;justify-content:space-between;align-items:center;gap:15px;border-bottom:1px solid #919286}
-.studio-top .eyebrow{color:#373c34}.studio-top .micro{color:#4b5248}
-.surface{position:relative;flex:1;min-height:490px;background:radial-gradient(ellipse at 43% 47%,#eee9d9 0%,#ded9cb 65%,#cac6b9 100%);overflow:hidden}
-.surface:after{content:"";position:absolute;inset:0;pointer-events:none;background-image:repeating-linear-gradient(0deg,transparent 0,transparent 7px,rgba(88,74,62,.02) 8px)}
-.surface canvas{width:100%;height:100%;display:block;cursor:crosshair;touch-action:none;position:absolute;inset:0}
-.studio-hint{position:absolute;top:19px;left:23px;z-index:2;color:#4e5148;background:rgba(239,236,222,.9);padding:7px 10px;pointer-events:none}
-.studio-bottom{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;padding:12px clamp(18px,2.6vw,42px);border-top:1px solid #919286}
-.studio-controls{display:flex;gap:6px;flex-wrap:wrap}.studio-control{min-height:42px;padding:8px 11px;cursor:pointer;border:1px solid #6f746b;background:transparent;color:var(--ink)}.studio-control:hover{background:var(--ink);color:var(--paper)}
-.studio-bottom .small-link{color:#32382f}.studio-note{padding:0 clamp(18px,2.6vw,42px) 15px;font:10px/1.55 var(--mono);color:#52564e;max-width:840px}
-.section-pad{padding:clamp(48px,6vw,95px) var(--pad)}
-.section-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(220px,.36fr);gap:20px;align-items:end;margin-bottom:28px}
-.section-head h2{font:400 clamp(42px,5.3vw,84px)/1.0 var(--serif);letter-spacing:-.055em;margin:15px 0 0;max-width:850px}
-.section-head p{color:var(--muted);font-size:15px;line-height:1.6;margin:0}
-.projects{border-bottom:1px solid var(--ink);background:var(--white)}
-.project-grid{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:clamp(13px,1.8vw,27px)}
-.project{display:block;min-width:0;text-decoration:none}.project .media{display:block;overflow:hidden;background:#cbc9c1;position:relative;aspect-ratio:1/1.06}.project:first-child .media{aspect-ratio:1/1.06}
-.project img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .35s ease,filter .35s ease}.project:hover img{transform:scale(1.035)}
-.project .kind{display:block;color:var(--rust);margin-top:15px}
-.project h3{font:400 clamp(25px,2.65vw,42px)/1.06 var(--serif);letter-spacing:-.04em;margin:7px 0 12px}
-.project p{font:14px/1.48 Arial;color:var(--muted);margin:0 0 8px;max-width:360px}
-.project .see{font:11px var(--mono);display:block;padding-top:10px;text-decoration:underline}
-.project .media::after{content:"↗";position:absolute;top:15px;right:15px;font:26px var(--serif);color:var(--ink);background:rgba(245,244,236,.85);padding:2px 10px}
-.provenance{font:11px/1.65 var(--mono);color:var(--muted);margin-top:31px;max-width:1000px}
-.work{padding:clamp(50px,6vw,100px) var(--pad);background:#222820;color:#f3f1e8;display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,7vw,150px);border-bottom:1px solid var(--ink)}
-.work h2{font:400 clamp(46px,5vw,78px)/1 var(--serif);letter-spacing:-.06em;margin:18px 0 0}.work p{max-width:600px;font:clamp(18px,1.7vw,25px)/1.5 var(--serif);margin:0 0 27px}
-.work .eyebrow{color:#d8a696}.work-links{display:grid;border-top:1px solid #81867b}
-.work-links a{display:flex;justify-content:space-between;gap:30px;align-items:center;text-decoration:none;border-bottom:1px solid #81867b;padding:16px 0;font:16px Arial;color:#f3f1e8}.work-links a:hover{color:#e6af93}
-.work-links span{font:11px var(--mono)}
-.edge{padding:clamp(55px,6.4vw,110px) var(--pad);display:grid;grid-template-columns:1.15fr .85fr;gap:8vw;border-bottom:1px solid var(--ink)}
-.edge h2{font:400 clamp(42px,5vw,76px)/1.04 var(--serif);letter-spacing:-.055em;margin:16px 0 0}
-.edge p{font:clamp(18px,1.85vw,27px)/1.43 var(--serif);margin:0 0 23px}
-.edge a{font:12px var(--mono)}
-.footer{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap;padding:24px var(--pad) 40px;color:var(--muted)}
-.footer nav{display:flex;gap:17px;flex-wrap:wrap}.footer a{text-decoration:none}.footer a:hover{text-decoration:underline}
-@media(max-width:1070px){.hero{grid-template-columns:.43fr .57fr}.hero h1{font-size:clamp(53px,6.4vw,80px)}.surface{min-height:450px}}
-@media(max-width:800px){.hero{grid-template-columns:1fr}.hero-copy{padding:40px var(--pad) 25px}.hero h1{font-size:clamp(56px,11vw,91px);max-width:13ch}.hero-end{display:none}.studio{border-left:0;border-top:1px solid var(--ink)}.surface{min-height:clamp(320px,71vw,550px)}.section-head{grid-template-columns:1fr}.section-head p{max-width:570px}.project-grid{grid-template-columns:1fr 1fr}.project:first-child{grid-column:1/-1}.project:first-child .media{aspect-ratio:1.7}.project .media{aspect-ratio:.95}.work,.edge{grid-template-columns:1fr}}
-@media(max-width:600px){.nav{display:none}.header{height:60px}.hero h1{font-size:clamp(55px,12.5vw,85px)}.hero-copy .intro{font-size:19px}.hero-links{gap:7px}.hero-links a{min-height:46px;padding:9px 12px;font-size:11px}.project-grid{grid-template-columns:1fr}.project:first-child{grid-column:auto}.project .media,.project:first-child .media{aspect-ratio:1.15}.project{padding-bottom:20px;border-bottom:1px solid var(--line)}.project:last-child{border-bottom:0}.section-head h2{font-size:clamp(40px,10vw,60px)}.studio-top .micro{font-size:10px}.studio-bottom{align-items:start}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.project img{transition:none}}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.52 Arial,Helvetica,sans-serif;letter-spacing:-.005em}
+a{color:inherit;text-underline-offset:.22em}
+a:hover{text-decoration-color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.skip-link{position:absolute;left:12px;top:8px;background:var(--ink);color:white;padding:10px;z-index:300;transform:translateY(-150%)}.skip-link:focus{transform:none}
+.container{max-width:1350px;margin:0 auto;padding-inline:var(--gutter)}
+.top{min-height:72px;display:flex;justify-content:space-between;align-items:center;gap:35px;border-bottom:1px solid var(--line);background:var(--paper);padding:14px var(--gutter);position:sticky;top:0;z-index:50}
+.top-inner{width:100%;max-width:1234px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.brand{font:600 clamp(18px,2vw,22px)/1.1 Arial,Helvetica,sans-serif;letter-spacing:-.045em;text-decoration:none}
+.topnav{display:flex;gap:clamp(16px,2.4vw,37px);align-items:center;white-space:nowrap}
+.topnav a{font-size:13px;text-decoration:none;color:var(--muted)}.topnav a:hover{color:var(--ink);text-decoration:underline}
+.main{max-width:1350px;margin:0 auto}
+.hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(24px,4.5vw,76px);align-items:center;padding:clamp(49px,7vw,98px) var(--gutter) clamp(36px,5.5vw,80px)}
+.eyebrow,.overline,.credit,.meta,.footer{font:11px/1.55 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.015em}
+.eyebrow{color:var(--muted);text-transform:uppercase}
+.hero h1{font:500 clamp(46px,5.65vw,87px)/.97 Arial,Helvetica,sans-serif;letter-spacing:-.067em;margin:23px 0 28px;max-width:11.5ch}
+.hero-copy{max-width:680px}
+.hero-copy p{font-size:clamp(18px,1.72vw,24px);line-height:1.42;max-width:590px;letter-spacing:-.019em;margin:0 0 28px;color:#44463f}
+.link-inline{font-size:14px;font-weight:600;text-decoration:underline;text-decoration-color:#8e8e88;text-underline-offset:5px}
+.hero-figure{margin:0;min-width:0}
+.hero-figure a{display:block;overflow:hidden;background:#bdc7bf}
+.hero-figure img{display:block;width:100%;height:clamp(310px,36vw,485px);object-fit:cover;object-position:center;transition:transform .4s ease}
+.hero-figure a:hover img{transform:scale(1.025)}
+.hero-figure figcaption{padding:12px 0 0;color:var(--muted);font:11px/1.55 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.hero-figure figcaption strong{color:var(--ink);font-weight:500}
+.section-head{display:flex;align-items:baseline;justify-content:space-between;gap:20px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.section-head h2{font:500 clamp(25px,3vw,40px)/1.1 Arial,Helvetica,sans-serif;letter-spacing:-.045em;margin:0}
+.section-head .eyebrow{color:var(--muted)}
+.routes{padding-bottom:clamp(50px,6vw,84px)}
+.routes-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.route{display:flex;flex-direction:column;padding:28px 24px 26px 0;min-width:0;border-bottom:1px solid var(--line);text-decoration:none}
+.route+.route{padding-left:24px;border-left:1px solid var(--line)}
+.route .overline{color:var(--accent)}
+.route h3{font:500 clamp(25px,2.7vw,38px)/1.06 Arial,Helvetica,sans-serif;letter-spacing:-.045em;margin:17px 0}
+.route p{color:var(--muted);font-size:15px;line-height:1.57;margin:0;flex:1}
+.route .more{font-size:13px;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:4px;margin-top:26px}
+.route:hover h3{text-decoration:underline;text-decoration-thickness:1px}
+.journal{padding-bottom:clamp(55px,7vw,108px)}
+.journal-top{display:flex;align-items:center;gap:15px;justify-content:space-between;margin-bottom:22px}
+.journal-top p{font-size:15px;color:var(--muted);margin:0}
+.journal-top a{font-size:13px;white-space:nowrap}
+.articles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2.2vw,30px)}
+.entry{min-width:0}.entry>a{display:block;color:inherit;text-decoration:none}
+.entry .visual{display:block;overflow:hidden;aspect-ratio:1.3;background:#d4d3cc}
+.entry img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .35s}
+.entry a:hover img{transform:scale(1.025)}
+.entry .meta{display:block;margin-top:13px;color:var(--muted)}
+.entry h3{font:500 clamp(21px,2vw,29px)/1.14 Arial,Helvetica,sans-serif;letter-spacing:-.035em;margin:8px 0 9px}
+.entry a:hover h3{text-decoration:underline;text-decoration-thickness:1px}
+.entry p{font-size:14px;color:var(--muted);line-height:1.6;margin:0}
+.credits{font:11px/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--muted);margin-top:23px;max-width:1000px}
+.closer{border-top:1px solid var(--line);padding-block:40px;display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.closer h2{font:500 clamp(25px,3vw,39px)/1.09 Arial,Helvetica,sans-serif;letter-spacing:-.045em;margin:0}
+.closer p{max-width:540px;line-height:1.58;margin:0;color:var(--muted);font-size:16px}
+.closer a{font-size:14px;color:var(--ink)}
+.bottom{border-top:1px solid var(--line);padding-block:22px 31px;display:flex;justify-content:space-between;gap:18px;align-items:start}
+.bottom .footer{color:var(--muted)}.bottom-links{display:flex;gap:23px;flex-wrap:wrap}.bottom-links a{font-size:12px;color:var(--muted);text-decoration:none}.bottom-links a:hover{text-decoration:underline}
+@media(max-width:900px){.hero{grid-template-columns:1fr 1fr;gap:27px}.hero h1{font-size:clamp(42px,6vw,66px)}.hero-figure img{height:350px}}
+@media(max-width:700px){.top{min-height:61px;padding-block:12px}.topnav{display:none}.hero{grid-template-columns:1fr;padding-top:37px;padding-bottom:40px;gap:33px}.hero h1{font-size:clamp(42px,10.6vw,64px);margin:19px 0 19px}.hero-copy p{font-size:18px}.hero-figure img{height:clamp(260px,70vw,375px)}.routes-grid{grid-template-columns:1fr}.route,.route+.route{padding:20px 0 23px;border-left:0}.route h3{font-size:29px;margin:9px 0}.route .more{margin-top:12px}.articles{grid-template-columns:1fr;gap:34px}.entry .visual{aspect-ratio:1.5}.entry h3{font-size:25px}.journal-top{align-items:baseline}.journal-top p{max-width:180px}.closer{grid-template-columns:1fr;gap:14px}.bottom{flex-direction:column;gap:17px}}
+@media(prefers-reduced-motion:reduce){.hero-figure img,.entry img{transition:none}html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
-<a class="skip" href="#contenido">Saltar al contenido</a>
-<header class="header"><a class="brand" href="/" aria-label="Diego Bravo, inicio">Diego Bravo</a>
-<nav class="nav" aria-label="Navegación principal"><a href="/obra.html">Obra</a><a href="/imagenes.html">Imágenes</a><a href="/notas.html">Cuaderno</a><a href="/investigaciones.html">Investigación</a><a href="/sobre.html">Sobre</a></nav></header>
-<main id="contenido">
-<section class="hero" aria-labelledby="hero-title">
-<div class="hero-copy">
-<div><div class="eyebrow">Dibujo · Caligrafía · Investigación visual</div><h1 id="hero-title">Antes de explicar, mirar.</h1>
-<p class="intro">Soy Diego Bravo. Trabajo con el trazo, la imagen y sus transformaciones. Recupero una práctica gráfica mientras investigo cómo la materia, las imágenes y las normas cambian nuestra manera de ver.</p>
-<div class="hero-links"><a href="/obra.html">Obra y procesos ↗</a><a href="/imagenes.html">Mirar imágenes ↗</a></div></div>
-<div class="hero-end"><span class="micro">Albaida · Proyecto independiente</span><span class="micro">Una práctica en desarrollo</span></div>
-</div>
-<div class="studio">
-<div class="studio-top"><span class="eyebrow">01 / Mesa de trazo</span><span class="micro">Un estudio digital que puedes intervenir</span></div>
-<div class="surface" id="surface"><span class="studio-hint micro" id="surface-hint">Traza sobre la imagen con el dedo o el ratón</span><canvas id="trace" tabindex="0" role="img" aria-label="Superficie de dibujo digital con un gesto inicial de muestra. Puedes añadir tus trazos con el ratón o el dedo; los controles permiten borrar, restaurar y guardar."></canvas><noscript><p style="padding:35px">Abre <a href="/mesa-de-trazo.html">Mesa de trazo</a> para trabajar con el dibujo.</p></noscript></div>
-<div class="studio-bottom"><div class="studio-controls"><button class="studio-control" id="clear" type="button">Limpiar</button><button class="studio-control" id="restore" type="button">Restaurar estudio</button><button class="studio-control" id="save" type="button">Guardar PNG</button></div><a class="small-link" href="/mesa-de-trazo.html">Abrir mesa completa ↗</a></div>
-<div class="studio-note" id="studio-status" aria-live="polite">Estudio gráfico digital desarrollado con asistencia de IA para esta web, no fotografía de una obra material. Los trazos que hagas se quedan en tu navegador.</div>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header class="top"><div class="top-inner"><a class="brand" href="/" aria-label="Diego Bravo — inicio">Diego Bravo</a><nav class="topnav" aria-label="Navegación principal"><a href="/obra.html">Obra</a><a href="/notas.html">Cuaderno</a><a href="/investigaciones.html">Investigación</a><a href="/sobre.html">Sobre</a></nav></div></header>
+<main class="main" id="contenido">
+<section class="hero">
+  <div class="hero-copy"><span class="eyebrow">Artista visual · Dibujo, imagen, escritura</span><h1>Mirar. Hacer. Pensar.</h1><p>Soy Diego Bravo. Trabajo entre el dibujo, la imagen y la investigación artística. Aquí conviven una práctica gráfica que estoy retomando, un cuaderno de ensayos visuales y proyectos que continúan abiertos.</p><a href="/obra.html" class="link-inline">Conocer la obra y los procesos ↗</a></div>
+  <figure class="hero-figure"><a href="/notas/una-planta-fuera-de-lugar.html" aria-label="Leer Una planta fuera de lugar, con imagen de Anna Atkins"><img src="https://images.metmuseum.org/CRDImages/ph/original/DP-17302-144.jpg" alt="Anna Atkins, Ulva latissima, cianotipo botánico del siglo XIX" decoding="async" referrerpolicy="no-referrer" fetchpriority="high"></a><figcaption><strong>Del cuaderno visual:</strong> «Una planta fuera de lugar». Imagen: Anna Atkins, <em>Ulva latissima</em>, ca. 1853. Archivo histórico, no obra propia. <a href="/imagenes.html#archivo">Procedencia ↗</a></figcaption></figure>
+</section>
+<section class="routes container" aria-labelledby="rutas"><div class="section-head"><h2 id="rutas">Tres formas de entrar</h2><span class="eyebrow">Sin recorrido obligatorio</span></div><div class="routes-grid">
+<a class="route" href="/obra.html"><span class="overline">01</span><h3>Obra</h3><p>Oficio gráfico, caligrafía, dibujo y procesos. Archivo anterior en recuperación y nuevas pruebas diferenciadas de las piezas terminadas.</p><span class="more">Explorar obra ↗</span></a>
+<a class="route" href="/notas.html"><span class="overline">02</span><h3>Cuaderno</h3><p>Textos breves e imágenes para mirar arte, materiales, naturaleza, cine y vida cotidiana desde preguntas concretas.</p><span class="more">Leer y mirar ↗</span></a>
+<a class="route" href="/investigaciones.html"><span class="overline">03</span><h3>Investigación</h3><p>Estética del umbral, Libro, Atlas, Diccionario y relaciones entre imágenes, obras, documentos y conceptos.</p><span class="more">Entrar en la investigación ↗</span></a>
 </div></section>
-<section class="projects section-pad" aria-labelledby="projects-title"><div class="section-head"><div><span class="eyebrow">Selección del Cuaderno visual</span><h2 id="projects-title">Tres imágenes. Tres preguntas.</h2></div><p>Empieza por mirar. La documentación, las referencias y las objeciones aparecen dentro de cada ensayo, no antes de las imágenes.</p></div>
-<div class="project-grid">
-<a class="project" href="/notas/anna-atkins-el-azul-que-no-pertenece-al-alga.html"><span class="media"><img src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/291513/1897730/main-image" alt="Cianotipia botánica de Anna Atkins, silueta de un alga sobre papel azul" loading="lazy" decoding="async" referrerpolicy="no-referrer"></span><span class="kind caption">01 / Imagen · Botánica</span><h3>El azul que no pertenece al alga.</h3><p>¿Qué pertenece al ejemplar y qué produce la técnica de registro?</p><span class="see">Ver el ensayo ↗</span></a>
-<a class="project" href="/notas/la-imagen-cambia-de-vecina.html"><span class="media"><img src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/268638/631820/main-image" alt="Secuencia histórica de Eadweard Muybridge sobre el movimiento" loading="lazy" decoding="async" referrerpolicy="no-referrer"></span><span class="kind caption">02 / Archivo · Montaje</span><h3>La imagen cambia de vecina.</h3><p>¿Cuánto cambia una imagen cuando cambia la que tiene al lado?</p><span class="see">Ver el ensayo ↗</span></a>
-<a class="project" href="/notas/lo-que-el-borrado-no-consigue-borrar.html"><span class="media"><img src="/assets/visual/nota-007-borrado.svg" alt="Estudio gráfico digital de trazos superpuestos y marcas parcialmente borradas" loading="lazy" decoding="async"></span><span class="kind caption">03 / Dibujo · Tiempo</span><h3>Lo que el borrado no consigue borrar.</h3><p>Una modificación puede permanecer visible cuando el gesto ya terminó.</p><span class="see">Ver el ensayo ↗</span></a>
-</div><p class="provenance">Obras históricas reproducidas: Anna Atkins y Eadweard Muybridge, The Metropolitan Museum of Art (dominio público / Open Access). Tercera imagen: esquema editorial digital de esta web. No se presentan como obras materiales de Diego Bravo. <a href="/imagenes.html#archivo">Ver procedencias ↗</a></p></section>
-<section class="work" aria-labelledby="work-title"><div><span class="eyebrow">Oficio y práctica</span><h2 id="work-title">El dibujo es un lugar de trabajo.</h2></div><div><p>La caligrafía me enseñó a pensar con el peso del trazo, el ritmo y el soporte. Hoy recupero ese oficio sin intentar repetir un estilo anterior. Distingo lo que ya he hecho de los experimentos que aún tengo que realizar.</p><div class="work-links"><a href="/obra.html">Trayectoria gráfica y procesos <span>↗</span></a><a href="/mesa-de-trazo.html">Mesa de trazo para experimentar <span>↗</span></a><a href="/practica.html">Pruebas materiales y protocolos <span>↗</span></a></div></div></section>
-<section class="edge" aria-labelledby="edge-title"><div><span class="eyebrow">Estética del umbral · Investigación abierta</span><h2 id="edge-title">Lo sensible también se decide.</h2></div><div><p>Una fotografía pasa a ser dato. Un camino, frontera. Una planta recibe un nombre y nuevas reglas de cuidado. Investigo qué cambia en esas operaciones, para quién cambia y qué se queda fuera.</p><a href="/estetica-del-umbral.html">Conocer la investigación ↗</a> · <a href="/investigaciones.html">Explorar casos y documentos ↗</a></div></section>
+<section class="journal container" aria-labelledby="lecturas"><div class="section-head"><h2 id="lecturas">Para mirar un momento</h2><span class="eyebrow">Del Cuaderno</span></div>
+<div class="journal-top"><p>Tres lecturas visuales para empezar, sin tener que conocer el proyecto entero.</p><a href="/notas.html">Ver todo el Cuaderno ↗</a></div>
+<div class="articles">
+<article class="entry"><a href="/notas/anna-atkins-el-azul-que-no-pertenece-al-alga.html"><span class="visual"><img src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/291513/1897730/main-image" alt="Anna Atkins, Desmarestia ligulata, cianotipo botánico sobre papel azul" loading="lazy" decoding="async" referrerpolicy="no-referrer"></span><span class="meta">Fotografía · Botánica</span><h3>El azul que no pertenece al alga</h3><p>De la impresión por contacto al archivo digital de las imágenes.</p></a></article>
+<article class="entry"><a href="/notas/la-imagen-cambia-de-vecina.html"><span class="visual"><img src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/268638/631820/main-image" alt="Eadweard Muybridge, serie fotográfica histórica del movimiento de dos niños" loading="lazy" decoding="async" referrerpolicy="no-referrer"></span><span class="meta">Montaje · Archivo</span><h3>La imagen cambia de vecina</h3><p>Una imagen no siempre significa lo mismo cuando se altera su compañía.</p></a></article>
+<article class="entry"><a href="/notas/lo-que-el-borrado-no-consigue-borrar.html"><span class="visual"><img src="/assets/visual/nota-007-borrado.svg" alt="Diagrama editorial original de trazos oscuros parcialmente borrados" loading="lazy" decoding="async"></span><span class="meta">Dibujo · Tiempo</span><h3>Lo que el borrado no consigue borrar</h3><p>El gesto de eliminar también puede dejar una huella.</p></a></article>
+</div>
+<p class="credits">Imágenes: Anna Atkins y Eadweard Muybridge, reproducciones históricas de dominio público / The Metropolitan Museum of Art; tercera imagen, composición editorial original. No se presentan como obras de Diego Bravo. <a href="/imagenes.html#archivo">Fuentes y archivo visual ↗</a></p></section>
+<section class="closer container"><h2>Un trabajo que sigue haciéndose.</h2><p>El sitio reúne obra, lectura y procesos sin exigirles un único lenguaje. También puedes <a href="/mesa-de-trazo.html">probar la Mesa de trazo</a> o <a href="/sobre.html">conocer mi trayectoria y contactar</a>.</p></section>
 </main>
-<footer class="footer"><span>© Diego Bravo · 2026 · Publicación independiente</span><nav aria-label="Enlaces secundarios"><a href="/buscar.html">Buscar</a><a href="/sobre.html">Contacto</a><a href="/colofon.html">Fuentes y derechos</a><a href="/feed.xml">RSS</a></nav></footer>
+<footer class="bottom container"><span class="footer">© Diego Bravo · 2026 · Publicación independiente</span><nav class="bottom-links" aria-label="Enlaces secundarios"><a href="/buscar.html">Buscar</a><a href="/imagenes.html">Imágenes</a><a href="/mapa.html">Mapa</a><a href="/colofon.html">Derechos y fuentes</a><a href="/feed.xml">RSS</a></nav></footer>
 <script defer src="/assets/mobile-shell.js"></script>
-<script>
-(function(){
-'use strict';
-const canvas=document.getElementById('trace'),frame=document.getElementById('surface'),hint=document.getElementById('surface-hint'),status=document.getElementById('studio-status');if(!canvas||!frame)return;
-const ctx=canvas.getContext('2d');if(!ctx){status.textContent='El dibujo interactivo no está disponible en este navegador.';return;}
-const example=[
-{color:'#2d322c',pts:[[.13,.77,.023],[.22,.48,.029],[.32,.22,.018],[.41,.54,.034],[.53,.83,.02],[.64,.35,.033],[.76,.18,.02],[.85,.56,.023]]},
-{color:'#272c28',pts:[[.10,.59,.010],[.20,.64,.013],[.32,.70,.016],[.48,.69,.009],[.65,.62,.014],[.79,.74,.008]]},
-{color:'#995139',pts:[[.16,.21,.009],[.28,.34,.01],[.43,.42,.009],[.55,.35,.011],[.70,.37,.01],[.82,.28,.008]]},
-{color:'#2b312b',pts:[[.25,.85,.006],[.33,.59,.007],[.47,.31,.01],[.61,.21,.006],[.72,.13,.009]]}
-];
-let strokes=example.map(s=>({color:s.color,pts:s.pts.map(p=>p.slice())})),current=null,pointer=null;
-function paint(){
-const rect=frame.getBoundingClientRect(),w=rect.width,h=rect.height;
-ctx.clearRect(0,0,canvas.width,canvas.height);
-ctx.save();const dpr=canvas.width/w;ctx.setTransform(dpr,0,0,dpr,0,0);
-for(const s of strokes.concat(current?[current]:[])){
-if(!s.pts.length)continue;ctx.strokeStyle=s.color;ctx.fillStyle=s.color;ctx.lineCap='round';ctx.lineJoin='round';
-if(s.pts.length===1){const p=s.pts[0];ctx.beginPath();ctx.arc(p[0]*w,p[1]*h,Math.max(1.2,p[2]*Math.min(w,h)/2),0,Math.PI*2);ctx.fill();continue;}
-for(let i=1;i<s.pts.length;i++){const a=s.pts[i-1],b=s.pts[i],thick=((a[2]+b[2])/2)*Math.min(w,h);
-ctx.globalAlpha=.86;ctx.lineWidth=Math.max(1.4,thick);ctx.beginPath();ctx.moveTo(a[0]*w,a[1]*h);ctx.lineTo(b[0]*w,b[1]*h);ctx.stroke();
-ctx.globalAlpha=.2;ctx.lineWidth=Math.max(2,thick*1.65);ctx.beginPath();ctx.moveTo(a[0]*w,a[1]*h);ctx.lineTo(b[0]*w,b[1]*h);ctx.stroke();
-}ctx.globalAlpha=1;}
-ctx.restore();}
-function size(){const r=frame.getBoundingClientRect(),dpr=Math.min(2,window.devicePixelRatio||1);canvas.width=Math.max(1,Math.round(r.width*dpr));canvas.height=Math.max(1,Math.round(r.height*dpr));paint();}
-function point(e){const b=canvas.getBoundingClientRect();return [Math.max(0,Math.min(1,(e.clientX-b.left)/b.width)),Math.max(0,Math.min(1,(e.clientY-b.top)/b.height)),Math.max(.004,Math.min(.032,(e.pointerType==='pen'&&e.pressure>0?e.pressure:.58)*.024))];}
-canvas.addEventListener('pointerdown',e=>{if(e.button!==0&&e.pointerType==='mouse')return;pointer=e.pointerId;canvas.setPointerCapture(pointer);current={color:'#262a26',pts:[point(e)]};hint.hidden=true;paint();});
-canvas.addEventListener('pointermove',e=>{if(pointer!==e.pointerId||!current)return;const p=point(e),prev=current.pts[current.pts.length-1];if(Math.hypot(p[0]-prev[0],p[1]-prev[1])>.002){current.pts.push(p);paint();}});
-function end(e){if(pointer!==e.pointerId||!current)return;strokes.push(current);current=null;pointer=null;paint();status.textContent='Trazo añadido. Puedes limpiar, restaurar el estudio o guardar la composición.';}
-canvas.addEventListener('pointerup',end);canvas.addEventListener('pointercancel',end);
-document.getElementById('clear').addEventListener('click',()=>{strokes=[];current=null;paint();status.textContent='Superficie limpia. Ahora puedes dibujar desde cero.';});
-document.getElementById('restore').addEventListener('click',()=>{strokes=example.map(s=>({color:s.color,pts:s.pts.map(p=>p.slice())}));current=null;paint();status.textContent='Estudio digital restaurado.';});
-document.getElementById('save').addEventListener('click',()=>{const file=document.createElement('a');file.download='estudio-de-trazo-diegobravo.png';const exported=document.createElement('canvas');exported.width=canvas.width;exported.height=canvas.height;const bx=exported.getContext('2d');bx.fillStyle='#ded9cb';bx.fillRect(0,0,exported.width,exported.height);bx.drawImage(canvas,0,0);file.href=exported.toDataURL('image/png');file.click();status.textContent='Se ha preparado una imagen PNG con fondo y trazos.';});
-if('ResizeObserver' in window)new ResizeObserver(size).observe(frame);else window.addEventListener('resize',size);size();
-})();
-</script>
 </body></html>
