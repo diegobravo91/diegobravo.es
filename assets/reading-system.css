@@ -447,3 +447,67 @@ body.reading-v2.page-buscar .hit h2{font-size:clamp(1.2rem,2vw,1.65rem);line-hei
    font-size:clamp(1.65rem,7vw,2.3rem)
  }
 }
+
+
+/* Ensayos visuales: reducir el salto entre prosa, figuras y secciones experimentales. */
+body.reading-v2.page-articulo .entry-article .entry-prose{
+  max-width:var(--read-measure-wide);
+}
+body.reading-v2.page-articulo .entry-prose>p,
+body.reading-v2.page-articulo .ab-essay>p,
+body.reading-v2.page-articulo .chapter>p,
+body.reading-v2.page-articulo .prose>p{
+  font:400 var(--read-body)/1.72 var(--read-serif);
+  max-width:var(--read-measure);
+}
+body.reading-v2.page-articulo .entry-prose>p+p,
+body.reading-v2.page-articulo .ab-essay>p+p{margin-top:1.2em}
+body.reading-v2.page-articulo .entry-prose .pull,
+body.reading-v2.page-articulo .prose .pull{
+  font:450 clamp(1.4rem,2.6vw,2.15rem)/1.34 var(--read-serif);
+  letter-spacing:-.02em;
+  padding-block:1rem;
+  margin-block:1.65em;
+}
+body.reading-v2.page-articulo .hero .dek,
+body.reading-v2.page-articulo .entry-hero .entry-deck{
+  font:400 clamp(1.15rem,1.85vw,1.5rem)/1.51 var(--read-serif);
+  max-width:53ch;
+}
+body.reading-v2.page-articulo .stage-title,
+body.reading-v2.page-articulo .ab-heading h2,
+body.reading-v2.page-articulo .chapter h2,
+body.reading-v2.page-articulo .entry-prose h2,
+body.reading-v2.page-articulo .ab-essay h2{
+  font:550 clamp(1.45rem,2.8vw,2.15rem)/1.22 var(--read-sans);
+  letter-spacing:-.02em;
+  text-transform:none;
+  max-width:34ch;
+}
+body.reading-v2.page-articulo .entry-prose h3,
+body.reading-v2.page-articulo .prose h3{
+  font:600 clamp(1.1rem,1.55vw,1.4rem)/1.33 var(--read-sans);
+  margin-top:2em;
+}
+body.reading-v2.page-articulo .stage,
+body.reading-v2.page-articulo .panels,
+body.reading-v2.page-articulo .chapter,
+body.reading-v2.page-articulo .ab-section{
+  scroll-margin-top:5rem;
+}
+body.reading-v2.page-articulo .panels,
+body.reading-v2.page-articulo .chapter,
+body.reading-v2.page-articulo .ab-section{
+  border-top:1px solid var(--read-rule);
+}
+body.reading-v2.page-articulo .source-note,
+body.reading-v2.page-articulo .source-list,
+body.reading-v2.page-articulo .entry-reference{
+  font-size:clamp(.81rem,1vw,.9rem);
+  line-height:1.6;
+}
+body.reading-v2.page-articulo figure figcaption{font-size:.82rem;line-height:1.55}
+@media(max-width:760px){
+ body.reading-v2.page-articulo .stage-title{font-size:1.5rem}
+ body.reading-v2.page-articulo .entry-article{grid-template-columns:1fr}
+}
