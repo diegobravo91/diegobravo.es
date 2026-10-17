@@ -264,3 +264,16 @@ La web pública incluye ahora **fichas CF** enlazadas desde el bloque "Ideas que
 - N-017 `notas/la-respuesta-no-es-el-significado.html`: respuesta vs significado, John Searle 1980 y sus críticos (Systems Reply, Robot Reply), relación lateral con Goffman y técnica del cuerpo; SVG + interacción local con tres reglas explícitas, **no** una prueba sobre conciencia o un modelo de lenguaje real. Fuentes institucionales Cambridge University Press y SEP. Este texto es ensayo asistido por IA pendiente de revisión, no argumento concluyente de que las IA actuales carecen de comprensión.
 - Las dos transcripciones originales automáticas de YouTube aportadas por el usuario están almacenadas en documentos PRIVADOS de su Drive; NO colocar URLs ni texto íntegro en código público sin permiso. Sus títulos en Drive comienzan con `FUENTE PRIVADA — Fernando Castro Flórez` y `FUENTE PRIVADA — Searle, La habitación china`. Antes de publicar citas, cotejar el audio; evitar frases largas copiadas.
 - Atlas/libro: perspectiva (lo que se ve frente a aquello que se atribuye), performatividad, interpretación y exterior/interior. Diferenciar `influencia histórica` de `analogía crítica` y `prototipo interactivo` de `obra propia realizada`.
+
+
+## Rediseño de portada pública — 17.10.2026
+
+Actualización directamente publicada sobre `index.html`, basada en la auditoría de 16 webs del censo histórico Instagram @delikaos y en la revisión de las imágenes realmente disponibles.
+
+- Apertura centrada en Diego Bravo como artista visual, sin manifiesto ni seis categorías teóricas ocupando la primera pantalla.
+- Mesa interactiva de trazo en la portada, con limpieza, restauración, descarga PNG con fondo y posibilidad de usar lápiz/dedo/ratón. Estudio digital asistido por IA, indicado como tal: no se presenta como obra física realizada ni recoge datos del usuario.
+- Tres trabajos editoriales visuales seleccionados con imágenes y fuentes; la investigación teórica queda en segundo nivel. Obras históricas de dominio público atribuidas a Anna Atkins y Muybridge; el borrado es una imagen gráfica editorial.
+- Accesos principales a Obra, Imágenes, Cuaderno, Investigación, Sobre; se mantienen móvil, pie y búsqueda y no se cambia el resto de URLs.
+- Derechos revisados en `data/media-rights.json`. El sitemap ya consignaba para la portada la fecha de 17.10.2026.
+- Pendiente verdadero: localizar y comprobar originales fotográficos de la antigua caligrafía y gráfica, con datos de autoría/fecha/destino antes de que sustituyan imágenes del Cuaderno en la home. La auditoría de Drive de oficio `01_OFICIO — REGISTRO DE EVIDENCIAS · CALIGRAFÍA Y GRÁFICA v0.1` contiene 8 referencias visuales, pero no autoriza todavía su presentación como portfolio completo.
+- Despliegue de GitHub Pages y aspecto en navegador real no verificados por herramientas externas al terminar el cambio; comprobados los archivos, enlaces locales esenciales, controles y estructura HTML en el repositorio.
