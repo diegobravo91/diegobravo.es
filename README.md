@@ -229,3 +229,13 @@ La web pública incluye ahora **fichas CF** enlazadas desde el bloque "Ideas que
 - Nueva Mesa de trazo: lienzo web sin librerías ni terceros. Permite probar relaciones entre gesto, copia y borrado e intervenir imágenes propias cargadas únicamente en el navegador.
 - El resultado pertenece a quien ejecuta los gestos y aporta las imágenes. La programación se desarrolla con asistencia de IA; no debe confundirse con una obra material ejecutada por Diego Bravo.
 - Accesos integrados desde portada, obra, práctica, biografía, búsqueda y móvil. Pendiente prueba visual y funcional en dispositivos físicos antes de considerarla versión final.
+
+
+## Constelaciones visuales V-001 · 17.10.2026
+
+- `constelaciones.html`: doce obras en cuatro montajes (gesto/papel; norma/ejercicio; naturaleza/diagrama; espacio/fuerza), imágenes dentro de la propia página, enlaces individuales de procedencia/derechos, contraste de influencia histórica y analogía curatorial.
+- Imagen: cada `<img>` remoto apunta a una ficha de Wikimedia Commons previamente contrastada como reproducción fiel de obra en dominio público. La estabilidad de las redirecciones `Special:FilePath` y el despliegue en navegador real siguen pendientes de comprobar. No deducir que un objeto es OA solo porque el museo tiene un programa general; comprobar cada ficha.
+- Derecho español: disposición transitoria cuarta LPI; para creadores fallecidos antes del 7/12/1987 puede aplicar vida + 80, frente al régimen general vida + 70. La Biblioteca Nacional incorpora en 2026 los fallecidos en 1945. Comprobar plazos, fotografías creativas, obras en colaboración y derechos de otros países individualmente. Art. 14 Directiva 2019/790: reproducciones fieles de obras visuales en dominio público. Fuente https://www.bne.es/es/servicios/autores-dominio-publico y https://www.boe.es/buscar/act.php?id=BOE-A-1996-8930 .
+- Criterio histórico: "amigos/colegas documentados" (Klee/Kandinsky, Bauhaus, Lenbachhaus https://www.lenbachhaus.de/en/program/exhibitions/details/klee-kandinsky), "contacto imposible" (Schiele/Goffman), "analogía sin filiación probada" (af Klint/Cajal/Haeckel, etc.). Un parecido formal no demuestra contacto; siempre buscar diferencia.
+- Continuidad: V-001 no sustituye al `atlas-relaciones-vivas.html`, al Cuaderno, al Atlas, al Libro ni a obras propias. Referencias principales: `cuaderno/mascara-compostura-ridiculo.html`, `cuaderno/cuerpo-que-aguanta.html`, `atlas-relaciones-vivas.html`. El archivo es una selección y no una enciclopedia cerrada.
+- Futura mejora concreta: probar en Android/Chrome que cargan las doce imágenes; si alguna falla, sustituir por descarga local autorizada y optimizada, preservando la ficha de procedencia.
