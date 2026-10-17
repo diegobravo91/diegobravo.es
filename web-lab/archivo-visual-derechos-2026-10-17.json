@@ -652,7 +652,31 @@
       "source_url": "https://haroldfeinstein.com/gallery/color-scanography-botanicals/",
       "research_use": "El escáner como cámara: continuidad problemática entre botánica fotográfica y escaneografía",
       "preview_url": ""
+    },
+    {
+      "id": "VA-054",
+      "creator": "Karl Blossfeldt",
+      "title": "Plantstudie · Urformen der Kunst · lámina 65",
+      "year": "1928",
+      "axis": "botanica",
+      "rights": "CC0",
+      "rights_note": "Rijksmuseum: fotograbado en dominio público; archivo digital específico de Commons identificado expresamente como CC0. Dos niveles de procedencia comprobados. Publicado en el montaje N-012.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Plantstudie_Urformen_der_Kunst_%28serietitel%29%2C_RP-F-2008-51-2170-65.jpg",
+      "research_use": "Comparar ampliación, aislado, escala, montaje e intersticio con cianotipias de Anna Atkins",
+      "preview_url": ""
+    },
+    {
+      "id": "VA-055",
+      "creator": "Karl Blossfeldt",
+      "title": "Plantstudie · Urformen der Kunst · lámina 98",
+      "year": "1928",
+      "axis": "botanica",
+      "rights": "CC0",
+      "rights_note": "Rijksmuseum: fotograbado en dominio público; archivo digital específico de Commons identificado expresamente como CC0. Dos niveles de procedencia comprobados. Publicado en el montaje N-012.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Plantstudie_Urformen_der_Kunst_%28serietitel%29%2C_RP-F-2008-51-2170-98.jpg",
+      "research_use": "Comparar ampliación, aislado, escala, montaje e intersticio con cianotipias de Anna Atkins",
+      "preview_url": ""
     }
   ],
-  "update_note": "21 nuevas referencias (20 The Met public domain + 1 archivo de Feinstein) con derechos por fuente; solo las cinco imágenes de la nota N-012 tienen URL gráfica publicada y atribuida de modo individual."
+  "update_note": "55 fuentes de imagen; 2 fotograbados originales de Blossfeldt (Rijksmuseum) añadidos con licencia CC0 del fichero exacto. No confundirlos con la reproducción restringida del Met."
 }
