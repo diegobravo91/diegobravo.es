@@ -277,3 +277,9 @@ Actualización directamente publicada sobre `index.html`, basada en la auditorí
 - Derechos revisados en `data/media-rights.json`. El sitemap ya consignaba para la portada la fecha de 17.10.2026.
 - Pendiente verdadero: localizar y comprobar originales fotográficos de la antigua caligrafía y gráfica, con datos de autoría/fecha/destino antes de que sustituyan imágenes del Cuaderno en la home. La auditoría de Drive de oficio `01_OFICIO — REGISTRO DE EVIDENCIAS · CALIGRAFÍA Y GRÁFICA v0.1` contiene 8 referencias visuales, pero no autoriza todavía su presentación como portfolio completo.
 - Despliegue de GitHub Pages y aspecto en navegador real no verificados por herramientas externas al terminar el cambio; comprobados los archivos, enlaces locales esenciales, controles y estructura HTML en el repositorio.
+
+## v0.26 — Cruces · 17.10.2026
+- `cruces.html`: explorador visual interactivo con ocho preguntas sobre vida rural, cuerpo, ecología, arquitectura, surrealismo, crítica, nihilismo y esperanza. Cada conexión distingue analogía de equivalencia; referencias científicas y artísticas enlazadas.
+- Nueva invitación visual desde portada y Cuaderno; no se añade otro menú principal.
+- Placas SVG diagramáticas hechas para la web con asistencia de IA; no son fotografías u obras históricas del autor. No se afirma haber registrado los lugares ni los experimentos materiales.
+- Navegación local sin seguimiento y selección de pregunta mediante fragmento URL. Revisión visual en navegadores reales todavía pendiente.
