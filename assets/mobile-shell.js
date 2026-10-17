@@ -7,7 +7,7 @@
     ['Inicio','/'],['Investigaciones','/investigaciones.html'],
     ['Buscar','/buscar.html'],['Atlas','/atlas.html'],['Libro','/estetica-del-umbral.html'],
     ['Diccionario','/diccionario.html'],['Práctica','/practica.html'],
-    ['Cuaderno','/notas.html'],['Mapa','/mapa.html'],
+    ['Cuaderno','/notas.html'],['Imágenes','/imagenes.html'],['Mapa','/mapa.html'],
     ['Sobre / contacto','/sobre.html'],['Derechos / colofón','/colofon.html']
   ];
   var path=location.pathname.replace(/\/$/,'/')||'/';
