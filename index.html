@@ -2,125 +2,63 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="index,follow,max-image-preview:large">
-<meta name="theme-color" content="#f3f2ed">
+<meta name="theme-color" content="#ebe9e1">
 <meta name="author" content="Diego Bravo">
-<meta name="description" content="Diego Bravo. Arte, dibujo, imagen y escritura. Obra y procesos, cuaderno visual e investigación artística.">
-<title>Diego Bravo — Arte, imagen y escritura</title>
+<meta name="description" content="Diego Bravo: dibujo, caligrafía, imagen y materia. Obra gráfica en recuperación, investigaciones visuales y ensayos sobre cómo las imágenes cambian de contexto.">
+<title>Diego Bravo — Dibujo, imagen, investigación</title>
 <link rel="canonical" href="https://diegobravo.es/">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-<link rel="alternate" type="application/rss+xml" title="Cuaderno — Diego Bravo" href="/feed.xml">
+<link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Cuaderno de Diego Bravo">
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/mobile-shell.css">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Diego Bravo">
-<meta property="og:title" content="Diego Bravo — Arte, imagen y escritura">
-<meta property="og:description" content="Obra y procesos, cuaderno visual e investigación artística.">
+<meta property="og:title" content="Diego Bravo — Dibujo, imagen, investigación">
+<meta property="og:description" content="Una práctica entre la imagen, la materia y la investigación artística.">
 <meta property="og:url" content="https://diegobravo.es/">
 <meta property="og:image" content="https://diegobravo.es/assets/social-card.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://diegobravo.es/assets/social-card.jpg">
-<link rel="stylesheet" href="/assets/site.css">
-<link rel="stylesheet" href="/assets/mobile-shell.css">
 <style>
-:root{--paper:#f3f2ed;--white:#fafaf7;--ink:#20211f;--muted:#676861;--line:#cccbc3;--accent:#8b4235;--gutter:clamp(20px,4vw,58px)}
-*,*::before,*::after{box-sizing:border-box}
-html{background:var(--paper);scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.52 Arial,Helvetica,sans-serif;letter-spacing:-.005em}
-a{color:inherit;text-underline-offset:.22em}
-a:hover{text-decoration-color:var(--accent)}
-:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
-.skip-link{position:absolute;left:12px;top:8px;background:var(--ink);color:white;padding:10px;z-index:300;transform:translateY(-150%)}.skip-link:focus{transform:none}
-.container{max-width:1350px;margin:0 auto;padding-inline:var(--gutter)}
-.top{min-height:72px;display:flex;justify-content:space-between;align-items:center;gap:35px;border-bottom:1px solid var(--line);background:var(--paper);padding:14px var(--gutter);position:sticky;top:0;z-index:50}
-.top-inner{width:100%;max-width:1234px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:25px}
-.brand{font:600 clamp(18px,2vw,22px)/1.1 Arial,Helvetica,sans-serif;letter-spacing:-.045em;text-decoration:none}
-.topnav{display:flex;gap:clamp(16px,2.4vw,37px);align-items:center;white-space:nowrap}
-.topnav a{font-size:13px;text-decoration:none;color:var(--muted)}.topnav a:hover{color:var(--ink);text-decoration:underline}
-.main{max-width:1350px;margin:0 auto}
-.hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(24px,4.5vw,76px);align-items:center;padding:clamp(49px,7vw,98px) var(--gutter) clamp(36px,5.5vw,80px)}
-.eyebrow,.overline,.credit,.meta,.footer{font:11px/1.55 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.015em}
-.eyebrow{color:var(--muted);text-transform:uppercase}
-.hero h1{font:500 clamp(46px,5.65vw,87px)/.97 Arial,Helvetica,sans-serif;letter-spacing:-.067em;margin:23px 0 28px;max-width:11.5ch}
-.hero-copy{max-width:680px}\n.hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:14px 28px;margin-top:3px}
-.hero-copy p{font-size:clamp(18px,1.72vw,24px);line-height:1.42;max-width:590px;letter-spacing:-.019em;margin:0 0 28px;color:#44463f}
-.link-inline{font-size:14px;font-weight:600;text-decoration:underline;text-decoration-color:#8e8e88;text-underline-offset:5px}
-.hero-figure{margin:0;min-width:0}
-.hero-figure a{display:block;overflow:hidden;background:#bdc7bf}
-.hero-figure img{display:block;width:100%;height:clamp(310px,36vw,485px);object-fit:cover;object-position:center;transition:transform .4s ease}
-.hero-figure a:hover img{transform:scale(1.025)}
-.hero-figure figcaption{padding:12px 0 0;color:var(--muted);font:11px/1.55 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
-.hero-figure figcaption strong{color:var(--ink);font-weight:500}
-.section-head{display:flex;align-items:baseline;justify-content:space-between;gap:20px;padding-bottom:16px;border-bottom:1px solid var(--line)}
-.section-head h2{font:500 clamp(25px,3vw,40px)/1.1 Arial,Helvetica,sans-serif;letter-spacing:-.045em;margin:0}
-.section-head .eyebrow{color:var(--muted)}
-.routes{padding-bottom:clamp(50px,6vw,84px)}
-.routes-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
-.route{display:flex;flex-direction:column;padding:28px 24px 26px 0;min-width:0;border-bottom:1px solid var(--line);text-decoration:none}
-.route+.route{padding-left:24px;border-left:1px solid var(--line)}
-.route .overline{color:var(--accent)}
-.route h3{font:500 clamp(25px,2.7vw,38px)/1.06 Arial,Helvetica,sans-serif;letter-spacing:-.045em;margin:17px 0}
-.route p{color:var(--muted);font-size:15px;line-height:1.57;margin:0;flex:1}
-.route .more{font-size:13px;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:4px;margin-top:26px}
-.route:hover h3{text-decoration:underline;text-decoration-thickness:1px}
-.journal{padding-bottom:clamp(55px,7vw,108px)}
-.journal-top{display:flex;align-items:center;gap:15px;justify-content:space-between;margin-bottom:22px}
-.journal-top p{font-size:15px;color:var(--muted);margin:0}
-.journal-top a{font-size:13px;white-space:nowrap}
-.articles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2.2vw,30px)}
-.entry{min-width:0}.entry>a{display:block;color:inherit;text-decoration:none}
-.entry .visual{display:block;overflow:hidden;aspect-ratio:1.3;background:#d4d3cc}
-.entry img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .35s}
-.entry a:hover img{transform:scale(1.025)}
-.entry .meta{display:block;margin-top:13px;color:var(--muted)}
-.entry h3{font:500 clamp(21px,2vw,29px)/1.14 Arial,Helvetica,sans-serif;letter-spacing:-.035em;margin:8px 0 9px}
-.entry a:hover h3{text-decoration:underline;text-decoration-thickness:1px}
-.entry p{font-size:14px;color:var(--muted);line-height:1.6;margin:0}
-.credits{font:11px/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--muted);margin-top:23px;max-width:1000px}
-.closer{border-top:1px solid var(--line);padding-block:40px;display:grid;grid-template-columns:1fr 1fr;gap:28px}
-.closer h2{font:500 clamp(25px,3vw,39px)/1.09 Arial,Helvetica,sans-serif;letter-spacing:-.045em;margin:0}
-.closer p{max-width:540px;line-height:1.58;margin:0;color:var(--muted);font-size:16px}
-.closer a{font-size:14px;color:var(--ink)}
-.bottom{border-top:1px solid var(--line);padding-block:22px 31px;display:flex;justify-content:space-between;gap:18px;align-items:start}
-.bottom .footer{color:var(--muted)}.bottom-links{display:flex;gap:23px;flex-wrap:wrap}.bottom-links a{font-size:12px;color:var(--muted);text-decoration:none}.bottom-links a:hover{text-decoration:underline}
-@media(max-width:900px){.hero{grid-template-columns:1fr 1fr;gap:27px}.hero h1{font-size:clamp(42px,6vw,66px)}.hero-figure img{height:350px}}
-@media(max-width:700px){.top{min-height:61px;padding-block:12px}.topnav{display:none}.hero{grid-template-columns:1fr;padding-top:37px;padding-bottom:40px;gap:33px}.hero h1{font-size:clamp(42px,10.6vw,64px);margin:19px 0 19px}.hero-copy p{font-size:18px}.hero-figure img{height:clamp(260px,70vw,375px)}.routes-grid{grid-template-columns:1fr}.route,.route+.route{padding:20px 0 23px;border-left:0}.route h3{font-size:29px;margin:9px 0}.route .more{margin-top:12px}.articles{grid-template-columns:1fr;gap:34px}.entry .visual{aspect-ratio:1.5}.entry h3{font-size:25px}.journal-top{align-items:baseline}.journal-top p{max-width:180px}.closer{grid-template-columns:1fr;gap:14px}.bottom{flex-direction:column;gap:17px}}
-@media(prefers-reduced-motion:reduce){.hero-figure img,.entry img{transition:none}html{scroll-behavior:auto}}
-
-/* Cruces: un único punto de exploración, sin añadir una categoría de navegación */
-.cross-feature{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,78px);align-items:center;padding-bottom:clamp(55px,7vw,103px)}
-.cross-art{min-width:0}.cross-art svg{display:block;width:100%;height:auto;aspect-ratio:660/385}.cross-art>span{display:block;font:11px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--muted);margin-top:11px}
-.cross-copy{padding-block:10px}.cross-copy h2{font:400 clamp(34px,4vw,62px)/1.06 Georgia,'Times New Roman',serif;letter-spacing:-.055em;max-width:590px;margin:17px 0 22px}
-.cross-copy p{font-size:clamp(16px,1.5vw,21px);line-height:1.55;color:var(--muted);max-width:610px;margin:0 0 28px}.cross-copy a{display:inline-block;font-size:15px;font-weight:600;text-decoration:underline;text-underline-offset:5px}.cross-copy small{display:block;font:11px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--muted);margin-top:14px}
-@media(max-width:700px){.cross-feature{grid-template-columns:1fr;gap:22px}.cross-copy h2{font-size:clamp(34px,9vw,52px)}.cross-copy p{font-size:17px}}
+:root{--paper:#ebe9e1;--white:#f8f7f2;--ink:#181c18;--light:#73766e;--line:#b6b9ae;--hot:#ad4c2f;--serif:Georgia,'Times New Roman',serif;--sans:Arial,Helvetica,sans-serif;--mono:ui-monospace,Consolas,'Liberation Mono',monospace;--g:clamp(20px,4.2vw,72px)}
+*,*:before,*:after{box-sizing:border-box}html{scroll-behavior:smooth;background:var(--paper)}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 var(--sans)}a{color:inherit;text-underline-offset:.3em}a:hover{color:var(--hot)}a:focus-visible{outline:3px solid var(--hot);outline-offset:3px}.skip{position:absolute;left:12px;top:0;transform:translateY(-120%);background:var(--ink);color:var(--white);padding:12px;z-index:900}.skip:focus{transform:none}img{max-width:100%}
+.top{background:rgba(235,233,225,.96);position:sticky;top:0;z-index:70;display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:62px;padding:12px var(--g);border-bottom:1px solid var(--ink)}.brand{font-size:15px;letter-spacing:-.025em;font-weight:700;text-decoration:none}.nav{display:flex;gap:clamp(13px,2.4vw,36px);font:12px/1.4 var(--sans)}.nav a{text-decoration:none}.nav a:hover{text-decoration:underline}
+.micro,.number,.eyebrow,.credit,.field,.footer,.browse,.small{font:11px/1.5 var(--mono);letter-spacing:.015em}.micro,.field{color:var(--light)}.eyebrow{color:var(--hot);text-transform:uppercase}
+.identity{padding:clamp(32px,5vw,74px) var(--g) 22px;display:grid;grid-template-columns:1fr minmax(240px,.28fr);gap:4vw;align-items:end}.identity h1{margin:0;font:400 clamp(88px,11.5vw,210px)/.76 var(--serif);letter-spacing:-.095em;white-space:nowrap}.identity .intro{font:clamp(15px,1.5vw,19px)/1.48 var(--sans);letter-spacing:-.025em;max-width:450px;margin:0}.identity .intro span{display:block;color:var(--light);font:11px var(--mono);margin:0 0 12px}.thinline{border-top:1px solid var(--ink);margin:25px var(--g) 0}.intro-line{display:flex;justify-content:space-between;gap:15px;padding:14px var(--g) 18px;align-items:baseline}.intro-line p{font:clamp(18px,2vw,30px)/1.18 var(--serif);letter-spacing:-.02em;margin:0}.intro-line a{font:11px var(--mono);text-decoration:none;white-space:nowrap}.intro-line a:hover{text-decoration:underline}
+/* The montage is a visual research route, not an attributed personal artwork. */
+.gallery{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,.8fr) minmax(0,.7fr);gap:6px;padding:0 var(--g);min-height:min(54vw,720px)}.tile{position:relative;min-width:0;overflow:hidden;background:#c7c6be;color:var(--ink);display:block;text-decoration:none}.tile:focus-visible{outline-offset:-4px}.tile img{width:100%;height:100%;position:absolute;inset:0;display:block;object-fit:cover;filter:grayscale(100%) contrast(1.08);transition:filter .4s,transform .6s}.tile:hover img{filter:grayscale(40%) contrast(1.06);transform:scale(1.018)}.tile-etching{min-height:550px;background:#d1ccc0}.tile-etching img{object-position:54% 50%}.tile-cyan{background:#173c6a}.tile-cyan img{filter:none;object-position:55% 45%}.tile-cyan:hover img{filter:saturate(1.15)}.tile-move img{object-position:50% 48%}.tile .tile-label{position:absolute;left:17px;top:17px;padding:9px 11px;background:var(--white);font:11px/1.5 var(--mono);color:var(--ink);max-width:calc(100% - 34px)}.tile .tile-desc{position:absolute;bottom:17px;left:17px;right:17px;background:rgba(247,246,240,.94);padding:12px 13px;display:flex;flex-direction:column;gap:3px}.tile .tile-desc strong{font:400 clamp(16px,1.7vw,27px)/1.1 var(--serif);letter-spacing:-.035em;overflow-wrap:break-word}.tile .tile-desc small{font:10px var(--mono);color:#505249}
+.montage-caption{padding:13px var(--g) 28px;display:flex;justify-content:space-between;gap:16px;align-items:start;color:var(--light);font:11px/1.6 var(--mono);border-bottom:1px solid var(--ink)}.montage-caption a{text-decoration:underline}
+.section{padding:clamp(52px,6.5vw,105px) var(--g)}.section-top{display:flex;gap:30px;justify-content:space-between;align-items:end;margin:0 0 32px}.section-top h2{font:400 clamp(40px,5.1vw,83px)/.99 var(--serif);letter-spacing:-.06em;margin:10px 0 0}.section-top p{max-width:365px;margin:0;font-size:15px;color:var(--light)}.edit{border-bottom:1px solid var(--ink)}.edit-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(15px,2vw,32px)}.editorial{min-width:0}.editorial a{display:block;text-decoration:none}.editorial .frame{background:#ccc9c1;display:block;overflow:hidden;position:relative;aspect-ratio:1.42}.editorial .frame img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .4s}.editorial a:hover img{transform:scale(1.022)}.editorial .frame .tag{position:absolute;top:14px;left:14px;background:var(--white);padding:8px 10px;color:var(--ink);font:11px var(--mono)}.editorial h3{font:400 clamp(27px,2.65vw,44px)/1.07 var(--serif);letter-spacing:-.035em;margin:13px 0 9px}.editorial p{color:var(--light);font-size:15px;margin:0 0 16px;max-width:640px}.editorial .read{display:block;font:12px var(--mono);text-decoration:underline}.editorial a:hover h3{text-decoration:underline}
+.practice{display:grid;grid-template-columns:.8fr 1.2fr;gap:5vw;padding:clamp(50px,7vw,112px) var(--g);background:#232822;color:#f0eee6}.practice .eyebrow{color:#e8ae99}.practice h2{font:400 clamp(45px,5.5vw,85px)/1 var(--serif);letter-spacing:-.06em;max-width:650px;margin:12px 0}.practice p{font:clamp(20px,2.25vw,30px)/1.4 var(--serif);margin:0 0 27px;max-width:650px}.practice .linkrow{display:flex;align-items:center;justify-content:space-between;gap:12px;border-top:1px solid #81877a;text-decoration:none;padding:18px 0;font-size:16px;color:#f0eee6}.practice .linkrow:last-child{border-bottom:1px solid #81877a}.practice .linkrow:hover{color:#e8ae99}
+.research{display:grid;grid-template-columns:1fr 1fr;gap:6vw;border-bottom:1px solid var(--ink)}.research h2{font:400 clamp(48px,6vw,94px)/.96 var(--serif);letter-spacing:-.065em;margin:14px 0 0}.research p{font:clamp(18px,2vw,27px)/1.39 var(--serif);max-width:700px;margin:0 0 22px}.research .browse{display:inline-block;margin-top:4px}.research .extra{font:14px/1.6 var(--sans);color:var(--light)}
+.footer{padding:28px var(--g) 45px;display:flex;justify-content:space-between;gap:18px;align-items:start;flex-wrap:wrap;color:var(--light)}.footer nav{display:flex;gap:22px;flex-wrap:wrap}.footer a{text-decoration:none}.footer a:hover{text-decoration:underline}
+@media(max-width:1080px){.identity{grid-template-columns:1fr}.identity h1{font-size:clamp(70px,12.8vw,145px)}.identity .intro{max-width:700px}.gallery{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);min-height:680px}.tile-move{grid-column:1/-1;min-height:245px}.tile-etching,.tile-cyan{min-height:430px}.tile-move img{object-position:50% 40%}.tile .tile-desc strong{font-size:25px}}
+@media(max-width:700px){.top{min-height:58px}.nav{display:none}.identity{padding-top:27px;gap:16px}.identity h1{font-size:clamp(58px,14.6vw,102px);white-space:normal;line-height:.82;letter-spacing:-.075em}.identity .intro{font-size:15px}.intro-line{align-items:flex-start;flex-direction:column;gap:8px}.gallery{grid-template-columns:repeat(2,minmax(0,1fr));min-height:0}.tile-etching{grid-column:1/-1;min-height:340px;aspect-ratio:auto}.tile-cyan,.tile-move{grid-column:auto;min-height:295px;aspect-ratio:auto}.tile-move img{object-position:50% 30%}.tile .tile-desc{left:9px;bottom:9px;right:9px;padding:9px}.tile .tile-desc strong{font-size:19px}.tile .tile-desc small{font-size:9px}.tile .tile-label{left:9px;top:9px;font-size:9px;padding:6px}.section-top{display:block}.section-top p{margin-top:16px}.edit-grid{grid-template-columns:1fr;gap:42px}.practice,.research{grid-template-columns:1fr}.practice h2,.research h2{font-size:clamp(43px,10vw,68px)}.montage-caption{display:block}.montage-caption span{display:block;margin-bottom:8px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.tile img,.editorial img{transition:none}}
 </style>
 </head>
 <body>
-<a class="skip-link" href="#contenido">Saltar al contenido</a>
-<header class="top"><div class="top-inner"><a class="brand" href="/" aria-label="Diego Bravo — inicio">Diego Bravo</a><nav class="topnav" aria-label="Navegación principal"><a href="/obra.html">Obra</a><a href="/imagenes.html">Imágenes</a><a href="/notas.html">Cuaderno</a><a href="/investigaciones.html">Investigación</a><a href="/sobre.html">Sobre</a></nav></div></header>
-<main class="main" id="contenido">
-<section class="hero">
-  <div class="hero-copy"><span class="eyebrow">Diego Bravo · Dibujo, imagen, materia · Estética del umbral</span><h1>La materia de mirar.</h1><p>Trabajo con dibujo, imagen y escritura. Aquí conviven una práctica gráfica en desarrollo, encuentros con obras y un cuaderno de ensayos visuales. Investigar no sustituye a hacer; mirar tampoco es una actividad pasiva.</p><div class="hero-actions"><a href="/obra.html" class="link-inline">Obra y procesos ↗</a><a href="/imagenes.html" class="link-inline">Entrar por las imágenes ↗</a></div></div>
-  <figure class="hero-figure"><a href="/notas/una-planta-fuera-de-lugar.html" aria-label="Leer Una planta fuera de lugar, con imagen de Anna Atkins"><img src="https://images.metmuseum.org/CRDImages/ph/original/DP-17302-144.jpg" alt="Anna Atkins, Ulva latissima, cianotipo botánico del siglo XIX" decoding="async" referrerpolicy="no-referrer" fetchpriority="high"></a><figcaption><strong>Del cuaderno visual:</strong> «Una planta fuera de lugar». Imagen: Anna Atkins, <em>Ulva latissima</em>, ca. 1853. Archivo histórico, no obra propia. <a href="/imagenes.html#archivo">Procedencia ↗</a></figcaption></figure>
-</section>
-<section class="routes container" aria-labelledby="rutas"><div class="section-head"><h2 id="rutas">Tres formas de entrar</h2><span class="eyebrow">Sin recorrido obligatorio</span></div><div class="routes-grid">
-<a class="route" href="/obra.html"><span class="overline">01</span><h3>Obra</h3><p>Oficio gráfico, caligrafía, dibujo y procesos. Archivo anterior en recuperación y nuevas pruebas diferenciadas de las piezas terminadas.</p><span class="more">Explorar obra ↗</span></a>
-<a class="route" href="/notas.html"><span class="overline">02</span><h3>Cuaderno</h3><p>Textos breves e imágenes para mirar arte, materiales, naturaleza, cine y vida cotidiana desde preguntas concretas.</p><span class="more">Leer y mirar ↗</span></a>
-<a class="route" href="/investigaciones.html"><span class="overline">03</span><h3>Investigación</h3><p>Estética del umbral, Libro, Atlas, Diccionario y relaciones entre imágenes, obras, documentos y conceptos.</p><span class="more">Entrar en la investigación ↗</span></a>
-</div></section>
-<section class="cross-feature container" aria-labelledby="cruces-h">
-<div class="cross-art" aria-hidden="true"><svg viewBox="0 0 660 385" xmlns="http://www.w3.org/2000/svg"><rect width="660" height="385" fill="#283c32"/><path d="M0 240h660M290 240l-25 52 36 18-22 75 M291 240l33 45-15 30 44 48" stroke="#ede8d9" stroke-width="2" fill="none"/><path d="M291 239C274 178 266 138 279 60M291 239C311 177 371 142 383 103M291 239C253 203 208 198 189 166" fill="none" stroke="#9eb49a" stroke-width="7" stroke-linecap="round"/><path d="M275 139Q232 112 230 155Q247 180 275 139M314 193Q370 160 361 204Q346 228 314 193M373 116Q408 86 402 134Q393 150 373 116" fill="#9eb49a" stroke="#78957c" stroke-width="2"/><circle cx="527" cy="108" r="56" stroke="#cf7961" stroke-width="1.5" fill="none"/><path d="M473 108h109M527 52v112" stroke="#cf7961" stroke-width="1"/><text x="28" y="43" fill="#cddbd1" font-size="11" font-family="monospace">CAMPO / CUERPO / IMAGEN</text><text x="425" y="330" fill="#d9dbc9" font-size="53" letter-spacing="-3" font-family="Georgia">¿y si…?</text></svg><span>Diagrama editorial · ninguna obra histórica reproducida</span></div>
-<div class="cross-copy"><span class="eyebrow">Una experiencia para explorar</span><h2 id="cruces-h">Lo que una cosa hace ver en otra.</h2><p>Una hierba en el asfalto, una mano que dibuja, una puerta vacía o una reparación. Ocho cruces entre arte, ciencia, mundo rural, cuerpo, surrealismo y filosofía.</p><a href="/cruces.html">Entrar en «Cruces» <span aria-hidden="true">↗</span></a><small>Preguntas interactivas · 2–4 minutos · sin registro</small></div>
-</section>
-<section class="journal container" aria-labelledby="lecturas"><div class="section-head"><h2 id="lecturas">Para mirar un momento</h2><span class="eyebrow">Del Cuaderno</span></div>
-<div class="journal-top"><p>Tres lecturas visuales para empezar, sin tener que conocer el proyecto entero.</p><a href="/imagenes.html">Ver el archivo de imágenes ↗</a></div>
-<div class="articles">
-<article class="entry"><a href="/notas/anna-atkins-el-azul-que-no-pertenece-al-alga.html"><span class="visual"><img src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/291513/1897730/main-image" alt="Anna Atkins, Desmarestia ligulata, cianotipo botánico sobre papel azul" loading="lazy" decoding="async" referrerpolicy="no-referrer"></span><span class="meta">Fotografía · Botánica</span><h3>El azul que no pertenece al alga</h3><p>De la impresión por contacto al archivo digital de las imágenes.</p></a></article>
-<article class="entry"><a href="/notas/la-imagen-cambia-de-vecina.html"><span class="visual"><img src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/268638/631820/main-image" alt="Eadweard Muybridge, serie fotográfica histórica del movimiento de dos niños" loading="lazy" decoding="async" referrerpolicy="no-referrer"></span><span class="meta">Montaje · Archivo</span><h3>La imagen cambia de vecina</h3><p>Una imagen no siempre significa lo mismo cuando se altera su compañía.</p></a></article>
-<article class="entry"><a href="/notas/lo-que-el-borrado-no-consigue-borrar.html"><span class="visual"><img src="/assets/visual/nota-007-borrado.svg" alt="Diagrama editorial original de trazos oscuros parcialmente borrados" loading="lazy" decoding="async"></span><span class="meta">Dibujo · Influencia</span><h3>Lo que el borrado no consigue borrar</h3><p>De Kentridge a Rauschenberg: borrar una imagen no es borrar a quien nos precede.</p></a></article>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="top"><a class="brand" href="/">Diego Bravo</a><nav class="nav" aria-label="Navegación principal"><a href="/obra.html">Obra</a><a href="/imagenes.html">Imágenes</a><a href="/notas.html">Cuaderno</a><a href="/investigaciones.html">Investigación</a><a href="/sobre.html">Sobre</a></nav></header>
+<main id="contenido">
+<section aria-labelledby="principal"><div class="identity"><h1 id="principal">Diego Bravo</h1><p class="intro"><span>ARTISTA VISUAL · DIBUJO · IMAGEN · ESCRITURA</span>Una práctica gráfica en reconstrucción y una investigación abierta sobre cómo cambian las imágenes, los materiales y las formas de vida.</p></div>
+<div class="thinline"></div><div class="intro-line"><p>Mirar una imagen es entrar en sus relaciones.</p><a href="/notas/la-imagen-cambia-de-vecina.html">Ver el primer montaje ↗</a></div>
+<div class="gallery" aria-label="Tres imágenes históricas, tres recorridos de investigación">
+<a class="tile tile-etching" href="/notas/la-imagen-cambia-de-vecina.html"><img src="https://images.metmuseum.org/CRDImages/dp/original/DP828232.jpg" alt="Giovanni Battista Piranesi: grabado de arquitectura antigua, arcos y ruinas" fetchpriority="high" decoding="async" referrerpolicy="no-referrer"><span class="tile-label">01 / ARCHIVO, MONTAJE</span><span class="tile-desc"><strong>La imagen cambia de vecina</strong><small>Piranesi · grabado histórico · CC0 ↗</small></span></a>
+<a class="tile tile-cyan" href="/notas/anna-atkins-el-azul-que-no-pertenece-al-alga.html"><img src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/291513/1897730/main-image" alt="Anna Atkins: cianotipia botánica con silueta clara de alga sobre azul" decoding="async" referrerpolicy="no-referrer"><span class="tile-label">02 / IMAGEN, TÉCNICA</span><span class="tile-desc"><strong>El azul no pertenece al alga</strong><small>Atkins · cianotipia · CC0 ↗</small></span></a>
+<a class="tile tile-move" href="/notas/el-tiempo-que-no-tenemos.html"><img src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/268638/631820/main-image" alt="Eadweard Muybridge: secuencia histórica de fotografías del movimiento" decoding="async" referrerpolicy="no-referrer"><span class="tile-label">03 / TIEMPO, CUERPO</span><span class="tile-desc"><strong>Descomponer el movimiento</strong><small>Muybridge · cronofotografía · CC0 ↗</small></span></a>
 </div>
-<p class="credits">Imágenes: Anna Atkins y Eadweard Muybridge, reproducciones históricas de dominio público / The Metropolitan Museum of Art; tercera imagen, composición editorial original. No se presentan como obras de Diego Bravo. <a href="/imagenes.html#archivo">Fuentes y archivo visual ↗</a></p></section>
-<section class="closer container"><h2>Un trabajo que sigue haciéndose.</h2><p>El sitio reúne obra, lectura y procesos sin exigirles un único lenguaje. También puedes <a href="/mesa-de-trazo.html">probar la Mesa de trazo</a> o <a href="/sobre.html">conocer mi trayectoria y contactar</a>.</p></section>
+<div class="montage-caption"><span>Estas reproducciones son obras históricas de terceros, no obras de Diego Bravo. El montaje y la lectura editorial pertenecen al Cuaderno.</span><a href="/imagenes.html#archivo">Procedencias y archivo ↗</a></div>
+</section>
+<section class="section edit" aria-labelledby="seleccion"><div class="section-top"><div><span class="eyebrow">CUADERNO / IMÁGENES</span><h2 id="seleccion">Pensar con imágenes.</h2></div><p>No son seis teorías ilustradas. Son problemas de percepción que empiezan por una imagen, un gesto o un documento.</p></div><div class="edit-grid">
+<article class="editorial"><a href="/notas/una-planta-fuera-de-lugar.html"><span class="frame"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Ulva_lactuca_MET_DP-17302-145.jpg" alt="Anna Atkins: cianotipia de Ulva lactuca" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="tag">01 / NOMBRAR</span></span><h3>Una planta fuera de lugar.</h3><p>Qué cambia entre observar, clasificar y decidir sobre una forma de vida.</p><span class="read">Abrir ensayo visual ↗</span></a></article>
+<article class="editorial"><a href="/notas/lo-que-el-borrado-no-consigue-borrar.html"><span class="frame"><img src="/assets/visual/nota-007-borrado.svg" alt="Composición gráfica editorial de una figura parcialmente borrada" loading="lazy" decoding="async"><span class="tag">02 / BORRAR</span></span><h3>Lo que el borrado no consigue borrar.</h3><p>Un experimento digital sobre la huella y las transformaciones que siguen visibles.</p><span class="read">Abrir ensayo visual ↗</span></a></article>
+</div></section>
+<section class="practice" aria-labelledby="oficio"><div><span class="eyebrow">OBRA / TRAYECTORIA</span><h2 id="oficio">El trazo fue primero.</h2></div><div><p>La caligrafía, el dibujo y el trabajo con herramientas y soportes constituyen el origen de mi práctica. Estoy recuperando ese archivo y volviendo a producir, sin presentar los ensayos digitales como obras materiales terminadas.</p><a class="linkrow" href="/obra.html">Obra gráfica y trayectoria <span aria-hidden="true">↗</span></a><a class="linkrow" href="/practica.html">Práctica y procesos <span aria-hidden="true">↗</span></a><a class="linkrow" href="/mesa-de-trazo.html">Mesa de trazo · herramienta experimental <span aria-hidden="true">↗</span></a></div></section>
+<section class="section research" aria-labelledby="umbral"><div><span class="eyebrow">ESTÉTICA DEL UMBRAL / INVESTIGACIÓN</span><h2 id="umbral">¿Qué cambia cuando cambia una relación?</h2></div><div><p>Una imagen pasa de recuerdo a dato. Un territorio vivido se convierte en perímetro administrativo. Una norma puede proteger, permitir o someter. Investigo esas transformaciones entre arte, técnica, derecho, materia y experiencia.</p><p class="extra">No todo cambio constituye un umbral y no toda clasificación es violencia. Las preguntas importan cuando pueden contrastarse con casos, imágenes y prácticas concretas.</p><a href="/estetica-del-umbral.html" class="browse">Explorar Estética del umbral ↗</a> · <a class="browse" href="/investigaciones.html">Investigaciones ↗</a> · <a class="browse" href="/cruces.html">Cruces: ocho preguntas visuales ↗</a></div></section>
 </main>
-<footer class="bottom container"><span class="footer">© Diego Bravo · 2026 · Publicación independiente</span><nav class="bottom-links" aria-label="Enlaces secundarios"><a href="/buscar.html">Buscar</a><a href="/imagenes.html">Imágenes</a><a href="/mapa.html">Mapa</a><a href="/colofon.html">Derechos y fuentes</a><a href="/feed.xml">RSS</a></nav></footer>
+<footer class="footer"><span>© Diego Bravo · 2026 · Archivo abierto en revisión</span><nav aria-label="Enlaces de pie"><a href="/buscar.html">Buscar</a><a href="/sobre.html">Sobre y contacto</a><a href="/colofon.html">Derechos y fuentes</a><a href="/feed.xml">RSS</a></nav></footer>
 <script defer src="/assets/mobile-shell.js"></script>
-</body></html>
+</body>
+</html>
