@@ -246,5 +246,5 @@ La web pública incluye ahora **fichas CF** enlazadas desde el bloque "Ideas que
 - Navegación principal de cuatro puertas, homogénea en las páginas públicas revisadas. Navegación móvil breve: Inicio, Obra, Cuaderno y Más (Investigación / Sobre / Buscar / Mesa de trazo).
 - Investigación ofrece primero Libro, Atlas y Diccionario y conserva el inventario de fichas y filtros dentro de un desplegable bajo demanda.
 - Tipografía de Obra y Sobre menos monumental; la infraestructura de investigación sigue disponible pero no se impone en portada.
-- Criterios observados: separación de Obras / Textos / CV de Inma Femenía y Cristina Garrido, y referencias artísticas estudiadas en Drive. La auditoría de redes disponible incluye censo de seguidos de Xavi Ceerre, no acceso directo verificable a los seguidos personales actuales de Diego.
+- Criterio editorial: distinguir obra, textos, investigación y contacto con una navegación pública breve; el archivo de referencias interno no se expone por defecto.
 - Pendiente: verificación visual móvil/escritorio sobre el despliegue real; recuperar originales propios para galería de obra documentada.
