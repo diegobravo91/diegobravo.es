@@ -2,17 +2,18 @@
 
 Fuente pública del sitio web de Diego Bravo.
 
-**Estética del umbral / Atlas del Umbral** es una investigación artística y escrita en proceso sobre límite, intervalo, materia, tiempo, archivo, percepción y transformación.
+**Diego Bravo** es el autor de esta web de arte, obra gráfica, escritura y experimentación material. **Estética del umbral / Atlas del Umbral** es uno de sus proyectos de investigación artística y escrita, no una categoría obligatoria para toda su producción.
 
 Superficie pública actual:
-- `index.html` — portada.
+- `index.html` — portada centrada en el artista, la obra y el acceso simple a los contenidos.
+- `obra.html` — obra y procesos: trayectoria gráfica, caligrafía expresiva, archivo en recuperación y situación pública de la práctica.
 - `investigaciones.html` — índice editorial común de casos, pruebas, textos y relaciones públicas.
 - `estetica-del-umbral.html` — selección pública del libro.
 - `atlas.html` — selección pública del Atlas.
 - `diccionario.html` — selección pública del Diccionario.
 - `practica.html` — método y estado del corpus.
 - `notas.html` — textos y fragmentos públicos.
-- `sobre.html` — posición, método y contacto profesional.
+- `sobre.html` — trayectoria gráfica, presentación personal, práctica, investigación y contacto profesional.
 - `mapa.html` — cartografía pública de relaciones y recorridos.
 - `feed.xml` — RSS de Notas.
 - `fisura-documento.html` — investigación en prueba sobre documento / práctica.
@@ -202,3 +203,4 @@ Sitio estático servido con GitHub Pages en [diegobravo.es](https://diegobravo.e
 - `index.html`: franja de imágenes con cinco vías de lectura antes de las secciones del proyecto. Menú principal con Imágenes, Android con acceso desde Explorar y búsqueda local con resultado propio.
 - Registro de derechos actualizado a cinco imágenes históricas; no introducir fotografías personales o de taller sin verificar autoría, privacidad y si se puede circular públicamente.
 - Pendiente inspección visual de despliegue/Chrome Android y revisión editorial humana final de dibujos y pies.
+\n## v0.23 — Artista primero · 17.10.2026\n- La web pasa de presentarse exclusivamente mediante Estética del umbral a presentarse como espacio de Diego Bravo, artista visual. El proyecto filosófico conserva su autonomía en Investigación.\n- Nueva Obra y procesos sin atribuir, inventar ni simular trabajos: archivo histórico propio pendiente de recuperar y práctica actual diferenciada de propuestas sin ejecutar.\n- Portada, Sobre, navegación general, navegación móvil, buscador y sitemap enlazan la nueva sección. El Cuaderno y la galería de imágenes editoriales siguen disponibles y mantienen su procedencia.\n- Prioridad editorial siguiente: documentar fotografía real de obra propia (vistas generales y detalles) y verificar fechas, autoría y permisos de reproducción antes de publicar.\n- Comprobar despliegue y visualización real en Chrome Android; la actualización del repositorio no sustituye esa inspección.\n
