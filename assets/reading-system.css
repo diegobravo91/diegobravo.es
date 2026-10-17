@@ -382,3 +382,68 @@ body.reading-v2 .toc a{min-height:2.5rem}
   body.reading-v2 .sec,body.reading-v2 .section,body.reading-v2 .chapter{break-inside:auto}
   body.reading-v2 .entry,body.reading-v2 .op,body.reading-v2 figure{break-inside:avoid}
 }
+
+
+/* Segunda pasada de auditoría: excepciones de la portada, búsquedas y galería. */
+body.reading-v2.page-index .identity h1{
+  font:500 clamp(3.15rem,7vw,5.65rem)/1.07 var(--read-sans);
+  letter-spacing:-.05em;white-space:normal;max-width:15ch;
+}
+body.reading-v2.page-index .section-top h2,
+body.reading-v2.page-index .practice h2,
+body.reading-v2.page-index .research h2,
+body.reading-v2.page-index .note-title h2,
+body.reading-v2.page-obra .pending h2,
+body.reading-v2.page-mesa-de-trazo .endnote h2,
+body.reading-v2.page-imagenes .atkins-feature h2,
+body.reading-v2.page-imagenes .blossfeldt-teaser h2,
+body.reading-v2.page-investigaciones .rule .big,
+body.reading-v2.page-mapa .rule .big{
+  font-size:clamp(1.7rem,3.4vw,2.85rem);
+  line-height:1.17;
+  letter-spacing:-.027em;
+  font-weight:530;
+  max-width:24ch;
+}
+body.reading-v2.page-index .section,
+body.reading-v2.page-index .practice,
+body.reading-v2.page-index .research{
+  padding-block:clamp(2rem,4vw,4.5rem)
+}
+body.reading-v2.page-index .lead-description h3,
+body.reading-v2.page-index .card-body h3,
+body.reading-v2.page-imagenes .read-panel h3{
+  font-size:clamp(1.35rem,2vw,2rem);
+  line-height:1.23;letter-spacing:-.025em;
+}
+body.reading-v2.page-obra .archive-intro{gap:clamp(1rem,3vw,3.2rem)}
+body.reading-v2.page-obra .archive-intro p{
+  font:400 var(--read-body)/1.67 var(--read-serif);
+  max-width:68ch;
+}
+body.reading-v2.page-obra .hero aside p{font:400 1.05rem/1.6 var(--read-serif)}
+body.reading-v2.page-mesa-de-trazo .intro h1{
+  font-size:clamp(2.75rem,6vw,5rem);
+  letter-spacing:-.04em;line-height:1.06;
+}
+body.reading-v2.page-imagenes .read-panel p,
+body.reading-v2.page-imagenes .atkins-feature p{
+  font-size:1.05rem;line-height:1.65;max-width:68ch
+}
+body.reading-v2.page-imagenes .read-panel h3{margin:0 0 .7rem}
+body.reading-v2.page-notas .entry .entry-image{align-self:start}
+body.reading-v2.page-notas .entry-image img{display:block}
+body.reading-v2.page-investigaciones .rule,
+body.reading-v2.page-mapa .rule{padding-block:clamp(1.5rem,3vw,3rem)}
+body.reading-v2.page-buscar .result h2,
+body.reading-v2.page-buscar .hit h2{font-size:clamp(1.2rem,2vw,1.65rem);line-height:1.3}
+@media(max-width:760px){
+ body.reading-v2.page-index .identity h1{font-size:clamp(2.8rem,10vw,3.7rem);line-height:1.08}
+ body.reading-v2.page-obra .archive-intro{grid-template-columns:1fr}
+ body.reading-v2.page-index .section-top h2,
+ body.reading-v2.page-index .practice h2,
+ body.reading-v2.page-index .research h2,
+ body.reading-v2.page-obra .pending h2{
+   font-size:clamp(1.65rem,7vw,2.3rem)
+ }
+}
