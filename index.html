@@ -85,6 +85,13 @@ a:hover{text-decoration-color:var(--accent)}
 @media(max-width:900px){.hero{grid-template-columns:1fr 1fr;gap:27px}.hero h1{font-size:clamp(42px,6vw,66px)}.hero-figure img{height:350px}}
 @media(max-width:700px){.top{min-height:61px;padding-block:12px}.topnav{display:none}.hero{grid-template-columns:1fr;padding-top:37px;padding-bottom:40px;gap:33px}.hero h1{font-size:clamp(42px,10.6vw,64px);margin:19px 0 19px}.hero-copy p{font-size:18px}.hero-figure img{height:clamp(260px,70vw,375px)}.routes-grid{grid-template-columns:1fr}.route,.route+.route{padding:20px 0 23px;border-left:0}.route h3{font-size:29px;margin:9px 0}.route .more{margin-top:12px}.articles{grid-template-columns:1fr;gap:34px}.entry .visual{aspect-ratio:1.5}.entry h3{font-size:25px}.journal-top{align-items:baseline}.journal-top p{max-width:180px}.closer{grid-template-columns:1fr;gap:14px}.bottom{flex-direction:column;gap:17px}}
 @media(prefers-reduced-motion:reduce){.hero-figure img,.entry img{transition:none}html{scroll-behavior:auto}}
+
+/* Cruces: un único punto de exploración, sin añadir una categoría de navegación */
+.cross-feature{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,78px);align-items:center;padding-bottom:clamp(55px,7vw,103px)}
+.cross-art{min-width:0}.cross-art svg{display:block;width:100%;height:auto;aspect-ratio:660/385}.cross-art>span{display:block;font:11px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--muted);margin-top:11px}
+.cross-copy{padding-block:10px}.cross-copy h2{font:400 clamp(34px,4vw,62px)/1.06 Georgia,'Times New Roman',serif;letter-spacing:-.055em;max-width:590px;margin:17px 0 22px}
+.cross-copy p{font-size:clamp(16px,1.5vw,21px);line-height:1.55;color:var(--muted);max-width:610px;margin:0 0 28px}.cross-copy a{display:inline-block;font-size:15px;font-weight:600;text-decoration:underline;text-underline-offset:5px}.cross-copy small{display:block;font:11px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--muted);margin-top:14px}
+@media(max-width:700px){.cross-feature{grid-template-columns:1fr;gap:22px}.cross-copy h2{font-size:clamp(34px,9vw,52px)}.cross-copy p{font-size:17px}}
 </style>
 </head>
 <body>
@@ -100,6 +107,10 @@ a:hover{text-decoration-color:var(--accent)}
 <a class="route" href="/notas.html"><span class="overline">02</span><h3>Cuaderno</h3><p>Textos breves e imágenes para mirar arte, materiales, naturaleza, cine y vida cotidiana desde preguntas concretas.</p><span class="more">Leer y mirar ↗</span></a>
 <a class="route" href="/investigaciones.html"><span class="overline">03</span><h3>Investigación</h3><p>Estética del umbral, Libro, Atlas, Diccionario y relaciones entre imágenes, obras, documentos y conceptos.</p><span class="more">Entrar en la investigación ↗</span></a>
 </div></section>
+<section class="cross-feature container" aria-labelledby="cruces-h">
+<div class="cross-art" aria-hidden="true"><svg viewBox="0 0 660 385" xmlns="http://www.w3.org/2000/svg"><rect width="660" height="385" fill="#283c32"/><path d="M0 240h660M290 240l-25 52 36 18-22 75 M291 240l33 45-15 30 44 48" stroke="#ede8d9" stroke-width="2" fill="none"/><path d="M291 239C274 178 266 138 279 60M291 239C311 177 371 142 383 103M291 239C253 203 208 198 189 166" fill="none" stroke="#9eb49a" stroke-width="7" stroke-linecap="round"/><path d="M275 139Q232 112 230 155Q247 180 275 139M314 193Q370 160 361 204Q346 228 314 193M373 116Q408 86 402 134Q393 150 373 116" fill="#9eb49a" stroke="#78957c" stroke-width="2"/><circle cx="527" cy="108" r="56" stroke="#cf7961" stroke-width="1.5" fill="none"/><path d="M473 108h109M527 52v112" stroke="#cf7961" stroke-width="1"/><text x="28" y="43" fill="#cddbd1" font-size="11" font-family="monospace">CAMPO / CUERPO / IMAGEN</text><text x="425" y="330" fill="#d9dbc9" font-size="53" letter-spacing="-3" font-family="Georgia">¿y si…?</text></svg><span>Diagrama editorial · ninguna obra histórica reproducida</span></div>
+<div class="cross-copy"><span class="eyebrow">Una experiencia para explorar</span><h2 id="cruces-h">Lo que una cosa hace ver en otra.</h2><p>Una hierba en el asfalto, una mano que dibuja, una puerta vacía o una reparación. Ocho cruces entre arte, ciencia, mundo rural, cuerpo, surrealismo y filosofía.</p><a href="/cruces.html">Entrar en «Cruces» <span aria-hidden="true">↗</span></a><small>Preguntas interactivas · 2–4 minutos · sin registro</small></div>
+</section>
 <section class="journal container" aria-labelledby="lecturas"><div class="section-head"><h2 id="lecturas">Para mirar un momento</h2><span class="eyebrow">Del Cuaderno</span></div>
 <div class="journal-top"><p>Tres lecturas visuales para empezar, sin tener que conocer el proyecto entero.</p><a href="/imagenes.html">Ver el archivo de imágenes ↗</a></div>
 <div class="articles">
