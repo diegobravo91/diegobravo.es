@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>El mapa no sabe atravesar — Atlas del umbral · Diego Bravo</title>
+<meta name="description" content="Robert Morris, las líneas de Nazca y las arquitecturas del confinamiento: una investigación sobre la distancia entre el plano y el cuerpo que atraviesa.">
+<meta name="author" content="Diego Bravo"><meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://diegobravo.es/notas/el-mapa-no-sabe-atravesar.html">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Notas">
+<meta property="og:type" content="article"><meta property="og:title" content="El mapa no sabe atravesar"><meta property="og:description" content="Conocer un espacio desde arriba no es lo mismo que atravesarlo. Robert Morris, dibujo y experiencia."><meta property="og:url" content="https://diegobravo.es/notas/el-mapa-no-sabe-atravesar.html"><meta property="og:image" content="https://diegobravo.es/assets/social-card.jpg">
+<meta name="theme-color" content="#eceae4">
+<style>
+:root{--paper:#eceae4;--ink:#191a17;--quiet:#686a62;--edge:#a7a89e;--accent:#a63d23;--mono:ui-monospace,Consolas,monospace}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--paper);font:16px/1.66 Georgia,serif}
+a{color:inherit;text-underline-offset:4px}a:hover{color:var(--accent)}a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.skip{position:absolute;left:-9999px;top:0;background:var(--ink);color:white;padding:12px}.skip:focus{left:12px;z-index:9}
+nav{padding:16px clamp(20px,5vw,75px);border-bottom:1px solid var(--ink);display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;font:12px var(--mono)}
+nav a{text-decoration:none}nav .menu{display:flex;flex-wrap:wrap;gap:18px}
+header{padding:clamp(45px,8vw,105px) clamp(20px,8vw,125px) 52px;border-bottom:1px solid var(--ink);display:grid;grid-template-columns:minmax(0,1.6fr) minmax(240px,.7fr);gap:45px}
+.kicker,.status,.figlabel,.small,footer{font:11px/1.55 var(--mono);letter-spacing:.035em}.kicker{text-transform:uppercase;color:var(--accent)}
+h1{margin:16px 0 24px;font:400 clamp(54px,7vw,106px)/.96 Georgia,serif;letter-spacing:-.06em;max-width:850px}
+.dek{font:23px/1.38 Georgia,serif;max-width:720px;margin:0}
+.status{align-self:end;border-top:2px solid var(--ink);padding-top:19px;color:var(--quiet)}
+.status strong{color:var(--ink)}
+article{max-width:1100px;margin:0 auto;padding:64px clamp(20px,4vw,48px);display:grid;grid-template-columns:175px minmax(0,730px);gap:40px}
+.sidemark{font:11px/1.7 var(--mono);color:var(--quiet);position:sticky;align-self:start;top:28px;text-transform:uppercase}
+.prose p{margin:0 0 24px}.prose h2{font:500 clamp(26px,3.2vw,42px)/1.14 Arial,sans-serif;letter-spacing:-.04em;margin:55px 0 17px}.prose h2:first-child{margin-top:0}
+.prose em{font-style:italic}.pull{font:italic 29px/1.25 Georgia,serif;border-left:4px solid var(--accent);padding:6px 0 6px 23px;margin:42px 0!important}
+.schema{margin:40px 0 42px;border:1px solid var(--ink);background:#e0e3da}
+.schema>div:first-child{font:11px var(--mono);padding:15px 20px;border-bottom:1px solid var(--ink);text-transform:uppercase}
+.schema-grid{display:grid;grid-template-columns:repeat(2,1fr)}
+.field{padding:25px 22px;min-height:250px}.field:first-child{border-right:1px solid var(--edge)}
+.field small{display:block;font:11px var(--mono);text-transform:uppercase;color:var(--quiet);margin-bottom:30px}
+.diagram{height:98px;margin:0 0 25px;position:relative}
+.above{background:repeating-linear-gradient(0deg,transparent 0 23px,rgba(30,30,27,.13) 23px 24px),repeating-linear-gradient(90deg,transparent 0 23px,rgba(30,30,27,.13) 23px 24px)}
+.above:after{content:'';position:absolute;left:14%;right:13%;top:45%;height:2px;background:#1b1b17;transform:rotate(-16deg)}
+.inside{border-bottom:2px solid #1b1b17;background:linear-gradient(120deg,transparent 0 36%,rgba(166,61,35,.08) 36% 55%,transparent 55%)}
+.inside:before{content:'';display:block;position:absolute;left:12%;bottom:0;width:65%;height:1px;background:#1b1b17;transform:rotate(-7deg);transform-origin:left}
+.inside:after{content:'↗';position:absolute;right:12%;bottom:30%;font-size:44px;color:var(--accent)}
+.field p{font:14px/1.45 Arial,sans-serif;margin:0}.schema figcaption{border-top:1px solid var(--edge);padding:11px 20px;font:11px/1.6 var(--mono);color:var(--quiet)}
+.sources{background:#dfe0d9;border-top:1px solid var(--ink);padding:42px clamp(20px,8vw,125px)}
+.sources-inner{max-width:850px;margin:auto}.sources h2{font:500 22px Arial,sans-serif;margin:0 0 15px}.sources p,.sources li{font:14px/1.6 Arial,sans-serif}
+.sources ul{padding-left:20px}
+.cross{display:flex;flex-wrap:wrap;gap:0;border-top:1px solid var(--ink)}.cross a{flex:1;min-width:210px;padding:26px 22px;border-right:1px solid var(--edge);font:500 20px/1.3 Arial,sans-serif;text-decoration:none}.cross a:hover{background:#d9dbd2}.cross small{display:block;font:11px var(--mono);color:var(--quiet);margin-bottom:10px}
+footer{border-top:1px solid var(--ink);padding:19px clamp(20px,5vw,75px);display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;color:var(--quiet)}
+@media(max-width:780px){header{grid-template-columns:1fr;gap:25px}article{grid-template-columns:1fr;gap:20px;padding-top:35px}.sidemark{position:static}.schema-grid{grid-template-columns:1fr}.field:first-child{border-right:0;border-bottom:1px solid var(--edge)}h1{font-size:clamp(46px,11vw,74px)}.sources{padding:32px 20px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head><body>
+<a class="skip" href="#contenido">Saltar al texto</a>
+<nav aria-label="Principal"><a href="/">Diego Bravo / cuaderno</a><div class="menu"><a href="/estetica-del-umbral.html">Libro</a><a href="/atlas.html">Atlas</a><a href="/diccionario.html">Diccionario</a><a href="/practica.html">Práctica</a><a href="/notas.html">Notas</a></div></nav>
+<main id="contenido">
+<header><div><div class="kicker">Atlas / lectura crítica / espacio</div><h1>El mapa no sabe atravesar.</h1><p class="dek">Robert Morris, una línea vista desde dentro y el dibujo como forma de pensamiento.</p></div><aside class="status"><strong>Nota de investigación · 17.10.2026</strong><p>Texto provisional elaborado a partir del catálogo del IVAM de 2011. Redacción con asistencia de IA, pendiente de revisión y asunción autoral. Ninguna de las pruebas descritas se presenta como obra propia realizada.</p><p>No se reproducen las obras de Morris: sus derechos se reservan a sus titulares.</p></aside></header>
+<article><aside class="sidemark">A partir de<br>Barbara Rose<br>Jeffrey Weiss<br>Jean-Pierre Criqui<br><br>IVAM, 2011</aside>
+<div class="prose">
+<h2>01. Saber dónde está una línea</h2>
+<p>Un dibujo puede representar un espacio y, al mismo tiempo, impedirnos saber cómo se experimenta. Desde cierta altura, una línea atraviesa un territorio como si lo dominara. Para quien camina sobre ese terreno, la misma línea se fragmenta en pasos, distancias, accidentes del suelo y cambios de horizonte. El plano proporciona relaciones visibles; el recorrido incorpora un cuerpo que tarda, duda, se orienta o retrocede.</p>
+<p>En 1975, Robert Morris viajó a Nazca, en Perú, y escribió sobre una diferencia que las fotografías aéreas tienden a ocultar: conocer los grandes dibujos desde arriba no equivale a encontrarse entre sus líneas. Jeffrey Weiss analiza esa experiencia en «Líneas de visión», incluido en el catálogo del IVAM <em>Robert Morris. El dibujo como pensamiento</em> (2011). A Morris le interesaba el punto de vista situado, no simplemente el reconocimiento de las figuras.</p>
+<p>La comparación con <em>Shift</em>, de Richard Serra, y los desplazamientos de Robert Smithson no autoriza a hacerlos equivalentes. Serra trabajó con límites determinados por la topografía y por el alcance de la mirada entre dos cuerpos; Morris examinó líneas que ya existían sobre un territorio. Los problemas espaciales comparten una vecindad, pero no su procedimiento.</p>
+<figure class="schema" role="group" aria-label="Esquema editorial de dos modos de conocer un lugar">
+<div>Dos posiciones ante el mismo problema</div><div class="schema-grid">
+<div class="field"><small>Vista desde arriba / relación legible</small><div class="diagram above" aria-hidden="true"></div><p>La línea es una relación visible de una vez. El plano reúne lo que un cuerpo no puede recorrer simultáneamente.</p></div>
+<div class="field"><small>Vista desde dentro / experiencia parcial</small><div class="diagram inside" aria-hidden="true"></div><p>El recorrido necesita duración, orientación y sucesión de miradas. La experiencia no cabe entera en su dibujo.</p></div>
+</div><figcaption>Esquema editorial original. No reproduce las líneas de Nazca, <em>Shift</em> ni ninguna obra histórica.</figcaption></figure>
+<h2>02. Cuando el plano decide sobre el cuerpo</h2>
+<p>Hay otra dirección menos tranquilizadora. En la serie <em>In the Realm of the Carceral</em> (1978), Morris dibuja pasillos, paredes, dispositivos de vigilancia y geometrías que distribuyen el desplazamiento. Barbara Rose los relaciona con los análisis del poder disciplinario en Foucault, con el panóptico de Bentham y con recuerdos de espacios destinados a conducir cuerpos.</p>
+<p>Aquí el dibujo no representa simplemente un laberinto atractivo. El recorrido puede estar calculado para reducir las posibilidades de quien lo atraviesa. El espacio es claro para el que lo administra y opresivo para quien debe obedecerlo. La misma legibilidad que ayuda a orientarse puede servir para gobernar a otros.</p>
+<p class="pull">Una forma no es libre porque pueda recorrerse. Importa quién decide la dirección y quién puede cambiarla.</p>
+<h2>03. Dibujar sin mirar no significa renunciar a elegir</h2>
+<p>Los <em>Blind Time Drawings</em>, iniciados en 1973, introducen otra fractura: Morris actúa con los ojos cerrados, siguiendo instrucciones y estimando cuánto tardará. Una anotación registra la diferencia entre tiempo imaginado y duración efectiva. El trazo se vuelve documento de una ejecución cuyo desarrollo no se ha controlado ópticamente de principio a fin.</p>
+<p>Pero hay una corrección decisiva en el ensayo de Rose: Morris observaba posteriormente los dibujos y descartaba muchos. La apertura del procedimiento no abolía el juicio estético. Una acción puede producir una huella banal; archivarla o mostrarla no la convierte automáticamente en obra.</p>
+<p>Es importante no confundir esa decisión de un artista vidente con las experiencias de las personas ciegas. Las colaboraciones de Morris plantearon además problemas de autoría y consentimiento que merecen una investigación diferenciada, no una metáfora fácil de la «ceguera».</p>
+<h2>04. Lo que vuelve al Libro y a la práctica</h2>
+<p>Este recorrido modifica una hipótesis de <em>Estética del umbral</em>. Un umbral no aparece simplemente porque algo se sitúe entre dos lugares. Debemos poder señalar una alteración concreta de la capacidad de percibir, cruzar, decidir o actuar. Y no toda alteración resulta deseable: la arquitectura del encierro también transforma la conducta.</p>
+<p>En el taller, podríamos dibujar un espacio recordado, después imaginar su recorrido desde dentro y comprobar qué contradice el plano. No es una pieza realizada ni una fórmula para fabricar arte: es una prueba abierta. Su resultado podría obligarnos a corregir esta nota, el Diccionario o incluso un capítulo del Libro.</p>
+<p>El dibujo adquiere entonces una función más exigente: no ilustrar una teoría disponible, sino situarla ante aquello que todavía no sabe.</p>
+</div></article>
+<section class="sources"><div class="sources-inner"><h2>Lecturas y procedencia</h2><p>Base de esta nota: <em>Robert Morris. El dibujo como pensamiento</em>, catálogo de la exposición del IVAM, Valencia, 2011, comisariada por Barbara Rose, ISBN 978-84-482-5650-0. El archivo original fue facilitado para investigación; esta página no redistribuye sus imágenes ni su texto íntegro.</p><ul>
+<li>Jeffrey Weiss, «Líneas de visión», pp. 79–95: Morris en Nazca, Serra y Smithson.</li>
+<li>Barbara Rose, «Robert Morris: el dibujo como reflexión», pp. 13–77: <em>In the Realm of the Carceral</em>, <em>Blind Time</em> y el lugar del juicio artístico.</li>
+<li>Jean-Pierre Criqui, «El dibujo en el corazón de las tinieblas», pp. 259–276: instrucciones, tiempo y percepción.</li>
+<li><a href="https://ivam.es/en/exposiciones/robert-morris-drawing-as-thinking/" rel="external noopener">IVAM: exposición y presentación institucional ↗</a> · <a href="https://ivam.es/wp-content/uploads/Morris_es.pdf" rel="external noopener">IVAM: dossier informativo en español ↗</a></li>
+</ul><p class="small">Las interpretaciones son de esta nota y no deben confundirse con afirmaciones literales de Morris. No se han utilizado imágenes protegidas de las obras históricas.</p></div></section>
+<section class="cross" aria-label="Seguir investigando"><a href="/atlas.html#dibujar-desde-dentro"><small>Atlas</small>Volver a la constelación ↗</a><a href="/diccionario.html#umbral"><small>Diccionario</small>Umbral ↗</a><a href="/diccionario.html#vado"><small>Diccionario</small>Vado ↗</a><a href="/estetica-del-umbral.html"><small>Libro</small>Estética del umbral ↗</a></section>
+</main><footer><span>Diego Bravo · Estética del umbral · Investigación abierta</span><a href="/colofon.html">Derechos y procedencia ↗</a></footer>
+</body></html>
