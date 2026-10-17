@@ -28,3 +28,21 @@ a,button{touch-action:manipulation}
   html{scroll-behavior:auto!important}
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
 }
+/* Site-wide editorial legibility and navigation — 2026-10-18.
+   Keep each page's own art direction; fix only shared reading defects. */
+html{scroll-padding-top:86px}
+main{min-width:0}
+main :is(section,article,aside){min-width:0}
+main :is(h1,h2,h3){text-wrap:balance}
+main :is(p,li,blockquote){overflow-wrap:break-word}
+main :is(p,li){text-wrap:pretty}
+main :is(iframe,video,object,embed){max-width:100%}
+main :is(a,button,summary):focus-visible{outline:3px solid #a52e17;outline-offset:3px}
+main [id]{scroll-margin-top:94px}
+main a[href^="https://"]{overflow-wrap:anywhere}
+[hidden]{display:none!important}
+@media(max-width:650px){
+ html{scroll-padding-top:70px}
+ main [id]{scroll-margin-top:74px}
+ main :is(p,li){hyphens:auto}
+}
