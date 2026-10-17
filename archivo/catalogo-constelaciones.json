@@ -157,13 +157,14 @@
     {
       "group": "r04",
       "creator": "Kazimir Malévich · 1879–1935",
-      "title": "Cuadrado negro",
-      "date": "1915",
+      "title": "Cuadrado negro (versión 1924, Museo Ruso)",
+      "date": "1924",
       "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Malevich.black-square.jpg?width=760",
       "image_source": "https://commons.wikimedia.org/wiki/File:Malevich.black-square.jpg",
       "image_status": "commons_public_domain_faithful_reproduction_source_record_verified",
       "display_status": "embedded_remotely_unverified_in_live_browser",
-      "classification": "visual_constellation_not_historical_influence_without_evidence"
+      "classification": "visual_constellation_not_historical_influence_without_evidence",
+      "version_note": "Commons indica objeto 1924 en Museo Ruso; no atribuir fotografía a la versión 1915"
     },
     {
       "group": "r05",
