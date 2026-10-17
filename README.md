@@ -192,3 +192,13 @@ Sitio estático servido con GitHub Pages en [diegobravo.es](https://diegobravo.e
 - Nuevos recursos compartidos `assets/ensayo-visual.css` y `assets/ensayo-visual.js` sin analítica ni librerías externas.
 - Añadidas las seis entradas a Cuaderno, portada, búsqueda local, RSS, sitemap y registro de derechos.
 - Desarrollo de textos y diagramas con asistencia de IA declarado en los propios artículos; requieren revisión autoral continua, como toda la publicación.
+
+## v0.22 — Imágenes, pasarela y portadas (17.10.2026)
+- Nueva `imagenes.html`: pasarela de once artículos, controles anterior/siguiente y miniaturas; acceso directo al ensayo y procedencia por imagen. El visor funciona en móvil, con teclado y enlaces de reserva si JS está desactivado.
+- Segundo bloque de archivo visual: cinco imágenes de dominio público del Metropolitan Museum of Art (Piranesi, Muybridge y tres láminas de Anna Atkins). Enlaces a fichas institucionales y atribuciones individuales. Imágenes remotas, no imágenes descargadas sin licencia.
+- Ocho archivos SVG originales en `assets/visual/` para representar operaciones de las notas. Los gráficos se declaran como diagramas editoriales; no simulan documentación fotográfica ni obra realizada.
+- `notas.html`: cada una de las once entradas tiene miniatura; acceso a la pasarela a un toque.
+- N–001 a N–005: imagen con pie y procedencia en el propio texto; cinco artículos posteriores ya contenían diagramas interactivos y N–006 imágenes históricas. La galería les da también cubierta.
+- `index.html`: franja de imágenes con cinco vías de lectura antes de las secciones del proyecto. Menú principal con Imágenes, Android con acceso desde Explorar y búsqueda local con resultado propio.
+- Registro de derechos actualizado a cinco imágenes históricas; no introducir fotografías personales o de taller sin verificar autoría, privacidad y si se puede circular públicamente.
+- Pendiente inspección visual de despliegue/Chrome Android y revisión editorial humana final de dibujos y pies.
