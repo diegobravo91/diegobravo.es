@@ -558,3 +558,48 @@ body.reading-v2.page-constelaciones .caption{font-size:1rem;line-height:1.62}
  body.reading-v2.page-atlas-relaciones-vivas .section-heading h2,
  body.reading-v2.page-articulo .chapter-head h2{font-size:1.55rem}
 }
+
+
+/* Ensayos de visita y nuevas lecturas: texto y rótulos a escala coherente. */
+body.reading-v2 .visit-prose,
+body.reading-v2 .visit-prose p,
+body.reading-v2 .visit-essay p,
+body.reading-v2 .visit-opening,
+body.reading-v2 .visit-detail p,
+body.reading-v2.page-articulo .intro p,
+body.reading-v2.page-articulo .content p,
+body.reading-v2.page-articulo .prose p{
+  font:400 var(--read-body)/1.69 var(--read-serif);
+  max-width:var(--read-measure);
+}
+body.reading-v2 .visit-article-head h1{font:550 clamp(2.6rem,5.8vw,4.9rem)/1.08 var(--read-sans);letter-spacing:-.04em}
+body.reading-v2 .visit-card h2,
+body.reading-v2 .visit-essay h2,
+body.reading-v2 .visit-sequence-head h2{
+  font:560 clamp(1.4rem,2.55vw,2.1rem)/1.23 var(--read-sans);
+  letter-spacing:-.025em;
+  text-transform:none;
+}
+body.reading-v2 .visit-pull,
+body.reading-v2 .visit-endnote h2,
+body.reading-v2.page-articulo .question{
+  font-size:clamp(1.35rem,2.3vw,2.15rem);
+  line-height:1.35;
+}
+body.reading-v2.page-articulo .big-word{
+  font-size:clamp(2.6rem,6.1vw,5.25rem);
+  line-height:1.08;letter-spacing:-.055em;
+}
+body.reading-v2.page-articulo .case{border-top:1px solid var(--read-rule)}
+body.reading-v2.page-articulo .case .content p{max-width:65ch}
+body.reading-v2 .visit-meta,
+body.reading-v2 .visit-credit,
+body.reading-v2 .visit-kicker,
+body.reading-v2.page-articulo .lab{
+  font-size:clamp(.72rem,.85vw,.83rem);line-height:1.55
+}
+@media(max-width:760px){
+  body.reading-v2 .visit-article-head h1{font-size:clamp(2.2rem,9vw,3.35rem)}
+  body.reading-v2 .visit-card h2,
+  body.reading-v2 .visit-essay h2{font-size:1.45rem}
+}
