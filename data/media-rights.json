@@ -127,6 +127,40 @@
       "status": "verified_source_2026-10-17",
       "web_use": "allowed_under_identified_Met_OA",
       "attribution": "Anna Atkins · The Metropolitan Museum of Art · Public Domain / CC0"
+    },
+    {
+      "id": "OA-BL-65",
+      "creator": "Karl Blossfeldt",
+      "title": "Plantstudie (Urformen der Kunst), lámina 65",
+      "date": "1928",
+      "original_work": "https://www.rijksmuseum.nl/en/collection/RP-F-2008-51-2170-65",
+      "source": "https://commons.wikimedia.org/wiki/File:Plantstudie_Urformen_der_Kunst_%28serietitel%29%2C_RP-F-2008-51-2170-65.jpg",
+      "file_ref": "Plantstudie_Urformen_der_Kunst_%28serietitel%29%2C_RP-F-2008-51-2170-65.jpg",
+      "used_on": [
+        "/notas/anna-atkins-el-azul-que-no-pertenece-al-alga.html"
+      ],
+      "legal_basis": "Rijksmuseum_public_domain_Rijksmuseum_digital_file_CC0_via_Wikimedia_Commons",
+      "status": "source_page_verified_2026-10-17",
+      "web_use": "allowed_under_CC0_checked_for_exact_file",
+      "attribution": "Karl Blossfeldt · Urformen der Kunst (1928), Rijksmuseum · CC0 · lámina 65",
+      "note": "Esta reproducción CC0 de Rijksmuseum es distinta de la fotografía de The Met anteriormente marcada como no descargable."
+    },
+    {
+      "id": "OA-BL-98",
+      "creator": "Karl Blossfeldt",
+      "title": "Plantstudie (Urformen der Kunst), lámina 98",
+      "date": "1928",
+      "original_work": "https://www.rijksmuseum.nl/en/collection/RP-F-2008-51-2170-98",
+      "source": "https://commons.wikimedia.org/wiki/File:Plantstudie_Urformen_der_Kunst_%28serietitel%29%2C_RP-F-2008-51-2170-98.jpg",
+      "file_ref": "Plantstudie_Urformen_der_Kunst_%28serietitel%29%2C_RP-F-2008-51-2170-98.jpg",
+      "used_on": [
+        "/notas/anna-atkins-el-azul-que-no-pertenece-al-alga.html"
+      ],
+      "legal_basis": "Rijksmuseum_public_domain_Rijksmuseum_digital_file_CC0_via_Wikimedia_Commons",
+      "status": "source_page_verified_2026-10-17",
+      "web_use": "allowed_under_CC0_checked_for_exact_file",
+      "attribution": "Karl Blossfeldt · Urformen der Kunst (1928), Rijksmuseum · CC0 · lámina 98",
+      "note": "Esta reproducción CC0 de Rijksmuseum es distinta de la fotografía de The Met anteriormente marcada como no descargable."
     }
   ],
   "digital_visual_essays": {
