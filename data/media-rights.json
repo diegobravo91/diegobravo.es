@@ -1,6 +1,6 @@
 {
   "schema": "diegobravo.es/asset-rights-v1",
-  "reviewed_on": "2026-10-16",
+  "reviewed_on": "2026-10-17",
   "policy": "Every media item reused must have a traceable source, identified author/rightsholder, legal basis and scope. No blanket permission from link or attribution.",
   "assets": [
     {
@@ -12,7 +12,8 @@
       "file_ref": "DP828232.jpg",
       "used_on": [
         "/",
-        "/atlas.html"
+        "/atlas.html",
+        "/notas/la-imagen-cambia-de-vecina.html"
       ],
       "legal_basis": "public_domain_work_and_Met_Open_Access_CC0",
       "status": "verified_source_2026-10-16",
@@ -29,7 +30,8 @@
       "file_ref": "Ulva_lactuca_MET_DP-17302-145.jpg",
       "used_on": [
         "/",
-        "/atlas.html"
+        "/atlas.html",
+        "/notas/la-imagen-cambia-de-vecina.html"
       ],
       "legal_basis": "CC0_1.0_recorded_on_Wikimedia_Commons_file_page",
       "status": "verified_source_2026-10-16",
@@ -46,7 +48,8 @@
       "file_ref": "collectionapi.metmuseum.org/api/collection/v1/iiif/268638/631820/main-image",
       "used_on": [
         "/",
-        "/atlas.html"
+        "/atlas.html",
+        "/notas/la-imagen-cambia-de-vecina.html"
       ],
       "legal_basis": "public_domain_work_and_Met_Open_Access_CC0",
       "status": "verified_source_2026-10-16",
@@ -54,5 +57,12 @@
       "social_reuse": "eligible_recheck_source_if_material_changed",
       "attribution": "The Metropolitan Museum of Art / Eadweard Muybridge / CC0"
     }
-  ]
+  ],
+  "digital_visual_essays": {
+    "published_on": "2026-10-17",
+    "notes": "Six visual essays N-006–N-011. Original schematic SVG/JS visualizations are editorial diagrams, not records of artwork, biological sampling or field walks. They contain no copied third-party images except 3 existing Met/CC0 images in N-006, tracked above.",
+    "css_path": "/assets/ensayo-visual.css",
+    "js_path": "/assets/ensayo-visual.js",
+    "source_attributions": "Each essay lists primary institution links; third-party copyrighted artworks are referenced by link without copying."
+  }
 }
