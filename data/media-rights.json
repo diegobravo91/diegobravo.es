@@ -197,6 +197,69 @@
       "status": "checked_specific_file_page_2026-10-17",
       "web_use": "public_domain_editorial",
       "attribution": "Santiago Ramón y Cajal · original scientific drawing · Wikimedia Commons · Public Domain"
+    },
+    {
+      "id": "VIS-2026-RADIX",
+      "photographer": "Diego Bravo",
+      "creator": "Tania Candiani",
+      "artwork": "Radix (2026)",
+      "source": "https://ivam.es/es/exposiciones/tania-candiani-radix/",
+      "files": [
+        "assets/visitas-2026/radix-vista.jpg",
+        "assets/visitas-2026/radix-raices.jpg"
+      ],
+      "pages": [
+        "/",
+        "/imagenes.html",
+        "/visitas-valencia-2026.html",
+        "/notas.html",
+        "/notas/lo-que-sostiene-la-vida.html"
+      ],
+      "photograph_status": "Author-supplied photograph, publication instructed by photographer",
+      "underlying_artwork_rights": "Rights remain with artist or rightsholder; license or statutory quotation exception not independently verified",
+      "rights_note": "Credit does not itself grant permission. Commentary context only; reevaluate licenses or request permission for continued display or other uses.",
+      "publication_date": "2026-10-17",
+      "license_claim": null
+    },
+    {
+      "id": "VIS-2026-BLEDA",
+      "photographer": "Diego Bravo",
+      "creator": "Bleda y Rosa",
+      "artwork": "Albufera (2026), Piedras de límite",
+      "source": "https://ivam.es/es/exposiciones/la-albufera/",
+      "files": [
+        "assets/visitas-2026/albufera-bleda-rosa.jpg"
+      ],
+      "pages": [
+        "/imagenes.html",
+        "/visitas-valencia-2026.html",
+        "/notas.html",
+        "/notas/un-territorio-no-es-un-fondo.html"
+      ],
+      "photograph_status": "Author-supplied photograph, publication instructed by photographer",
+      "underlying_artwork_rights": "Rights remain with artist or rightsholder; license or statutory quotation exception not independently verified",
+      "rights_note": "Credit does not itself grant permission. Commentary context only; reevaluate licenses or request permission for continued display or other uses.",
+      "publication_date": "2026-10-17",
+      "license_claim": null
+    },
+    {
+      "id": "VIS-2026-LOREN",
+      "photographer": "Diego Bravo",
+      "creator": "Lucía Loren",
+      "artwork": "Tramas acuáticas: flujos e hilazas (2025–2026)",
+      "source": "https://ivam.es/es/exposiciones/la-albufera/",
+      "files": [
+        "assets/visitas-2026/albufera-loren-fibras.jpg"
+      ],
+      "pages": [
+        "/",
+        "/notas/un-territorio-no-es-un-fondo.html"
+      ],
+      "photograph_status": "Author-supplied photograph, publication instructed by photographer",
+      "underlying_artwork_rights": "Rights remain with artist or rightsholder; license or statutory quotation exception not independently verified",
+      "rights_note": "Credit does not itself grant permission. Commentary context only; reevaluate licenses or request permission for continued display or other uses.",
+      "publication_date": "2026-10-17",
+      "license_claim": null
     }
   ],
   "digital_visual_essays": {
