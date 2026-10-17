@@ -18,6 +18,26 @@
 .notice{background:var(--ink);color:var(--bg);padding:var(--pad);display:grid;grid-template-columns:1fr 1fr;gap:8vw}.notice h2{font-size:clamp(42px,6vw,92px);line-height:.86;letter-spacing:-.06em;font-weight:500;margin:0}.notice p{font-size:17px;line-height:1.55;max-width:620px;margin:0}.notice a{color:var(--bg)}
 .footer{padding:var(--pad);display:flex;justify-content:space-between;gap:30px;font:10px/1.6 var(--mono);text-transform:uppercase;color:var(--soft)}
 @media(max-width:900px){.grid{grid-template-columns:1fr}.cell{border-right:0;border-bottom:1px solid var(--hair);min-height:280px}.cell:last-child{border-bottom:0}.statement{grid-template-columns:1fr}.flow{grid-template-columns:repeat(2,1fr)}.flow div{border-bottom:1px solid var(--hair)}.head{grid-template-columns:86px 1fr}.row{grid-template-columns:1fr}.row .tag{white-space:normal}.notice{grid-template-columns:1fr}.footer{display:block}.footer span{display:block;margin-bottom:8px}}
+
+.mesa{padding:clamp(20px,3vw,45px) var(--pad);border-top:1px solid var(--ink);background:#f5f3ed}
+.mesa-intro{max-width:780px;font-size:clamp(20px,2vw,28px);line-height:1.25;letter-spacing:-.025em;margin:0 0 25px}
+.mesa-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid var(--hair)}
+.mesa-field{display:block;padding:20px;border-right:1px solid var(--hair)}
+.mesa-field:last-child{border-right:0}
+.mesa-field span{display:block;font:10px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--soft);margin-bottom:13px}
+.mesa-field select{width:100%;font:500 19px/1.4 var(--sans);min-height:46px;background:transparent;color:var(--ink);border:0;border-bottom:1px solid var(--ink);border-radius:0}
+.mesa-buttons{display:flex;gap:12px;align-items:center;margin:24px 0;flex-wrap:wrap}
+.mesa button{border:1px solid var(--ink);background:var(--ink);color:var(--bg);font:11px var(--mono);padding:14px 18px;cursor:pointer;min-height:44px}
+.mesa button.secondary{background:transparent;color:var(--ink)}
+.mesa button:disabled{opacity:.5;cursor:not-allowed}
+.mesa-output{background:var(--bg);border:1px solid var(--hair);padding:clamp(20px,3vw,36px);max-width:930px}
+.mesa-output h3{font-weight:500;font-size:clamp(25px,3vw,43px);line-height:1;letter-spacing:-.035em;margin:12px 0 20px}
+.mesa-output p{font-size:16px;line-height:1.57;margin:4px 0;max-width:700px}
+.mesa-output .step{display:block;font:10px/1.4 var(--mono);text-transform:uppercase;color:var(--soft);margin:21px 0 7px}
+.mesa-tip{font:11px/1.6 var(--mono);color:var(--soft);margin:16px 0}
+.mesa select:focus-visible,.mesa button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+@media(max-width:760px){.mesa-controls{grid-template-columns:1fr}.mesa-field{border-right:0;border-bottom:1px solid var(--hair)}.mesa-field:last-child{border-bottom:0}}
+
 </style><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://diegobravo.es/assets/social-card.jpg">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"CreativeWork","name":"Práctica — Estética del umbral","url":"https://diegobravo.es/practica.html","inLanguage":"es","author":{"@type":"Person","name":"Diego Bravo","url":"https://diegobravo.es/"}}</script>
 <link rel="stylesheet" href="/assets/site.css">
@@ -73,8 +93,42 @@
 <article class="cell" id="operacion-retirar"><div><span class="meta">04 / Sustracción</span><h3>Retirar</h3><p>Interrumpir un gesto habitual o quitar un elemento secundario de una composición sin sustituirlo. Comparar qué relaciones dejan de funcionar y cuáles aparecen. En la vida, retirar una disponibilidad no equivale siempre a romper una relación.</p><p><a href="/diccionario.html#acceso">Acceso ↗</a> · <a href="/atlas.html#intervalos-en-circulacion">Intervalos ↗</a></p></div><div class="state">PROPUESTA / NO REALIZADA</div></article>
 </div>
 <div class="notice"><p>La lista original de Serra no se reproduce aquí. Esta es una selección de trabajo con atribuciones diferenciadas. Una prueba entra en el corpus de obra solo después de ejecutarse, documentarse y producir una consecuencia que podamos examinar.</p><p><a href="https://www.moma.org/collection/works/152793" rel="external">Fuente: <em>Verb List</em> ↗</a> · <a href="https://www.aaa.si.edu/collections/interviews/oral-history-interview-robert-morris-13065" rel="external">Testimonio de Morris ↗</a></p></div>
+<div class="mesa" id="mesa-operaciones">
+<p class="mesa-intro">Compón una prueba. El gesto abre una pregunta, pero no decide la respuesta del material.</p>
+<form id="mesa-form" autocomplete="off">
+<div class="mesa-controls">
+<label class="mesa-field"><span>01 / Verbo</span><select name="verbo"><option value="levantar">Levantar</option><option value="dejar-caer">Dejar caer</option><option value="cribar">Cribar</option><option value="retirar">Retirar</option></select></label>
+<label class="mesa-field"><span>02 / Materia</span><select name="materia"><option value="papel">Papel</option><option value="tela">Tela</option><option value="carton">Cartón fino</option><option value="vegetal">Papel vegetal</option></select></label>
+<label class="mesa-field"><span>03 / Condición</span><select name="condicion"><option value="una">Una vez, sin corregir</option><option value="repetir">Repetir y comparar</option><option value="mover">Cambiar el punto de apoyo</option><option value="retorno">Que el documento vuelva a intervenir</option></select></label>
+</div>
+<div class="mesa-buttons"><button type="submit">Preparar ficha</button><button type="button" id="mesa-copiar" class="secondary" disabled>Copiar ficha</button><span class="mesa-tip" id="mesa-estado" role="status" aria-live="polite"></span></div>
+</form>
+<div class="mesa-output" id="mesa-salida" aria-live="polite" aria-atomic="true"><span class="step">Ejemplo · Propuesta no realizada</span><h3>Levantar · papel</h3><p>Levanta una hoja por un punto; observa qué hace su peso. Anota la diferencia entre la forma prevista y la que efectivamente aparece.</p></div>
+<p class="mesa-tip">Sin almacenamiento, seguimiento ni transmisión de datos. La ficha es una propuesta; no simula resultados ni los registra.</p>
+</div>
+
 </section>
 
 </main>
 <footer class="footer"><span>Diego Bravo / Estética del umbral</span><span>Práctica · versión pública v0.5 · 29.09.2026</span> · <a href="/colofon.html">Colofón</a></footer>
+
+<script>
+(function(){
+"use strict";
+const f=document.getElementById("mesa-form"),o=document.getElementById("mesa-salida"),b=document.getElementById("mesa-copiar"),e=document.getElementById("mesa-estado");if(!f||!o||!b)return;
+const mat={papel:"papel",tela:"tela",carton:"cartón fino",vegetal:"papel vegetal"};
+const verb={levantar:["Levantar","Sostén el material por un único punto y elévalo lentamente. No anticipes la forma: observa apoyo, tensión y caída."],"dejar-caer":["Dejar caer","Sujeta el material desde arriba y suéltalo sobre una superficie despejada. Registra pliegues, bordes y posiciones inesperadas."],cribar:["Cribar","Usa una malla o una hoja con pequeñas aberturas preparadas y coloca debajo otra superficie. Haz pasar confeti de papel o luz, sin polvos ni sustancias peligrosas. Observa paso, retención y desvío."],retirar:["Retirar","Quita un apoyo o una parte secundaria de la disposición. No sustituyas inmediatamente lo que falta: observa cómo cambia el equilibrio."]};
+const cond={una:"Realiza una sola intervención y conserva el primer estado sin embellecerlo por inercia.",repetir:"Repite con una muestra equivalente; compara si el mismo gesto produce o no la misma forma.",mover:"Repite cambiando solo el punto de apoyo o la posición; identifica una diferencia verificable.",retorno:"Fotografía o dibuja el primer estado. Deja que ese registro decida una segunda acción: el documento no solo recuerda, interviene."};
+let ficha="";function node(t,c,tx){const x=document.createElement(t);if(c)x.className=c;x.textContent=tx;return x;}
+function para(etiqueta,texto){o.append(node("span","step",etiqueta),node("p","",texto));}
+f.addEventListener("submit",function(ev){ev.preventDefault();const v=f.elements.verbo.value,m=f.elements.materia.value,c=f.elements.condicion.value;if(!verb[v]||!mat[m]||!cond[c])return;
+const title=verb[v][0]+" · "+mat[m];const pasos=[["01 / Antes","Registra el material antes de actuar y escribe una predicción que pueda fallar."],["02 / Intervención",verb[v][1]],["03 / Variación",cond[c]],["04 / Resistencia","¿Qué ocurrió que no habías decidido? ¿Se produjo alguna diferencia perceptible o ninguna?"],["05 / Consecuencia","Conserva, modifica o descarta. Ejecutar una instrucción no equivale a realizar una obra."]];
+o.replaceChildren(node("span","step","Ficha de prueba · no realizada"),node("h3","",title));pasos.forEach(x=>para(x[0],x[1]));
+o.appendChild(node("p","mesa-tip","Fuentes de método: Richard Serra, Verb List (1967); Robert Morris, Anti Form (1968). Estas instrucciones son una adaptación editorial actual, no citas ni instrucciones originales."));
+ficha=title+"\n\n"+pasos.map(x=>x[0]+"\n"+x[1]).join("\n\n");b.disabled=false;e.textContent="";
+});
+b.addEventListener("click",async function(){if(!ficha)return;try{if(!navigator.clipboard?.writeText)throw new Error("copiar no disponible");await navigator.clipboard.writeText(ficha);e.textContent="Ficha copiada.";}catch(err){e.textContent="Selecciona la ficha y cópiala manualmente.";}})
+})();
+</script>
+
 </body></html>
