@@ -204,3 +204,21 @@ Sitio estático servido con GitHub Pages en [diegobravo.es](https://diegobravo.e
 - Registro de derechos actualizado a cinco imágenes históricas; no introducir fotografías personales o de taller sin verificar autoría, privacidad y si se puede circular públicamente.
 - Pendiente inspección visual de despliegue/Chrome Android y revisión editorial humana final de dibujos y pies.
 \n## v0.23 — Artista primero · 17.10.2026\n- La web pasa de presentarse exclusivamente mediante Estética del umbral a presentarse como espacio de Diego Bravo, artista visual. El proyecto filosófico conserva su autonomía en Investigación.\n- Nueva Obra y procesos sin atribuir, inventar ni simular trabajos: archivo histórico propio pendiente de recuperar y práctica actual diferenciada de propuestas sin ejecutar.\n- Portada, Sobre, navegación general, navegación móvil, buscador y sitemap enlazan la nueva sección. El Cuaderno y la galería de imágenes editoriales siguen disponibles y mantienen su procedencia.\n- Prioridad editorial siguiente: documentar fotografía real de obra propia (vistas generales y detalles) y verificar fechas, autoría y permisos de reproducción antes de publicar.\n- Comprobar despliegue y visualización real en Chrome Android; la actualización del repositorio no sustituye esa inspección.\n
+## Cuaderno de campo — registro de investigaciones abiertas
+
+## Cuaderno de campo — registro de investigaciones abiertas
+
+La web pública incluye ahora **fichas CF** enlazadas desde el bloque "Ideas que todavía no son artículos" de `notas.html`. Son un cuaderno de campo de investigación abierto, no sustituyen a las entradas N del Cuaderno, al Atlas ni a las obras documentadas. Las CF son páginas HTML accesibles por enlace y marcadas `noindex,follow` mientras son investigaciones no consolidadas: **no son privadas**; toda información incluida es públicamente accesible por URL.
+
+**Índice de fichas**
+- **CF–001 · La máscara no tiene rostro** (17.10.2026, investigación abierta): `cuaderno/mascara-compostura-ridiculo.html`. Relaciones Schiele–Goffman, vergüenza propia y ajena, compostura, ridículo intencional, trabajo e identidad social, humor jovial y procedimientos abstractos. Artistas: Gillian Wearing, Andrea Fraser, Erwin Wurm, Fischli & Weiss, Mierle Laderman Ukeles, David Shrigley. Vinculada a N–011. Incluye cuatro propuestas y un prototipo web, todos diferenciados de la obra realizada.
+
+**Protocolo para futuras ampliaciones (ChatGPT / Work / edición humana):**
+1. Empezar leyendo este README, el índice `notas.html` y las fichas CF existentes; buscar antes de duplicar.
+2. Registrar únicamente hallazgos relevantes para la práctica: pregunta exacta, motivo de importancia, fecha y fuente verificable (primaria si es posible); separar HECHO / INTERPRETACIÓN / HIPÓTESIS / PROPUESTA / PRUEBA REALIZADA.
+3. Conectar el hallazgo con uno o varios nodos existentes por enlace, no multiplicar páginas de afinidades vagas. Registrar también la objeción, la diferencia entre referentes y qué operación visual/material podría ponerse a prueba.
+4. Mantener las CF como cuaderno en proceso: futuras revisiones añaden fecha e historial resumido; no falsear ejecuciones, imágenes propias, permisos o citas; ninguna pieza sin realizar se anuncia como obra.
+5. Si hay material autobiográfico o laboral, preservar privacidad de terceros; evitar nombres de compañeros o relatos privados identificables. `noindex` no es control de acceso.
+6. Tras una prueba de taller documentada, decidir si la relación merece pasar a `Práctica`, Atlas, Diccionario, ensayo N, Libro o presentación pública; la WEB no sustituye la obra.
+7. En futuras conversaciones, pedir expresamente «revisar/actualizar el cuaderno de campo de diegobravo.es» para que el asistente consulte GitHub: no existe sincronización automática entre cada chat y el sitio ni edición de fondo por el mero hecho de investigar.
+
