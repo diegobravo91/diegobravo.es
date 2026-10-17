@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>La máscara no tiene rostro — Cuaderno de campo · Diego Bravo</title>
+<meta name="description" content="Cuaderno de campo abierto: Schiele, Goffman, vergüenza ajena, ridículo deliberado, máscara social, trabajo, humor y práctica abstracta. Fuentes, conexiones y experimentos pendientes.">
+<meta name="robots" content="noindex,follow"><meta name="author" content="Diego Bravo">
+<link rel="canonical" href="https://diegobravo.es/cuaderno/mascara-compostura-ridiculo.html">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/site.css">
+<meta name="theme-color" content="#eceae4">
+<style>
+:root{--paper:#eceae4;--ink:#171815;--muted:#585950;--rule:#aaa99f;--orange:#aa3c20;--white:#f8f7f2;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 Arial,Helvetica,sans-serif}
+a{color:inherit;text-underline-offset:4px}a:hover{color:var(--orange)}:focus-visible{outline:2px solid var(--orange);outline-offset:3px}
+.top{padding:17px clamp(18px,4vw,64px);display:flex;justify-content:space-between;align-items:center;gap:20px;border-bottom:1px solid var(--ink)}
+.top a{text-decoration:none}.top nav{display:flex;gap:22px;font:12px var(--mono)}.brand{font-weight:700}
+.eyebrow,.mark,.micro,.meta,.tag{font:11px/1.6 var(--mono);letter-spacing:.02em}
+.eyebrow,.micro,.meta{color:var(--muted)}
+.hero{padding:clamp(40px,7vw,110px) clamp(18px,6vw,90px);display:grid;grid-template-columns:1.25fr .65fr;gap:7vw;border-bottom:1px solid var(--ink)}
+h1{font:400 clamp(54px,9vw,128px)/.89 Georgia,'Times New Roman',serif;letter-spacing:-.066em;margin:23px 0 28px}
+.dek{font:clamp(19px,2.25vw,29px)/1.3 Georgia,serif;max-width:740px}
+.heroaside{border-top:2px solid var(--ink);padding-top:18px;align-self:end}.heroaside p{font-size:14px;line-height:1.6}
+.status{display:inline-block;border:1px solid var(--orange);color:var(--orange);padding:5px 9px;font:11px var(--mono)}
+.toc{display:flex;flex-wrap:wrap;gap:8px 22px;padding:22px clamp(18px,6vw,90px);border-bottom:1px solid var(--rule);font:12px var(--mono)}
+.toc a{text-decoration:none}.section{display:grid;grid-template-columns:minmax(120px,.25fr) minmax(0,1fr);gap:clamp(18px,4vw,70px);padding:clamp(36px,5vw,74px) clamp(18px,6vw,90px);border-bottom:1px solid var(--rule)}
+.section > .meta{padding-top:9px}.body{max-width:900px}
+h2{font:400 clamp(32px,4vw,59px)/1.06 Georgia,serif;letter-spacing:-.038em;margin:0 0 24px}
+h3{font:500 clamp(21px,2.3vw,30px)/1.15 Georgia,serif;margin:26px 0 10px}
+p{margin:0 0 17px}.lead{font:clamp(21px,2.4vw,34px)/1.3 Georgia,serif;letter-spacing:-.02em}
+em{font-style:italic}.big{font:400 clamp(22px,2.7vw,39px)/1.32 Georgia,serif;letter-spacing:-.018em}
+.factlist{display:grid;gap:0;border-top:1px solid var(--rule);margin:28px 0}
+.fact{display:grid;grid-template-columns:minmax(125px,.31fr) 1fr;gap:20px;padding:17px 0;border-bottom:1px solid var(--rule)}
+.fact .mark{color:var(--orange)}.fact p{margin:0}
+.relations{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:24px}
+.person{border:1px solid var(--rule);padding:20px;background:rgba(255,255,255,.23)}
+.person strong{display:block;font:500 22px/1.15 Georgia,serif;margin:8px 0}.person p{font-size:14px;margin:0 0 12px}.person a{font:11px var(--mono)}
+.open{font:11px var(--mono);color:var(--orange);text-transform:uppercase}.note{background:var(--white);border-left:3px solid var(--orange);padding:18px 22px;margin:24px 0;font-size:14px}
+.works{counter-reset:works}.work{border-top:1px solid var(--rule);padding:19px 0}.work h3{margin:4px 0 10px}.work:last-child{border-bottom:1px solid var(--rule)}
+.demo{background:#262c29;color:#eef0e9;padding:clamp(18px,3vw,37px);margin:24px 0}
+.demohead{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}
+.demo svg{display:block;width:100%;max-width:700px;margin:0 auto 8px}
+.controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.controls button{cursor:pointer;border:1px solid #ccd1c8;background:transparent;color:#eef0e9;padding:10px 16px;font:12px var(--mono)}
+.controls button:hover,.controls button:focus{background:#eef0e9;color:#262c29}
+.demo .micro{color:#bac1b8}#resultado{margin:14px 0 0;color:#f2f3ed;min-height:3.2em}
+.sources{padding-left:20px}.sources li{margin:0 0 13px}.sources a{overflow-wrap:anywhere}
+.footer{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;padding:25px clamp(18px,6vw,90px);font:11px var(--mono);color:var(--muted)}
+@media(max-width:750px){.hero,.section{display:block}.heroaside{margin-top:34px}.section>.meta{margin:0 0 20px}.relations{grid-template-columns:1fr}.fact{display:block}.fact .mark{display:block;margin-bottom:8px}.top nav{gap:11px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header class="top"><a class="brand" href="/">Diego Bravo / Cuaderno</a><nav aria-label="Navegación"><a href="/notas.html">Notas</a><a href="/atlas.html">Atlas</a><a href="/mapa.html">Mapa</a></nav></header>
+<main id="contenido">
+<header class="hero">
+<div><div class="eyebrow">CF–001 / CUADERNO DE CAMPO · INICIO 17.10.2026</div>
+<h1>La máscara no tiene rostro.</h1>
+<p class="dek">Schiele y Goffman: el gesto que se expone, la compostura que se exige y el ridículo que puede volver visible una norma.</p>
+<div class="eyebrow">Sociabilidad / vergüenza / humor / trabajo / abstracción</div></div>
+<div class="heroaside"><span class="status">Investigación abierta · no obra realizada</span>
+<p>Este registro conserva una constelación, sus fuentes y sus posibles operaciones. No presenta una pieza ya ejecutada ni un ensayo definitivo. Está enlazado al <a href="/notas/el-instante-en-que-deja-de-hacer-gracia.html">ensayo visual N–011</a>, que aborda específicamente el momento en que una broma deja de ser compartida.</p>
+<p class="micro">Última revisión: 17.10.2026 · Texto de trabajo organizado con asistencia de IA; requiere revisión y decisión autoral.</p></div></header>
+<nav class="toc" aria-label="Secciones"><a href="#hallazgo">01 Hallazgo</a><a href="#fuentes">02 Fuentes y diferencias</a><a href="#constelacion">03 Interlocutores</a><a href="#operaciones">04 Operaciones</a><a href="#experimento">05 Interacción</a><a href="#preguntas">06 Preguntas y continuidad</a></nav>
+<section class="section" id="hallazgo"><div class="meta">01 / NÚCLEO</div><div class="body">
+<h2>La obligación de comportarse correctamente es muy fina.</h2>
+<p class="lead">No hace falta dibujar una máscara para trabajar sobre las máscaras. Una corrección, una repetición, una etiqueta o un silencio pueden organizar lo que una forma tiene permitido hacer.</p>
+<p>Hay vergüenza ajena cuando alguien parece no advertir el fracaso de su actuación. Pero si hace el ridículo deliberadamente, se abre otra pregunta: ¿quién interpreta mal la escena? Saber que una actuación es voluntaria no garantiza que sea emancipadora; puede ser un juego, una provocación o una imposición. Importan la reciprocidad, la asimetría y la posibilidad de detenerla.</p>
+<p>Otro conflicto conecta la investigación con la vida laboral: una ocupación puede funcionar como etiqueta pública capaz de eclipsar una práctica artística. El empleo que sostiene una vida y la identidad que una persona desea desarrollar no tienen por qué coincidir. Esta tensión se registra como problema de representación y reconocimiento, sin convertir una vivencia privada en espectáculo.</p>
+<div class="note"><strong>Hipótesis de trabajo.</strong> En una práctica visual abstracta, la sociabilidad puede aparecer como operación y no como iconografía: alinear, vigilar, retirar, clasificar, corregir, cubrir, exagerar, permitir o impedir un desvío. La prueba debe producir una consecuencia formal que sobreviva sin el texto explicativo.</div>
+</div></section>
+<section class="section" id="fuentes"><div class="meta">02 / LECTURA CONTRASTADA</div><div class="body">
+<h2>Dos formas de trabajar la aparición.</h2>
+<div class="factlist">
+<div class="fact"><div class="mark">SCHIELE / GESTO</div><p>Egon Schiele escenificaba sus gestos y expresiones. La ficha del Leopold Museum sobre la fotografía <em>Egon Schiele, Posing</em> (Anton Josef Trčka, 1914) remite a su carta del 20 de septiembre de 1910 a Josef Hoffmann, donde contrapone rostros enmascarados y manos desenmascaradas. <a href="https://onlinecollection.leopoldmuseum.org/en/object/31834-egon-schiele-posing/">Fuente primaria y contextualización ↗</a></p></div>
+<div class="fact"><div class="mark">GOFFMAN / ENCUENTRO</div><p>En <em>Embarrassment and Social Organization</em> (1956), Erving Goffman describe la vergüenza como un problema de la organización de la interacción, no solo como sentimiento privado. En las pp. 265, 268–271 examina la incomodidad compartida, las expectativas incompatibles y la función social de la vergüenza. <a href="https://www.journals.uchicago.edu/doi/10.1086/222003">Artículo, American Journal of Sociology ↗</a></p></div>
+<div class="fact"><div class="mark">DESACUERDO</div><p>La intensidad del gesto en Schiele no equivale a una verdad transparente; para Goffman, un gesto observado también entra en un marco de interpretación. Su correspondencia aquí es <em>una lectura curatorial</em>, no una influencia histórica probada.</p></div>
+<div class="fact"><div class="mark">DISTANCIA DE ROL</div><p>El papel social puede desempeñarse sin que agote a la persona. El concepto de <em>role distance</em>, desarrollado por Goffman en <em>Encounters</em> (1961), ofrece una vía para pensar el empleo, la compostura y la práctica artística sin reducir el yo a un único rótulo. La diferencia entre observación empírica y autobiografía sigue siendo necesaria.</p></div>
+</div>
+<p><strong>Contrapunto ético:</strong> no toda transgresión revela una injusticia. La vergüenza puede proteger a alguien; la broma puede humillar. Tampoco toda retirada es sumisión ni toda exhibición es libertad.</p>
+</div></section>
+<section class="section" id="constelacion"><div class="meta">03 / REFERENTES VIVOS</div><div class="body">
+<h2>Una constelación de operaciones, no un club de afinidades.</h2>
+<div class="relations">
+<div class="person"><span class="open">Autopresentación</span><strong>Egon Schiele</strong><p>Pose, mano, desfiguración voluntaria. ¿Qué expresa una figura precisamente cuando parece fingir?</p><a href="https://onlinecollection.leopoldmuseum.org/en/object/31834-egon-schiele-posing/">Leopold Museum ↗</a></div>
+<div class="person"><span class="open">Marco social</span><strong>Erving Goffman</strong><p>Fachada, compostura, estigma, conflicto entre papeles. ¿Quién define qué conducta es apropiada?</p><a href="https://www.journals.uchicago.edu/doi/10.1086/222003">Texto de 1956 ↗</a></div>
+<div class="person"><span class="open">Ridículo voluntario</span><strong>Gillian Wearing</strong><p><em>Dancing in Peckham</em> (1994): bailar a solas, a la vista de quienes no oyen la música. El público no comparte el mismo marco.</p><a href="https://artcollection.dcms.gov.uk/artwork/m17286-1/">Government Art Collection ↗</a></div>
+<div class="person"><span class="open">Solemnidad desplazada</span><strong>Andrea Fraser</strong><p><em>Museum Highlights</em> (1989): usar el registro de autoridad del museo para nombrar espacios ordinarios.</p><a href="https://www.philamuseum.org/exhibitions/museum-highlights-gallery-talk-andrea-fraser">Philadelphia Museum of Art ↗</a></div>
+<div class="person"><span class="open">Instrucción imposible</span><strong>Erwin Wurm</strong><p><em>One Minute Sculptures</em>: una regla invita a convertir el cuerpo en una configuración temporal y absurda.</p><a href="https://www.erwinwurm.com/artworks/one-minute-sculptures">Archivo del artista ↗</a></div>
+<div class="person"><span class="open">Humor de la materia</span><strong>Fischli &amp; Weiss</strong><p><em>The Way Things Go</em> (1987): los objetos producen una cadena de acciones cuya precisión raya en el disparate.</p><a href="https://www.guggenheim.org/articles/checklist/joy-suspense-and-the-way-things-go">Guggenheim ↗</a></div>
+<div class="person"><span class="open">Trabajo / reconocimiento</span><strong>Mierle Laderman Ukeles</strong><p><em>Touch Sanitation</em> (1979–1980): reconocer públicamente el mantenimiento invisible que sostiene la ciudad.</p><a href="https://queensmuseum.org/exhibition/mierle-laderman-ukeles/">Queens Museum ↗</a></div>
+<div class="person"><span class="open">Lenguaje / humor gráfico</span><strong>David Shrigley</strong><p>Texto y dibujo sencillo para desajustar expectativas. Referente lateral, no plantilla para una estética propia.</p><a href="https://www.moma.org/collection/works/102290">MoMA ↗</a></div>
+</div>
+<p class="micro" style="margin-top:18px">Referentes pendientes de contraste transversal: Andy Kaufman (fracaso escenificado); Nietzsche (jovialidad y afirmación); Foucault (disciplina, examen, normalización); Yoko Ono (instrucciones, consentimiento). No convertir la proximidad temática en equivalencia histórica.</p>
+</div></section>
+<section class="section" id="operaciones"><div class="meta">04 / PRUEBAS NO REALIZADAS</div><div class="body">
+<h2>Del yo social a la forma.</h2>
+<div class="works">
+<div class="work"><span class="open">PR–01 / Dibujo · propuesta</span><h3>Comportamiento adecuado</h3><p>Una serie de marcas obedece una pauta. Se introduce un desvío y se intenta corregirlo sin cambiar las reglas iniciales. Se documentan cuatro estados: norma, desviación, corrección, consecuencia. La prueba fracasa si el resultado solo ilustra «una línea rebelde» sin consecuencia material propia.</p></div>
+<div class="work"><span class="open">PR–02 / Caligrafía · propuesta</span><h3>Manual de compostura</h3><p>Instrucciones incompatibles ejecutadas gráficamente: «sea espontáneo», «no destaque», «exprese su individualidad de forma normal». El dibujo y la letra trabajan contra el mandato que enuncian. Evitar la frase ingeniosa cuando no genera una forma.</p></div>
+<div class="work"><span class="open">PR–03 / Variación gestual · propuesta</span><h3>El mismo gesto, cinco papeles</h3><p>Mismos materiales, gestos sometidos a situaciones distintas: obedecer, impresionar, errar, jugar y trabajar sin público. No adjudicar de antemano autenticidad a uno de ellos. Comparar diferencias observables.</p></div>
+<div class="work"><span class="open">PR–04 / Intersticio web · prototipo</span><h3>La corrección interminable</h3><p>El visitante corrige una desviación que cambia de posición cada vez. La interfaz le ofrece agencia y, al mismo tiempo, lo invita a reproducir la norma. Prototipo didáctico: aún no acredita una pieza artística completa.</p></div>
+</div>
+</div></section>
+<section class="section" id="experimento"><div class="meta">05 / UNA PRUEBA AQUÍ</div><div class="body">
+<h2>El comportamiento correcto se desplaza.</h2>
+<p>No hay rostros en este experimento; solamente un patrón, una desviación y un botón. ¿A partir de cuántas correcciones deja de ser una reparación y pasa a ser una obediencia?</p>
+<div class="demo"><div class="demohead"><span class="eyebrow" style="color:#c5c9be">Esquema interactivo · realizado para este cuaderno</span><span class="micro" id="contador">00 correcciones</span></div>
+<svg viewBox="0 0 650 300" role="img" aria-label="Ocho trazos verticales, uno desviado de forma ligera. Cada corrección mueve la desviación a otro trazo."><g id="marcas" stroke="#e6e7e0" stroke-width="3" stroke-linecap="round"></g><line x1="25" y1="257" x2="625" y2="257" stroke="#737b70" stroke-width="1" stroke-dasharray="3 7"/></svg>
+<div class="controls"><button type="button" id="corregir">Corregir lo incorrecto</button><button type="button" id="reiniciar">Empezar de nuevo</button></div>
+<p id="resultado" aria-live="polite">Hay una forma que no termina de encajar.</p>
+<div class="micro">SVG original y comportamiento local sin seguimiento de visitas. No simula reacciones psicológicas reales.</div>
+</div></div></section>
+<section class="section" id="preguntas"><div class="meta">06 / CONTINUIDAD</div><div class="body">
+<h2>Preguntas que no quiero perder.</h2>
+<div class="factlist">
+<div class="fact"><span class="mark">Q–01</span><p>¿Cuándo el ridículo deliberado cuestiona una regla y cuándo humilla a quien no ha elegido participar?</p></div>
+<div class="fact"><span class="mark">Q–02</span><p>¿Cómo producir humor dentro de una obra materialmente abstracta, sin explicarlo en un texto?</p></div>
+<div class="fact"><span class="mark">Q–03</span><p>¿Puede una máscara preservar la libertad de alguien, en lugar de simplemente ocultarlo?</p></div>
+<div class="fact"><span class="mark">Q–04</span><p>¿En qué momento una clasificación laboral reemplaza injustamente la complejidad de una persona?</p></div>
+<div class="fact"><span class="mark">Q–05</span><p>¿Puede haber una crítica jovial de la norma, sin superioridad moral ni cinismo?</p></div>
+</div>
+<p class="big">Reírse del papel sin despreciar a quien tiene que interpretarlo.</p>
+<h3>Siguiente paso verificable</h3>
+<p>Ejecutar <em>Comportamiento adecuado</em> sobre papel; fechar y fotografiar sus cuatro estados; decidir si produce una consecuencia formal autónoma. Hasta entonces permanece como propuesta. Si se realiza, vincular la documentación aquí, en <a href="/practica.html">Práctica</a> y, solo si corresponde, en el <a href="/atlas.html">Atlas</a>.</p>
+<p><a href="/notas/el-instante-en-que-deja-de-hacer-gracia.html">Ensayo visual relacionado: «El instante en que deja de hacer gracia» ↗</a><br><a href="/notas.html#ideas">Otras ideas todavía abiertas en el Cuaderno ↗</a><br><a href="/mapa.html">Mapa de relaciones existente ↗</a></p>
+<h3>Procedencia y estado</h3><p>Conversación de investigación del 17 de octubre de 2026, articulada con la lectura de Goffman (1956) aportada para el estudio y con referencias de museos e instituciones enlazadas. Las hipótesis y propuestas no son atribuciones a esos autores. Las fichas externas son fuentes para contrastar los hechos; las interpretaciones quedan abiertas. Esta página no publica detalles personales, nombres de compañeros ni correspondencia privada.</p>
+<p class="micro">Registro de cambios: 17.10.2026 — apertura de CF–001, constelación, preguntas, cuatro propuestas y microprototipo. Próxima versión: tras prueba en taller o revisión de fuentes. Las notas del cuaderno pueden corregirse sin borrar sus preguntas anteriores.</p>
+</div></section>
+</main>
+<footer class="footer"><span>Diego Bravo · Cuaderno de campo · CF–001 · en investigación</span><span><a href="/notas.html">Volver al Cuaderno</a> · <a href="/colofon.html">Derechos y procedencia</a></span></footer>
+<script>
+(function(){'use strict';const g=document.getElementById('marcas'), count=document.getElementById('contador'),out=document.getElementById('resultado');let n=0;function draw(){g.replaceChildren();for(let i=0;i<8;i++){let line=document.createElementNS('http://www.w3.org/2000/svg','line'),x=70+i*72;line.setAttribute('x1',x);line.setAttribute('y1',42);line.setAttribute('x2',x+(i===(3+n)%8?22:0));line.setAttribute('y2',230);line.setAttribute('stroke',i===(3+n)%8?'#efa174':'#e6e7e0');g.appendChild(line)}count.textContent=String(n).padStart(2,'0')+' correcciones';out.textContent=n===0?'Hay una forma que no termina de encajar.':n<3?'La desviación ha cambiado de lugar.':n<6?'La norma permanece. Quien corrige continúa trabajando.':'Quizá ya no estás corrigiendo el dibujo. Estás obedeciendo al botón.'}document.getElementById('corregir').addEventListener('click',()=>{n++;draw()});document.getElementById('reiniciar').addEventListener('click',()=>{n=0;draw()});draw()})();
+</script>
+</body></html>
