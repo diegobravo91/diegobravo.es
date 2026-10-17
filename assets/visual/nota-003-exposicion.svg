@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="t d"><title id="t">Planta editorial de una exposición imaginaria que dispone accesos y relaciones</title><desc id="d">Composición editorial original de Diego Bravo para la web. No reproduce una obra artística de terceros ni documenta un experimento realizado.</desc><defs></defs>
+<rect width="1200" height="800" fill="#e6e0d5"/>
+<g stroke="#252623" stroke-width="5" fill="none">
+<path d="M140 120 H515 V270 M515 360 V675 H140 V120"/>
+<path d="M680 120 H1060 V690 H680 V535 M680 420 V120"/>
+</g>
+<rect x="184" y="180" width="170" height="120" fill="#242522"/>
+<rect x="716" y="485" width="290" height="85" fill="#b83a22"/>
+<path d="M330 310 C650 360,595 625,848 618" stroke="#b83a22" stroke-width="9" fill="none" stroke-dasharray="7 22"/>
+<path d="M848 618 L823 590 M848 618 L807 629" stroke="#b83a22" stroke-width="9"/>
+<circle cx="330" cy="310" r="17" fill="#b83a22"/>
+<circle cx="848" cy="618" r="17" fill="#e4e0d5" stroke="#242522" stroke-width="5"/>
+<path d="M480 380 H720" stroke="#252623" stroke-width="2" stroke-dasharray="7 9"/>
+<text x="140" y="747" fill="#252623" font-family="monospace" font-size="19" letter-spacing="3">MOSTRAR ES DISPONER RELACIONES</text>
+</svg>
